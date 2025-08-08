@@ -1,0 +1,124 @@
+/* first row */
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 8px;
+}
+/* fixed select sizes */
+.select-fixed {
+  width: 280px;
+  height: 36px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border, #444);
+  background: var(--surface);
+  color: var(--text);
+}
+.select-fixed.small {
+  width: 180px;
+}
+
+/* push theme toggle to the far right inside the row */
+.theme-wrap {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* second row grid with fixed card sizes */
+.second-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  align-items: start;
+  padding: 8px 12px 24px;
+}
+
+/* card / box styles */
+.box {
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 10px;
+  border: 1px solid rgb(229, 231, 235, 0.3);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  height: 220px; /* fixed height */
+  overflow: hidden;
+  min-width: 280px; /* fixed-ish width for consistency */
+}
+
+.box-head {
+  padding: 12px 14px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+}
+
+.box-body {
+  padding: 12px 14px;
+  overflow: auto;
+  flex: 1;
+}
+
+/* custom scrollbar */
+.box-body::-webkit-scrollbar {
+  width: 4px;
+}
+.box-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.box-body::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 4px;
+}
+
+/* mini table */
+.mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(229, 231, 235, 0.3);
+  border-radius: 4px;
+  font-size: 0.90rem;
+}
+.mini-table thead tr th {
+  text-align: left;
+  font-weight: 600;
+  padding: 8px 6px;
+  /* background: rgba(0, 0, 0, 0.06); */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
+}
+
+.mini-table th {
+  text-align: left;
+  font-weight: 600;
+  padding: 8px 6px;
+  background: rgba(116, 116, 116, 0.651);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
+}
+.mini-table tbody tr td {
+  padding: 10px 6px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.04); */
+}
+
+/* theme aware overrides */
+[data-theme="dark"] .box {
+  background: #071a2b;
+  border-color: rgba(255, 255, 255, 0.03);
+}
+[data-theme="dark"] .box-head {
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom-color: rgba(255, 255, 255, 0.04);
+}
+[data-theme="dark"] .mini-table thead tr th {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 880px) {
+  .second-row {
+    grid-template-columns: 1fr;
+  }
+}

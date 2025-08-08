@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.css - global tokens + base styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+:root {
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --muted: #6b7280;
+  --text: #0f1724;
+  --accent: #6366f1;
+  --radius: 10px;
+  --gap: 12px;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+/* dark theme */
+[data-theme="dark"] {
+  --bg: #000000;
+  --surface: #000000;
+  --muted: #9aa6b2;
+  --text: #fafafa;
+  --accent: #7c5cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* container used across the UI */
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 16px;
+}
+
+/* small header layout similar to the reference */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: 12px;
+  /* border-radius: var(--radius); */
+  border:none;
+  background: var(--surface);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* neutral button for toggles */
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Global select styling - applies to all selects */
+select {
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+/* Form controls theme support */
+.form-select,
+.dropdown-menu {
+  background-color: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--muted) !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--accent) !important;
+  color: var(--surface) !important;
+}
