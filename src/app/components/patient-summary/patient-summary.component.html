@@ -4,7 +4,7 @@
     <option *ngFor="let patient of patients" [value]="patient">{{ patient }}</option>
   </select>
 
-  <select [(ngModel)]="selectedEye" class="select-fixed small">
+  <select [(ngModel)]="selectedEye" (ngModelChange)="updateData()" class="select-fixed small">
     <option *ngFor="let eye of eyes" [value]="eye">{{ eye }}</option>
   </select>
 
@@ -19,9 +19,7 @@
   <div class="box">
     <div class="box-head">Patient Summary</div>
     <div class="box-body scroll">
-      <p>
-        The patient with a history of recurrent macular edema and proliferative diabetic retinopathy (PDR) in the RE underwent multiple Ozurdex injections starting from September 2017, with additional treatments including retina laser procedures such as PRP and focal laser. Despite these interventions, the RE experienced fluctuating visual acuity and episodes of cystoid macular edema (CME), necessitating further management with Tricort and occasional Avastin injections. The patient's course was complicated by conditions such as CSME, acute nongranulomatous anterior uveitis, and episcleritis/scleritis, which were managed with appropriate interventions. Over time, the RE showed episodes of increased central macular thickness (CMT) with the latest interventions.
-      </p>
+      <p>{{ patientSummary }}</p>
     </div>
   </div>
 
@@ -30,9 +28,17 @@
     <div class="box-head">Disease</div>
     <div class="box-body">
       <table class="mini-table">
-        <thead><tr><th>Disease</th><th>Date</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Disease</th>
+            <th>Date</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr *ngFor="let d of diseases"><td>{{d.name}}</td><td>{{d.date}}</td></tr>
+          <tr *ngFor="let d of diseases">
+            <td>{{ d.name }}</td>
+            <td>{{ d.date }}</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -43,12 +49,31 @@
     <div class="box-head">Procedures</div>
     <div class="box-body">
       <table class="mini-table">
-        <thead><tr><th>Type</th><th>Item</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Item</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr *ngFor="let p of procedures"><td>{{p.type}}</td><td>{{p.item}}</td></tr>
+          <tr *ngFor="let p of procedures">
+            <td>{{ p.type }}</td>
+            <td>{{ p.item }}</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
 </div>
-<app-gantt-chart [data]="ganttData" [config]="ganttConfig"></app-gantt-chart>
+
+<!-- Line Chart with Data Binding -->
+<app-line-chart
+  [chartData]="lineChartData"
+  [metrics]="lineChartMetrics">
+</app-line-chart>
+
+<!-- Gantt Chart -->
+<app-gantt-chart
+  [data]="ganttData"
+  [config]="ganttConfig">
+</app-gantt-chart>

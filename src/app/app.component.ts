@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { ThemeService } from './theme.service';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 import { PatientSummaryComponent } from './components/patient-summary/patient-summary.component';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     ThemeToggleComponent,
-    PatientSummaryComponent // ✅ Import your patient-summary component
+    PatientSummaryComponent,
+    LineChartComponent
   ],
   template: `
     <div class="container-fluid">

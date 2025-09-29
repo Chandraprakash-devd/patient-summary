@@ -1,4 +1,10 @@
-import { Component, ViewChild, ElementRef, AfterViewInit, Input } from '@angular/core';
+import {
+  Component,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+  Input,
+} from '@angular/core';
 import Chart from 'chart.js/auto';
 import { getRelativePosition } from 'chart.js/helpers';
 import annotationPlugin from 'chartjs-plugin-annotation';
@@ -76,6 +82,7 @@ export class GanttChartComponent implements AfterViewInit {
             backgroundColor: this.config.barColor || '#ec407a',
             borderRadius: this.config.borderRadius || 6,
             stack: 'stack1',
+            barThickness: 25,
           },
         ],
       },
@@ -96,7 +103,7 @@ export class GanttChartComponent implements AfterViewInit {
           legend: { display: false },
           title: {
             display: !!this.config.title,
-            text: this.config.title || 'Gantt Chart',
+            text: this.config.title,
             color: 'white',
             font: {
               size: 16,
@@ -108,9 +115,39 @@ export class GanttChartComponent implements AfterViewInit {
             },
           },
           tooltip: {
-            enabled: false, // Disable default tooltip
-            external: (context) => {
-              this.customTooltip(context, dateFormat);
+            enabled: true,
+            position: 'nearest',
+            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+            titleFont: { size: 14},
+            bodyFont: { size: 12 },
+            padding: 12,
+            cornerRadius: 8,
+            borderColor: this.config.barColor || '#ec407a',
+            borderWidth: 3,
+            caretPadding: 10,
+            callbacks: {
+              title: (tooltipItems) =>
+                this.data[tooltipItems[0].dataIndex].task,
+              label: (tooltipItem) => {
+                const task = this.data[tooltipItem.dataIndex];
+                const startDate = new Date(task.start).toLocaleDateString(
+                  dateFormat,
+                  {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric',
+                  }
+                );
+                const endDate = new Date(task.end).toLocaleDateString(
+                  dateFormat,
+                  {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric',
+                  }
+                );
+                return [`Start: ${startDate}`, `End: ${endDate}`];
+              },
             },
           },
           datalabels: {
@@ -130,7 +167,7 @@ export class GanttChartComponent implements AfterViewInit {
           x: {
             stacked: true,
             ticks: {
-              color: '#ccc',
+              color: '#979797ff',
               callback: function (this, tickValue: string | number): string {
                 if (typeof tickValue === 'number') {
                   const date = new Date(
@@ -142,7 +179,7 @@ export class GanttChartComponent implements AfterViewInit {
               },
             },
             grid: {
-              color: '#ccc',
+              color: '#8b8b8bff',
             },
           },
           y: {
@@ -183,14 +220,16 @@ export class GanttChartComponent implements AfterViewInit {
       tooltipEl.style.opacity = '0';
       tooltipEl.style.pointerEvents = 'none';
       tooltipEl.style.position = 'absolute';
-      tooltipEl.style.transform = 'translate(-50%, -100%)'; // Position above the bar
       tooltipEl.style.transition = 'all .1s ease';
       tooltipEl.style.padding = '12px 16px';
       tooltipEl.style.fontSize = '13px';
-      tooltipEl.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      tooltipEl.style.fontFamily =
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
       tooltipEl.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.4)';
       tooltipEl.style.zIndex = '1000';
-      tooltipEl.style.borderLeft = `3px solid ${this.config.barColor || '#ec407a'}`;
+      tooltipEl.style.borderLeft = `3px solid ${
+        this.config.barColor || '#ec407a'
+      }`;
       tooltipEl.style.minWidth = '160px';
       chart.canvas.parentNode.appendChild(tooltipEl);
     }
@@ -212,52 +251,69 @@ export class GanttChartComponent implements AfterViewInit {
       const formatOptions: Intl.DateTimeFormatOptions = {
         day: '2-digit',
         month: '2-digit',
-        year: 'numeric'
+        year: 'numeric',
       };
 
-      const formattedStart = startDate.toLocaleDateString(dateFormat, formatOptions);
-      const formattedEnd = endDate.toLocaleDateString(dateFormat, formatOptions);
+      const formattedStart = startDate.toLocaleDateString(
+        dateFormat,
+        formatOptions
+      );
+      const formattedEnd = endDate.toLocaleDateString(
+        dateFormat,
+        formatOptions
+      );
 
       // Use custom tooltip callback if provided
       if (this.config.tooltipCallback) {
-        const customContent = this.config.tooltipCallback(tooltip.dataPoints[0], this.data);
+        const customContent = this.config.tooltipCallback(
+          tooltip.dataPoints[0],
+          this.data
+        );
         tooltipEl.innerHTML = `<div style="text-align: left;">${customContent}</div>`;
       } else {
         // Default tooltip content
         tooltipEl.innerHTML = `
-          <div style="text-align: left;">
-            <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; line-height: 1.2;">
-              ${task.task}
-            </div>
-            <div style="font-size: 12px; color: rgba(255, 255, 255, 0.8); line-height: 1.3;">
-              <div style="margin-bottom: 2px;">Start: ${formattedStart}</div>
-              <div>End: ${formattedEnd}</div>
-            </div>
+        <div style="text-align: left;">
+          <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; line-height: 1.2;">
+            ${task.task}
           </div>
-        `;
+          <div style="font-size: 12px; color: rgba(255, 255, 255, 0.8); line-height: 1.3;">
+            <div style="margin-bottom: 2px;">Start: ${formattedStart}</div>
+            <div>End: ${formattedEnd}</div>
+          </div>
+        </div>
+      `;
       }
     }
 
     // Position tooltip
     const canvasPosition = chart.canvas.getBoundingClientRect();
     const tooltipWidth = tooltipEl.offsetWidth || 160; // Use minWidth if offsetWidth is not yet available
-    let left = canvasPosition.left + tooltip.caretX;
+    const chartArea = chart.chartArea; // Get chart area for accurate bar positioning
 
-    // Adjust for transform translate(-50%)
-    left -= tooltipWidth / 2;
+    // Calculate left position (centered above the bar)
+    let left = canvasPosition.left + tooltip.caretX - tooltipWidth / 2;
 
-    // Ensure tooltip doesn't go off screen
+    // Ensure tooltip doesn't go off screen horizontally
     if (left + tooltipWidth > window.innerWidth) {
       left = window.innerWidth - tooltipWidth - 10;
     } else if (left < 0) {
       left = 10;
     }
 
-    const top = canvasPosition.top + tooltip.caretY - tooltipEl.offsetHeight - 10;
+    // Calculate top position to place tooltip above the bar
+    const dataIndex = tooltip.dataPoints[0].dataIndex;
+    const barHeight =
+      chart.scales.y.getPixelForValue(dataIndex) -
+      chart.scales.y.getPixelForValue(dataIndex - 10); // Approximate bar height
+    const barTop = chart.scales.y.getPixelForValue(dataIndex) - barHeight / 2; // Center of the bar
+    const top =
+      canvasPosition.top + chartArea.top + barTop - tooltipEl.offsetHeight - 10;
 
     // Apply positioning
     tooltipEl.style.opacity = '1';
     tooltipEl.style.left = left + 'px';
-    tooltipEl.style.top = top + 'px';
+    tooltipEl.style.top = `${top}px`;
+    tooltipEl.style.transform = 'none'; // Remove transform to avoid additional offsets
   }
 }
