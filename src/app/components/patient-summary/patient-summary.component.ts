@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 import { GanttChartComponent } from '../gantt-chart/gantt-chart.component';
 import { LineChartComponent, ChartData, MetricConfig, ProcedureData, TimeDataPoint } from '../line-chart/line-chart.component';
-import jsonData from '../../../../patient_complete_data.json'; // Adjust path as needed
+// import jsonData from './patient_complete_data (1).json'; // Adjust path as needed
+import jsonData from '../../../../patient_complete_data.json'
 
 @Component({
   selector: 'app-patient-summary',
@@ -111,11 +112,10 @@ export class PatientSummaryComponent implements OnInit {
   }
 
   generatePatientSummary(): string {
-    const eye = this.selectedEye === 'Right Eye' ? 'RE' : this.selectedEye === 'Left Eye' ? 'LE' : 'BE';
     const eyeAbbr = this.selectedEye === 'Right Eye' ? 'RE' : this.selectedEye === 'Left Eye' ? 'LE' : 'eyes';
     // Dynamic summary based on diagnosis and procedures
-    const diagnoses = this.getGanttData(eye).map(d => d.task).join(', ');
-    const procList = this.getProcedures(eye).map(p => p.item).join(', ');
+    const diagnoses = this.getGanttData(eyeAbbr).map(d => d.task).join(', ');
+    const procList = this.getProcedures(eyeAbbr).map(p => p.item).join(', ');
     return `The patient (UID: ${this.jsonData.patient_info.uid}) with conditions including ${diagnoses || 'no recorded diagnoses'} in the ${eyeAbbr} has undergone procedures such as ${procList || 'no recorded procedures'}. The patient's history includes ${this.diseases.length ? this.diseases.map(d => d.name).join(', ') : 'no systemic conditions'}. Visual acuity, IOP, and CMT have been monitored over ${this.jsonData.patient_info.total_visits} visits from ${this.jsonData.patient_info.first_visit.substring(0, 10)} to ${this.jsonData.patient_info.last_visit.substring(0, 10)}.`;
   }
 
@@ -159,17 +159,39 @@ export class PatientSummaryComponent implements OnInit {
     const diagMap = new Map<string, { start: string; end: string }>();
     Object.keys(this.jsonData.diagnosis || {}).forEach(key => {
       const parts = key.split('_diagnosis_');
-      const task = parts[0].replace(/_/g, ' ');
+      if (parts.length !== 2) return;
+      const baseTask = parts[0].replace(/_/g, ' ');
       const cond = this.jsonData.diagnosis[key];
-      if (cond && (cond.eye === eye || cond.from_both_eyes)) {
-        let entry = diagMap.get(task) || { start: '9999-12-31', end: '0001-01-01' };
+      if (!cond) return;
+
+      let include = false;
+      let displayTask = baseTask;
+
+      if (eye === 'BE') {
+        include = true;
+        if (cond.from_both_eyes) {
+          displayTask = baseTask + ' (BE)';
+        } else if (cond.eye) {
+          displayTask = baseTask + ' (' + cond.eye + ')';
+        }
+      } else {
+        if (cond.eye === eye || cond.from_both_eyes) {
+          include = true;
+          if (cond.from_both_eyes) {
+            displayTask = baseTask + ' (BE)';
+          }
+        }
+      }
+
+      if (include) {
+        let entry = diagMap.get(displayTask) || { start: '9999-12-31', end: '0001-01-01' };
         (cond.periods || []).forEach((p: any) => {
           if (p.start_date && p.end_date) {
             if (p.start_date < entry.start) entry.start = p.start_date;
             if (p.end_date > entry.end) entry.end = p.end_date;
           }
         });
-        diagMap.set(task, entry);
+        diagMap.set(displayTask, entry);
       }
     });
     return Array.from(diagMap.entries())
