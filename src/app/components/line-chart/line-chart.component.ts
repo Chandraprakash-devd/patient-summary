@@ -47,7 +47,7 @@ export interface ChartData {
   standalone: true,
   imports: [CommonModule],
   templateUrl: './line-chart.component.html',
-  styleUrl: './line-chart.component.css'
+  styleUrls: ['./line-chart.component.css'],
 })
 export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('chartCanvas', { static: true })
@@ -66,15 +66,23 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit() {
     if (!this.chartData || !this.metrics) {
-      throw new Error('chartData and metrics inputs are required for LineChartComponent');
+      throw new Error(
+        'chartData and metrics inputs are required for LineChartComponent'
+      );
     }
 
     const allDates = [
       ...this.chartData.visualAcuityData.map((d) => new Date(d.x)),
+      ...this.chartData.iopData.map((d) => new Date(d.x)),
+      ...this.chartData.cmtData.map((d) => new Date(d.x)),
       ...this.chartData.procedures.map((p) => new Date(p.date)),
-    ];
-    this.minDate = new Date(Math.min(...allDates.map((d) => d.getTime())));
-    this.maxDate = new Date(Math.max(...allDates.map((d) => d.getTime())));
+    ].filter((d) => !isNaN(d.getTime()));
+    this.minDate = allDates.length
+      ? new Date(Math.min(...allDates.map((d) => d.getTime())))
+      : new Date();
+    this.maxDate = allDates.length
+      ? new Date(Math.max(...allDates.map((d) => d.getTime())))
+      : new Date();
   }
 
   ngAfterViewInit() {
@@ -95,9 +103,11 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
     this.ngZone.runOutsideAngular(() => {
       this.themeObserver = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
-          if (mutation.type === 'attributes' && 
-              (mutation.attributeName === 'data-theme' || 
-               mutation.attributeName === 'class')) {
+          if (
+            mutation.type === 'attributes' &&
+            (mutation.attributeName === 'data-theme' ||
+              mutation.attributeName === 'class')
+          ) {
             this.ngZone.run(() => {
               if (this.chart) {
                 this.chart.destroy();
@@ -110,22 +120,23 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
 
       this.themeObserver.observe(document.documentElement, {
         attributes: true,
-        attributeFilter: ['data-theme', 'class']
+        attributeFilter: ['data-theme', 'class'],
       });
     });
   }
 
   getProcedurePosition(dateString: string): number {
     const date = new Date(dateString);
+    if (isNaN(date.getTime())) return 0;
     const timeRange = this.maxDate.getTime() - this.minDate.getTime();
     const timeFromStart = date.getTime() - this.minDate.getTime();
-    return (timeFromStart / timeRange) * 100;
+    return timeRange ? (timeFromStart / timeRange) * 100 : 0;
   }
 
   getScaleValues(metricIndex: number): number[] {
     const metric = this.metrics[metricIndex];
     const { min, max, step } = metric;
-    
+
     if (step) {
       const values = [];
       for (let i = max; i >= min; i -= step) {
@@ -135,42 +146,26 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
     } else {
       const range = max - min;
       const stepSize = range / 3;
-      return [max, max - stepSize, max - (2 * stepSize), min].map(v => 
-        Number(v.toFixed(2))
-      );
+      return [max, max - stepSize, max - 2 * stepSize, min];
     }
-  }
-
-  private isDarkTheme(): boolean {
-    const dataTheme = document.documentElement.getAttribute('data-theme');
-    const htmlClass = document.documentElement.className;
-    const bodyClass = document.body?.className || '';
-    
-    return dataTheme === 'dark' || 
-           htmlClass.includes('dark') || 
-           bodyClass.includes('dark');
   }
 
   private getThemeColors() {
-    const isDark = this.isDarkTheme();
-    
-    if (isDark) {
-      return {
-        gridColor: '#333333',
-        tickColor: '#979797',
-        borderColor: '#333333',
-      };
-    } else {
-      return {
-        gridColor: '#e0e0e0',
-        tickColor: '#666666',
-        borderColor: '#cccccc',
-      };
-    }
+    const isDarkTheme =
+      document.documentElement.getAttribute('data-theme') === 'dark';
+    return {
+      gridColor: isDarkTheme
+        ? 'rgba(255, 255, 255, 0.1)'
+        : 'rgba(0, 0, 0, 0.1)',
+      tickColor: isDarkTheme ? '#ffffff' : '#000000',
+      borderColor: isDarkTheme ? '#ffffff' : '#000000',
+    };
   }
 
   private createChart() {
-    const ctx = this.chartCanvas.nativeElement.getContext('2d')!;
+    const ctx = this.chartCanvas.nativeElement.getContext('2d');
+    if (!ctx) return;
+
     const colors = this.getThemeColors();
 
     const config: ChartConfiguration = {
@@ -189,6 +184,7 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
             borderWidth: 1,
             tension: 0.3,
             yAxisID: this.metrics[0].yAxisId,
+            hidden: this.chartData.visualAcuityData.length === 0,
           },
           {
             label: this.metrics[1].name,
@@ -202,6 +198,7 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
             borderWidth: 1,
             tension: 0.3,
             yAxisID: this.metrics[1].yAxisId,
+            hidden: this.chartData.iopData.length === 0,
           },
           {
             label: this.metrics[2].name,
@@ -215,6 +212,7 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
             borderWidth: 1,
             tension: 0.3,
             yAxisID: this.metrics[2].yAxisId,
+            hidden: this.chartData.cmtData.length === 0,
           },
         ],
       },
@@ -234,7 +232,7 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
           },
           datalabels: {
             display: false,
-          }
+          },
         },
         scales: {
           x: {
@@ -258,6 +256,8 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
             border: {
               color: colors.borderColor,
             },
+            min: this.minDate.toISOString().substring(0, 10),
+            max: this.maxDate.toISOString().substring(0, 10),
           },
           [this.metrics[0].yAxisId]: {
             type: 'linear',
@@ -293,10 +293,10 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
         },
         layout: {
           padding: {
-            top: 5,
-            right: 10,
-            bottom: 10,
-            left: 5,
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20,
           },
         },
       },

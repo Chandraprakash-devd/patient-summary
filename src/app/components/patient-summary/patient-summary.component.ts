@@ -4,8 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 import { GanttChartComponent } from '../gantt-chart/gantt-chart.component';
 import { LineChartComponent, ChartData, MetricConfig, ProcedureData, TimeDataPoint } from '../line-chart/line-chart.component';
-// import jsonData from './patient_complete_data (1).json'; // Adjust path as needed
-import jsonData from '../../../../patient_complete_data.json'
+import jsonData from '../../../../patient_complete_data.json';
 
 @Component({
   selector: 'app-patient-summary',
@@ -30,9 +29,134 @@ export class PatientSummaryComponent implements OnInit {
   diseases: { name: string; date: string }[] = [];
   procedures: { type: string; item: string }[] = [];
   ganttData: { task: string; start: string; end: string }[] = [];
+  backgroundRetinaData: { task: string; start: string; end: string }[] = [];
+  maculaFovealReflexData: { task: string; start: string; end: string }[] = [];
+  conjunctivaData: { task: string; start: string; end: string }[] = [];
+  mediaData: { task: string; start: string; end: string }[] = [];
+  anteriorChamberData: { task: string; start: string; end: string }[] = [];
+  irisData: { task: string; start: string; end: string }[] = [];
+  discData: { task: string; start: string; end: string }[] = [];
+  pupilData: { task: string; start: string; end: string }[] = [];
+  vesselsData: { task: string; start: string; end: string }[] = [];
+  undilatedFundusData: { task: string; start: string; end: string }[] = [];
 
   ganttConfig = {
-    title: 'Diagnoses',
+    title: 'Diagnoses Timeline',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+
+  backgroundRetinaConfig = {
+    title: 'Background Retina',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+
+  maculaFovealReflexConfig = {
+    title: 'Macula Foveal Reflex',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+
+  conjunctivaConfig = {
+    title: 'Conjunctiva',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+
+  mediaConfig = {
+    title: 'Media',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+  anteriorChamberConfig = {
+    title: 'Anterior Chamber',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+  irisConfig = {
+    title: 'Iris',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+  discConfig = {
+    title: 'Disc',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+  pupilConfig = {
+    title: 'Pupil',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+
+  vesselsConfig = {
+    title: 'Vessels',
+    barColor: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+  undilatedFundusConfig = {
+    title: 'Undilated Fundus',
     barColor: '#e23670',
     borderRadius: 3,
     dateFormat: 'en-US',
@@ -102,9 +226,19 @@ export class PatientSummaryComponent implements OnInit {
     this.patientSummary = this.generatePatientSummary();
     this.diseases = this.getDiseases();
     this.procedures = this.getProcedures(eye);
-    this.ganttData = this.getGanttData(eye);
+    this.ganttData = this.getGanttData('diagnosis');
+    this.backgroundRetinaData = this.getGanttData('background_retina');
+    this.maculaFovealReflexData = this.getGanttData('foveal_reflex');
+    this.conjunctivaData = this.getGanttData('conjunctiva');
+    this.mediaData = this.getGanttData('media');
+    this.anteriorChamberData = this.getGanttData('anterior_chamber');
+    this.irisData = this.getGanttData('iris');
+    this.discData = this.getGanttData('disc');
+    this.pupilData = this.getGanttData('pupil');
+    
+    this.vesselsData = this.getGanttData('vessels');
+    this.undilatedFundusData = this.getGanttData('undilated_fundus');
     this.lineChartData = this.getLineChartData(eye);
-    // Debug logs
     console.log('Diseases:', this.diseases);
     console.log('Procedures:', this.procedures);
     console.log('Gantt Data:', this.ganttData);
@@ -113,10 +247,10 @@ export class PatientSummaryComponent implements OnInit {
 
   generatePatientSummary(): string {
     const eyeAbbr = this.selectedEye === 'Right Eye' ? 'RE' : this.selectedEye === 'Left Eye' ? 'LE' : 'eyes';
-    // Dynamic summary based on diagnosis and procedures
-    const diagnoses = this.getGanttData(eyeAbbr).map(d => d.task).join(', ');
-    const procList = this.getProcedures(eyeAbbr).map(p => p.item).join(', ');
-    return `The patient (UID: ${this.jsonData.patient_info.uid}) with conditions including ${diagnoses || 'no recorded diagnoses'} in the ${eyeAbbr} has undergone procedures such as ${procList || 'no recorded procedures'}. The patient's history includes ${this.diseases.length ? this.diseases.map(d => d.name).join(', ') : 'no systemic conditions'}. Visual acuity, IOP, and CMT have been monitored over ${this.jsonData.patient_info.total_visits} visits from ${this.jsonData.patient_info.first_visit.substring(0, 10)} to ${this.jsonData.patient_info.last_visit.substring(0, 10)}.`;
+    const diagnoses = this.ganttData.map(d => d.task).join(', ') || 'no recorded diagnoses';
+    const procList = this.procedures.map(p => p.item).join(', ') || 'no recorded procedures';
+    const systemicConditions = this.diseases.map(d => d.name).join(', ') || 'no systemic conditions';
+    return `The patient (UID: ${this.jsonData.patient_info.uid}) with conditions including ${diagnoses} in the ${eyeAbbr} has undergone procedures such as ${procList}. The patient's history includes ${systemicConditions}. Visual acuity, IOP, and CMT have been monitored over ${this.jsonData.patient_info.total_visits} visits from ${this.jsonData.patient_info.first_visit.substring(0, 10)} to ${this.jsonData.patient_info.last_visit.substring(0, 10)}.`;
   }
 
   getDiseases(): { name: string; date: string }[] {
@@ -124,7 +258,7 @@ export class PatientSummaryComponent implements OnInit {
     (this.jsonData.visits || []).forEach((visit: any) => {
       if (visit.systemic_history && visit.systemic_history.description) {
         const diseases = visit.systemic_history.description.split(';').filter((d: string) => d.trim());
-        const visitDate = visit.visit_date.substring(0, 7).replace('-', '/');
+        const visitDate = visit.visit_date?.substring(0, 7).replace('-', '/') || '';
         diseases.forEach((disease: string) => {
           const trimmed = disease.trim();
           if (trimmed && !diseasesMap.has(trimmed)) {
@@ -139,7 +273,7 @@ export class PatientSummaryComponent implements OnInit {
   getProcedures(eye: string): { type: string; item: string }[] {
     const procCount = new Map<string, number>();
     (this.jsonData.visits || []).forEach((visit: any) => {
-      const procEye = visit.procedures ? visit.procedures[eye] || visit.procedures['BE'] : null;
+      const procEye = visit.procedures ? (visit.procedures[eye] || visit.procedures['BE']) : null;
       if (procEye) {
         procEye.forEach((proc: any) => {
           const name = proc.laser_type || proc.type;
@@ -155,52 +289,45 @@ export class PatientSummaryComponent implements OnInit {
     });
   }
 
-  getGanttData(eye: string): { task: string; start: string; end: string }[] {
+  getGanttData(section:string): { task: string; start: string; end: string }[] {
+    // Use gantt_charts.diagnoses for diagnosis timelines
+    const ganttSection = this.jsonData.gantt_charts[section]
+    console.log(section)
+    
+    if (!ganttSection) {
+      console.warn('No gantt_charts.diagnoses or diagnosis section found');
+      return [];
+    }
+
     const diagMap = new Map<string, { start: string; end: string }>();
-    Object.keys(this.jsonData.diagnosis || {}).forEach(key => {
-      const parts = key.split('_diagnosis_');
-      if (parts.length !== 2) return;
-      const baseTask = parts[0].replace(/_/g, ' ');
-      const cond = this.jsonData.diagnosis[key];
-      if (!cond) return;
+    Object.keys(ganttSection).forEach(key => {
+      const cond = ganttSection[key];
+      if (!cond || !cond.condition || !cond.periods) return;
 
-      let include = false;
-      let displayTask = baseTask;
+      const task = cond.condition;
+      // const matchesEye = cond.eye === eye || (eye === 'BE' && cond.from_both_eyes);
+      // if (!matchesEye) return;
 
-      if (eye === 'BE') {
-        include = true;
-        if (cond.from_both_eyes) {
-          displayTask = baseTask + ' (BE)';
-        } else if (cond.eye) {
-          displayTask = baseTask + ' (' + cond.eye + ')';
+      let entry = diagMap.get(task) || { start: '9999-12-31', end: '0001-01-01' };
+      cond.periods.forEach((p: any) => {
+        if (p.start_date && p.end_date) {
+          if (p.start_date < entry.start) entry.start = p.start_date;
+          if (p.end_date > entry.end) entry.end = p.end_date;
         }
-      } else {
-        if (cond.eye === eye || cond.from_both_eyes) {
-          include = true;
-          if (cond.from_both_eyes) {
-            displayTask = baseTask + ' (BE)';
-          }
-        }
-      }
-
-      if (include) {
-        let entry = diagMap.get(displayTask) || { start: '9999-12-31', end: '0001-01-01' };
-        (cond.periods || []).forEach((p: any) => {
-          if (p.start_date && p.end_date) {
-            if (p.start_date < entry.start) entry.start = p.start_date;
-            if (p.end_date > entry.end) entry.end = p.end_date;
-          }
-        });
-        diagMap.set(displayTask, entry);
-      }
+      });
+      diagMap.set(task, entry);
     });
-    return Array.from(diagMap.entries())
+
+    const ganttData = Array.from(diagMap.entries())
       .map(([task, { start, end }]) => ({
         task,
         start: start.substring(0, 10),
         end: end.substring(0, 10)
       }))
       .filter(d => d.start !== '9999-12-31' && d.end !== '0001-01-01');
+
+    console.log('Processed Gantt Data from gantt_charts.diagnoses:', ganttData);
+    return ganttData;
   }
 
   getLineChartData(eye: string): ChartData {
@@ -214,7 +341,7 @@ export class PatientSummaryComponent implements OnInit {
       if (!date) return;
 
       // Procedures
-      const procEye = visit.procedures ? visit.procedures[eye] || visit.procedures['BE'] : null;
+      const procEye = visit.procedures ? (visit.procedures[eye] || visit.procedures['BE']) : null;
       if (procEye) {
         procEye.forEach((proc: any) => {
           const type = proc.type?.includes('Inj') ? 'injection' : 'procedure';
