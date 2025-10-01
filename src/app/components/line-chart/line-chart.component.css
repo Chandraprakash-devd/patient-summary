@@ -10,8 +10,7 @@
   width: 100%;
 }
 
-[data-theme='light'] .chart-container,
-.light-theme .chart-container {
+[data-theme='light'].chart-container {
   background: #fff;
   color: #000;
 }
@@ -54,8 +53,7 @@
   background: #000;
 }
 
-[data-theme='light'] .y-axis-labels,
-.light-theme .y-axis-labels {
+[data-theme='light'] .y-axis-labels {
   background: #fff;
 }
 
@@ -75,8 +73,7 @@
   margin-bottom: 5px;
 }
 
-[data-theme='light'] .metric-name,
-.light-theme .metric-name {
+[data-theme='light'] .metric-name {
   color: #666;
 }
 
@@ -95,8 +92,7 @@
   color: #fff;
 }
 
-[data-theme='light'] .scale-value,
-.light-theme .scale-value {
+[data-theme='light'] .scale-value {
   color: #000;
 }
 
@@ -106,8 +102,7 @@
   background: #000;
 }
 
-[data-theme='light'] .chart-area,
-.light-theme .chart-area {
+[data-theme='light'] .chart-area {
   background: #fff;
 }
 

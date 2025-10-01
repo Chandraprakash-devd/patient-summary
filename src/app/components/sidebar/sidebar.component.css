@@ -1,0 +1,103 @@
+/* sidebar.component.css */
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  background-color: var(--surface); /* Matches global surface color */
+  color: var(--text); /* Matches global text color */
+  padding: 10px 0;
+  border-top-right-radius: var(--radius); /* Uses global radius */
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  border: 1px solid var(--text);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow for theme awareness */
+}
+
+.sidebar.expanded {
+  width: 250px;
+}
+
+.expand-toggle {
+  background: none;
+  border: none;
+  color: var(--text); /* Matches global text color */
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.expand-toggle:hover {
+  color: var(--accent); /* Matches global accent color */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Matches btn hover in light theme */
+}
+
+[data-theme="dark"] .menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Matches btn hover in dark theme */
+}
+
+.menu-item label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 10px;
+  min-width: 20px;
+  text-align: center;
+  color: var(--text); /* Matches global text color */
+}
+
+.label {
+  flex: 1;
+  color: var(--text); /* Matches global text color */
+}
+
+.sub-menu {
+  padding-left: 20px;
+  margin-top: 10px;
+  background-color: var(--surface); /* Matches global surface color */
+}
+
+.sub-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  transition: background-color 0.3s ease;
+}
+
+.sub-item:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Matches menu-item hover in light theme */
+}
+
+[data-theme="dark"] .sub-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Matches menu-item hover in dark theme */
+}
+
+.sub-item label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: var(--accent); /* Matches global accent color */
+}

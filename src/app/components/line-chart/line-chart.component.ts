@@ -1,3 +1,4 @@
+// line-chart.component.ts
 import {
   Component,
   OnInit,
@@ -6,12 +7,14 @@ import {
   AfterViewInit,
   Input,
   OnDestroy,
-  NgZone,
+  SimpleChanges, // Newly added import
+  OnChanges, // Newly added import
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Chart, ChartConfiguration, registerables } from 'chart.js';
 import 'chartjs-adapter-date-fns';
-Chart.register(...registerables);
+import { Subscription } from 'rxjs';
+import { ThemeService } from '../../theme.service';
 
 export interface ProcedureData {
   date: string;
@@ -49,7 +52,7 @@ export interface ChartData {
   templateUrl: './line-chart.component.html',
   styleUrls: ['./line-chart.component.css'],
 })
-export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
+export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnChanges { // Added OnChanges
   @ViewChild('chartCanvas', { static: true })
   chartCanvas!: ElementRef<HTMLCanvasElement>;
 
@@ -57,14 +60,23 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() metrics!: MetricConfig[];
   @Input() title: string = 'Clinical Metrics Over Time';
 
+  // Newly added inputs for toggles
+  @Input() showVA: boolean = true;
+  @Input() showIOP: boolean = true;
+  @Input() showCMT: boolean = true;
+  @Input() showProcedures: boolean = true;
+
   private chart!: Chart;
   private minDate!: Date;
   private maxDate!: Date;
-  private themeObserver!: MutationObserver;
+  private themeSubscription!: Subscription;
+  public currentTheme: 'light' | 'dark' = 'light';
 
-  constructor(private ngZone: NgZone) {}
+  constructor(private themeService: ThemeService) {}
 
   ngOnInit() {
+    this.currentTheme = (document.documentElement.getAttribute('data-theme') as 'light' | 'dark') || 'light';
+
     if (!this.chartData || !this.metrics) {
       throw new Error(
         'chartData and metrics inputs are required for LineChartComponent'
@@ -87,42 +99,32 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     this.createChart();
-    this.observeThemeChanges();
+    this.themeSubscription = this.themeService.theme$.subscribe((theme) => {
+      this.currentTheme = theme;
+      if (this.chart) {
+        this.chart.destroy();
+      }
+      this.createChart();
+    });
+  }
+
+  // Newly added to handle toggle changes
+  ngOnChanges(changes: SimpleChanges) {
+    if (this.chart && (changes['showVA'] || changes['showIOP'] || changes['showCMT'])) {
+      this.chart.data.datasets[0].hidden = !this.showVA;
+      this.chart.data.datasets[1].hidden = !this.showIOP;
+      this.chart.data.datasets[2].hidden = !this.showCMT;
+      this.chart.update();
+    }
   }
 
   ngOnDestroy() {
-    if (this.themeObserver) {
-      this.themeObserver.disconnect();
+    if (this.themeSubscription) {
+      this.themeSubscription.unsubscribe();
     }
     if (this.chart) {
       this.chart.destroy();
     }
-  }
-
-  private observeThemeChanges() {
-    this.ngZone.runOutsideAngular(() => {
-      this.themeObserver = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-          if (
-            mutation.type === 'attributes' &&
-            (mutation.attributeName === 'data-theme' ||
-              mutation.attributeName === 'class')
-          ) {
-            this.ngZone.run(() => {
-              if (this.chart) {
-                this.chart.destroy();
-              }
-              setTimeout(() => this.createChart(), 0);
-            });
-          }
-        });
-      });
-
-      this.themeObserver.observe(document.documentElement, {
-        attributes: true,
-        attributeFilter: ['data-theme', 'class'],
-      });
-    });
   }
 
   getProcedurePosition(dateString: string): number {
@@ -151,14 +153,18 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private getThemeColors() {
-    const isDarkTheme =
-      document.documentElement.getAttribute('data-theme') === 'dark';
+    const isDarkTheme = this.currentTheme === 'dark';
     return {
       gridColor: isDarkTheme
         ? 'rgba(255, 255, 255, 0.1)'
         : 'rgba(0, 0, 0, 0.1)',
       tickColor: isDarkTheme ? '#ffffff' : '#000000',
       borderColor: isDarkTheme ? '#ffffff' : '#000000',
+      tooltipBackground: isDarkTheme ? 'rgba(0, 0, 0, 0.8)' : 'rgba(255, 255, 255, 0.8)',
+      tooltipTitleColor: isDarkTheme ? '#ffffff' : '#000000',
+      tooltipBodyColor: isDarkTheme ? '#ffffff' : '#000000',
+      tooltipBorderColor: isDarkTheme ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.2)',
+      isDarkTheme,
     };
   }
 
@@ -166,7 +172,10 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
     const ctx = this.chartCanvas.nativeElement.getContext('2d');
     if (!ctx) return;
 
-    const colors = this.getThemeColors();
+    const { gridColor, tickColor, borderColor, isDarkTheme, tooltipBackground, tooltipTitleColor, tooltipBodyColor, tooltipBorderColor } = this.getThemeColors();
+
+    // Set canvas background explicitly
+    this.chartCanvas.nativeElement.style.backgroundColor = isDarkTheme ? '#000000' : '#ffffff';
 
     const config: ChartConfiguration = {
       type: 'line',
@@ -177,42 +186,42 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
             data: this.chartData.visualAcuityData as any,
             borderColor: this.metrics[0].color,
             backgroundColor: this.metrics[0].color,
-            pointBackgroundColor: '#ffffff',
+            pointBackgroundColor: isDarkTheme ? '#ffffff' : '#000000',
             pointBorderColor: this.metrics[0].color,
             pointRadius: 2,
             pointHoverRadius: 4,
             borderWidth: 1,
             tension: 0.3,
             yAxisID: this.metrics[0].yAxisId,
-            hidden: this.chartData.visualAcuityData.length === 0,
+            hidden: !this.showVA, // Updated with toggle
           },
           {
             label: this.metrics[1].name,
             data: this.chartData.iopData as any,
             borderColor: this.metrics[1].color,
             backgroundColor: this.metrics[1].color,
-            pointBackgroundColor: '#ffffff',
+            pointBackgroundColor: isDarkTheme ? '#ffffff' : '#000000',
             pointBorderColor: this.metrics[1].color,
             pointRadius: 2,
             pointHoverRadius: 4,
             borderWidth: 1,
             tension: 0.3,
             yAxisID: this.metrics[1].yAxisId,
-            hidden: this.chartData.iopData.length === 0,
+            hidden: !this.showIOP, // Updated with toggle
           },
           {
             label: this.metrics[2].name,
             data: this.chartData.cmtData as any,
             borderColor: this.metrics[2].color,
             backgroundColor: this.metrics[2].color,
-            pointBackgroundColor: '#ffffff',
+            pointBackgroundColor: isDarkTheme ? '#ffffff' : '#000000',
             pointBorderColor: this.metrics[2].color,
             pointRadius: 2,
             pointHoverRadius: 4,
             borderWidth: 1,
             tension: 0.3,
             yAxisID: this.metrics[2].yAxisId,
-            hidden: this.chartData.cmtData.length === 0,
+            hidden: !this.showCMT, // Updated with toggle
           },
         ],
       },
@@ -229,6 +238,11 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
           },
           tooltip: {
             enabled: true,
+            backgroundColor: tooltipBackground,
+            titleColor: tooltipTitleColor,
+            bodyColor: tooltipBodyColor,
+            borderColor: tooltipBorderColor,
+            borderWidth: 1,
           },
           datalabels: {
             display: false,
@@ -243,18 +257,18 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
               },
             },
             grid: {
-              color: colors.gridColor,
+              color: gridColor,
               lineWidth: 0.5,
             },
             ticks: {
-              color: colors.tickColor,
+              color: tickColor,
               font: {
                 size: 9,
               },
               maxTicksLimit: 15,
             },
             border: {
-              color: colors.borderColor,
+              color: borderColor,
             },
             min: this.minDate.toISOString().substring(0, 10),
             max: this.maxDate.toISOString().substring(0, 10),
@@ -286,7 +300,7 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy {
             min: this.metrics[2].min,
             max: this.metrics[2].max,
             grid: {
-              color: colors.gridColor,
+              color: gridColor,
               lineWidth: 0.5,
             },
           },

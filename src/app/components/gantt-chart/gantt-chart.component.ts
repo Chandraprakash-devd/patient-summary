@@ -1,3 +1,4 @@
+// gantt-chart.component.ts
 import {
   Component,
   ViewChild,
@@ -118,7 +119,7 @@ export class GanttChartComponent implements AfterViewInit {
             enabled: true,
             position: 'nearest',
             backgroundColor: 'rgba(0, 0, 0, 0.9)',
-            titleFont: { size: 14},
+            titleFont: { size: 14 },
             bodyFont: { size: 12 },
             padding: 12,
             cornerRadius: 8,
@@ -155,11 +156,63 @@ export class GanttChartComponent implements AfterViewInit {
             color: 'white',
             align: 'center',
             anchor: 'center',
-            formatter: (value: any, context: any) => {
-              if (context.dataset.label === 'Duration') {
-                return labels[context.dataIndex];
+            font: {
+              family: 'sans-serif',
+              size: 12,
+              weight: 'normal',
+            },
+            formatter: (value, context) => {
+              if (context.dataset.label !== 'Duration') {
+                return '';
               }
-              return '';
+
+              const dataIndex = context.dataIndex;
+              const chart = context.chart;
+              const ctx = chart.ctx;
+              const datasets = chart.data.datasets as {
+                data: number[];
+              }[];
+              const offset = datasets[0].data[dataIndex] as number;
+              const duration = datasets[1].data[dataIndex] as number;
+              const startPixel = chart.scales['x'].getPixelForValue(offset);
+              const endPixel = chart.scales['x'].getPixelForValue(offset + duration);
+
+              if (endPixel <= startPixel) {
+                return '';
+              }
+
+              const labels = chart.data.labels as string[];
+              let label = labels[dataIndex] as string;
+
+              const font = 'normal 12px sans-serif';
+              ctx.save();
+              ctx.font = font;
+              let textWidth = ctx.measureText(label).width;
+              ctx.restore();
+
+              const padding = 20;
+              const availableWidth = endPixel - startPixel - padding;
+
+              if (availableWidth < 20) {
+                return '';
+              }
+
+              if (textWidth > availableWidth) {
+                let truncated = label;
+                while (textWidth > availableWidth && truncated.length > 0) {
+                  truncated = truncated.slice(0, -1);
+                  ctx.save();
+                  ctx.font = font;
+                  textWidth = ctx.measureText(truncated + '...').width;
+                  ctx.restore();
+                }
+                if (truncated.length === 0) {
+                  return '';
+                }
+                return truncated + '...';
+              }
+
+              return label;
             },
           },
         },

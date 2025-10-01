@@ -1,0 +1,129 @@
+<!-- sidebar.component.html (New File) -->
+<div class="sidebar" [class.expanded]="isExpanded">
+  <button class="expand-toggle" (click)="toggleExpanded()">☰</button>
+
+  <div class="menu-item">
+    <label>
+      <input type="checkbox" [(ngModel)]="showVA" (ngModelChange)="showVAChange.emit(showVA)" />
+      <span class="icon">👁️</span> <!-- Placeholder icon for VA -->
+      <span class="label" *ngIf="isExpanded">Show VA</span>
+    </label>
+  </div>
+
+  <div class="menu-item">
+    <label>
+      <input type="checkbox" [(ngModel)]="showIOP" (ngModelChange)="showIOPChange.emit(showIOP)" />
+      <span class="icon">📈</span> <!-- Placeholder icon for IOP -->
+      <span class="label" *ngIf="isExpanded">Show IOP</span>
+    </label>
+  </div>
+
+  <div class="menu-item">
+    <label>
+      <input type="checkbox" [(ngModel)]="showCMT" (ngModelChange)="showCMTChange.emit(showCMT)" />
+      <span class="icon">🧱</span> <!-- Placeholder icon for CMT -->
+      <span class="label" *ngIf="isExpanded">Show CMT</span>
+    </label>
+  </div>
+
+  <div class="menu-item">
+    <label>
+      <input type="checkbox" [(ngModel)]="showProcedures" (ngModelChange)="showProceduresChange.emit(showProcedures)" />
+      <span class="icon">🌊</span> <!-- Placeholder icon for Procedure -->
+      <span class="label" *ngIf="isExpanded">Show Procedure</span>
+    </label>
+  </div>
+
+  <div class="menu-item">
+    <label>
+      <input type="checkbox" [(ngModel)]="showDiagnosis" (ngModelChange)="showDiagnosisChange.emit(showDiagnosis)" />
+      <span class="icon">🩺</span> <!-- Placeholder icon for Diagnosis -->
+      <span class="label" *ngIf="isExpanded">Show Diagnosis</span>
+    </label>
+  </div>
+
+  <div class="menu-item">
+    <label>
+      <input type="checkbox" [(ngModel)]="showMedication" (ngModelChange)="showMedicationChange.emit(showMedication)" />
+      <span class="icon">💊</span> <!-- Placeholder icon for Medication -->
+      <span class="label" *ngIf="isExpanded">Show Medication</span>
+    </label>
+  </div>
+
+  <div class="menu-item">
+    <label>
+      <input type="checkbox" [(ngModel)]="showObservations" (ngModelChange)="showObservationsChange.emit(showObservations)" />
+      <span class="icon">🔬</span> <!-- Placeholder icon for Observation -->
+      <span class="label" *ngIf="isExpanded">Show Observation</span>
+    </label>
+  </div>
+
+  <div class="sub-menu" *ngIf="isExpanded">
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showLens" (ngModelChange)="showLensChange.emit(showLens)" />
+        <span class="label">Lens</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showBackgroundRetina" (ngModelChange)="showBackgroundRetinaChange.emit(showBackgroundRetina)" />
+        <span class="label">Background Retina</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showMaculaFovealReflex" (ngModelChange)="showMaculaFovealReflexChange.emit(showMaculaFovealReflex)" />
+        <span class="label">Macula Foveal Reflex</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showConjunctiva" (ngModelChange)="showConjunctivaChange.emit(showConjunctiva)" />
+        <span class="label">Conjunctiva</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showMedia" (ngModelChange)="showMediaChange.emit(showMedia)" />
+        <span class="label">Media</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showAnteriorChamber" (ngModelChange)="showAnteriorChamberChange.emit(showAnteriorChamber)" />
+        <span class="label">Anterior Chamber</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showIris" (ngModelChange)="showIrisChange.emit(showIris)" />
+        <span class="label">Iris</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showDisc" (ngModelChange)="showDiscChange.emit(showDisc)" />
+        <span class="label">Disc</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showPupil" (ngModelChange)="showPupilChange.emit(showPupil)" />
+        <span class="label">Pupil</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showVessels" (ngModelChange)="showVesselsChange.emit(showVessels)" />
+        <span class="label">Vessels</span>
+      </label>
+    </div>
+    <div class="sub-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="showUndilatedFundus" (ngModelChange)="showUndilatedFundusChange.emit(showUndilatedFundus)" />
+        <span class="label">Undilated Fundus</span>
+      </label>
+    </div>
+  </div>
+</div>

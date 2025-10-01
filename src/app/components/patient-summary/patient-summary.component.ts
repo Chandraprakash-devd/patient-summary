@@ -1,9 +1,11 @@
+// patient-summary.component.ts
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 import { GanttChartComponent } from '../gantt-chart/gantt-chart.component';
 import { LineChartComponent, ChartData, MetricConfig, ProcedureData, TimeDataPoint } from '../line-chart/line-chart.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 import jsonData from '../../../../patient_complete_data.json';
 
 @Component({
@@ -14,7 +16,8 @@ import jsonData from '../../../../patient_complete_data.json';
     FormsModule,
     ThemeToggleComponent,
     GanttChartComponent,
-    LineChartComponent
+    LineChartComponent,
+    SidebarComponent
   ],
   templateUrl: './patient-summary.component.html',
   styleUrls: ['./patient-summary.component.css']
@@ -23,7 +26,7 @@ export class PatientSummaryComponent implements OnInit {
   jsonData: any = jsonData; // Loaded from file
   patientSummary: string = '';
   patients: string[] = [];
-  eyes: string[] = ['Right Eye', 'Left Eye', 'Both Eyes'];
+  eyes: string[] = ['Right Eye', 'Left Eye'];
   selectedPatient: string = '';
   selectedEye: string = this.eyes[0];
   diseases: { name: string; date: string }[] = [];
@@ -39,6 +42,27 @@ export class PatientSummaryComponent implements OnInit {
   pupilData: { task: string; start: string; end: string }[] = [];
   vesselsData: { task: string; start: string; end: string }[] = [];
   undilatedFundusData: { task: string; start: string; end: string }[] = [];
+  medicationsData: { task: string; start: string; end: string }[] = [];
+
+  // Newly added toggle booleans
+  showVA: boolean = true;
+  showIOP: boolean = true;
+  showCMT: boolean = true;
+  showProcedures: boolean = true;
+  showDiagnosis: boolean = true;
+  showMedication: boolean = true;
+  showObservations: boolean = true;
+  showLens: boolean = true;
+  showBackgroundRetina: boolean = true;
+  showMaculaFovealReflex: boolean = true;
+  showConjunctiva: boolean = true;
+  showMedia: boolean = true;
+  showAnteriorChamber: boolean = true;
+  showIris: boolean = true;
+  showDisc: boolean = true;
+  showPupil: boolean = true;
+  showVessels: boolean = true;
+  showUndilatedFundus: boolean = true;
 
   ganttConfig = {
     title: 'Diagnoses Timeline',
@@ -167,6 +191,18 @@ export class PatientSummaryComponent implements OnInit {
     }
   };
 
+  medicationsConfig = {
+    title: 'Medications',
+    barColor: '#af57db',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    }
+  };
+
   lineChartData: ChartData = {
     procedures: [],
     visualAcuityData: [],
@@ -238,6 +274,7 @@ export class PatientSummaryComponent implements OnInit {
     
     this.vesselsData = this.getGanttData('vessels');
     this.undilatedFundusData = this.getGanttData('undilated_fundus');
+    this.medicationsData = this.getMedicationsGanttData();
     this.lineChartData = this.getLineChartData(eye);
     console.log('Diseases:', this.diseases);
     console.log('Procedures:', this.procedures);
@@ -327,6 +364,59 @@ export class PatientSummaryComponent implements OnInit {
       .filter(d => d.start !== '9999-12-31' && d.end !== '0001-01-01');
 
     console.log('Processed Gantt Data from gantt_charts.diagnoses:', ganttData);
+    return ganttData;
+  }
+
+  getMedicationsGanttData(): { task: string; start: string; end: string }[] {
+    const medMap = new Map<string, { start: string; end: string }>();
+    (this.jsonData.visits || []).forEach((visit: any) => {
+      if (visit.medications) {
+        visit.medications.forEach((med: any) => {
+          const task = med.drug?.trim();
+          if (!task) return;
+
+          // Prefer duration_start and duration_end if available (dd/mm/yyyy format)
+          let start = '';
+          if (med.duration_start) {
+            const parts = med.duration_start.split('/');
+            if (parts.length === 3) {
+              start = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
+            }
+          } else if (med.start_date) {
+            start = med.start_date.substring(0, 10);
+          }
+
+          let end = '';
+          if (med.duration_end) {
+            const parts = med.duration_end.split('/');
+            if (parts.length === 3) {
+              end = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
+            }
+          } else if (med.start_date && med.duration_days) {
+            const startDate = new Date(med.start_date.substring(0, 10));
+            const endDate = new Date(startDate.getTime() + med.duration_days * 86400000);
+            end = endDate.toISOString().substring(0, 10);
+          }
+
+          if (start && end) {
+            const entry = medMap.get(task) || { start: '9999-12-31', end: '0001-01-01' };
+            if (start < entry.start) entry.start = start;
+            if (end > entry.end) entry.end = end;
+            medMap.set(task, entry);
+          }
+        });
+      }
+    });
+
+    const ganttData = Array.from(medMap.entries())
+      .map(([task, { start, end }]) => ({
+        task,
+        start,
+        end
+      }))
+      .filter(d => d.start !== '9999-12-31' && d.end !== '0001-01-01');
+
+    console.log('Processed Medications Gantt Data:', ganttData);
     return ganttData;
   }
 

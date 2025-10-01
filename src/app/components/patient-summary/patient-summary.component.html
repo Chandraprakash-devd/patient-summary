@@ -1,3 +1,4 @@
+<!-- patient-summary.component.html -->
 <!-- First row: Dropdowns + Theme Toggle -->
 <div class="top-row">
   <select [(ngModel)]="selectedPatient" class="select-fixed">
@@ -69,52 +70,98 @@
 <!-- Line Chart with Data Binding -->
 <app-line-chart
   [chartData]="lineChartData"
-  [metrics]="lineChartMetrics">
+  [metrics]="lineChartMetrics"
+  [showVA]="showVA"
+  [showIOP]="showIOP"
+  [showCMT]="showCMT"
+  [showProcedures]="showProcedures">
 </app-line-chart>
 
 <!-- Gantt Chart -->
 <app-gantt-chart
+  *ngIf="showDiagnosis"
   [data]="ganttData"
   [config]="ganttConfig">
 </app-gantt-chart>
-
 <app-gantt-chart
+  *ngIf="showMedication"
+  [data]="medicationsData"
+  [config]="medicationsConfig">
+</app-gantt-chart>
+<!-- <app-gantt-chart
+  *ngIf="showObservations && showLens"
+  [data]="lensData"
+  [config]="lensConfig"> -->
+<!-- </app-gantt-chart> -->
+<app-gantt-chart
+  *ngIf="showObservations && showBackgroundRetina"
   [data]="backgroundRetinaData"
   [config]="backgroundRetinaConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showMaculaFovealReflex"
   [data]="maculaFovealReflexData"
   [config]="maculaFovealReflexConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showConjunctiva"
   [data]="conjunctivaData"
   [config]="conjunctivaConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showMedia"
   [data]="mediaData"
   [config]="mediaConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showAnteriorChamber"
   [data]="anteriorChamberData"
   [config]="anteriorChamberConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showIris"
   [data]="irisData"
   [config]="irisConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showDisc"
   [data]="discData"
   [config]="discConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showPupil"
   [data]="pupilData"
   [config]="pupilConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showVessels"
   [data]="vesselsData"
   [config]="vesselsConfig">
 </app-gantt-chart>
 <app-gantt-chart
+  *ngIf="showObservations && showUndilatedFundus"
   [data]="undilatedFundusData"
   [config]="undilatedFundusConfig">
 </app-gantt-chart>
+
+<!-- Newly added sidebar -->
+<app-sidebar
+  [(showVA)]="showVA"
+  [(showIOP)]="showIOP"
+  [(showCMT)]="showCMT"
+  [(showProcedures)]="showProcedures"
+  [(showDiagnosis)]="showDiagnosis"
+  [(showMedication)]="showMedication"
+  [(showObservations)]="showObservations"
+  [(showLens)]="showLens"
+  [(showBackgroundRetina)]="showBackgroundRetina"
+  [(showMaculaFovealReflex)]="showMaculaFovealReflex"
+  [(showConjunctiva)]="showConjunctiva"
+  [(showMedia)]="showMedia"
+  [(showAnteriorChamber)]="showAnteriorChamber"
+  [(showIris)]="showIris"
+  [(showDisc)]="showDisc"
+  [(showPupil)]="showPupil"
+  [(showVessels)]="showVessels"
+  [(showUndilatedFundus)]="showUndilatedFundus">
+</app-sidebar>

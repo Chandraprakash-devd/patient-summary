@@ -1,5 +1,5 @@
-<div class="chart-container">
-  <div class="procedures-overlay">
+<div class="chart-container" [attr.data-theme]="currentTheme">
+  <div class="procedures-overlay" *ngIf="showProcedures">
     <div
       *ngFor="let procedure of chartData.procedures"
       class="procedure-marker"
@@ -59,21 +59,21 @@
 
   <div class="chart-content">
     <div class="y-axis-labels">
-      <div class="metric-label visual-acuity">
-        <div class="scale-values">
+      <div class="metric-label visual-acuity" *ngIf="showVA">
+        <div class="scale-values" >
           <div class="scale-value" *ngFor="let value of getScaleValues(0)">
             {{ value }}
           </div>
         </div>
       </div>
-      <div class="metric-label iop">
+      <div class="metric-label iop" *ngIf="showIOP">
         <div class="scale-values">
           <div class="scale-value" *ngFor="let value of getScaleValues(1)">
             {{ value }}
           </div>
         </div>
       </div>
-      <div class="metric-label cmt">
+      <div class="metric-label cmt" *ngIf="showCMT">
         <div class="scale-values">
           <div class="scale-value" *ngFor="let value of getScaleValues(2)">
             {{ value }}
