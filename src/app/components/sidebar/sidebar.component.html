@@ -1,128 +1,346 @@
-<!-- sidebar.component.html (New File) -->
-<div class="sidebar" [class.expanded]="isExpanded">
-  <button class="expand-toggle" (click)="toggleExpanded()">☰</button>
-
+<!-- sidebar.component.html -->
+<div class="sidebar">
   <div class="menu-item">
     <label>
-      <input type="checkbox" [(ngModel)]="showVA" (ngModelChange)="showVAChange.emit(showVA)" />
-      <span class="icon">👁️</span> <!-- Placeholder icon for VA -->
-      <span class="label" *ngIf="isExpanded">Show VA</span>
+      
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-eye w-4 h-4 mr-2 transition-transform duration-300 ease-in-out group-hover/dock:rotate-12"
+        >
+          <path
+            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+          ></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+      </span>
+      <span class="label">Show VA</span>
+      <input
+        type="checkbox"
+        [(ngModel)]="showVA"
+        (ngModelChange)="showVAChange.emit(showVA)"
+      />
     </label>
   </div>
 
   <div class="menu-item">
     <label>
-      <input type="checkbox" [(ngModel)]="showIOP" (ngModelChange)="showIOPChange.emit(showIOP)" />
-      <span class="icon">📈</span> <!-- Placeholder icon for IOP -->
-      <span class="label" *ngIf="isExpanded">Show IOP</span>
+     
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-gauge w-4 h-4 mr-2 transition-transform duration-300 ease-in-out group-hover/dock:rotate-12"
+        >
+          <path d="m12 14 4-4"></path>
+          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+        </svg>
+      </span>
+      <span class="label">Show IOP</span>
+       <input
+        type="checkbox"
+        [(ngModel)]="showIOP"
+        (ngModelChange)="showIOPChange.emit(showIOP)"
+      />
     </label>
   </div>
 
   <div class="menu-item">
     <label>
-      <input type="checkbox" [(ngModel)]="showCMT" (ngModelChange)="showCMTChange.emit(showCMT)" />
-      <span class="icon">🧱</span> <!-- Placeholder icon for CMT -->
-      <span class="label" *ngIf="isExpanded">Show CMT</span>
+      
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-layers w-4 h-4 mr-2 transition-transform duration-300 ease-in-out group-hover/dock:rotate-12"
+        >
+          <path
+            d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"
+          ></path>
+          <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path>
+          <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path>
+        </svg>
+      </span>
+      <span class="label">Show CMT</span>
+      <input
+        type="checkbox"
+        [(ngModel)]="showCMT"
+        (ngModelChange)="showCMTChange.emit(showCMT)"
+      />
     </label>
   </div>
 
   <div class="menu-item">
     <label>
-      <input type="checkbox" [(ngModel)]="showProcedures" (ngModelChange)="showProceduresChange.emit(showProcedures)" />
-      <span class="icon">🌊</span> <!-- Placeholder icon for Procedure -->
-      <span class="label" *ngIf="isExpanded">Show Procedure</span>
+      
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-activity w-4 h-4 mr-2 transition-transform duration-300 ease-in-out group-hover/dock:rotate-12"
+        >
+          <path
+            d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+          ></path>
+        </svg>
+      </span>
+      <span class="label">Show Procedure</span>
+      <input
+        type="checkbox"
+        [(ngModel)]="showProcedures"
+        (ngModelChange)="showProceduresChange.emit(showProcedures)"
+      />
     </label>
   </div>
 
   <div class="menu-item">
     <label>
-      <input type="checkbox" [(ngModel)]="showDiagnosis" (ngModelChange)="showDiagnosisChange.emit(showDiagnosis)" />
-      <span class="icon">🩺</span> <!-- Placeholder icon for Diagnosis -->
-      <span class="label" *ngIf="isExpanded">Show Diagnosis</span>
+      
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-stethoscope w-4 h-4 mr-2 transition-transform duration-300 ease-in-out group-hover/dock:rotate-12"
+        >
+          <path
+            d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"
+          ></path>
+          <path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"></path>
+          <circle cx="20" cy="10" r="2"></circle>
+        </svg>
+      </span>
+      <span class="label">Show Diagnosis</span>
+      <input
+        type="checkbox"
+        [(ngModel)]="showDiagnosis"
+        (ngModelChange)="showDiagnosisChange.emit(showDiagnosis)"
+      />
     </label>
   </div>
 
   <div class="menu-item">
     <label>
-      <input type="checkbox" [(ngModel)]="showMedication" (ngModelChange)="showMedicationChange.emit(showMedication)" />
-      <span class="icon">💊</span> <!-- Placeholder icon for Medication -->
-      <span class="label" *ngIf="isExpanded">Show Medication</span>
+      
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-pill w-4 h-4 mr-2 transition-transform duration-300 ease-in-out group-hover/dock:rotate-12"
+        >
+          <path
+            d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"
+          ></path>
+          <path d="m8.5 8.5 7 7"></path>
+        </svg>
+      </span>
+      <span class="label">Show Medication</span>
+      <input
+        type="checkbox"
+        [(ngModel)]="showMedication"
+        (ngModelChange)="showMedicationChange.emit(showMedication)"
+      />
     </label>
   </div>
 
   <div class="menu-item">
     <label>
-      <input type="checkbox" [(ngModel)]="showObservations" (ngModelChange)="showObservationsChange.emit(showObservations)" />
-      <span class="icon">🔬</span> <!-- Placeholder icon for Observation -->
-      <span class="label" *ngIf="isExpanded">Show Observation</span>
+     
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-microscope w-4 h-4 mr-2 transition-transform duration-300 ease-in-out group-hover/dock:rotate-12"
+        >
+          <path d="M6 18h8"></path>
+          <path d="M3 22h18"></path>
+          <path d="M14 22a7 7 0 1 0 0-14h-1"></path>
+          <path d="M9 14h2"></path>
+          <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"></path>
+          <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"></path>
+        </svg>
+      </span>
+      <span class="label">Show Observation</span>
+       <input
+        type="checkbox"
+        [(ngModel)]="showObservations"
+        (ngModelChange)="showObservationsChange.emit(showObservations)"
+      />
     </label>
   </div>
 
-  <div class="sub-menu" *ngIf="isExpanded">
+  <div class="sub-menu">
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showLens" (ngModelChange)="showLensChange.emit(showLens)" />
+        
         <span class="label">Lens</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showLens"
+          (ngModelChange)="showLensChange.emit(showLens)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showBackgroundRetina" (ngModelChange)="showBackgroundRetinaChange.emit(showBackgroundRetina)" />
+        
         <span class="label">Background Retina</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showBackgroundRetina"
+          (ngModelChange)="
+            showBackgroundRetinaChange.emit(showBackgroundRetina)
+          "
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showMaculaFovealReflex" (ngModelChange)="showMaculaFovealReflexChange.emit(showMaculaFovealReflex)" />
+        
         <span class="label">Macula Foveal Reflex</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showMaculaFovealReflex"
+          (ngModelChange)="
+            showMaculaFovealReflexChange.emit(showMaculaFovealReflex)
+          "
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showConjunctiva" (ngModelChange)="showConjunctivaChange.emit(showConjunctiva)" />
+        
         <span class="label">Conjunctiva</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showConjunctiva"
+          (ngModelChange)="showConjunctivaChange.emit(showConjunctiva)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showMedia" (ngModelChange)="showMediaChange.emit(showMedia)" />
+        
         <span class="label">Media</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showMedia"
+          (ngModelChange)="showMediaChange.emit(showMedia)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showAnteriorChamber" (ngModelChange)="showAnteriorChamberChange.emit(showAnteriorChamber)" />
+        
         <span class="label">Anterior Chamber</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showAnteriorChamber"
+          (ngModelChange)="showAnteriorChamberChange.emit(showAnteriorChamber)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showIris" (ngModelChange)="showIrisChange.emit(showIris)" />
+        
         <span class="label">Iris</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showIris"
+          (ngModelChange)="showIrisChange.emit(showIris)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showDisc" (ngModelChange)="showDiscChange.emit(showDisc)" />
+        
         <span class="label">Disc</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showDisc"
+          (ngModelChange)="showDiscChange.emit(showDisc)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showPupil" (ngModelChange)="showPupilChange.emit(showPupil)" />
+        
         <span class="label">Pupil</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showPupil"
+          (ngModelChange)="showPupilChange.emit(showPupil)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showVessels" (ngModelChange)="showVesselsChange.emit(showVessels)" />
+        
         <span class="label">Vessels</span>
+        <input
+          type="checkbox"
+          [(ngModel)]="showVessels"
+          (ngModelChange)="showVesselsChange.emit(showVessels)"
+        />
       </label>
     </div>
     <div class="sub-item">
       <label>
-        <input type="checkbox" [(ngModel)]="showUndilatedFundus" (ngModelChange)="showUndilatedFundusChange.emit(showUndilatedFundus)" />
         <span class="label">Undilated Fundus</span>
+         <input
+          type="checkbox"
+          [(ngModel)]="showUndilatedFundus"
+          (ngModelChange)="showUndilatedFundusChange.emit(showUndilatedFundus)"
+        />
       </label>
     </div>
   </div>

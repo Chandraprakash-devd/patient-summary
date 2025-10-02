@@ -326,6 +326,27 @@ export class PatientSummaryComponent implements OnInit {
     });
   }
 
+  getSvgForProcedure(procedureItem: string): { svg: string; color: string } {
+  // Check if it's an injection type
+  if (/Inj|Ozurdex|Tricort|Avastin|Pagenax|Accentrix/i.test(procedureItem)) {
+    // Extract the medication name to get the color
+    const name = procedureItem.replace(/\s*\(\d+x\)$/, ''); // Remove count suffix
+    const color = this.colorMap.get(name) || '#00bcd4'; // Default injection color
+    return {
+      svg: 'injection',
+      color: color
+    };
+  } else {
+    // It's a laser procedure
+    const name = procedureItem.replace(/\s*\(\d+x\)$/, '');
+    const color = this.colorMap.get(name) || '#ef4444'; // Default laser color
+    return {
+      svg: 'procedure',
+      color: color
+    };
+  }
+}
+
   getGanttData(section:string): { task: string; start: string; end: string }[] {
     // Use gantt_charts.diagnoses for diagnosis timelines
     const ganttSection = this.jsonData.gantt_charts[section]

@@ -40,17 +40,17 @@
   background: var(--surface);
   color: var(--text);
   border-radius: 10px;
-  border: 1px solid rgb(229, 231, 235, 0.3);
+  border: 1px solid rgba(229, 231, 235, 0.075);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   height: 220px; /* fixed height */
-  overflow: hidden;
-  min-width: 280px; /* fixed-ish width for consistency */
+  overflow: auto;
+  min-width: 280px; 
 }
 
 .box-head {
-  padding: 12px 14px;
+  padding: 6px 8px;
   font-weight: 700;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   background: rgba(0, 0, 0, 0.04);
@@ -58,8 +58,8 @@
 }
 
 .box-body {
-  padding: 12px 14px;
-  overflow: auto;
+  padding: 6px 8px;
+  overflow: hidden;
   flex: 1;
 }
 
@@ -71,8 +71,23 @@
   background: transparent;
 }
 .box-body::-webkit-scrollbar-thumb {
-  background: var(--muted);
+  /* background: var(--muted);*/
+   background: transparent;
   border-radius: 4px;
+}
+
+.procedure-type-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.procedure-type-cell svg {
+  flex-shrink: 0;
+}
+
+.type-label {
+  white-space: nowrap;
 }
 
 /* mini table */

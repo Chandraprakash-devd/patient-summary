@@ -3,36 +3,38 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 60px;
-  background-color: var(--surface); /* Matches global surface color */
-  color: var(--text); /* Matches global text color */
-  padding: 10px 0;
-  border-top-right-radius: var(--radius); /* Uses global radius */
-  overflow-y: auto;
-  transition: width 0.3s ease;
+  width: 80px; /* Increased width in shrinked mode */
+  background-color: var(--surface); /* Default to light theme surface */
+  color: var(--text);
+  padding: 8px 0; /* Reduced padding to make it slightly shorter */
+  border-radius: var(--radius);
+  overflow-y: auto; /* Restore vertical scrolling */
+  transition: width 0.3s ease, margin 0.3s ease, background-color 0.3s ease; /* Ensure background transitions */
   z-index: 1000;
-  border: 1px solid var(--text);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow for theme awareness */
+  margin-left: 20px; /* Offset from left corner */
+  margin-bottom: 20px; /* Offset from bottom corner */
+  max-height: 400px; /* Limit height to make it shorter, with scrolling if needed */
+  border: 1px solid var(--muted); /* Border for differentiation in light theme */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
-.sidebar.expanded {
-  width: 250px;
+/* Ensure hover maintains the background */
+.sidebar:hover {
+  width: 250px; /* Expanded mode width remains unchanged */
+  margin-left: 20px; /* Maintain offset in expanded mode */
+  margin-bottom: 20px; /* Maintain offset in expanded mode */
 }
 
-.expand-toggle {
-  background: none;
-  border: none;
-  color: var(--text); /* Matches global text color */
-  font-size: 20px;
-  cursor: pointer;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
+/* Force gray background for entire sidebar in dark theme with higher specificity */
+html[data-theme="dark"] .sidebar {
+  background-color: #666666 !important; /* Override any other styles */
+  border: 1px solid #808080; /* Adjusted border for contrast in dark mode */
 }
 
-.expand-toggle:hover {
-  color: var(--accent); /* Matches global accent color */
+/* Ensure sub-menu matches sidebar background in dark mode */
+html[data-theme="dark"] .sub-menu {
+  background-color: #666666; /* Match sidebar background */
 }
 
 .menu-item {
@@ -40,14 +42,15 @@
   align-items: center;
   padding: 8px 10px;
   transition: background-color 0.3s ease;
+  min-width: 0; /* Allow content to shrink if needed */
 }
 
 .menu-item:hover {
-  background-color: rgba(0, 0, 0, 0.05); /* Matches btn hover in light theme */
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-[data-theme="dark"] .menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Matches btn hover in dark theme */
+html[data-theme="dark"] .menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .menu-item label {
@@ -55,25 +58,41 @@
   align-items: center;
   cursor: pointer;
   width: 100%;
+  overflow: hidden; /* Prevent overflow within label */
 }
 
 .icon {
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 10px;
   min-width: 20px;
   text-align: center;
-  color: var(--text); /* Matches global text color */
+  color: var(--text);
+  flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .label {
   flex: 1;
-  color: var(--text); /* Matches global text color */
+  color: var(--text);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden; /* Prevent label overflow */
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+}
+
+.sidebar:hover .label {
+  opacity: 1;
 }
 
 .sub-menu {
   padding-left: 20px;
   margin-top: 10px;
-  background-color: var(--surface); /* Matches global surface color */
+  background-color: var(--surface); /* Default to light theme surface */
+  display: none;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.sidebar:hover .sub-menu {
+  display: block;
 }
 
 .sub-item {
@@ -81,23 +100,36 @@
   align-items: center;
   padding: 4px 0;
   transition: background-color 0.3s ease;
+  min-width: 0; /* Allow content to shrink if needed */
 }
 
 .sub-item:hover {
-  background-color: rgba(0, 0, 0, 0.05); /* Matches menu-item hover in light theme */
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-[data-theme="dark"] .sub-item:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Matches menu-item hover in dark theme */
+html[data-theme="dark"] .sub-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .sub-item label {
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow within sub-item label */
 }
 
 input[type="checkbox"] {
   margin-right: 10px;
-  accent-color: var(--accent); /* Matches global accent color */
+  accent-color: var(--accent);
+}
+
+/* Hide default scrollbar but keep functionality */
+.sidebar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.sidebar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
