@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 80px; /* Increased width in shrinked mode */
+  width: 70px; /* Increased width in shrinked mode */
   background-color: var(--surface); /* Default to light theme surface */
   color: var(--text);
   padding: 8px 0; /* Reduced padding to make it slightly shorter */

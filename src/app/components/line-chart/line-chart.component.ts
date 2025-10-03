@@ -7,8 +7,8 @@ import {
   AfterViewInit,
   Input,
   OnDestroy,
-  SimpleChanges, // Newly added import
-  OnChanges, // Newly added import
+  SimpleChanges,
+  OnChanges,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Chart, ChartConfiguration, registerables } from 'chart.js';
@@ -29,9 +29,18 @@ export interface TimeDataPoint {
   y: number;
 }
 
+export interface VADataPoint {
+  x: string;
+  y: string;
+  yNumeric: number;
+  nv: string | null;
+}
+
 export interface MetricConfig {
   name: string;
   color: string;
+  colorLight?: string;
+  colorDark?: string;
   min: number;
   max: number;
   step?: number;
@@ -39,10 +48,15 @@ export interface MetricConfig {
 }
 
 export interface ChartData {
-  visualAcuityData: TimeDataPoint[];
+  visualAcuityData: VADataPoint[];
   iopData: TimeDataPoint[];
   cmtData: TimeDataPoint[];
   procedures: ProcedureData[];
+}
+
+interface PositionedProcedure extends ProcedureData {
+  position: number;
+  row: number;
 }
 
 @Component({
@@ -52,7 +66,9 @@ export interface ChartData {
   templateUrl: './line-chart.component.html',
   styleUrls: ['./line-chart.component.css'],
 })
-export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnChanges { // Added OnChanges
+export class LineChartComponent
+  implements OnInit, AfterViewInit, OnDestroy, OnChanges
+{
   @ViewChild('chartCanvas', { static: true })
   chartCanvas!: ElementRef<HTMLCanvasElement>;
 
@@ -60,7 +76,6 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
   @Input() metrics!: MetricConfig[];
   @Input() title: string = 'Clinical Metrics Over Time';
 
-  // Newly added inputs for toggles
   @Input() showVA: boolean = true;
   @Input() showIOP: boolean = true;
   @Input() showCMT: boolean = true;
@@ -70,12 +85,19 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
   private minDate!: Date;
   private maxDate!: Date;
   private themeSubscription!: Subscription;
+  private themeObserver!: MutationObserver;
   public currentTheme: 'light' | 'dark' = 'light';
+
+  // For positioned procedures with collision detection
+  public positionedProcedures: PositionedProcedure[] = [];
 
   constructor(private themeService: ThemeService) {}
 
   ngOnInit() {
-    this.currentTheme = (document.documentElement.getAttribute('data-theme') as 'light' | 'dark') || 'light';
+    this.currentTheme =
+      (document.documentElement.getAttribute('data-theme') as
+        | 'light'
+        | 'dark') || 'light';
 
     if (!this.chartData || !this.metrics) {
       throw new Error(
@@ -95,10 +117,13 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
     this.maxDate = allDates.length
       ? new Date(Math.max(...allDates.map((d) => d.getTime())))
       : new Date();
+
+    this.calculateProcedurePositions();
   }
 
   ngAfterViewInit() {
     this.createChart();
+    this.setupThemeObserver();
     this.themeSubscription = this.themeService.theme$.subscribe((theme) => {
       this.currentTheme = theme;
       if (this.chart) {
@@ -108,9 +133,34 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
     });
   }
 
-  // Newly added to handle toggle changes
   ngOnChanges(changes: SimpleChanges) {
-    if (this.chart && (changes['showVA'] || changes['showIOP'] || changes['showCMT'])) {
+    if (
+      this.chart &&
+      changes['chartData'] &&
+      !changes['chartData'].firstChange
+    ) {
+      const allDates = [
+        ...this.chartData.visualAcuityData.map((d) => new Date(d.x)),
+        ...this.chartData.iopData.map((d) => new Date(d.x)),
+        ...this.chartData.cmtData.map((d) => new Date(d.x)),
+        ...this.chartData.procedures.map((p) => new Date(p.date)),
+      ].filter((d) => !isNaN(d.getTime()));
+
+      if (allDates.length) {
+        this.minDate = new Date(Math.min(...allDates.map((d) => d.getTime())));
+        this.maxDate = new Date(Math.max(...allDates.map((d) => d.getTime())));
+      }
+
+      this.calculateProcedurePositions();
+      this.chart.destroy();
+      this.createChart();
+    }
+
+    if (
+      this.chart &&
+      (changes['showVA'] || changes['showIOP'] || changes['showCMT']) &&
+      !changes['chartData']
+    ) {
       this.chart.data.datasets[0].hidden = !this.showVA;
       this.chart.data.datasets[1].hidden = !this.showIOP;
       this.chart.data.datasets[2].hidden = !this.showCMT;
@@ -119,12 +169,157 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
   }
 
   ngOnDestroy() {
+    if (this.themeObserver) {
+      this.themeObserver.disconnect();
+    }
     if (this.themeSubscription) {
       this.themeSubscription.unsubscribe();
     }
     if (this.chart) {
       this.chart.destroy();
     }
+  }
+
+  private calculateProcedurePositions(): void {
+    const procedures = this.chartData.procedures.map((proc) => ({
+      ...proc,
+      position: this.getProcedurePosition(proc.date),
+      row: 0,
+    }));
+
+    // Sort by position
+    procedures.sort((a, b) => a.position - b.position);
+
+    // Detect overlaps and assign rows
+    const OVERLAP_THRESHOLD = 1.5; // Procedures within 1.5% are considered overlapping
+
+    for (let i = 0; i < procedures.length; i++) {
+      const currentProc = procedures[i];
+      const occupiedRows: Set<number> = new Set();
+
+      // Check all previous procedures that might overlap
+      for (let j = 0; j < i; j++) {
+        const prevProc = procedures[j];
+        const distance = Math.abs(currentProc.position - prevProc.position);
+
+        if (distance < OVERLAP_THRESHOLD) {
+          occupiedRows.add(prevProc.row);
+        }
+      }
+
+      // Find the first available row
+      let row = 0;
+      while (occupiedRows.has(row)) {
+        row++;
+      }
+      currentProc.row = row;
+    }
+
+    this.positionedProcedures = procedures;
+  }
+
+  private setupThemeObserver(): void {
+    this.themeObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes') {
+          setTimeout(() => {
+            this.updateChartTheme();
+          }, 50);
+        }
+      });
+    });
+
+    const observerConfig = {
+      attributes: true,
+      attributeFilter: ['class', 'data-theme'],
+    };
+
+    this.themeObserver.observe(document.documentElement, observerConfig);
+    this.themeObserver.observe(document.body, observerConfig);
+  }
+
+  private isDarkTheme(): boolean {
+    const html = document.documentElement;
+    const body = document.body;
+
+    return (
+      html.classList.contains('dark') ||
+      html.classList.contains('dark-theme') ||
+      html.getAttribute('data-theme') === 'dark' ||
+      body.classList.contains('dark') ||
+      body.classList.contains('dark-theme') ||
+      body.getAttribute('data-theme') === 'dark'
+    );
+  }
+
+  private getMetricColor(metricIndex: number): string {
+    const metric = this.metrics[metricIndex];
+    const isDark = this.isDarkTheme();
+
+    if (isDark && metric.colorDark) {
+      return metric.colorDark;
+    } else if (!isDark && metric.colorLight) {
+      return metric.colorLight;
+    }
+    return metric.color;
+  }
+
+  private updateChartTheme(): void {
+    if (!this.chart) {
+      return;
+    }
+
+    const colors = this.getThemeColors();
+    const isDark = this.isDarkTheme();
+
+    const datasets = this.chart.data.datasets as any[];
+
+    datasets[0].borderColor = this.getMetricColor(0);
+    datasets[0].backgroundColor = this.getMetricColor(0);
+    datasets[0].pointBorderColor = this.getMetricColor(0);
+    datasets[0].pointBackgroundColor = isDark ? '#000000' : '#ffffff';
+
+    datasets[1].borderColor = this.getMetricColor(1);
+    datasets[1].backgroundColor = this.getMetricColor(1);
+    datasets[1].pointBorderColor = this.getMetricColor(1);
+    datasets[1].pointBackgroundColor = isDark ? '#000000' : '#ffffff';
+
+    datasets[2].borderColor = this.getMetricColor(2);
+    datasets[2].backgroundColor = this.getMetricColor(2);
+    datasets[2].pointBorderColor = this.getMetricColor(2);
+    datasets[2].pointBackgroundColor = isDark ? '#000000' : '#ffffff';
+
+    const xScale = this.chart.options.scales?.['x'] as any;
+    if (xScale) {
+      if (xScale.ticks) {
+        xScale.ticks.color = colors.tickColor;
+      }
+      if (xScale.grid) {
+        xScale.grid.color = colors.gridColor;
+      }
+      if (xScale.border) {
+        xScale.border.color = colors.borderColor;
+      }
+    }
+
+    const yScale = this.chart.options.scales?.['y'] as any;
+    if (yScale?.grid) {
+      yScale.grid.color = colors.gridColor;
+    }
+
+    const tooltip = this.chart.options.plugins?.tooltip as any;
+    if (tooltip) {
+      tooltip.backgroundColor = colors.tooltipBackground;
+      tooltip.titleColor = colors.tooltipTitleColor;
+      tooltip.bodyColor = colors.tooltipBodyColor;
+      tooltip.borderColor = colors.tooltipBorderColor;
+    }
+
+    this.chartCanvas.nativeElement.style.backgroundColor = isDark
+      ? '#000000'
+      : '#ffffff';
+
+    this.chart.update('active');
   }
 
   getProcedurePosition(dateString: string): number {
@@ -135,35 +330,49 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
     return timeRange ? (timeFromStart / timeRange) * 100 : 0;
   }
 
-  getScaleValues(metricIndex: number): number[] {
+  getScaleValues(metricIndex: number): string[] {
     const metric = this.metrics[metricIndex];
+
+    if (metricIndex === 0) {
+      return ['6/6', '6/18', '6/60', 'CF', 'HM', 'PL', 'No PL'];
+    }
+
     const { min, max, step } = metric;
 
     if (step) {
-      const values = [];
+      const values: string[] = [];
       for (let i = max; i >= min; i -= step) {
-        values.push(i);
+        values.push(i.toString());
       }
       return values;
     } else {
       const range = max - min;
       const stepSize = range / 3;
-      return [max, max - stepSize, max - 2 * stepSize, min];
+      return [
+        max.toString(),
+        (max - stepSize).toFixed(0),
+        (max - 2 * stepSize).toFixed(0),
+        min.toString(),
+      ];
     }
   }
 
   private getThemeColors() {
-    const isDarkTheme = this.currentTheme === 'dark';
+    const isDarkTheme = this.isDarkTheme();
     return {
       gridColor: isDarkTheme
         ? 'rgba(255, 255, 255, 0.1)'
         : 'rgba(0, 0, 0, 0.1)',
       tickColor: isDarkTheme ? '#ffffff' : '#000000',
       borderColor: isDarkTheme ? '#ffffff' : '#000000',
-      tooltipBackground: isDarkTheme ? 'rgba(0, 0, 0, 0.8)' : 'rgba(255, 255, 255, 0.8)',
+      tooltipBackground: isDarkTheme
+        ? 'rgba(0, 0, 0, 0.8)'
+        : 'rgba(255, 255, 255, 0.8)',
       tooltipTitleColor: isDarkTheme ? '#ffffff' : '#000000',
       tooltipBodyColor: isDarkTheme ? '#ffffff' : '#000000',
-      tooltipBorderColor: isDarkTheme ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.2)',
+      tooltipBorderColor: isDarkTheme
+        ? 'rgba(255, 255, 255, 0.2)'
+        : 'rgba(0, 0, 0, 0.2)',
       isDarkTheme,
     };
   }
@@ -172,10 +381,38 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
     const ctx = this.chartCanvas.nativeElement.getContext('2d');
     if (!ctx) return;
 
-    const { gridColor, tickColor, borderColor, isDarkTheme, tooltipBackground, tooltipTitleColor, tooltipBodyColor, tooltipBorderColor } = this.getThemeColors();
+    const {
+      gridColor,
+      tickColor,
+      borderColor,
+      isDarkTheme,
+      tooltipBackground,
+      tooltipTitleColor,
+      tooltipBodyColor,
+      tooltipBorderColor,
+    } = this.getThemeColors();
 
-    // Set canvas background explicitly
-    this.chartCanvas.nativeElement.style.backgroundColor = isDarkTheme ? '#000000' : '#ffffff';
+    this.chartCanvas.nativeElement.style.backgroundColor = isDarkTheme
+      ? '#000000'
+      : '#ffffff';
+
+    const normalizeVA = (value: number) => {
+      const range = this.metrics[0].max - this.metrics[0].min;
+      const normalized = (value - this.metrics[0].min) / range;
+      return 66.67 + normalized * 33.33;
+    };
+
+    const normalizeIOP = (value: number) => {
+      const range = this.metrics[1].max - this.metrics[1].min;
+      const normalized = (value - this.metrics[1].min) / range;
+      return 33.33 + normalized * 33.33;
+    };
+
+    const normalizeCMT = (value: number) => {
+      const range = this.metrics[2].max - this.metrics[2].min;
+      const normalized = (value - this.metrics[2].min) / range;
+      return 0 + normalized * 33.33;
+    };
 
     const config: ChartConfiguration = {
       type: 'line',
@@ -183,45 +420,59 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
         datasets: [
           {
             label: this.metrics[0].name,
-            data: this.chartData.visualAcuityData as any,
-            borderColor: this.metrics[0].color,
-            backgroundColor: this.metrics[0].color,
+            data: this.chartData.visualAcuityData.map((d) => ({
+              x: d.x,
+              y: normalizeVA(d.yNumeric),
+              originalY: d.y,
+              originalYNumeric: d.yNumeric,
+              nv: d.nv,
+            })) as any,
+            borderColor: this.getMetricColor(0),
+            backgroundColor: this.getMetricColor(0),
             pointBackgroundColor: isDarkTheme ? '#000000' : '#ffffff',
-            pointBorderColor: this.metrics[0].color,
+            pointBorderColor: this.getMetricColor(0),
             pointRadius: 2,
             pointHoverRadius: 4,
-            borderWidth: 1,
+            borderWidth: 2,
             tension: 0.3,
-            yAxisID: this.metrics[0].yAxisId,
-            hidden: !this.showVA, // Updated with toggle
+            yAxisID: 'y',
+            hidden: !this.showVA,
           },
           {
             label: this.metrics[1].name,
-            data: this.chartData.iopData as any,
-            borderColor: this.metrics[1].color,
-            backgroundColor: this.metrics[1].color,
-            pointBackgroundColor: isDarkTheme ? '#ffffff' : '#000000',
-            pointBorderColor: this.metrics[1].color,
+            data: this.chartData.iopData.map((d) => ({
+              x: d.x,
+              y: normalizeIOP(d.y),
+              originalY: d.y,
+            })) as any,
+            borderColor: this.getMetricColor(1),
+            backgroundColor: this.getMetricColor(1),
+            pointBackgroundColor: isDarkTheme ? '#000000' : '#ffffff',
+            pointBorderColor: this.getMetricColor(1),
             pointRadius: 2,
             pointHoverRadius: 4,
-            borderWidth: 1,
+            borderWidth: 2,
             tension: 0.3,
-            yAxisID: this.metrics[1].yAxisId,
-            hidden: !this.showIOP, // Updated with toggle
+            yAxisID: 'y',
+            hidden: !this.showIOP,
           },
           {
             label: this.metrics[2].name,
-            data: this.chartData.cmtData as any,
-            borderColor: this.metrics[2].color,
-            backgroundColor: this.metrics[2].color,
-            pointBackgroundColor: isDarkTheme ? '#ffffff' : '#000000',
-            pointBorderColor: this.metrics[2].color,
+            data: this.chartData.cmtData.map((d) => ({
+              x: d.x,
+              y: normalizeCMT(d.y),
+              originalY: d.y,
+            })) as any,
+            borderColor: this.getMetricColor(2),
+            backgroundColor: this.getMetricColor(2),
+            pointBackgroundColor: isDarkTheme ? '#000000' : '#ffffff',
+            pointBorderColor: this.getMetricColor(2),
             pointRadius: 2,
             pointHoverRadius: 4,
-            borderWidth: 1,
+            borderWidth: 2,
             tension: 0.3,
-            yAxisID: this.metrics[2].yAxisId,
-            hidden: !this.showCMT, // Updated with toggle
+            yAxisID: 'y',
+            hidden: !this.showCMT,
           },
         ],
       },
@@ -243,6 +494,28 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
             bodyColor: tooltipBodyColor,
             borderColor: tooltipBorderColor,
             borderWidth: 1,
+            callbacks: {
+              title: (tooltipItems) => {
+                return tooltipItems[0].label;
+              },
+              label: (context) => {
+                const datasetLabel = context.dataset.label || '';
+                const rawData = context.raw as any;
+
+                if (datasetLabel.includes('BCVA')) {
+                  return `${datasetLabel}: ${rawData.originalY}${
+                    rawData.nv ? ' / ' + rawData.nv : ''
+                  }`;
+                } else if (datasetLabel.includes('IOP')) {
+                  return `${datasetLabel}: ${rawData.originalY.toFixed(
+                    1
+                  )} mm Hg`;
+                } else if (datasetLabel.includes('CMT')) {
+                  return `${datasetLabel}: ${rawData.originalY.toFixed(0)} μm`;
+                }
+                return `${datasetLabel}: ${rawData.originalY}`;
+              },
+            },
           },
           datalabels: {
             display: false,
@@ -273,32 +546,12 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
             min: this.minDate.toISOString().substring(0, 10),
             max: this.maxDate.toISOString().substring(0, 10),
           },
-          [this.metrics[0].yAxisId]: {
+          y: {
             type: 'linear',
             display: false,
             position: 'left',
-            min: this.metrics[0].min,
-            max: this.metrics[0].max,
-            grid: {
-              drawOnChartArea: false,
-            },
-          },
-          [this.metrics[1].yAxisId]: {
-            type: 'linear',
-            display: false,
-            position: 'left',
-            min: this.metrics[1].min,
-            max: this.metrics[1].max,
-            grid: {
-              drawOnChartArea: false,
-            },
-          },
-          [this.metrics[2].yAxisId]: {
-            type: 'linear',
-            display: false,
-            position: 'left',
-            min: this.metrics[2].min,
-            max: this.metrics[2].max,
+            min: 0,
+            max: 100,
             grid: {
               color: gridColor,
               lineWidth: 0.5,

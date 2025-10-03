@@ -1,4 +1,3 @@
-// patient-summary.component.ts
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -10,9 +9,10 @@ import {
   MetricConfig,
   ProcedureData,
   TimeDataPoint,
+  VADataPoint,
 } from '../line-chart/line-chart.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
-import jsonData from '../../../../patient_1271481_summary.json';
+import jsonData from '../../../../patient_complete_data.json';
 
 @Component({
   selector: 'app-patient-summary',
@@ -50,7 +50,7 @@ export class PatientSummaryComponent implements OnInit {
   undilatedFundusData: { task: string; start: string; end: string }[] = [];
   medicationsData: { task: string; start: string; end: string }[] = [];
 
-  // Newly added toggle booleans
+  // Toggle booleans
   showVA: boolean = true;
   showIOP: boolean = true;
   showCMT: boolean = true;
@@ -237,22 +237,28 @@ export class PatientSummaryComponent implements OnInit {
     {
       name: 'Dist : BCVA / Near : BCVA',
       color: '#4a9eff',
-      min: 0.25,
-      max: 1.75,
-      step: 0.5,
+      colorLight: '#4a9eff',
+      colorDark: '#6bb6ff',
+      min: -2.0,
+      max: 1.6,
+      step: 0.3,
       yAxisId: 'y1',
     },
     {
       name: 'IOP',
       color: '#4ade80',
-      min: 4,
-      max: 16,
-      step: 4,
+      colorLight: '#4ade80',
+      colorDark: '#5fea9a',
+      min: 0,
+      max: 20,
+      step: 5,
       yAxisId: 'y2',
     },
     {
       name: 'CMT',
       color: '#f472b6',
+      colorLight: '#f472b6',
+      colorDark: '#f78bc9',
       min: 0,
       max: 1000,
       step: 250,
@@ -260,15 +266,26 @@ export class PatientSummaryComponent implements OnInit {
     },
   ];
 
-  colorMap = new Map<string, string>([
-    ['Ozurdex', '#00bcd4'],
-    ['Tricort', '#4ade80'],
-    ['Avastin', '#06b6d4'],
-    ['Pagenax', '#8b5cf6'],
-    ['Accentrix', '#f472b6'],
-    ['Accessible PRP', '#ef4444'],
-    ['Focal', '#f97316'],
-  ]);
+  // Dynamic color assignment for procedures
+  private procedureColorMap = new Map<string, string>();
+  private colorPalette: string[] = [
+    '#00bcd4', // Cyan
+    '#4ade80', // Green
+    '#06b6d4', // Teal
+    '#8b5cf6', // Purple
+    '#f472b6', // Pink
+    '#ef4444', // Red
+    '#f97316', // Orange
+    '#eab308', // Yellow
+    '#3b82f6', // Blue
+    '#ec4899', // Fuchsia
+    '#10b981', // Emerald
+    '#f59e0b', // Amber
+    '#6366f1', // Indigo
+    '#14b8a6', // Teal
+    '#a855f7', // Violet
+  ];
+  private colorIndex = 0;
 
   ngOnInit(): void {
     if (!this.jsonData || !this.jsonData.patient_info) {
@@ -277,11 +294,64 @@ export class PatientSummaryComponent implements OnInit {
     }
     this.patients = [`Patient ${this.jsonData.patient_info.uid}`];
     this.selectedPatient = this.patients[0];
+
+    // Initialize procedure colors
+    this.initializeProcedureColors();
+
     this.updateData();
   }
 
+  /**
+   * Initialize colors for all unique procedures in the dataset
+   */
+  private initializeProcedureColors(): void {
+    const uniqueProcedures = new Set<string>();
+
+    (this.jsonData.visits || []).forEach((visit: any) => {
+      if (visit.procedures) {
+        ['RE', 'LE', 'BE'].forEach((eye) => {
+          const procEye = visit.procedures[eye];
+          if (procEye) {
+            procEye.forEach((proc: any) => {
+              const name = proc.laser_type || proc.type;
+              if (name) {
+                uniqueProcedures.add(name);
+              }
+            });
+          }
+        });
+      }
+    });
+
+    // Assign colors to each unique procedure
+    Array.from(uniqueProcedures).forEach((procedureName) => {
+      this.procedureColorMap.set(
+        procedureName,
+        this.colorPalette[this.colorIndex % this.colorPalette.length]
+      );
+      this.colorIndex++;
+    });
+
+    console.log('Procedure colors initialized:', this.procedureColorMap);
+  }
+
+  /**
+   * Get color for a procedure name
+   */
+  private getProcedureColor(procedureName: string): string {
+    let color = this.procedureColorMap.get(procedureName);
+
+    if (!color) {
+      // If procedure not found, assign a new color
+      color = this.colorPalette[this.colorIndex % this.colorPalette.length];
+      this.procedureColorMap.set(procedureName, color);
+      this.colorIndex++;
+    }
+
+    return color;
+  }
+
   onEyeChange(): void {
-    console.log('Eye changed to:', this.selectedEye);
     this.updateData();
   }
 
@@ -292,15 +362,12 @@ export class PatientSummaryComponent implements OnInit {
         : this.selectedEye === 'Left Eye'
         ? 'LE'
         : 'BE';
-    console.log('Updating data for eye:', eye);
 
     this.patientSummary = this.generatePatientSummary();
     this.diseases = this.getDiseases();
     this.procedures = this.getProcedures(eye);
 
-    // Force new array references for change detection
     this.ganttData = [...this.getGanttData('diagnosis', eye)];
-    console.log('Updated ganttData:', this.ganttData);
 
     this.backgroundRetinaData = [
       ...this.getGanttData('background_retina', eye),
@@ -316,11 +383,6 @@ export class PatientSummaryComponent implements OnInit {
     this.undilatedFundusData = [...this.getGanttData('undilated_fundus', eye)];
     this.medicationsData = [...this.getMedicationsGanttData(eye)];
     this.lineChartData = { ...this.getLineChartData(eye) };
-
-    console.log('Diseases:', this.diseases);
-    console.log('Procedures:', this.procedures);
-    console.log('Medications:', this.medicationsData);
-    console.log('Line Chart Data:', this.lineChartData);
   }
 
   generatePatientSummary(): string {
@@ -393,33 +455,27 @@ export class PatientSummaryComponent implements OnInit {
   }
 
   getSvgForProcedure(procedureItem: string): { svg: string; color: string } {
-    if (/Inj|Ozurdex|Tricort|Avastin|Pagenax|Accentrix/i.test(procedureItem)) {
-      const name = procedureItem.replace(/\s*\(\d+x\)$/, '');
-      const color = this.colorMap.get(name) || '#00bcd4';
-      return {
-        svg: 'injection',
-        color: color,
-      };
-    } else {
-      const name = procedureItem.replace(/\s*\(\d+x\)$/, '');
-      const color = this.colorMap.get(name) || '#ef4444';
-      return {
-        svg: 'procedure',
-        color: color,
-      };
-    }
+    // Remove count suffix to get base procedure name
+    const name = procedureItem.replace(/\s*\(\d+x\)$/, '');
+
+    // Determine if it's an injection or laser procedure
+    const isInjection = /Inj|Ozurdex|Tricort|Avastin|Pagenax|Accentrix/i.test(
+      name
+    );
+
+    return {
+      svg: isInjection ? 'injection' : 'procedure',
+      color: this.getProcedureColor(name),
+    };
   }
 
   getGanttData(
     section: string,
     eye: string
   ): { task: string; start: string; end: string }[] {
-    // Try to get data from gantt_charts first, fallback to old diagnosis structure
     const ganttSection =
       this.jsonData.gantt_charts?.[section] ||
       (section === 'diagnosis' ? this.jsonData.diagnosis : null);
-
-    console.log('Getting gantt data for section:', section, 'eye:', eye);
 
     if (!ganttSection) {
       console.warn(`No data found for section: ${section}`);
@@ -433,13 +489,10 @@ export class PatientSummaryComponent implements OnInit {
       const cond = ganttSection[key];
       if (!cond) return;
 
-      // Determine the task name based on data structure
       let baseTask = '';
       if (cond.condition) {
-        // New structure: uses condition property
         baseTask = cond.condition;
       } else if (key.includes('_diagnosis_') || key.includes('_')) {
-        // Old structure: parse from key
         const parts = key.split('_diagnosis_');
         if (parts.length === 2) {
           baseTask = parts[0].replace(/_/g, ' ');
@@ -452,11 +505,9 @@ export class PatientSummaryComponent implements OnInit {
 
       if (!baseTask || !cond.periods) return;
 
-      // Handle bilateral conditions (from_both_eyes)
       if (cond.from_both_eyes) {
         const bilateralKey = baseTask + '_bilateral';
 
-        // Only process bilateral conditions once
         if (!processedBilateralConditions.has(bilateralKey)) {
           processedBilateralConditions.add(bilateralKey);
 
@@ -474,32 +525,22 @@ export class PatientSummaryComponent implements OnInit {
           });
 
           diagMap.set(displayTask, entry);
-          console.log(
-            `Processed bilateral: ${displayTask}, eye in data: ${cond.eye}, periods: ${cond.periods.length}`
-          );
         }
-        return; // Skip further processing for bilateral conditions
+        return;
       }
 
-      // Handle eye-specific conditions
       let include = false;
       let displayTask = baseTask;
 
       if (eye === 'BE') {
-        // Show all conditions when "Both Eyes" is selected
         include = true;
         displayTask = baseTask + ' (' + cond.eye + ')';
       } else {
-        // Show only conditions that match the selected eye
         if (cond.eye === eye) {
           include = true;
           displayTask = baseTask;
         }
       }
-
-      console.log(
-        `Task: ${baseTask}, cond.eye: ${cond.eye}, from_both_eyes: ${cond.from_both_eyes}, requested eye: ${eye}, include: ${include}`
-      );
 
       if (include) {
         let entry = diagMap.get(displayTask) || {
@@ -526,10 +567,6 @@ export class PatientSummaryComponent implements OnInit {
       }))
       .filter((d) => d.start !== '9999-12-31' && d.end !== '0001-01-01');
 
-    console.log(
-      `Processed Gantt Data for ${section} (eye: ${eye}):`,
-      ganttData
-    );
     return ganttData;
   }
 
@@ -594,13 +631,13 @@ export class PatientSummaryComponent implements OnInit {
       }))
       .filter((d) => d.start !== '9999-12-31' && d.end !== '0001-01-01');
 
-    console.log('Processed Medications Gantt Data:', ganttData);
     return ganttData;
   }
-
   getLineChartData(eye: string): ChartData {
+    console.log('=== Getting Line Chart Data for eye:', eye, '===');
+
     const procedures: ProcedureData[] = [];
-    const visualAcuityData: TimeDataPoint[] = [];
+    const visualAcuityData: VADataPoint[] = [];
     const iopData: TimeDataPoint[] = [];
     const cmtData: TimeDataPoint[] = [];
 
@@ -608,6 +645,7 @@ export class PatientSummaryComponent implements OnInit {
       const date = visit.visit_date?.substring(0, 10) || '';
       if (!date) return;
 
+      // Extract Procedures with dynamic colors
       const procEye = visit.procedures
         ? visit.procedures[eye] || visit.procedures['BE']
         : null;
@@ -616,67 +654,137 @@ export class PatientSummaryComponent implements OnInit {
           const type = proc.type?.includes('Inj') ? 'injection' : 'procedure';
           const name = proc.laser_type || proc.type;
           if (name) {
-            const color = this.colorMap.get(name) || '#cccccc';
+            const color = this.getProcedureColor(name);
             procedures.push({ date, type, name, color });
           }
         });
       }
 
-      if (visit.vision_iop && visit.vision_iop.dv_refraction) {
-        const vaStr =
-          visit.vision_iop.dv_refraction[eye]?.VA ||
-          visit.vision_iop.dv_refraction[eye]?.UCVA_VA;
-        if (vaStr) {
-          const y = this.convertVaToDecimal(vaStr);
-          if (y !== null) {
-            visualAcuityData.push({ x: date, y });
+      // Extract Visual Acuity (DV for plotting, NV for tooltip)
+      if (visit.vision_iop) {
+        let dvVA: string | null = null;
+        let nvVA: string | null = null;
+
+        if (
+          visit.vision_iop.dv_refraction &&
+          visit.vision_iop.dv_refraction[eye]
+        ) {
+          const dvData = visit.vision_iop.dv_refraction[eye];
+          const rawDV = dvData.VA || dvData.UCVA_VA;
+          if (rawDV) {
+            dvVA = this.normalizeVAString(rawDV);
+          }
+        }
+
+        if (
+          visit.vision_iop.nv_refraction &&
+          visit.vision_iop.nv_refraction[eye]
+        ) {
+          const nvData = visit.vision_iop.nv_refraction[eye];
+          if (nvData.VA) {
+            nvVA = this.normalizeVAString(nvData.VA);
+          }
+        }
+
+        if (dvVA) {
+          const numericValue = this.convertVAToNumeric(dvVA);
+          if (numericValue !== null) {
+            visualAcuityData.push({
+              x: date,
+              y: dvVA,
+              yNumeric: numericValue,
+              nv: nvVA,
+            });
           }
         }
       }
 
+      // Extract IOP (Intraocular Pressure)
       if (visit.investigations && visit.investigations.general_investigations) {
         const gens = visit.investigations.general_investigations.map(
           (g: any) => g.name
         );
         const idx = gens.indexOf('IOP');
         if (idx >= 0) {
-          const vals =
-            visit.investigations.eye_specific_results[eye]?.split(';') || [];
-          const valStr = vals[idx];
-          const y = parseFloat(valStr);
-          if (!isNaN(y) && y > 0) {
-            iopData.push({ x: date, y });
+          const eyeResults = visit.investigations.eye_specific_results?.[eye];
+
+          if (typeof eyeResults === 'string') {
+            const vals = eyeResults.split(';');
+            const valStr = vals[idx];
+            const y = parseFloat(valStr);
+            if (!isNaN(y) && y > 0) {
+              iopData.push({ x: date, y });
+            }
+          } else if (eyeResults) {
+            const y = parseFloat(eyeResults);
+            if (!isNaN(y) && y > 0) {
+              iopData.push({ x: date, y });
+            }
           }
         }
       }
 
-      if (visit.investigations && visit.investigations.general_investigations) {
-        const gens = visit.investigations.general_investigations.map(
-          (g: any) => g.name
-        );
-        const idx = gens.indexOf('Optical Coherence Tomography');
-        if (idx >= 0) {
-          const vals =
-            visit.investigations.eye_specific_results[eye]?.split(';') || [];
-          const valStr = vals[idx];
-          const y = parseFloat(valStr);
-          if (!isNaN(y) && y > 0) {
-            cmtData.push({ x: date, y });
+      // Extract CMT - Try multiple sources in priority order
+      let cmtValue: number | null = null;
+
+      if (visit.investigations) {
+        if (visit.investigations.general_investigations) {
+          const gens = visit.investigations.general_investigations.map(
+            (g: any) => g.name
+          );
+          const octIndex = gens.indexOf('Optical Coherence Tomography');
+
+          if (octIndex >= 0 && visit.investigations.eye_specific_results) {
+            const eyeResults = visit.investigations.eye_specific_results[eye];
+
+            if (typeof eyeResults === 'string') {
+              const vals = eyeResults.split(';');
+              const valStr = vals[octIndex];
+              const parsed = parseFloat(valStr);
+              if (!isNaN(parsed) && parsed >= 150 && parsed <= 1500) {
+                cmtValue = parsed;
+              }
+            } else if (eyeResults) {
+              const parsed = parseFloat(eyeResults);
+              if (!isNaN(parsed) && parsed >= 150 && parsed <= 1500) {
+                cmtValue = parsed;
+              }
+            }
+          }
+        }
+
+        if (!cmtValue && visit.investigations.special_notes) {
+          const eyeNote = visit.investigations.special_notes[eye];
+          if (eyeNote) {
+            const extracted = this.extractCMTFromText(eyeNote);
+            if (extracted) {
+              cmtValue = extracted;
+            }
+          }
+        }
+
+        if (!cmtValue && visit.investigations.special_notes?.raw) {
+          const extracted = this.extractCMTFromText(
+            visit.investigations.special_notes.raw,
+            eye
+          );
+          if (extracted) {
+            cmtValue = extracted;
+          }
+        }
+
+        if (!cmtValue && visit.investigations.special_notes?.raw) {
+          const extracted = this.extractCMTFromText(
+            visit.investigations.special_notes.raw
+          );
+          if (extracted) {
+            cmtValue = extracted;
           }
         }
       }
-      if (
-        visit.investigations &&
-        visit.investigations.special_notes &&
-        visit.investigations.special_notes.raw
-      ) {
-        const cmt = this.extractCMT(
-          visit.investigations.special_notes.raw,
-          eye
-        );
-        if (cmt) {
-          cmtData.push({ x: date, y: cmt });
-        }
+
+      if (cmtValue) {
+        cmtData.push({ x: date, y: cmtValue });
       }
     });
 
@@ -684,42 +792,135 @@ export class PatientSummaryComponent implements OnInit {
       a: { x?: string; date?: string },
       b: { x?: string; date?: string }
     ) => (a.x || a.date || '').localeCompare(b.x || b.date || '');
+
     procedures.sort(sortByDate);
     visualAcuityData.sort(sortByDate);
     iopData.sort(sortByDate);
     cmtData.sort(sortByDate);
 
+    console.log(`VA Data Points for ${eye}:`, visualAcuityData.length);
+    console.log(
+      'VA Values:',
+      visualAcuityData.map((d) => `${d.x}: ${d.y} (${d.yNumeric})`)
+    );
+    console.log(`IOP Data Points for ${eye}:`, iopData.length);
+    console.log(
+      'IOP Values:',
+      iopData.map((d) => `${d.x}: ${d.y}`)
+    );
+    console.log(`CMT Data Points for ${eye}:`, cmtData.length);
+    console.log(
+      'CMT Values:',
+      cmtData.map((d) => `${d.x}: ${d.y}`)
+    );
+    console.log('=== End Line Chart Data ===\n');
+
     return { procedures, visualAcuityData, iopData, cmtData };
   }
 
-  convertVaToDecimal(vaStr: string): number | null {
+  normalizeVAString(vaStr: string): string | null {
     if (!vaStr) return null;
-    vaStr = vaStr.trim().replace('P', '').toUpperCase();
-    if (vaStr.includes('/')) {
-      const [numer, denom] = vaStr.split('/').map((s) => parseFloat(s));
-      if (isNaN(numer) || isNaN(denom)) return null;
-      return numer / denom;
-    } else if (vaStr.includes('CF')) {
-      return 0.01;
-    } else if (vaStr === 'HM') {
-      return 0.005;
-    } else if (vaStr === 'PL') {
-      return 0.001;
-    } else if (vaStr === 'NO PL' || vaStr === 'NAS') {
-      return 0;
-    } else {
-      const num = parseFloat(vaStr);
-      return isNaN(num) ? null : num;
-    }
+    let normalized = vaStr.trim().replace(/P$/i, '').trim();
+    if (!normalized) return null;
+    return normalized;
   }
 
-  extractCMT(text: string, eye: string): number | null {
+  convertVAToNumeric(vaStr: string): number | null {
+    if (!vaStr) return null;
+
+    const upper = vaStr.toUpperCase().trim();
+
+    const snellenToLogMAR: { [key: string]: number } = {
+      '6/6': 0.0,
+      '6/7.5': 0.1,
+      '6/9': 0.18,
+      '6/12': 0.3,
+      '6/15': 0.4,
+      '6/18': 0.48,
+      '6/24': 0.6,
+      '6/30': 0.7,
+      '6/36': 0.78,
+      '6/48': 0.9,
+      '6/60': 1.0,
+      '6/120': 1.3,
+      '20/20': 0.0,
+      '20/25': 0.1,
+      '20/30': 0.18,
+      '20/40': 0.3,
+      '20/50': 0.4,
+      '20/60': 0.48,
+      '20/80': 0.6,
+      '20/100': 0.7,
+      '20/120': 0.78,
+      '20/160': 0.9,
+      '20/200': 1.0,
+    };
+
+    if (snellenToLogMAR[upper]) {
+      return 1.5 - snellenToLogMAR[upper];
+    }
+
+    if (upper.includes('/')) {
+      const parts = upper.split('/');
+      if (parts.length === 2) {
+        const numerator = parseFloat(parts[0]);
+        const denominator = parseFloat(parts[1]);
+        if (!isNaN(numerator) && !isNaN(denominator) && denominator !== 0) {
+          const logMAR = Math.log10(denominator / numerator);
+          return 1.5 - logMAR;
+        }
+      }
+    }
+
+    if (upper.startsWith('N')) {
+      const num = parseFloat(upper.substring(1));
+      if (!isNaN(num)) {
+        const logMAR = Math.log10(num / 6);
+        return 1.5 - logMAR;
+      }
+    }
+
+    if (upper.includes('CF')) return -0.5;
+    if (upper === 'HM') return -1.0;
+    if (upper === 'PL') return -1.5;
+    if (upper === 'NO PL' || upper === 'NAS') return -2.0;
+
+    return null;
+  }
+
+  extractCMTFromText(text: string, eye?: string): number | null {
     if (!text) return null;
-    const regex = new RegExp(
-      `(?:${eye}\\s*)?(?:CMT|central macular thickness)\\s*[:=]?\\s*(\\d+)\\s*um?`,
-      'i'
-    );
-    const match = text.match(regex);
-    return match ? parseInt(match[1], 10) : null;
+
+    if (eye) {
+      const eyeSpecificRegex = new RegExp(
+        `(?:${eye}\\s+)?(?:CMT|cmt|central macular thickness)\\s*(?:${eye}\\s*)?[:-]?\\s*(\\d+)\\s*(?:um|μm|microns?|M)?`,
+        'i'
+      );
+      const eyeMatch = text.match(eyeSpecificRegex);
+      if (eyeMatch) {
+        const value = parseInt(eyeMatch[1], 10);
+        if (!isNaN(value) && value >= 150 && value <= 1500) {
+          return value;
+        }
+      }
+    }
+
+    const patterns = [
+      /(?:CMT|cmt|central macular thickness)\s*[:-]?\s*(\d+)\s*(?:um|μm|microns?|M)?/i,
+      /(?<!foveal\s+thickness\s*[:-]?\s*)\b(\d{3,4})M\b/i,
+      /(?<!foveal\s+)thickness\s*[:-]?\s*(\d+)\s*(?:um|μm|microns?)?/i,
+    ];
+
+    for (const pattern of patterns) {
+      const match = text.match(pattern);
+      if (match) {
+        const value = parseInt(match[1], 10);
+        if (!isNaN(value) && value >= 150 && value <= 1500) {
+          return value;
+        }
+      }
+    }
+
+    return null;
   }
 }

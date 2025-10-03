@@ -84,7 +84,7 @@ export class GanttChartComponent
       !changes['data'].firstChange &&
       this.chartInitialized
     ) {
-      console.log('Data changed, re-rendering chart. New data:', this.data);
+      // console.log('Data changed, re-rendering chart. New data:', this.data);
 
       // Destroy existing chart before creating new one
       if (this.chart) {
@@ -112,7 +112,7 @@ export class GanttChartComponent
     this.themeObserver = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.type === 'attributes') {
-          console.log('Theme attribute changed:', mutation.attributeName);
+          // console.log('Theme attribute changed:', mutation.attributeName);
           // Add a small delay to ensure styles are applied
           setTimeout(() => {
             this.updateChartTheme();
@@ -130,7 +130,7 @@ export class GanttChartComponent
     this.themeObserver.observe(document.documentElement, observerConfig);
     this.themeObserver.observe(document.body, observerConfig);
 
-    console.log('Theme observer setup complete');
+    // console.log('Theme observer setup complete');
   }
 
   private isDarkTheme(): boolean {
@@ -146,18 +146,18 @@ export class GanttChartComponent
       body.classList.contains('dark-theme') ||
       body.getAttribute('data-theme') === 'dark';
 
-    console.log(
-      'Theme check - isDark:',
-      isDark,
-      'html classes:',
-      html.className,
-      'body classes:',
-      body.className,
-      'html data-theme:',
-      html.getAttribute('data-theme'),
-      'body data-theme:',
-      body.getAttribute('data-theme')
-    );
+    // console.log(
+    //   'Theme check - isDark:',
+    //   isDark,
+    //   'html classes:',
+    //   html.className,
+    //   'body classes:',
+    //   body.className,
+    //   'html data-theme:',
+    //   html.getAttribute('data-theme'),
+    //   'body data-theme:',
+    //   body.getAttribute('data-theme')
+    // );
 
     return isDark;
   }
@@ -169,13 +169,13 @@ export class GanttChartComponent
     let barColor: string;
     if (isDark && this.config.barColorDark) {
       barColor = this.config.barColorDark;
-      console.log('Using dark theme color:', barColor);
+      // console.log('Using dark theme color:', barColor);
     } else if (!isDark && this.config.barColorLight) {
       barColor = this.config.barColorLight;
-      console.log('Using light theme color:', barColor);
+      // console.log('Using light theme color:', barColor);
     } else {
       barColor = this.config.barColor || (isDark ? '#ec407a' : '#e23670');
-      console.log('Using default color:', barColor);
+      // console.log('Using default color:', barColor);
     }
 
     return {
@@ -189,11 +189,11 @@ export class GanttChartComponent
 
   private updateChartTheme(): void {
     if (!this.chart) {
-      console.log('Chart not initialized yet');
+      // console.log('Chart not initialized yet');
       return;
     }
 
-    console.log('Updating chart theme...');
+    // console.log('Updating chart theme...');
     const colors = this.getThemeColors();
 
     // Update title color
@@ -207,13 +207,13 @@ export class GanttChartComponent
         colors.barColor
       );
       this.chart.data.datasets[1].backgroundColor = backgroundColors;
-      console.log(
-        'Updated bar colors to:',
-        colors.barColor,
-        'for',
-        backgroundColors.length,
-        'bars'
-      );
+      // console.log(
+      //   'Updated bar colors to:',
+      //   colors.barColor,
+      //   'for',
+      //   backgroundColors.length,
+      //   'bars'
+      // );
     }
 
     // Update tick colors
@@ -238,7 +238,7 @@ export class GanttChartComponent
 
     // Force update with animation
     this.chart.update('active');
-    console.log('Chart update complete');
+    // console.log('Chart update complete');
   }
 
   private renderChart(): void {
@@ -499,7 +499,7 @@ export class GanttChartComponent
       },
     });
 
-    console.log('Chart rendered with', this.processedData.length, 'items');
+    // console.log('Chart rendered with', this.processedData.length, 'items');
   }
 
   private assignTracksToOverlappingItems(
