@@ -1,7 +1,7 @@
 <div class="chart-container" [attr.data-theme]="currentTheme">
   <div class="procedures-overlay" *ngIf="showProcedures">
-    <div *ngFor="let procedure of positionedProcedures" class="procedure-marker" [style.left.%]="procedure.position"
-      [style.top.px]="5 + (procedure.row * 22)" [title]="
+    <div *ngFor="let procedure of positionedProcedures" class="procedure-marker"
+      [style.left.%]="procedure.position + (procedure.offsetIndex * 0.4)" [title]="
         procedure.name +
         (procedure.count ? ' (' + procedure.count + 'x)' : '')
       ">

@@ -56,7 +56,7 @@ export interface ChartData {
 
 interface PositionedProcedure extends ProcedureData {
   position: number;
-  row: number;
+  offsetIndex: number;
 }
 
 @Component({
@@ -88,7 +88,6 @@ export class LineChartComponent
   private themeObserver!: MutationObserver;
   public currentTheme: 'light' | 'dark' = 'light';
 
-  // For positioned procedures with collision detection
   public positionedProcedures: PositionedProcedure[] = [];
 
   constructor(private themeService: ThemeService) {}
@@ -184,35 +183,34 @@ export class LineChartComponent
     const procedures = this.chartData.procedures.map((proc) => ({
       ...proc,
       position: this.getProcedurePosition(proc.date),
-      row: 0,
+      offsetIndex: 0,
     }));
 
     // Sort by position
     procedures.sort((a, b) => a.position - b.position);
 
-    // Detect overlaps and assign rows
-    const OVERLAP_THRESHOLD = 1.5; // Procedures within 1.5% are considered overlapping
+    // Detect overlaps and assign horizontal offsets
+    const OVERLAP_THRESHOLD = 1.2; // Procedures within 1.2% are considered overlapping
 
     for (let i = 0; i < procedures.length; i++) {
       const currentProc = procedures[i];
-      const occupiedRows: Set<number> = new Set();
+      let maxOffsetInRange = 0;
 
       // Check all previous procedures that might overlap
       for (let j = 0; j < i; j++) {
         const prevProc = procedures[j];
         const distance = Math.abs(currentProc.position - prevProc.position);
 
+        // If procedures overlap, track the highest offset in this range
         if (distance < OVERLAP_THRESHOLD) {
-          occupiedRows.add(prevProc.row);
+          maxOffsetInRange = Math.max(
+            maxOffsetInRange,
+            prevProc.offsetIndex + 1
+          );
         }
       }
 
-      // Find the first available row
-      let row = 0;
-      while (occupiedRows.has(row)) {
-        row++;
-      }
-      currentProc.row = row;
+      currentProc.offsetIndex = maxOffsetInRange;
     }
 
     this.positionedProcedures = procedures;

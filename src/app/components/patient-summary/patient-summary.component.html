@@ -1,6 +1,6 @@
 <!-- patient-summary.component.html -->
 <div class="top-row">
-  <select [(ngModel)]="selectedPatient" class="select-fixed">
+  <select [(ngModel)]="selectedPatient" (ngModelChange)="onPatientChange()" class="select-fixed">
     <option *ngFor="let patient of patients" [value]="patient">{{ patient }}</option>
   </select>
 
@@ -94,6 +94,7 @@
 
   <app-gantt-chart *ngIf="showDiagnosis" [data]="ganttData" [config]="ganttConfig"></app-gantt-chart>
   <app-gantt-chart *ngIf="showMedication" [data]="medicationsData" [config]="medicationsConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showLens" [data]="lensData" [config]="lensConfig"></app-gantt-chart>
   <app-gantt-chart *ngIf="showObservations && showBackgroundRetina" [data]="backgroundRetinaData"
     [config]="backgroundRetinaConfig"></app-gantt-chart>
   <app-gantt-chart *ngIf="showObservations && showMaculaFovealReflex" [data]="maculaFovealReflexData"

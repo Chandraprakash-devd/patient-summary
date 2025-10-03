@@ -12,7 +12,8 @@ import {
   VADataPoint,
 } from '../line-chart/line-chart.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
-import jsonData from '../../../../patient_complete_data.json';
+import patient1Data from '../../../../patient_complete_data.json';
+import patient2Data from '../../../../patient_1271481_summary.json';
 
 @Component({
   selector: 'app-patient-summary',
@@ -29,7 +30,12 @@ import jsonData from '../../../../patient_complete_data.json';
   styleUrls: ['./patient-summary.component.css'],
 })
 export class PatientSummaryComponent implements OnInit {
-  jsonData: any = jsonData;
+  private patientDataMap = new Map<string, any>([
+    ['Patient 1', patient1Data],
+    ['Patient 2', patient2Data],
+  ]);
+
+  jsonData: any = patient1Data;
   patientSummary: string = '';
   patients: string[] = [];
   eyes: string[] = ['Right Eye', 'Left Eye'];
@@ -49,6 +55,7 @@ export class PatientSummaryComponent implements OnInit {
   vesselsData: { task: string; start: string; end: string }[] = [];
   undilatedFundusData: { task: string; start: string; end: string }[] = [];
   medicationsData: { task: string; start: string; end: string }[] = [];
+  lensData: { task: string; start: string; end: string }[] = [];
 
   // Toggle booleans
   showVA: boolean = true;
@@ -226,6 +233,19 @@ export class PatientSummaryComponent implements OnInit {
     },
   };
 
+  lensConfig = {
+    title: 'Lens',
+    barColorLight: '#f4a462',
+    barColorDark: '#e23670',
+    borderRadius: 3,
+    dateFormat: 'en-US',
+    tooltipCallback: (context: any, data: any[]) => {
+      const index = context.dataIndex;
+      const task = data[index];
+      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+    },
+  };
+
   lineChartData: ChartData = {
     procedures: [],
     visualAcuityData: [],
@@ -237,7 +257,7 @@ export class PatientSummaryComponent implements OnInit {
     {
       name: 'Dist : BCVA / Near : BCVA',
       color: '#4a9eff',
-      colorLight: '#4a9eff',
+      colorLight: '#e76e50',
       colorDark: '#6bb6ff',
       min: -2.0,
       max: 1.6,
@@ -247,7 +267,7 @@ export class PatientSummaryComponent implements OnInit {
     {
       name: 'IOP',
       color: '#4ade80',
-      colorLight: '#4ade80',
+      colorLight: '#2a9d90',
       colorDark: '#5fea9a',
       min: 0,
       max: 20,
@@ -257,7 +277,7 @@ export class PatientSummaryComponent implements OnInit {
     {
       name: 'CMT',
       color: '#f472b6',
-      colorLight: '#f472b6',
+      colorLight: '#f4a462',
       colorDark: '#f78bc9',
       min: 0,
       max: 1000,
@@ -288,16 +308,36 @@ export class PatientSummaryComponent implements OnInit {
   private colorIndex = 0;
 
   ngOnInit(): void {
+    this.patients = Array.from(this.patientDataMap.keys());
+    this.selectedPatient = this.patients[0];
+
+    this.jsonData = this.patientDataMap.get(this.selectedPatient);
+
     if (!this.jsonData || !this.jsonData.patient_info) {
       console.error('Invalid JSON data structure');
       return;
     }
-    this.patients = [`Patient ${this.jsonData.patient_info.uid}`];
-    this.selectedPatient = this.patients[0];
-
     // Initialize procedure colors
     this.initializeProcedureColors();
 
+    this.updateData();
+  }
+
+  onPatientChange(): void {
+    // Load the selected patient's data
+    this.jsonData = this.patientDataMap.get(this.selectedPatient);
+
+    if (!this.jsonData || !this.jsonData.patient_info) {
+      console.error('Invalid JSON data for selected patient');
+      return;
+    }
+
+    // Reinitialize procedure colors for new patient
+    this.procedureColorMap.clear();
+    this.colorIndex = 0;
+    this.initializeProcedureColors();
+
+    // Update all data for new patient
     this.updateData();
   }
 
@@ -382,6 +422,7 @@ export class PatientSummaryComponent implements OnInit {
     this.vesselsData = [...this.getGanttData('vessels', eye)];
     this.undilatedFundusData = [...this.getGanttData('undilated_fundus', eye)];
     this.medicationsData = [...this.getMedicationsGanttData(eye)];
+    this.lensData = [...this.getGanttData('lens', eye)];
     this.lineChartData = { ...this.getLineChartData(eye) };
   }
 

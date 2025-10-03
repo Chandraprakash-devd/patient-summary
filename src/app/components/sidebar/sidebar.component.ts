@@ -1,5 +1,12 @@
 // sidebar.component.ts
-import { Component, EventEmitter, Input, Output, OnInit, OnDestroy } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  OnInit,
+  OnDestroy,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ThemeService } from '../../theme.service';
@@ -10,7 +17,7 @@ import { Subscription } from 'rxjs';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent implements OnInit, OnDestroy {
   @Input() showVA: boolean = true;
@@ -75,7 +82,10 @@ export class SidebarComponent implements OnInit, OnDestroy {
   constructor(private themeService: ThemeService) {}
 
   ngOnInit() {
-    this.currentTheme = (document.documentElement.getAttribute('data-theme') as 'light' | 'dark') || 'light';
+    this.currentTheme =
+      (document.documentElement.getAttribute('data-theme') as
+        | 'light'
+        | 'dark') || 'light';
     this.themeSubscription = this.themeService.theme$.subscribe((theme) => {
       this.currentTheme = theme;
     });
@@ -89,5 +99,44 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
   toggleExpanded() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  onShowObservationsChange(value: boolean) {
+    this.showObservations = value;
+    this.showObservationsChange.emit(value);
+
+    // Check/uncheck all sub-items based on parent state
+    this.showLens = value;
+    this.showLensChange.emit(value);
+
+    this.showBackgroundRetina = value;
+    this.showBackgroundRetinaChange.emit(value);
+
+    this.showMaculaFovealReflex = value;
+    this.showMaculaFovealReflexChange.emit(value);
+
+    this.showConjunctiva = value;
+    this.showConjunctivaChange.emit(value);
+
+    this.showMedia = value;
+    this.showMediaChange.emit(value);
+
+    this.showAnteriorChamber = value;
+    this.showAnteriorChamberChange.emit(value);
+
+    this.showIris = value;
+    this.showIrisChange.emit(value);
+
+    this.showDisc = value;
+    this.showDiscChange.emit(value);
+
+    this.showPupil = value;
+    this.showPupilChange.emit(value);
+
+    this.showVessels = value;
+    this.showVesselsChange.emit(value);
+
+    this.showUndilatedFundus = value;
+    this.showUndilatedFundusChange.emit(value);
   }
 }

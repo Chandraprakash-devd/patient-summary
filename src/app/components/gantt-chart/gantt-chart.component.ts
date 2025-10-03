@@ -78,20 +78,15 @@ export class GanttChartComponent
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    // Only re-render if data changes and chart is already initialized
     if (
       changes['data'] &&
       !changes['data'].firstChange &&
       this.chartInitialized
     ) {
-      // console.log('Data changed, re-rendering chart. New data:', this.data);
-
-      // Destroy existing chart before creating new one
       if (this.chart) {
         this.chart.destroy();
       }
 
-      // Re-render with new data
       if (this.data && this.data.length > 0) {
         this.renderChart();
       }
@@ -108,12 +103,9 @@ export class GanttChartComponent
   }
 
   private setupThemeObserver(): void {
-    // Watch for theme changes on the document body or html element
     this.themeObserver = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.type === 'attributes') {
-          // console.log('Theme attribute changed:', mutation.attributeName);
-          // Add a small delay to ensure styles are applied
           setTimeout(() => {
             this.updateChartTheme();
           }, 50);
@@ -121,7 +113,6 @@ export class GanttChartComponent
       });
     });
 
-    // Observe both html and body for class and data-theme changes
     const observerConfig = {
       attributes: true,
       attributeFilter: ['class', 'data-theme'],
@@ -129,12 +120,9 @@ export class GanttChartComponent
 
     this.themeObserver.observe(document.documentElement, observerConfig);
     this.themeObserver.observe(document.body, observerConfig);
-
-    // console.log('Theme observer setup complete');
   }
 
   private isDarkTheme(): boolean {
-    // Check multiple common theme indicators
     const html = document.documentElement;
     const body = document.body;
 
@@ -146,36 +134,19 @@ export class GanttChartComponent
       body.classList.contains('dark-theme') ||
       body.getAttribute('data-theme') === 'dark';
 
-    // console.log(
-    //   'Theme check - isDark:',
-    //   isDark,
-    //   'html classes:',
-    //   html.className,
-    //   'body classes:',
-    //   body.className,
-    //   'html data-theme:',
-    //   html.getAttribute('data-theme'),
-    //   'body data-theme:',
-    //   body.getAttribute('data-theme')
-    // );
-
     return isDark;
   }
 
   private getThemeColors() {
     const isDark = this.isDarkTheme();
 
-    // Use theme-specific colors from config if provided, otherwise fall back to defaults
     let barColor: string;
     if (isDark && this.config.barColorDark) {
       barColor = this.config.barColorDark;
-      // console.log('Using dark theme color:', barColor);
     } else if (!isDark && this.config.barColorLight) {
       barColor = this.config.barColorLight;
-      // console.log('Using light theme color:', barColor);
     } else {
       barColor = this.config.barColor || (isDark ? '#ec407a' : '#e23670');
-      // console.log('Using default color:', barColor);
     }
 
     return {
@@ -189,56 +160,39 @@ export class GanttChartComponent
 
   private updateChartTheme(): void {
     if (!this.chart) {
-      // console.log('Chart not initialized yet');
       return;
     }
 
-    // console.log('Updating chart theme...');
     const colors = this.getThemeColors();
 
-    // Update title color
     if (this.chart.options.plugins?.title) {
       this.chart.options.plugins.title.color = colors.titleColor;
     }
 
-    // Update bar colors - this is the key part
     if (this.chart.data.datasets[1]) {
       const backgroundColors = Array(this.processedData.length).fill(
         colors.barColor
       );
       this.chart.data.datasets[1].backgroundColor = backgroundColors;
-      // console.log(
-      //   'Updated bar colors to:',
-      //   colors.barColor,
-      //   'for',
-      //   backgroundColors.length,
-      //   'bars'
-      // );
     }
 
-    // Update tick colors
     if (this.chart.options.scales?.['x']?.ticks) {
       this.chart.options.scales['x'].ticks.color = colors.tickColor;
     }
 
-    // Update grid colors
     if (this.chart.options.scales?.['x']?.grid) {
       this.chart.options.scales['x'].grid.color = colors.gridColor;
     }
 
-    // Update tooltip border
     if (this.chart.options.plugins?.tooltip) {
       this.chart.options.plugins.tooltip.borderColor = colors.barColor;
     }
 
-    // Update datalabels color
     if (this.chart.options.plugins?.datalabels) {
       (this.chart.options.plugins.datalabels as any).color = colors.labelColor;
     }
 
-    // Force update with animation
     this.chart.update('active');
-    // console.log('Chart update complete');
   }
 
   private renderChart(): void {
@@ -250,8 +204,8 @@ export class GanttChartComponent
     this.processedData = this.assignTracksToOverlappingItems(this.data);
 
     const minHeight = 300;
-    const barHeight = 30;
-    const padding = 100;
+    const barHeight = 45;
+    const padding = 200;
     const calculatedHeight = Math.max(
       minHeight,
       this.processedData.length * barHeight + padding
@@ -260,6 +214,7 @@ export class GanttChartComponent
     const container = this.ganttCanvas.nativeElement.parentElement;
     if (container) {
       container.style.height = `${calculatedHeight}px`;
+      container.style.overflow = 'visible';
     }
 
     const startDate = new Date(
@@ -319,6 +274,7 @@ export class GanttChartComponent
         responsive: true,
         maintainAspectRatio: false,
         indexAxis: 'y',
+        clip: false,
         elements: {
           bar: {
             borderSkipped: false,
@@ -470,14 +426,17 @@ export class GanttChartComponent
             },
             grid: {
               color: colors.gridColor,
+              lineWidth: 1,
+              ...({ borderDash: [5, 5] } as any),
             },
           },
           y: {
             stacked: false,
             offset: true,
+            grace: '20%',
             beforeFit: (axis: any) => {
-              axis.paddingTop = 25;
-              axis.paddingBottom = 15;
+              axis.paddingTop = 40; // Increased from 25 to 40
+              axis.paddingBottom = 20; // Increased from 15 to 20
             },
             ticks: {
               display: false,
@@ -492,14 +451,12 @@ export class GanttChartComponent
           padding: {
             left: 10,
             right: 10,
-            top: 30,
-            bottom: 10,
+            top: 70, // Increased from 30 to 40
+            bottom: 20, // Increased from 10 to 20
           },
         },
       },
     });
-
-    // console.log('Chart rendered with', this.processedData.length, 'items');
   }
 
   private assignTracksToOverlappingItems(
