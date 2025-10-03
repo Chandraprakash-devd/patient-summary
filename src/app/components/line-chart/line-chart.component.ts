@@ -186,7 +186,7 @@ export class LineChartComponent implements OnInit, AfterViewInit, OnDestroy, OnC
             data: this.chartData.visualAcuityData as any,
             borderColor: this.metrics[0].color,
             backgroundColor: this.metrics[0].color,
-            pointBackgroundColor: isDarkTheme ? '#ffffff' : '#000000',
+            pointBackgroundColor: isDarkTheme ? '#000000' : '#ffffff',
             pointBorderColor: this.metrics[0].color,
             pointRadius: 2,
             pointHoverRadius: 4,

@@ -5,6 +5,8 @@ import {
   ElementRef,
   AfterViewInit,
   Input,
+  OnDestroy,
+  HostListener,
 } from '@angular/core';
 import Chart from 'chart.js/auto';
 import { getRelativePosition } from 'chart.js/helpers';
@@ -22,25 +24,42 @@ interface GanttData {
 interface GanttConfig {
   title?: string;
   barColor?: string;
+  barColorLight?: string;
+  barColorDark?: string;
   borderRadius?: number;
   dateFormat?: string;
   tooltipCallback?: (context: any, data: GanttData[]) => string;
+}
+
+interface ProcessedGanttItem {
+  task: string;
+  start: string;
+  end: string;
+  track: number;
+  startTime: number;
+  endTime: number;
 }
 
 @Component({
   selector: 'app-gantt-chart',
   standalone: true,
   template: `
-    <div style="position: relative; height: 400px; width: 100%;">
+    <div style="position: relative; min-height: 400px; width: 100%;">
       <canvas #ganttCanvas></canvas>
     </div>
   `,
 })
-export class GanttChartComponent implements AfterViewInit {
+export class GanttChartComponent implements AfterViewInit, OnDestroy {
   @ViewChild('ganttCanvas') ganttCanvas!: ElementRef<HTMLCanvasElement>;
   @Input() data: GanttData[] = [];
   @Input() config: GanttConfig = {};
   chart!: Chart;
+  private actualDurations: number[] = [];
+  private minDurationDays: number = 0;
+  private isSameDayScenario: boolean = false;
+  private themeObserver!: MutationObserver;
+  private processedData: ProcessedGanttItem[] = [];
+  private taskNames: string[] = [];
 
   ngAfterViewInit(): void {
     if (!this.data || this.data.length === 0) {
@@ -48,20 +67,178 @@ export class GanttChartComponent implements AfterViewInit {
       return;
     }
 
+    this.renderChart();
+    this.setupThemeObserver();
+  }
+
+  ngOnDestroy(): void {
+    if (this.themeObserver) {
+      this.themeObserver.disconnect();
+    }
+    if (this.chart) {
+      this.chart.destroy();
+    }
+  }
+
+  private setupThemeObserver(): void {
+    // Watch for theme changes on the document body or html element
+    this.themeObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes') {
+          console.log('Theme attribute changed:', mutation.attributeName);
+          // Add a small delay to ensure styles are applied
+          setTimeout(() => {
+            this.updateChartTheme();
+          }, 50);
+        }
+      });
+    });
+
+    // Observe both html and body for class and data-theme changes
+    const observerConfig = {
+      attributes: true,
+      attributeFilter: ['class', 'data-theme'],
+    };
+
+    this.themeObserver.observe(document.documentElement, observerConfig);
+    this.themeObserver.observe(document.body, observerConfig);
+    
+    console.log('Theme observer setup complete');
+  }
+
+  private isDarkTheme(): boolean {
+    // Check multiple common theme indicators
+    const html = document.documentElement;
+    const body = document.body;
+    
+    const isDark = (
+      html.classList.contains('dark') ||
+      html.classList.contains('dark-theme') ||
+      html.getAttribute('data-theme') === 'dark' ||
+      body.classList.contains('dark') ||
+      body.classList.contains('dark-theme') ||
+      body.getAttribute('data-theme') === 'dark'
+    );
+    
+    console.log('Theme check - isDark:', isDark, 
+                'html classes:', html.className, 
+                'body classes:', body.className,
+                'html data-theme:', html.getAttribute('data-theme'),
+                'body data-theme:', body.getAttribute('data-theme'));
+    
+    return isDark;
+  }
+
+  private getThemeColors() {
+    const isDark = this.isDarkTheme();
+    
+    // Use theme-specific colors from config if provided, otherwise fall back to defaults
+    let barColor: string;
+    if (isDark && this.config.barColorDark) {
+      barColor = this.config.barColorDark;
+      console.log('Using dark theme color:', barColor);
+    } else if (!isDark && this.config.barColorLight) {
+      barColor = this.config.barColorLight;
+      console.log('Using light theme color:', barColor);
+    } else {
+      barColor = this.config.barColor || (isDark ? '#ec407a' : '#e23670');
+      console.log('Using default color:', barColor);
+    }
+    
+    return {
+      barColor,
+      titleColor: isDark ? 'white' : '#1a1a1a',
+      tickColor: isDark ? '#979797ff' : '#666666',
+      gridColor: isDark ? '#8b8b8bff' : '#cccccc',
+      labelColor: isDark ? 'white' : '#1a1a1a',
+    };
+  }
+
+  private updateChartTheme(): void {
+    if (!this.chart) {
+      console.log('Chart not initialized yet');
+      return;
+    }
+
+    console.log('Updating chart theme...');
+    const colors = this.getThemeColors();
+
+    // Update title color
+    if (this.chart.options.plugins?.title) {
+      this.chart.options.plugins.title.color = colors.titleColor;
+    }
+
+    // Update bar colors - this is the key part
+    if (this.chart.data.datasets[1]) {
+      const backgroundColors = Array(this.processedData.length).fill(colors.barColor);
+      this.chart.data.datasets[1].backgroundColor = backgroundColors;
+      console.log('Updated bar colors to:', colors.barColor, 'for', backgroundColors.length, 'bars');
+    }
+
+    // Update tick colors
+    if (this.chart.options.scales?.['x']?.ticks) {
+      this.chart.options.scales['x'].ticks.color = colors.tickColor;
+    }
+
+    // Update grid colors
+    if (this.chart.options.scales?.['x']?.grid) {
+      this.chart.options.scales['x'].grid.color = colors.gridColor;
+    }
+
+    // Update tooltip border
+    if (this.chart.options.plugins?.tooltip) {
+      this.chart.options.plugins.tooltip.borderColor = colors.barColor;
+    }
+
+    // Update datalabels color
+    if (this.chart.options.plugins?.datalabels) {
+      (this.chart.options.plugins.datalabels as any).color = colors.labelColor;
+    }
+
+    // Force update with animation
+    this.chart.update('active');
+    console.log('Chart update complete');
+  }
+
+  private renderChart(): void {
+    this.processedData = this.assignTracksToOverlappingItems(this.data);
+    
+    const minHeight = 300;
+    const barHeight = 30;
+    const padding = 100;
+    const calculatedHeight = Math.max(minHeight, (this.processedData.length * barHeight) + padding);
+    
+    const container = this.ganttCanvas.nativeElement.parentElement;
+    if (container) {
+      container.style.height = `${calculatedHeight}px`;
+    }
+    
     const startDate = new Date(
       Math.min(...this.data.map((d) => new Date(d.start).getTime()))
     );
-    const offsetData = this.data.map(
-      (d) =>
-        (new Date(d.start).getTime() - startDate.getTime()) /
-        (1000 * 60 * 60 * 24)
-    );
-    const durationData = this.data.map(
-      (d) =>
-        (new Date(d.end).getTime() - new Date(d.start).getTime()) /
-        (1000 * 60 * 60 * 24)
-    );
-    const labels = this.data.map((d) => d.task);
+    
+    const labels: string[] = [];
+    const offsetData: number[] = [];
+    const durationData: number[] = [];
+    this.taskNames = [];
+    
+    const minDurationDays = 30;
+    const colors = this.getThemeColors();
+    const backgroundColors: string[] = [];
+    
+    this.processedData.forEach((item) => {
+      labels.push(`Track ${item.track}: ${item.task}`);
+      this.taskNames.push(item.task);
+      
+      const offset = (item.startTime - startDate.getTime()) / (1000 * 60 * 60 * 24);
+      const actualDuration = (item.endTime - item.startTime) / (1000 * 60 * 60 * 24);
+      const displayDuration = Math.max(actualDuration, minDurationDays);
+      
+      this.actualDurations.push(actualDuration);
+      offsetData.push(offset);
+      durationData.push(displayDuration);
+      backgroundColors.push(colors.barColor);
+    });
 
     const ctx = this.ganttCanvas.nativeElement.getContext('2d')!;
     const dateFormat = this.config.dateFormat || 'en-GB';
@@ -80,10 +257,10 @@ export class GanttChartComponent implements AfterViewInit {
           {
             label: 'Duration',
             data: durationData,
-            backgroundColor: this.config.barColor || '#ec407a',
+            backgroundColor: backgroundColors,
             borderRadius: this.config.borderRadius || 6,
             stack: 'stack1',
-            barThickness: 25,
+            barThickness: 20,
           },
         ],
       },
@@ -105,7 +282,7 @@ export class GanttChartComponent implements AfterViewInit {
           title: {
             display: !!this.config.title,
             text: this.config.title,
-            color: 'white',
+            color: colors.titleColor,
             font: {
               size: 16,
               weight: 'bold',
@@ -123,15 +300,14 @@ export class GanttChartComponent implements AfterViewInit {
             bodyFont: { size: 12 },
             padding: 12,
             cornerRadius: 8,
-            borderColor: this.config.barColor || '#ec407a',
+            borderColor: colors.barColor,
             borderWidth: 3,
             caretPadding: 10,
             callbacks: {
-              title: (tooltipItems) =>
-                this.data[tooltipItems[0].dataIndex].task,
+              title: (tooltipItems) => this.taskNames[tooltipItems[0].dataIndex],
               label: (tooltipItem) => {
-                const task = this.data[tooltipItem.dataIndex];
-                const startDate = new Date(task.start).toLocaleDateString(
+                const item = this.processedData[tooltipItem.dataIndex];
+                const startDateStr = new Date(item.start).toLocaleDateString(
                   dateFormat,
                   {
                     day: '2-digit',
@@ -139,7 +315,7 @@ export class GanttChartComponent implements AfterViewInit {
                     year: 'numeric',
                   }
                 );
-                const endDate = new Date(task.end).toLocaleDateString(
+                const endDateStr = new Date(item.end).toLocaleDateString(
                   dateFormat,
                   {
                     day: '2-digit',
@@ -147,18 +323,18 @@ export class GanttChartComponent implements AfterViewInit {
                     year: 'numeric',
                   }
                 );
-                return [`Start: ${startDate}`, `End: ${endDate}`];
+                return [`Start: ${startDateStr}`, `End: ${endDateStr}`];
               },
             },
           },
           datalabels: {
             display: true,
-            color: 'white',
+            color: colors.labelColor,
             align: 'center',
             anchor: 'center',
             font: {
               family: 'sans-serif',
-              size: 12,
+              size: 11,
               weight: 'normal',
             },
             formatter: (value, context) => {
@@ -167,6 +343,12 @@ export class GanttChartComponent implements AfterViewInit {
               }
 
               const dataIndex = context.dataIndex;
+              const actualDuration = this.actualDurations[dataIndex];
+              
+              if (actualDuration < this.minDurationDays) {
+                return '...';
+              }
+
               const chart = context.chart;
               const ctx = chart.ctx;
               const datasets = chart.data.datasets as {
@@ -181,20 +363,19 @@ export class GanttChartComponent implements AfterViewInit {
                 return '';
               }
 
-              const labels = chart.data.labels as string[];
-              let label = labels[dataIndex] as string;
+              let label = this.taskNames[dataIndex];
 
-              const font = 'normal 12px sans-serif';
+              const font = 'normal 11px sans-serif';
               ctx.save();
               ctx.font = font;
               let textWidth = ctx.measureText(label).width;
               ctx.restore();
 
-              const padding = 20;
+              const padding = 16;
               const availableWidth = endPixel - startPixel - padding;
 
               if (availableWidth < 20) {
-                return '';
+                return '...';
               }
 
               if (textWidth > availableWidth) {
@@ -207,7 +388,7 @@ export class GanttChartComponent implements AfterViewInit {
                   ctx.restore();
                 }
                 if (truncated.length === 0) {
-                  return '';
+                  return '...';
                 }
                 return truncated + '...';
               }
@@ -219,8 +400,10 @@ export class GanttChartComponent implements AfterViewInit {
         scales: {
           x: {
             stacked: true,
+            min: this.isSameDayScenario ? -45 : undefined,
+            max: this.isSameDayScenario ? 45 : undefined,
             ticks: {
-              color: '#979797ff',
+              color: colors.tickColor,
               callback: function (this, tickValue: string | number): string {
                 if (typeof tickValue === 'number') {
                   const date = new Date(
@@ -232,11 +415,16 @@ export class GanttChartComponent implements AfterViewInit {
               },
             },
             grid: {
-              color: '#8b8b8bff',
+              color: colors.gridColor,
             },
           },
           y: {
-            stacked: true,
+            stacked: false,
+            offset: true,
+            beforeFit: (axis: any) => {
+              axis.paddingTop = 25;
+              axis.paddingBottom = 15;
+            },
             ticks: {
               display: false,
             },
@@ -250,123 +438,57 @@ export class GanttChartComponent implements AfterViewInit {
           padding: {
             left: 10,
             right: 10,
-            top: 10,
+            top: 30,
             bottom: 10,
           },
         },
       },
     });
+    
+    console.log('Chart rendered with initial theme');
   }
 
-  private customTooltip(context: any, dateFormat: string): void {
-    const { chart, tooltip } = context;
-
-    // Get or create tooltip element
-    let tooltipEl = chart.canvas.parentNode.querySelector('div.custom-tooltip');
-
-    if (!tooltipEl) {
-      tooltipEl = document.createElement('div');
-      tooltipEl.className = 'custom-tooltip';
-      tooltipEl.style.background = 'rgba(0, 0, 0, 0.9)';
-      tooltipEl.style.borderRadius = '8px';
-      tooltipEl.style.color = 'white';
-      tooltipEl.style.opacity = '0';
-      tooltipEl.style.pointerEvents = 'none';
-      tooltipEl.style.position = 'absolute';
-      tooltipEl.style.transition = 'all .1s ease';
-      tooltipEl.style.padding = '12px 16px';
-      tooltipEl.style.fontSize = '13px';
-      tooltipEl.style.fontFamily =
-        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-      tooltipEl.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.4)';
-      tooltipEl.style.zIndex = '1000';
-      tooltipEl.style.borderLeft = `3px solid ${
-        this.config.barColor || '#ec407a'
-      }`;
-      tooltipEl.style.minWidth = '160px';
-      chart.canvas.parentNode.appendChild(tooltipEl);
+  private assignTracksToOverlappingItems(data: GanttData[]): ProcessedGanttItem[] {
+    if (!data || data.length === 0) {
+      return [];
     }
 
-    // Hide if no tooltip
-    if (tooltip.opacity === 0) {
-      tooltipEl.style.opacity = '0';
-      return;
-    }
-
-    // Set content
-    if (tooltip.body) {
-      const dataIndex = tooltip.dataPoints[0].dataIndex;
-      const task = this.data[dataIndex];
-
-      // Format dates
-      const startDate = new Date(task.start);
-      const endDate = new Date(task.end);
-      const formatOptions: Intl.DateTimeFormatOptions = {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric',
-      };
-
-      const formattedStart = startDate.toLocaleDateString(
-        dateFormat,
-        formatOptions
-      );
-      const formattedEnd = endDate.toLocaleDateString(
-        dateFormat,
-        formatOptions
-      );
-
-      // Use custom tooltip callback if provided
-      if (this.config.tooltipCallback) {
-        const customContent = this.config.tooltipCallback(
-          tooltip.dataPoints[0],
-          this.data
-        );
-        tooltipEl.innerHTML = `<div style="text-align: left;">${customContent}</div>`;
-      } else {
-        // Default tooltip content
-        tooltipEl.innerHTML = `
-        <div style="text-align: left;">
-          <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; line-height: 1.2;">
-            ${task.task}
-          </div>
-          <div style="font-size: 12px; color: rgba(255, 255, 255, 0.8); line-height: 1.3;">
-            <div style="margin-bottom: 2px;">Start: ${formattedStart}</div>
-            <div>End: ${formattedEnd}</div>
-          </div>
-        </div>
-      `;
+    const items: ProcessedGanttItem[] = data.map(item => ({
+      task: item.task,
+      start: item.start,
+      end: item.end,
+      track: 0,
+      startTime: new Date(item.start).getTime(),
+      endTime: new Date(item.end).getTime()
+    })).sort((a, b) => {
+      if (a.startTime !== b.startTime) {
+        return a.startTime - b.startTime;
       }
-    }
+      return a.endTime - b.endTime;
+    });
 
-    // Position tooltip
-    const canvasPosition = chart.canvas.getBoundingClientRect();
-    const tooltipWidth = tooltipEl.offsetWidth || 160; // Use minWidth if offsetWidth is not yet available
-    const chartArea = chart.chartArea; // Get chart area for accurate bar positioning
+    const trackEndTimes: number[] = [];
 
-    // Calculate left position (centered above the bar)
-    let left = canvasPosition.left + tooltip.caretX - tooltipWidth / 2;
+    items.forEach((item) => {
+      let assignedTrack = -1;
+      
+      for (let i = 0; i < trackEndTimes.length; i++) {
+        if (trackEndTimes[i] <= item.startTime) {
+          assignedTrack = i;
+          break;
+        }
+      }
+      
+      if (assignedTrack === -1) {
+        assignedTrack = trackEndTimes.length;
+        trackEndTimes.push(item.endTime);
+      } else {
+        trackEndTimes[assignedTrack] = item.endTime;
+      }
 
-    // Ensure tooltip doesn't go off screen horizontally
-    if (left + tooltipWidth > window.innerWidth) {
-      left = window.innerWidth - tooltipWidth - 10;
-    } else if (left < 0) {
-      left = 10;
-    }
+      item.track = assignedTrack;
+    });
 
-    // Calculate top position to place tooltip above the bar
-    const dataIndex = tooltip.dataPoints[0].dataIndex;
-    const barHeight =
-      chart.scales.y.getPixelForValue(dataIndex) -
-      chart.scales.y.getPixelForValue(dataIndex - 10); // Approximate bar height
-    const barTop = chart.scales.y.getPixelForValue(dataIndex) - barHeight / 2; // Center of the bar
-    const top =
-      canvasPosition.top + chartArea.top + barTop - tooltipEl.offsetHeight - 10;
-
-    // Apply positioning
-    tooltipEl.style.opacity = '1';
-    tooltipEl.style.left = left + 'px';
-    tooltipEl.style.top = `${top}px`;
-    tooltipEl.style.transform = 'none'; // Remove transform to avoid additional offsets
+    return items;
   }
 }
