@@ -29,12 +29,12 @@ import jsonData from '../../../../patient_1271481_summary.json';
   styleUrls: ['./patient-summary.component.css'],
 })
 export class PatientSummaryComponent implements OnInit {
-  jsonData: any = jsonData; // Loaded from file
+  jsonData: any = jsonData;
   patientSummary: string = '';
   patients: string[] = [];
   eyes: string[] = ['Right Eye', 'Left Eye'];
-  selectedPatient: string = '';
   selectedEye: string = this.eyes[0];
+  selectedPatient: string = '';
   diseases: { name: string; date: string }[] = [];
   procedures: { type: string; item: string }[] = [];
   ganttData: { task: string; start: string; end: string }[] = [];
@@ -71,9 +71,9 @@ export class PatientSummaryComponent implements OnInit {
   showUndilatedFundus: boolean = true;
 
   ganttConfig = {
-    title: 'Diagnoses Timeline',
-    barColorLight: '#f4a462', // Lighter/different shade for light theme
-    barColorDark: '#e23670', // Original color for dark theme
+    title: 'Diagnoses',
+    barColorLight: '#f4a462',
+    barColorDark: '#e23670',
     borderRadius: 3,
     dateFormat: 'en-US',
     tooltipCallback: (context: any, data: any[]) => {
@@ -215,8 +215,8 @@ export class PatientSummaryComponent implements OnInit {
 
   medicationsConfig = {
     title: 'Medications',
-    barColorLight: '#e8c468', // Purple for light theme
-    barColorDark: '#af57db', // Lighter purple for dark theme
+    barColorLight: '#e8c468',
+    barColorDark: '#af57db',
     borderRadius: 3,
     dateFormat: 'en-US',
     tooltipCallback: (context: any, data: any[]) => {
@@ -280,6 +280,11 @@ export class PatientSummaryComponent implements OnInit {
     this.updateData();
   }
 
+  onEyeChange(): void {
+    console.log('Eye changed to:', this.selectedEye);
+    this.updateData();
+  }
+
   updateData(): void {
     const eye =
       this.selectedEye === 'Right Eye'
@@ -287,27 +292,34 @@ export class PatientSummaryComponent implements OnInit {
         : this.selectedEye === 'Left Eye'
         ? 'LE'
         : 'BE';
-    console.log(eye);
+    console.log('Updating data for eye:', eye);
+
     this.patientSummary = this.generatePatientSummary();
     this.diseases = this.getDiseases();
     this.procedures = this.getProcedures(eye);
-    this.ganttData = this.getGanttData('diagnosis', eye);
-    this.backgroundRetinaData = this.getGanttData('background_retina', eye);
-    this.maculaFovealReflexData = this.getGanttData('foveal_reflex', eye);
-    this.conjunctivaData = this.getGanttData('conjunctiva', eye);
-    this.mediaData = this.getGanttData('media', eye);
-    this.anteriorChamberData = this.getGanttData('anterior_chamber', eye);
-    this.irisData = this.getGanttData('iris', eye);
-    this.discData = this.getGanttData('disc', eye);
-    this.pupilData = this.getGanttData('pupil', eye);
 
-    this.vesselsData = this.getGanttData('vessels', eye);
-    this.undilatedFundusData = this.getGanttData('undilated_fundus', eye);
-    this.medicationsData = this.getMedicationsGanttData();
-    this.lineChartData = this.getLineChartData(eye);
+    // Force new array references for change detection
+    this.ganttData = [...this.getGanttData('diagnosis', eye)];
+    console.log('Updated ganttData:', this.ganttData);
+
+    this.backgroundRetinaData = [
+      ...this.getGanttData('background_retina', eye),
+    ];
+    this.maculaFovealReflexData = [...this.getGanttData('foveal_reflex', eye)];
+    this.conjunctivaData = [...this.getGanttData('conjunctiva', eye)];
+    this.mediaData = [...this.getGanttData('media', eye)];
+    this.anteriorChamberData = [...this.getGanttData('anterior_chamber', eye)];
+    this.irisData = [...this.getGanttData('iris', eye)];
+    this.discData = [...this.getGanttData('disc', eye)];
+    this.pupilData = [...this.getGanttData('pupil', eye)];
+    this.vesselsData = [...this.getGanttData('vessels', eye)];
+    this.undilatedFundusData = [...this.getGanttData('undilated_fundus', eye)];
+    this.medicationsData = [...this.getMedicationsGanttData(eye)];
+    this.lineChartData = { ...this.getLineChartData(eye) };
+
     console.log('Diseases:', this.diseases);
     console.log('Procedures:', this.procedures);
-    console.log('Gantt Data:', this.ganttData);
+    console.log('Medications:', this.medicationsData);
     console.log('Line Chart Data:', this.lineChartData);
   }
 
@@ -381,19 +393,16 @@ export class PatientSummaryComponent implements OnInit {
   }
 
   getSvgForProcedure(procedureItem: string): { svg: string; color: string } {
-    // Check if it's an injection type
     if (/Inj|Ozurdex|Tricort|Avastin|Pagenax|Accentrix/i.test(procedureItem)) {
-      // Extract the medication name to get the color
-      const name = procedureItem.replace(/\s*\(\d+x\)$/, ''); // Remove count suffix
-      const color = this.colorMap.get(name) || '#00bcd4'; // Default injection color
+      const name = procedureItem.replace(/\s*\(\d+x\)$/, '');
+      const color = this.colorMap.get(name) || '#00bcd4';
       return {
         svg: 'injection',
         color: color,
       };
     } else {
-      // It's a laser procedure
       const name = procedureItem.replace(/\s*\(\d+x\)$/, '');
-      const color = this.colorMap.get(name) || '#ef4444'; // Default laser color
+      const color = this.colorMap.get(name) || '#ef4444';
       return {
         svg: 'procedure',
         color: color,
@@ -405,38 +414,108 @@ export class PatientSummaryComponent implements OnInit {
     section: string,
     eye: string
   ): { task: string; start: string; end: string }[] {
-    // Define eye based on selectedEye
-    // const eye = this.selectedEye === 'Right Eye' ? 'RE' : this.selectedEye === 'Left Eye' ? 'LE' : 'BE';
+    // Try to get data from gantt_charts first, fallback to old diagnosis structure
+    const ganttSection =
+      this.jsonData.gantt_charts?.[section] ||
+      (section === 'diagnosis' ? this.jsonData.diagnosis : null);
 
-    const ganttSection = this.jsonData.gantt_charts[section];
-    console.log(section);
+    console.log('Getting gantt data for section:', section, 'eye:', eye);
 
     if (!ganttSection) {
-      console.warn('No gantt_charts.diagnoses or diagnosis section found');
+      console.warn(`No data found for section: ${section}`);
       return [];
     }
 
     const diagMap = new Map<string, { start: string; end: string }>();
+    const processedBilateralConditions = new Set<string>();
+
     Object.keys(ganttSection).forEach((key) => {
       const cond = ganttSection[key];
-      if (!cond || !cond.condition || !cond.periods) return;
+      if (!cond) return;
 
-      const task = cond.condition;
-      const matchesEye =
-        cond.eye === eye || (eye === 'BE' && cond.from_both_eyes);
-      if (!matchesEye) return;
-
-      let entry = diagMap.get(task) || {
-        start: '9999-12-31',
-        end: '0001-01-01',
-      };
-      cond.periods.forEach((p: any) => {
-        if (p.start_date && p.end_date) {
-          if (p.start_date < entry.start) entry.start = p.start_date;
-          if (p.end_date > entry.end) entry.end = p.end_date;
+      // Determine the task name based on data structure
+      let baseTask = '';
+      if (cond.condition) {
+        // New structure: uses condition property
+        baseTask = cond.condition;
+      } else if (key.includes('_diagnosis_') || key.includes('_')) {
+        // Old structure: parse from key
+        const parts = key.split('_diagnosis_');
+        if (parts.length === 2) {
+          baseTask = parts[0].replace(/_/g, ' ');
+        } else {
+          baseTask = key.replace(/_/g, ' ');
         }
-      });
-      diagMap.set(task, entry);
+      } else {
+        baseTask = key;
+      }
+
+      if (!baseTask || !cond.periods) return;
+
+      // Handle bilateral conditions (from_both_eyes)
+      if (cond.from_both_eyes) {
+        const bilateralKey = baseTask + '_bilateral';
+
+        // Only process bilateral conditions once
+        if (!processedBilateralConditions.has(bilateralKey)) {
+          processedBilateralConditions.add(bilateralKey);
+
+          const displayTask = baseTask + ' (BE)';
+          let entry = diagMap.get(displayTask) || {
+            start: '9999-12-31',
+            end: '0001-01-01',
+          };
+
+          (cond.periods || []).forEach((p: any) => {
+            if (p.start_date && p.end_date) {
+              if (p.start_date < entry.start) entry.start = p.start_date;
+              if (p.end_date > entry.end) entry.end = p.end_date;
+            }
+          });
+
+          diagMap.set(displayTask, entry);
+          console.log(
+            `Processed bilateral: ${displayTask}, eye in data: ${cond.eye}, periods: ${cond.periods.length}`
+          );
+        }
+        return; // Skip further processing for bilateral conditions
+      }
+
+      // Handle eye-specific conditions
+      let include = false;
+      let displayTask = baseTask;
+
+      if (eye === 'BE') {
+        // Show all conditions when "Both Eyes" is selected
+        include = true;
+        displayTask = baseTask + ' (' + cond.eye + ')';
+      } else {
+        // Show only conditions that match the selected eye
+        if (cond.eye === eye) {
+          include = true;
+          displayTask = baseTask;
+        }
+      }
+
+      console.log(
+        `Task: ${baseTask}, cond.eye: ${cond.eye}, from_both_eyes: ${cond.from_both_eyes}, requested eye: ${eye}, include: ${include}`
+      );
+
+      if (include) {
+        let entry = diagMap.get(displayTask) || {
+          start: '9999-12-31',
+          end: '0001-01-01',
+        };
+
+        (cond.periods || []).forEach((p: any) => {
+          if (p.start_date && p.end_date) {
+            if (p.start_date < entry.start) entry.start = p.start_date;
+            if (p.end_date > entry.end) entry.end = p.end_date;
+          }
+        });
+
+        diagMap.set(displayTask, entry);
+      }
     });
 
     const ganttData = Array.from(diagMap.entries())
@@ -447,10 +526,16 @@ export class PatientSummaryComponent implements OnInit {
       }))
       .filter((d) => d.start !== '9999-12-31' && d.end !== '0001-01-01');
 
-    console.log('Processed Gantt Data from gantt_charts.diagnoses:', ganttData);
+    console.log(
+      `Processed Gantt Data for ${section} (eye: ${eye}):`,
+      ganttData
+    );
     return ganttData;
   }
-  getMedicationsGanttData(): { task: string; start: string; end: string }[] {
+
+  getMedicationsGanttData(
+    eye: string
+  ): { task: string; start: string; end: string }[] {
     const medMap = new Map<string, { start: string; end: string }>();
     (this.jsonData.visits || []).forEach((visit: any) => {
       if (visit.medications) {
@@ -458,7 +543,6 @@ export class PatientSummaryComponent implements OnInit {
           const task = med.drug?.trim();
           if (!task) return;
 
-          // Prefer duration_start and duration_end if available (dd/mm/yyyy format)
           let start = '';
           if (med.duration_start) {
             const parts = med.duration_start.split('/');
@@ -524,7 +608,6 @@ export class PatientSummaryComponent implements OnInit {
       const date = visit.visit_date?.substring(0, 10) || '';
       if (!date) return;
 
-      // Procedures
       const procEye = visit.procedures
         ? visit.procedures[eye] || visit.procedures['BE']
         : null;
@@ -539,7 +622,6 @@ export class PatientSummaryComponent implements OnInit {
         });
       }
 
-      // Visual Acuity
       if (visit.vision_iop && visit.vision_iop.dv_refraction) {
         const vaStr =
           visit.vision_iop.dv_refraction[eye]?.VA ||
@@ -552,7 +634,6 @@ export class PatientSummaryComponent implements OnInit {
         }
       }
 
-      // IOP
       if (visit.investigations && visit.investigations.general_investigations) {
         const gens = visit.investigations.general_investigations.map(
           (g: any) => g.name
@@ -569,7 +650,6 @@ export class PatientSummaryComponent implements OnInit {
         }
       }
 
-      // CMT
       if (visit.investigations && visit.investigations.general_investigations) {
         const gens = visit.investigations.general_investigations.map(
           (g: any) => g.name
@@ -634,12 +714,12 @@ export class PatientSummaryComponent implements OnInit {
   }
 
   extractCMT(text: string, eye: string): number | null {
-  if (!text) return null;
-  const regex = new RegExp(
-    `(?:${eye}\\s*)?(?:CMT|central macular thickness)\\s*[:=]?\\s*(\\d+)\\s*um?`,
-    'i'
-  );
-  const match = text.match(regex);
-  return match ? parseInt(match[1], 10) : null;
-}
+    if (!text) return null;
+    const regex = new RegExp(
+      `(?:${eye}\\s*)?(?:CMT|central macular thickness)\\s*[:=]?\\s*(\\d+)\\s*um?`,
+      'i'
+    );
+    const match = text.match(regex);
+    return match ? parseInt(match[1], 10) : null;
+  }
 }

@@ -6,6 +6,8 @@ import {
   AfterViewInit,
   Input,
   OnDestroy,
+  OnChanges,
+  SimpleChanges,
   HostListener,
 } from '@angular/core';
 import Chart from 'chart.js/auto';
@@ -49,7 +51,9 @@ interface ProcessedGanttItem {
     </div>
   `,
 })
-export class GanttChartComponent implements AfterViewInit, OnDestroy {
+export class GanttChartComponent
+  implements AfterViewInit, OnChanges, OnDestroy
+{
   @ViewChild('ganttCanvas') ganttCanvas!: ElementRef<HTMLCanvasElement>;
   @Input() data: GanttData[] = [];
   @Input() config: GanttConfig = {};
@@ -60,6 +64,7 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
   private themeObserver!: MutationObserver;
   private processedData: ProcessedGanttItem[] = [];
   private taskNames: string[] = [];
+  private chartInitialized: boolean = false;
 
   ngAfterViewInit(): void {
     if (!this.data || this.data.length === 0) {
@@ -69,6 +74,28 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
 
     this.renderChart();
     this.setupThemeObserver();
+    this.chartInitialized = true;
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // Only re-render if data changes and chart is already initialized
+    if (
+      changes['data'] &&
+      !changes['data'].firstChange &&
+      this.chartInitialized
+    ) {
+      console.log('Data changed, re-rendering chart. New data:', this.data);
+
+      // Destroy existing chart before creating new one
+      if (this.chart) {
+        this.chart.destroy();
+      }
+
+      // Re-render with new data
+      if (this.data && this.data.length > 0) {
+        this.renderChart();
+      }
+    }
   }
 
   ngOnDestroy(): void {
@@ -102,7 +129,7 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
 
     this.themeObserver.observe(document.documentElement, observerConfig);
     this.themeObserver.observe(document.body, observerConfig);
-    
+
     console.log('Theme observer setup complete');
   }
 
@@ -110,28 +137,34 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
     // Check multiple common theme indicators
     const html = document.documentElement;
     const body = document.body;
-    
-    const isDark = (
+
+    const isDark =
       html.classList.contains('dark') ||
       html.classList.contains('dark-theme') ||
       html.getAttribute('data-theme') === 'dark' ||
       body.classList.contains('dark') ||
       body.classList.contains('dark-theme') ||
-      body.getAttribute('data-theme') === 'dark'
+      body.getAttribute('data-theme') === 'dark';
+
+    console.log(
+      'Theme check - isDark:',
+      isDark,
+      'html classes:',
+      html.className,
+      'body classes:',
+      body.className,
+      'html data-theme:',
+      html.getAttribute('data-theme'),
+      'body data-theme:',
+      body.getAttribute('data-theme')
     );
-    
-    console.log('Theme check - isDark:', isDark, 
-                'html classes:', html.className, 
-                'body classes:', body.className,
-                'html data-theme:', html.getAttribute('data-theme'),
-                'body data-theme:', body.getAttribute('data-theme'));
-    
+
     return isDark;
   }
 
   private getThemeColors() {
     const isDark = this.isDarkTheme();
-    
+
     // Use theme-specific colors from config if provided, otherwise fall back to defaults
     let barColor: string;
     if (isDark && this.config.barColorDark) {
@@ -144,7 +177,7 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
       barColor = this.config.barColor || (isDark ? '#ec407a' : '#e23670');
       console.log('Using default color:', barColor);
     }
-    
+
     return {
       barColor,
       titleColor: isDark ? 'white' : '#1a1a1a',
@@ -170,9 +203,17 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
 
     // Update bar colors - this is the key part
     if (this.chart.data.datasets[1]) {
-      const backgroundColors = Array(this.processedData.length).fill(colors.barColor);
+      const backgroundColors = Array(this.processedData.length).fill(
+        colors.barColor
+      );
       this.chart.data.datasets[1].backgroundColor = backgroundColors;
-      console.log('Updated bar colors to:', colors.barColor, 'for', backgroundColors.length, 'bars');
+      console.log(
+        'Updated bar colors to:',
+        colors.barColor,
+        'for',
+        backgroundColors.length,
+        'bars'
+      );
     }
 
     // Update tick colors
@@ -201,39 +242,49 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
   }
 
   private renderChart(): void {
+    if (!this.data || this.data.length === 0) {
+      console.warn('No data to render in Gantt chart');
+      return;
+    }
+
     this.processedData = this.assignTracksToOverlappingItems(this.data);
-    
+
     const minHeight = 300;
     const barHeight = 30;
     const padding = 100;
-    const calculatedHeight = Math.max(minHeight, (this.processedData.length * barHeight) + padding);
-    
+    const calculatedHeight = Math.max(
+      minHeight,
+      this.processedData.length * barHeight + padding
+    );
+
     const container = this.ganttCanvas.nativeElement.parentElement;
     if (container) {
       container.style.height = `${calculatedHeight}px`;
     }
-    
+
     const startDate = new Date(
       Math.min(...this.data.map((d) => new Date(d.start).getTime()))
     );
-    
+
     const labels: string[] = [];
     const offsetData: number[] = [];
     const durationData: number[] = [];
     this.taskNames = [];
-    
+
     const minDurationDays = 30;
     const colors = this.getThemeColors();
     const backgroundColors: string[] = [];
-    
+
     this.processedData.forEach((item) => {
       labels.push(`Track ${item.track}: ${item.task}`);
       this.taskNames.push(item.task);
-      
-      const offset = (item.startTime - startDate.getTime()) / (1000 * 60 * 60 * 24);
-      const actualDuration = (item.endTime - item.startTime) / (1000 * 60 * 60 * 24);
+
+      const offset =
+        (item.startTime - startDate.getTime()) / (1000 * 60 * 60 * 24);
+      const actualDuration =
+        (item.endTime - item.startTime) / (1000 * 60 * 60 * 24);
       const displayDuration = Math.max(actualDuration, minDurationDays);
-      
+
       this.actualDurations.push(actualDuration);
       offsetData.push(offset);
       durationData.push(displayDuration);
@@ -304,7 +355,8 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
             borderWidth: 3,
             caretPadding: 10,
             callbacks: {
-              title: (tooltipItems) => this.taskNames[tooltipItems[0].dataIndex],
+              title: (tooltipItems) =>
+                this.taskNames[tooltipItems[0].dataIndex],
               label: (tooltipItem) => {
                 const item = this.processedData[tooltipItem.dataIndex];
                 const startDateStr = new Date(item.start).toLocaleDateString(
@@ -344,7 +396,7 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
 
               const dataIndex = context.dataIndex;
               const actualDuration = this.actualDurations[dataIndex];
-              
+
               if (actualDuration < this.minDurationDays) {
                 return '...';
               }
@@ -357,7 +409,9 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
               const offset = datasets[0].data[dataIndex] as number;
               const duration = datasets[1].data[dataIndex] as number;
               const startPixel = chart.scales['x'].getPixelForValue(offset);
-              const endPixel = chart.scales['x'].getPixelForValue(offset + duration);
+              const endPixel = chart.scales['x'].getPixelForValue(
+                offset + duration
+              );
 
               if (endPixel <= startPixel) {
                 return '';
@@ -444,41 +498,45 @@ export class GanttChartComponent implements AfterViewInit, OnDestroy {
         },
       },
     });
-    
-    console.log('Chart rendered with initial theme');
+
+    console.log('Chart rendered with', this.processedData.length, 'items');
   }
 
-  private assignTracksToOverlappingItems(data: GanttData[]): ProcessedGanttItem[] {
+  private assignTracksToOverlappingItems(
+    data: GanttData[]
+  ): ProcessedGanttItem[] {
     if (!data || data.length === 0) {
       return [];
     }
 
-    const items: ProcessedGanttItem[] = data.map(item => ({
-      task: item.task,
-      start: item.start,
-      end: item.end,
-      track: 0,
-      startTime: new Date(item.start).getTime(),
-      endTime: new Date(item.end).getTime()
-    })).sort((a, b) => {
-      if (a.startTime !== b.startTime) {
-        return a.startTime - b.startTime;
-      }
-      return a.endTime - b.endTime;
-    });
+    const items: ProcessedGanttItem[] = data
+      .map((item) => ({
+        task: item.task,
+        start: item.start,
+        end: item.end,
+        track: 0,
+        startTime: new Date(item.start).getTime(),
+        endTime: new Date(item.end).getTime(),
+      }))
+      .sort((a, b) => {
+        if (a.startTime !== b.startTime) {
+          return a.startTime - b.startTime;
+        }
+        return a.endTime - b.endTime;
+      });
 
     const trackEndTimes: number[] = [];
 
     items.forEach((item) => {
       let assignedTrack = -1;
-      
+
       for (let i = 0; i < trackEndTimes.length; i++) {
         if (trackEndTimes[i] <= item.startTime) {
           assignedTrack = i;
           break;
         }
       }
-      
+
       if (assignedTrack === -1) {
         assignedTrack = trackEndTimes.length;
         trackEndTimes.push(item.endTime);
