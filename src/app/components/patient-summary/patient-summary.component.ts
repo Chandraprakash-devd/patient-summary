@@ -797,29 +797,20 @@ export class PatientSummaryComponent implements OnInit {
         if (!cmtValue && visit.investigations.special_notes) {
           const eyeNote = visit.investigations.special_notes[eye];
           if (eyeNote) {
-            const extracted = this.extractCMTFromText(eyeNote);
+            const extracted = this.extractCMTFromText(eyeNote, eye);
             if (extracted) {
               cmtValue = extracted;
             }
           }
-        }
 
-        if (!cmtValue && visit.investigations.special_notes?.raw) {
-          const extracted = this.extractCMTFromText(
-            visit.investigations.special_notes.raw,
-            eye
-          );
-          if (extracted) {
-            cmtValue = extracted;
-          }
-        }
-
-        if (!cmtValue && visit.investigations.special_notes?.raw) {
-          const extracted = this.extractCMTFromText(
-            visit.investigations.special_notes.raw
-          );
-          if (extracted) {
-            cmtValue = extracted;
+          if (!cmtValue && visit.investigations.special_notes.raw) {
+            const extracted = this.extractCMTFromText(
+              visit.investigations.special_notes.raw,
+              eye
+            );
+            if (extracted) {
+              cmtValue = extracted;
+            }
           }
         }
       }
