@@ -1,0 +1,5558 @@
+{
+  "patient_info": {
+    "uid": "1288057",
+    "total_visits": 30,
+    "first_visit": "2017-07-22 12:11:07.443000",
+    "last_visit": "2023-10-28 07:07:27.270000"
+  },
+  "visits": [
+    {
+      "visit_number": 1,
+      "chronology": "Initial Visit",
+      "visit_date": "2017-07-22 12:11:07.443000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 1096682,
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "6/9",
+            "UCVA_VA": "2025-06-09 00:00:00"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/9",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N6"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        },
+        "description": "Diabetes;Hypertension;Cardiac;Asthma;Other Allergies;Non-Ocular Sx;Others;Hyperlipidemia;Drug Allergies"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "31",
+          "LE": "20"
+        }
+      },
+      "ocular_history": {
+        "description": "IOL Insertion",
+        "duration": "8 years"
+      }
+    },
+    {
+      "visit_number": 2,
+      "chronology": "Follow-up #1",
+      "visit_date": "2018-10-30 13:53:14.010000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 41500272,
+      "diagnosis": {
+        "BE": [
+          "Secondary Glaucoma"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6P",
+          "LE": "6/9"
+        },
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "6/6P",
+            "UCVA_VA": "6/6P"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/9",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N6"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        },
+        "remarks": {
+          "RE": "no e/o NVI",
+          "LE": "no e/o NVI"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.5"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "PVD",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Present",
+          "LE": "Present"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "1900-01-03 00:00:00",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2018-10-30 13:53:14.010000",
+          "duration_end": "2018-10-30 13:53:14.010000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "38.000",
+          "LE": "28.000"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month;1 month",
+        "date": "Nov 30 2018 12:00AM;Nov 30 2018 12:00AM",
+        "location": ";3"
+      },
+      "opinion": {
+        "clinic": "GLAUCOMA CLINIC;RETINA CLINIC",
+        "refererer": "be high iop;BACK TO RETINA",
+        "remarks": "? steroid responder;",
+        "completed_datetime": "Oct 30 2018  6:04PM;Jan  1 1900 12:00AM",
+        "completion_status": "1;0",
+        "completion_remarks": "BE AGM STARTED;",
+        "clinic_type": "Other Clinic;Other Clinic"
+      }
+    },
+    {
+      "visit_number": 3,
+      "chronology": "Follow-up #2",
+      "visit_date": "2019-08-20 11:49:53.013000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 142829425,
+      "diagnosis": {
+        "BE": [
+          "Secondary Glaucoma"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6P",
+          "LE": "6/18P"
+        },
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "6/6P",
+            "UCVA_VA": "6/6P"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/12P",
+            "UCVA_VA": "6/12P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6",
+            "UCVA_VA": "N6"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N18",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Normal Size and Reaction to Light",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Deferred-Small Pupil",
+          "LE": "Deferred-Small Pupil"
+        },
+        "disc": {
+          "RE": "not visualised",
+          "LE": "not visualised"
+        },
+        "vessels": {
+          "RE": "not visualised",
+          "LE": "not visualised"
+        },
+        "background_retina": {
+          "RE": "not visualised",
+          "LE": "not visualised"
+        },
+        "foveal_reflex": {
+          "RE": "not visualised",
+          "LE": "not visualised"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "1900-01-03 00:00:00",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2019-08-20 11:49:53.013000",
+          "duration_end": "2019-08-20 11:49:53.013000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "25",
+          "LE": "19"
+        }
+      },
+      "follow_up": {
+        "advice": "Tomorrow",
+        "date": "2019-08-21 00:00:00"
+      }
+    },
+    {
+      "visit_number": 4,
+      "chronology": "Follow-up #3",
+      "visit_date": "2019-08-24 08:13:09.487000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 142856936,
+      "diagnosis": {
+        "BE": [
+          "Secondary Glaucoma"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Defective distance vision"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6P",
+          "LE": "6/24"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0;0",
+          "diastolic": "0;0;0;0"
+        },
+        "status": "; ; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL, YAG Opening",
+          "LE": "PCIOL, YAG Opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.4",
+          "LE": "cup disc ratio-0.6"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "erm"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "1900-01-03 00:00:00",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2019-08-24 08:13:09.487000",
+          "duration_end": "2019-08-24 08:13:09.487000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Humphrey Field Analyzer"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "15.000",
+          "LE": "17.000"
+        },
+        "special_notes": {
+          "raw": "done,done;No Data;DONE,DONE"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2019-11-25 00:00:00"
+      }
+    },
+    {
+      "visit_number": 5,
+      "chronology": "Follow-up #4",
+      "visit_date": "2021-05-07 09:37:19.323000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 147201511,
+      "diagnosis": {
+        "LE": [
+          "RRD",
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P Sectoral PHC"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Defective Vision",
+          "duration": "1 week"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6P",
+          "LE": "6/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6P",
+            "UCVA_VA": "6/6P"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N60",
+            "UCVA_VA": "NAS"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL, YAG Opening",
+          "LE": "PCIOL, YAG Opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.4",
+          "LE": "cup disc ratio-0.4"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": ", ERM  with ?? shallow detatchment"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "1900-01-03 00:00:00",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2021-05-07 09:37:19.323000",
+          "duration_end": "2021-05-07 09:37:19.323000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14.000",
+          "LE": "14.000"
+        },
+        "special_notes": {
+          "RE": "224M",
+          "LE": "224M",
+          "raw": "HRA-ERM.Parafoveal hard exudates .Foveal Thickness -224M,HRA-ERM.Parafoveal hard exudates .Foveal Thickness -224M,HRA-Serous detachment at macula with extra macula and ILM folds with macular hole."
+        }
+      },
+      "follow_up": {
+        "advice": "3 months;1 week",
+        "date": "Aug  7 2021 12:00AM;May 14 2021 12:00AM",
+        "location": ";"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "LE OCT MACULAR a/further mx",
+        "completed_datetime": "2021-05-07 12:17:00",
+        "completion_status": "1",
+        "completion_remarks": "LE VR  SX under  guarded prognosis",
+        "clinic_type": "Other Clinic"
+      },
+      "ocular_history": {
+        "description": "No",
+        "duration": "0"
+      }
+    },
+    {
+      "visit_number": 6,
+      "chronology": "Follow-up #5",
+      "visit_date": "2021-06-10 12:17:54.290000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 147348164,
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      }
+    },
+    {
+      "visit_number": 7,
+      "chronology": "Follow-up #6",
+      "visit_date": "2021-07-06 15:54:31.190000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 147576489,
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      }
+    },
+    {
+      "visit_number": 8,
+      "chronology": "Follow-up #7",
+      "visit_date": "2021-07-29 13:04:31.023000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 147886202,
+      "diagnosis": {
+        "LE": [
+          "RRD",
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P Sectoral PHC"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "2025-06-06 00:00:00"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6",
+            "UCVA_VA": "N14"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N60",
+            "UCVA_VA": "NAR"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;108",
+          "diastolic": "0;0;67"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Normal Size and Reaction to Light",
+          "LE": "sluggish"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.4",
+          "LE": "cup disc ratio-0.4"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "inferonsal sclerosed vessels with CRA patch along vessels",
+          "LE": "STBVO,  laser  scars , hole above  arcade . subtotal  RRD"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "off,  subfoveal deposits"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Blood Pressure"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "30.000",
+          "LE": "20.000"
+        }
+      },
+      "follow_up": {
+        "advice": "SOS;2 days",
+        "date": "Jan  1 1900 12:00AM;Jul 31 2021 12:00AM",
+        "location": ";"
+      },
+      "opinion": {
+        "clinic": "UVEA CLINIC;UVEA CLINIC",
+        "refererer": "? TB VASCULITIS;? BE TB VASCULITIS, CLEARANCE FOR LE VR SX",
+        "remarks": ";",
+        "completed_datetime": "Jan  1 1900 12:00AM;Jul 29 2021  5:19PM",
+        "completion_status": "0;1",
+        "completion_remarks": ";to get CT chest reports .",
+        "clinic_type": "Other Clinic;Other Clinic"
+      }
+    },
+    {
+      "visit_number": 9,
+      "chronology": "Follow-up #8",
+      "visit_date": "2021-07-31 08:20:39.853000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 147905471,
+      "diagnosis": {
+        "LE": [
+          "RRD",
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P Sectoral PHC"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;96;0;0;100;0",
+          "diastolic": "0;62;0;0;64;0"
+        },
+        "status": "; ; ; ; ;",
+        "description": "Asthma;Cardiac;Diabetes;Drug Allergies;Hyperlipidemia;Hypertension;Non-Ocular Sx;Other Allergies;Others;Remarks;H/O COVID 19;H/O COVID VACCINE;Identification Marks"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.4",
+          "LE": "cup disc ratio-0.4"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "STBVO,  laser  scars , hole above  arcade . subtotal  RRD"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "off,  subfoveal deposits"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "74"
+          },
+          {
+            "name": "SPO2",
+            "value": "99"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "ECG"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "15.000",
+          "LE": "14.000"
+        },
+        "special_notes": {
+          "raw": "normal"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2021-08-31 00:00:00"
+      },
+      "opinion": {
+        "clinic": "PHYSICIAN",
+        "refererer": "LE Parsplana Vitrectomy (PPV) + Endo Laser (Full) +  Fluid Air Exchange +  ILMP / ERMP +  Tricort Wa",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 10,
+      "chronology": "Follow-up #9",
+      "visit_date": "2021-08-05 09:05:04.543000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 147970575,
+      "diagnosis": {
+        "LE": [
+          "RRD",
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P Sectoral PHC"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia"
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "109;0;0;100;0;0;0;103;0;120",
+          "diastolic": "71;0;0;80;0;0;0;60;0;80"
+        },
+        "status": "; ; ; ; ; ; ; ; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.4",
+          "LE": "cup disc ratio-0.4"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "STBVO,  laser  scars , hole above  arcade . subtotal  RRD"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "off,  subfoveal deposits"
+        }
+      },
+      "medications": [
+        {
+          "drug": "ALPRAX 0.5 TAB",
+          "start_date": "Aug  5 2021 12:00AM",
+          "frequency": "Night Only",
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 1,
+          "duration_start": "05/08/2021",
+          "duration_end": "05/08/2021"
+        },
+        {
+          "drug": "DOLO 650MG TAB",
+          "start_date": "Aug  5 2021 12:00AM",
+          "frequency": 2,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 5,
+          "duration_start": "05/08/2021",
+          "duration_end": "09/08/2021"
+        },
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "Aug  5 2021 12:00AM",
+          "frequency": 8,
+          "route": "11",
+          "duration_days": 2,
+          "duration_start": "05/08/2021",
+          "duration_end": "06/08/2021"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "68"
+          },
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "113"
+          },
+          {
+            "name": "Pulse",
+            "value": "77"
+          },
+          {
+            "name": "SPO2",
+            "value": "97"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "64"
+          },
+          {
+            "name": "Blood Pressure"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "20.000",
+          "LE": "14.000"
+        }
+      },
+      "follow_up": {
+        "advice": "15 days",
+        "date": "2021-08-23 00:00:00"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "LE Parsplana Vitrectomy (PPV) + Endo Laser (Full) +  Fluid Air Exchange +  ILMP / ERMP +  Tricort Wa",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      },
+      "ocular_history": {
+        "description": "Fit for LE Parsplana Vitrectomy (PPV) + Endo Laser (Full) + Fluid Air Exchange + ILMP / ERMP + Tricort WaPhysician:Dr. Banu Shree, Jul 31 2021 12:08 PM,MDU",
+        "duration": "0"
+      }
+    },
+    {
+      "visit_number": 11,
+      "chronology": "Follow-up #10",
+      "visit_date": "2021-08-21 15:25:30.613000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 148204140,
+      "diagnosis": {
+        "LE": [
+          "RRD",
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P Sectoral PHC"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6P",
+          "LE": "4/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;108;0",
+          "diastolic": "0;62;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth, quiet",
+          "LE": "Normal Depth, flare - minimal , pigments+"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "bulbar congestion+"
+        },
+        "pupil": {
+          "RE": "Normal Size and Reaction to Light",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "PCIOL, YAG Opening",
+          "LE": "PCIOL, YAG Opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "undilated_fundus": {
+          "RE": "cdr-0.5",
+          "LE": "cdr-0.5, SO filled globe"
+        },
+        "media": {
+          "RE": "haze1+cells ?old",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.4",
+          "LE": "cup disc ratio-0.4"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "STBVO,  laser  scars , hole above  arcade . subtotal  RRD"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "off,  subfoveal deposits"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "Aug 21 2021 12:00AM",
+          "frequency": 2,
+          "route": "11",
+          "duration_days": 30,
+          "duration_start": "21/8/2021",
+          "duration_end": "19/9/2021"
+        },
+        {
+          "drug": "IOPAR-SR CAP",
+          "start_date": "Aug 21 2021 12:00AM",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 3,
+          "duration_start": "21/08/2021",
+          "duration_end": "23/08/2021"
+        },
+        {
+          "drug": "PANTOCID 40MG TAB",
+          "start_date": "Aug 21 2021 12:00AM",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 3,
+          "duration_start": "21/08/2021",
+          "duration_end": "23/08/2021"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "23.000",
+          "LE": "35.000"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month;1 month;1 month;1 month;3 days",
+        "date": "Sep 21 2021 12:00AM;Sep 21 2021 12:00AM;Sep 21 2021 12:00AM;Sep 21 2021 12:00AM;Aug 24 2021 12:00AM",
+        "location": ";9;9,9;9,9,9;9,9,9,9"
+      }
+    },
+    {
+      "visit_number": 12,
+      "chronology": "Follow-up #11",
+      "visit_date": "2021-08-28 08:29:18.673000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 148290342,
+      "diagnosis": {
+        "LE": [
+          "RRD",
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P Sectoral PHC",
+          "S/P PPV+SOI",
+          "Silicon Oil Glaucoma",
+          "Corticosteroid-Induced Ocular Hypertension"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Pseudophakic Glaucoma"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6P",
+          "LE": "6/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;123;0",
+          "diastolic": "0;75;0"
+        },
+        "status": "; ;Done at Aravind"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth, quiet",
+          "LE": "Normal Depth, flare - minimal , pigments+"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "bulbar congestion+"
+        },
+        "pupil": {
+          "RE": "Normal Size and Reaction to Light",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "PCIOL, YAG Opening",
+          "LE": "PCIOL, YAG Opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "undilated_fundus": {
+          "RE": "cdr-0.5",
+          "LE": "cdr-0.5, SO filled globe"
+        },
+        "media": {
+          "RE": "haze1+cells ?old",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.65"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "STBVO,  laser  scars , retina on"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "off,  subfoveal deposits"
+        }
+      },
+      "medications": [
+        {
+          "drug": "ALPHAGAN-Z EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 3,
+          "route": "11",
+          "duration_start": "2021-08-28 08:29:18.673000",
+          "duration_end": "2021-08-28 08:29:18.673000"
+        },
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2021-08-28 08:29:18.673000",
+          "duration_end": "2021-08-28 08:29:18.673000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Blood Sugar"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "19.000",
+          "LE": "34.000"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month;1 month;1 month",
+        "date": "Sep 28 2021 12:00AM;Sep 28 2021 12:00AM;Sep 28 2021 12:00AM",
+        "location": ";9;"
+      },
+      "opinion": {
+        "clinic": "GLAUCOMA CLINIC;RETINA CLINIC",
+        "refererer": "le sec ocular hypertension;review",
+        "remarks": ";",
+        "completed_datetime": "Aug 28 2021 12:50PM;Aug 28 2021 11:07AM",
+        "completion_status": "1;1",
+        "completion_remarks": ".LE raised IOP could be steroid response ,agm stepped up LE .Guarded visual prognosis LE clearly explained to the patient and attender;observe - will take glaucoma clinic opinion for secondary glaucoma",
+        "clinic_type": "Other Clinic;Other Clinic"
+      }
+    },
+    {
+      "visit_number": 13,
+      "chronology": "Follow-up #12",
+      "visit_date": "2021-09-25 08:43:12.930000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 148676283,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth, quiet",
+          "LE": "Normal Depth, pigments"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "no nvi"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL, peripheral pco",
+          "LE": "PCIOL, peripheral pco"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "haze1+cells ?old",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.65"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "STBVO,  laser  scars , retina on, hole with FP inferior to disc"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "dull, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2021-09-25 08:43:12.930000",
+          "duration_end": "2021-09-25 08:43:12.930000"
+        },
+        {
+          "drug": "ALPHAGAN-Z EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 3,
+          "route": "11",
+          "duration_start": "2021-09-25 08:43:12.930000",
+          "duration_end": "2021-09-25 08:43:12.930000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Clarus"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "16.000",
+          "LE": "14.000"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI"
+        },
+        "special_notes": {
+          "raw": "HRA-ERM.Parafoveal hard exudates .Foveal Thickness -215M,HRA-ERM.Cystic changes at extramacula.Resolving Serous detachment at macula with extra macula ( Inferior to the macula & Nasl to the disc ) with macular hole.;FP,FP"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month;1 month;1 month;SOS;SOS",
+        "date": "Oct 25 2021 12:00AM;Oct 25 2021 12:00AM;Oct 25 2021 12:00AM;Jan  1 1900 12:00AM;Jan  1 1900 12:00AM",
+        "location": ";3;3,3;;1"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "scheduled review le s/p ppv soi",
+        "completed_datetime": "2021-09-25 15:12:00",
+        "completion_status": "1",
+        "completion_remarks": "CSB Dr KK sir - LE BRVO TRD s/p PPV SOI  - ReRD - to plan SOR ResOI, Explained in detail about the guarded visual prognosis, Need for strict systemic control explained,",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 14,
+      "chronology": "Follow-up #13",
+      "visit_date": "2021-12-16 12:48:40.323000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 149676380,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/9",
+          "LE": "5/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "No NVI, Normal Color and Pattern",
+          "LE": "No NVI, Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Sluggish reaction",
+          "LE": "Sluggish reaction"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "haze1+cells ?old",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.65"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "hole superiorly, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "20",
+          "LE": "20"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI"
+        }
+      },
+      "follow_up": {
+        "advice": "SOS",
+        "date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 15,
+      "chronology": "Follow-up #14",
+      "visit_date": "2021-12-17 08:51:58.813000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 149683198,
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;107;0;0",
+          "diastolic": "0;0;57;0;0"
+        },
+        "status": "; ; ; ;",
+        "description": "Asthma;Cardiac;Diabetes;Drug Allergies;H/O COVID 19;H/O COVID VACCINE;Hyperlipidemia;Hypertension;Identification Marks;Non-Ocular Sx;Other Allergies;Others;Remarks;Thyroid"
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Pulse",
+            "value": "87"
+          },
+          {
+            "name": "SPO2",
+            "value": "99"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "ECG"
+          },
+          {
+            "name": "B Scan"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "special_notes": {
+          "raw": "NR;LE - Silicone oil filled globe . Temporal ? RD."
+        }
+      },
+      "opinion": {
+        "clinic": "PHYSICIAN",
+        "refererer": "LE Silicon Oil Removal (SOR) + Membrane Peeling",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 16,
+      "chronology": "Follow-up #15",
+      "visit_date": "2021-12-25 09:39:53.960000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 149795971,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "6/9",
+          "LE": "4/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;120;0;0;0;0;0;116",
+          "diastolic": "0;68;0;0;0;0;0;68"
+        },
+        "status": "; ; ;Done at Outside;Done at Outside; ; ;",
+        "description": "Asthma;Cardiac;Diabetes;Drug Allergies;H/O COVID 19;H/O COVID VACCINE;Hyperlipidemia;Hypertension;Identification Marks;Non-Ocular Sx;Other Allergies;Others;Remarks;Thyroid"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "No NVI, Normal Color and Pattern",
+          "LE": "No NVI, Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Sluggish reaction",
+          "LE": "Sluggish reaction"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "haze1+cells ?old",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.65"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "hole superiorly, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI"
+        }
+      },
+      "medications": [
+        {
+          "drug": "GEMER 0.5MG  TAB",
+          "start_date": "Dec 25 2021 12:00AM",
+          "frequency": 2,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 30,
+          "duration_start": "25/12/2021",
+          "duration_end": "23/01/2022"
+        },
+        {
+          "drug": "ALPRAX 0.5 TAB",
+          "start_date": "Dec 25 2021 12:00AM",
+          "frequency": "Night Only",
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 1,
+          "duration_start": "25/12/2021",
+          "duration_end": "25/12/2021"
+        },
+        {
+          "drug": "DOLO 650MG TAB",
+          "start_date": "Dec 25 2021 12:00AM",
+          "frequency": 2,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 5,
+          "duration_start": "25/12/2021",
+          "duration_end": "29/12/2021"
+        },
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "Dec 25 2021 12:00AM",
+          "frequency": 8,
+          "route": "11",
+          "duration_days": 2,
+          "duration_start": "25/12/2021",
+          "duration_end": "26/12/2021"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "70"
+          },
+          {
+            "name": "Blood Sugar"
+          },
+          {
+            "name": "Blood Sugar"
+          },
+          {
+            "name": "Pulse",
+            "value": "60"
+          },
+          {
+            "name": "SPO2",
+            "value": "99"
+          },
+          {
+            "name": "Blood Pressure"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "20.000",
+          "LE": "20.000"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI"
+        }
+      },
+      "opinion": {
+        "clinic": "PHYSICIAN",
+        "refererer": "LE Silicon Oil Removal (SOR) + Membrane Peeling",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 17,
+      "chronology": "Follow-up #16",
+      "visit_date": "2021-12-26 16:20:52.927000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 149806788,
+      "systemic_history": {
+        "bp": {
+          "systolic": "100;0;0;100;0;0;95;130;0;0",
+          "diastolic": "60;0;0;67;0;0;68;80;0;0"
+        },
+        "status": "; ; ; ; ; ; ; ; ;"
+      },
+      "medications": [
+        {
+          "drug": "ALPRAX 0.5 TAB",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": "Night Only",
+          "meals": "After Meals",
+          "route": "15",
+          "duration_start": "2021-12-26 16:20:52.927000",
+          "duration_end": "2021-12-26 16:20:52.927000"
+        },
+        {
+          "drug": "ZIVIMOX - D EYE DROPS",
+          "start_date": "Dec 28 2021 12:00AM",
+          "frequency": 6,
+          "timing": "7 AM,9 AM,11 AM,1 PM,3 PM,5 PM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "28/12/2021",
+          "duration_end": "03/01/2022"
+        },
+        {
+          "drug": "ZIVIMOX - D EYE DROPS",
+          "start_date": "Jan  4 2022 12:00AM",
+          "frequency": 5,
+          "timing": "7 AM,10 AM,1 PM,4 PM,7 PM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "04/01/2022",
+          "duration_end": "10/01/2022"
+        },
+        {
+          "drug": "ZIVIMOX - D EYE DROPS",
+          "start_date": "Jan 11 2022 12:00AM",
+          "frequency": 4,
+          "timing": "7 AM,11 AM,3 PM,7 PM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "11/01/2022",
+          "duration_end": "17/01/2022"
+        },
+        {
+          "drug": "ZIVIMOX - D EYE DROPS",
+          "start_date": "Jan 18 2022 12:00AM",
+          "frequency": 3,
+          "timing": "7 AM,1 PM,7 PM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "18/01/2022",
+          "duration_end": "24/01/2022"
+        },
+        {
+          "drug": "ZIVIMOX - D EYE DROPS",
+          "start_date": "Jan 25 2022 12:00AM",
+          "frequency": 2,
+          "timing": "7 AM,7 PM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "25/01/2022",
+          "duration_end": "31/01/2022"
+        },
+        {
+          "drug": "ZIVIMOX - D EYE DROPS",
+          "start_date": "Feb  1 2022 12:00AM",
+          "frequency": 1,
+          "timing": "7 AM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "01/02/2022",
+          "duration_end": "07/02/2022"
+        },
+        {
+          "drug": "HOMIDE EYE DROPS",
+          "start_date": "Dec 28 2021 12:00AM",
+          "frequency": 2,
+          "timing": "7 AM,7 PM",
+          "route": "11",
+          "duration_days": 40,
+          "duration_start": "28/12/2021",
+          "duration_end": "05/02/2022"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "74"
+          },
+          {
+            "name": "SPO2",
+            "value": "97"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "77"
+          },
+          {
+            "name": "Pulse",
+            "value": "71"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Pulse",
+            "value": "68"
+          },
+          {
+            "name": "SPO2",
+            "value": "100"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      },
+      "follow_up": {
+        "advice": "15 days",
+        "date": "2022-01-13 00:00:00"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "LE Silicon Oil Removal (SOR) + Membrane Peeling",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 18,
+      "chronology": "Follow-up #17",
+      "visit_date": "2022-01-10 15:04:31.027000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 149998971,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0;0;0",
+          "diastolic": "0;0;0;0;0"
+        },
+        "status": "; ; ; ;",
+        "description": "Asthma;Cardiac;Diabetes;Drug Allergies;H/O COVID 19;H/O COVID VACCINE;Hyperlipidemia;Hypertension;Identification Marks;Non-Ocular Sx;Other Allergies;Others;Remarks;Thyroid;GIT;Renal;RS"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        },
+        "remarks": {
+          "RE": "no NVI",
+          "LE": "no NVI"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Sluggish reaction",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5, susp IRS",
+          "LE": "cup disc ratio-0.7, IRT, Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "hole superiorly, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 2,
+          "timing": "7 AM,7 PM",
+          "route": "11",
+          "duration_start": "2022-01-10 15:04:31.027000",
+          "duration_end": "2022-01-10 15:04:31.027000"
+        },
+        {
+          "drug": "ALPHAGAN-Z EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 3,
+          "route": "11",
+          "duration_start": "2022-01-10 15:04:31.027000",
+          "duration_end": "2022-01-10 15:04:31.027000"
+        },
+        {
+          "drug": "NETALO EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": "Night Only",
+          "route": "1",
+          "duration_start": "2022-01-10 15:04:31.027000",
+          "duration_end": "2022-01-10 15:04:31.027000"
+        },
+        {
+          "drug": "IOPAR-SR CAP",
+          "start_date": "Jan 10 2022 12:00AM",
+          "frequency": 2,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 3,
+          "duration_start": "10/01/2022",
+          "duration_end": "12/01/2022"
+        },
+        {
+          "drug": "PANTOCID 40MG TAB",
+          "start_date": "Jan 10 2022 12:00AM",
+          "frequency": "Morning Only",
+          "meals": "Before Meals",
+          "route": "15",
+          "duration_days": 3,
+          "duration_start": "10/01/2022",
+          "duration_end": "12/01/2022"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "CCT"
+          },
+          {
+            "name": "Humphrey Field Analyzer"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "24.000",
+          "LE": "35.000"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        },
+        "special_notes": {
+          "raw": "No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "1 week;1 week;1 month",
+        "date": "Jan 17 2022 12:00AM;Jan 17 2022 12:00AM;Feb 10 2022 12:00AM",
+        "location": ";3;"
+      },
+      "opinion": {
+        "clinic": "GLAUCOMA CLINIC",
+        "refererer": "BE secondary glaucoma",
+        "remarks": "back to retina clinic",
+        "completed_datetime": "2022-01-10 16:22:00",
+        "completion_status": "1",
+        "completion_remarks": "BE Secondary glaucoma.. has BE thick corneas.. Corrected IOP, RE-19 mm Hg, LE -34 mm Hg.. hence advised tp cont same agm in RE and stepped up agm in LE.. To reassess IOP after 1 week",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 19,
+      "chronology": "Follow-up #18",
+      "visit_date": "2022-01-22 09:42:13.720000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 150120014,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine checkup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "6/6"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "VA": "N6",
+            "UCVA_VA": "N14"
+          },
+          "LE": {
+            "VA": "N60",
+            "UCVA_VA": "NAS"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        },
+        "remarks": {
+          "RE": "no NVI",
+          "LE": "no NVI"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Sluggish reaction",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "hole superiorly, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2022-01-22 09:42:13.720000",
+          "duration_end": "2022-01-22 09:42:13.720000"
+        },
+        {
+          "drug": "ALPHAGAN-Z EYE DROPS",
+          "instruction": "Near Vision only",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 3,
+          "route": "11",
+          "duration_start": "2022-01-22 09:42:13.720000",
+          "duration_end": "2022-01-22 09:42:13.720000"
+        },
+        {
+          "drug": "NETALO EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": "Night Only",
+          "route": "1",
+          "duration_start": "2022-01-22 09:42:13.720000",
+          "duration_end": "2022-01-22 09:42:13.720000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Humphrey Field Analyzer"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14.000",
+          "LE": "16.000"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        },
+        "special_notes": {
+          "raw": "done,done"
+        }
+      },
+      "follow_up": {
+        "advice": "19 days",
+        "date": "2022-02-10 00:00:00"
+      }
+    },
+    {
+      "visit_number": 20,
+      "chronology": "Follow-up #19",
+      "visit_date": "2022-02-26 08:59:55.443000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 150586958,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine Followup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        },
+        "remarks": {
+          "RE": "no NVI",
+          "LE": "no NVI"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Sluggish reaction",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "hole superiorly, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "medications": [
+        {
+          "drug": "ALPHAGAN-Z EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2022-02-26 08:59:55.443000",
+          "duration_end": "2022-02-26 08:59:55.443000"
+        },
+        {
+          "drug": "MISOPT EYE DROPS",
+          "start_date": "Jan  1 1900 12:00AM",
+          "frequency": 2,
+          "route": "11",
+          "duration_start": "2022-02-26 08:59:55.443000",
+          "duration_end": "2022-02-26 08:59:55.443000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "19",
+          "LE": "11"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "follow_up": {
+        "advice": "6 weeks",
+        "date": "2022-04-09 00:00:00"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "review",
+        "completed_datetime": "2022-02-26 11:28:00",
+        "completion_status": "1",
+        "completion_remarks": "LE VASCULITIS , POST PPV+ SOI - MULTIPLE.... OBSERVE NOW.. R/A 2  MONTHS.. GVP EXPLAINED",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 21,
+      "chronology": "Follow-up #20",
+      "visit_date": "2022-04-23 08:34:00.527000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 151447816,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "6/6"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          },
+          "LE": {
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        },
+        "remarks": {
+          "RE": "no NVI",
+          "LE": "no NVI"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Sluggish reaction",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "hole superiorly, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Clarus"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14.000",
+          "LE": "15.000"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        },
+        "special_notes": {
+          "raw": "No Data;No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2022-07-23 00:00:00"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC;RETINA CLINIC",
+        "refererer": "review;review & opine on SOR LE",
+        "remarks": ";",
+        "completed_datetime": "Jan  1 1900 12:00AM;Apr 23 2022  5:28PM",
+        "completion_status": "0;1",
+        "completion_remarks": ";review with oct+ CLARUS",
+        "clinic_type": "Other Clinic;Other Clinic"
+      },
+      "ocular_history": {
+        "description": "No;LE: ALPHAGAN Z 5ML EYE DROPS BE: MISOPT 5ML EYE DROPS",
+        "duration": "0;0"
+      }
+    },
+    {
+      "visit_number": 22,
+      "chronology": "Follow-up #21",
+      "visit_date": "2022-04-26 10:37:41.047000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 151492676,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "hole superiorly, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Clarus"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM. .Foveal Thickness -210M,HRA- Retina attached with  detachment at extramacula  and mild irregular rpe;FP,FP"
+        }
+      },
+      "follow_up": {
+        "advice": "2 months",
+        "date": "2022-06-27 00:00:00"
+      }
+    },
+    {
+      "visit_number": 23,
+      "chronology": "Follow-up #22",
+      "visit_date": "2022-08-15 08:31:31.837000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 153251150,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Redness"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "2025-06-06 00:00:00"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "superior retina attached, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "16.000",
+          "LE": "14.000"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM. .Foveal Thickness -210M,HRA- Retina attached with detachment at extramacula.;No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months;1 month",
+        "date": "Nov 15 2022 12:00AM;Sep 15 2022 12:00AM",
+        "location": ";"
+      },
+      "opinion": {
+        "clinic": "GLAUCOMA CLINIC",
+        "refererer": "review",
+        "completed_datetime": "2022-08-15 13:10:00",
+        "completion_status": "1",
+        "completion_remarks": "NO E/O CONGESTION BE.BE MUDDY CONJUNCTIVA.PT REASSURED.GUARDED VISUAL PROGNOSIS BE CLEARLY EXPLAINED TO THE PATIENT",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 24,
+      "chronology": "Follow-up #23",
+      "visit_date": "2022-09-24 09:54:57.657000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 153870552,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine Followup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "5/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "superior retina attached, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "20",
+          "LE": "15"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2022-12-24 00:00:00"
+      }
+    },
+    {
+      "visit_number": 25,
+      "chronology": "Follow-up #24",
+      "visit_date": "2022-11-12 08:31:13.037000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 154586569,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "2025-06-06 00:00:00"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N60",
+            "UCVA_VA": "N60"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "superior retina attached, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "20.000",
+          "LE": "17.000"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM. .Foveal Thickness -210M,HRA- Detachment at extramacula."
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2023-02-13 00:00:00"
+      }
+    },
+    {
+      "visit_number": 26,
+      "chronology": "Follow-up #25",
+      "visit_date": "2022-12-24 09:16:37.353000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 155233058,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "superior retina attached, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "21",
+          "LE": "14"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "follow_up": {
+        "advice": "2 months",
+        "date": "2023-02-24 00:00:00"
+      }
+    },
+    {
+      "visit_number": 27,
+      "chronology": "Follow-up #26",
+      "visit_date": "2023-03-11 08:35:31.930000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 156365012,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine Followup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "superior retina attached, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "18",
+          "LE": "14"
+        },
+        "fundus_remarks": {
+          "LE": "BRVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "follow_up": {
+        "advice": "6 months",
+        "date": "2023-09-11 00:00:00"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "brvo for review",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 28,
+      "chronology": "Follow-up #27",
+      "visit_date": "2023-03-22 09:11:09.183000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 156549017,
+      "diagnosis": {
+        "LE": [
+          "BRVO- Branch Retinal Vein Occlusion",
+          "S/P PPV+SOI",
+          "Corticosteroid-Induced Ocular Hypertension",
+          "TRD- Tractional Retinal Detachment"
+        ],
+        "BE": [
+          "Secondary Glaucoma",
+          "PCIOL  / Pseudophakia",
+          "Vasculitis"
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "2025-06-06 00:00:00"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6",
+            "UCVA_VA": "N12"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N36",
+            "UCVA_VA": "N60"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0;0;0",
+          "diastolic": "0;0;0;0;0"
+        },
+        "status": "; ; ; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Deep",
+          "LE": "Deep"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "port sutures intact, minimal subconjunctival SO"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL, pc opening"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "SO filled"
+        },
+        "disc": {
+          "RE": "cup disc ratio-0.5",
+          "LE": "cup disc ratio-0.6 Pale disc"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "cra scars inferiorly",
+          "LE": "superior retina attached, hole with SRF inferiorly"
+        },
+        "foveal_reflex": {
+          "RE": "dull",
+          "LE": "scarring, attached"
+        },
+        "remarks": {
+          "LE": "vasculitis RVO RRD s/p PPV SOI, s/p SOR +SOI"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Clarus"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Clarus"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "20.000",
+          "LE": "19.000"
+        },
+        "fundus_remarks": {
+          "LE": "vasculitis RVO RRD s/p PPV SOI, s/p SOR +SOI"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM. .Foveal Thickness -210M,HRA- Detachment at extramacula.;FP,FP;No Data;No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "Tomorrow;5 months",
+        "date": "Mar 23 2023 12:00AM;Aug 22 2023 12:00AM",
+        "location": ";1"
+      }
+    },
+    {
+      "visit_number": 29,
+      "chronology": "Follow-up #28",
+      "visit_date": "2023-09-23 08:56:00.653000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 159661123,
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "2025-06-06 00:00:00"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.0",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          },
+          "LE": {
+            "SPH": "2",
+            "VA": "N6",
+            "UCVA_VA": "N60"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "1;0",
+          "LE": "1;0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Normal Size and Reaction to Light",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Clear",
+          "LE": "Clear"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Present",
+          "LE": "Present"
+        }
+      },
+      "medications": [
+        {
+          "drug": "IOPAR-SR CAP",
+          "start_date": "2023-09-23 00:00:00",
+          "frequency": 2,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 3,
+          "duration_start": "23/09/2023",
+          "duration_end": "25/09/2023"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "28",
+          "LE": "17"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2023-10-23 00:00:00"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "KNOWN   CASE  OF   VASCULITIS  LE      POST VR SX",
+        "remarks": "TO  RULE  OUT  ACTIVE  VASCULITIS     IN  RE PLEASE",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      }
+    },
+    {
+      "visit_number": 30,
+      "chronology": "Follow-up #29",
+      "visit_date": "2023-10-28 07:07:27.270000",
+      "Uid": 1288057,
+      "mr_no": "P2416905",
+      "peid": 160235543,
+      "vision_iop": {
+        "vision": {
+          "RE": "6/6",
+          "LE": "6/60"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0;0",
+          "LE": "0;0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Normal Size and Reaction to Light",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "sof globe"
+        },
+        "disc": {
+          "RE": "cdr0.5",
+          "LE": "cdr0.5"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "VASCULITIS",
+          "LE": "old   rvo,VASCULITIS"
+        },
+        "foveal_reflex": {
+          "RE": "DULL CR ATROPHY",
+          "LE": "DULL CR ATROPHY"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "21",
+          "LE": "12"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months;3 months;3 months",
+        "date": "Jan 29 2024 12:00AM;Jan 29 2024 12:00AM;Jan 29 2024 12:00AM",
+        "location": ";;1"
+      },
+      "opinion": {
+        "clinic": "RETINA CLINIC",
+        "refererer": "review",
+        "completed_datetime": "2023-10-28 09:34:00",
+        "completion_status": "1",
+        "completion_remarks": "To observe for now, r/a 3 months /SOS",
+        "clinic_type": "Other Clinic"
+      }
+    }
+  ],
+  "gantt_charts": {
+    "anterior_chamber": {
+      "Normal Depth_anterior_chamber_RE": {
+        "condition": "Normal Depth",
+        "field": "anterior_chamber",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "Normal Depth_anterior_chamber_LE": {
+        "condition": "Normal Depth",
+        "field": "anterior_chamber",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "quiet_anterior_chamber_RE": {
+        "condition": "quiet",
+        "field": "anterior_chamber",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "flare - minimal_anterior_chamber_LE": {
+        "condition": "flare - minimal",
+        "field": "anterior_chamber",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "pigments+_anterior_chamber_LE": {
+        "condition": "pigments+",
+        "field": "anterior_chamber",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "pigments_anterior_chamber_LE": {
+        "condition": "pigments",
+        "field": "anterior_chamber",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "Deep_anterior_chamber_RE": {
+        "condition": "Deep",
+        "field": "anterior_chamber",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Deep_anterior_chamber_LE": {
+        "condition": "Deep",
+        "field": "anterior_chamber",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      }
+    },
+    "iris": {
+      "Normal Color and Pattern_iris_RE": {
+        "condition": "Normal Color and Pattern",
+        "field": "iris",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "Normal Color and Pattern_iris_LE": {
+        "condition": "Normal Color and Pattern",
+        "field": "iris",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          },
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "No NVI_iris_LE": {
+        "condition": "No NVI",
+        "field": "iris",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-12-25 09:39:53.960000"
+          }
+        ]
+      },
+      "No NVI_iris_RE": {
+        "condition": "No NVI",
+        "field": "iris",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2021-12-25 09:39:53.960000"
+          }
+        ]
+      }
+    },
+    "conjunctiva": {
+      "Normal_conjunctiva_RE": {
+        "condition": "Normal",
+        "field": "conjunctiva",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "Normal_conjunctiva_LE": {
+        "condition": "Normal",
+        "field": "conjunctiva",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2021-08-05 09:05:04.543000"
+          },
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-12-25 09:39:53.960000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "bulbar congestion+_conjunctiva_LE": {
+        "condition": "bulbar congestion+",
+        "field": "conjunctiva",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "port sutures intact_conjunctiva_LE": {
+        "condition": "port sutures intact",
+        "field": "conjunctiva",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "minimal subconjunctival SO_conjunctiva_LE": {
+        "condition": "minimal subconjunctival SO",
+        "field": "conjunctiva",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      }
+    },
+    "pupil": {
+      "Pharmacologically Dilated_pupil_RE": {
+        "condition": "Pharmacologically Dilated",
+        "field": "pupil",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-05-07 09:37:19.323000"
+          },
+          {
+            "start_date": "2021-07-31 08:20:39.853000",
+            "end_date": "2021-08-05 09:05:04.543000"
+          },
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          },
+          {
+            "start_date": "2022-04-26 10:37:41.047000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Pharmacologically Dilated_pupil_LE": {
+        "condition": "Pharmacologically Dilated",
+        "field": "pupil",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-05-07 09:37:19.323000"
+          },
+          {
+            "start_date": "2021-07-31 08:20:39.853000",
+            "end_date": "2021-08-05 09:05:04.543000"
+          },
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          },
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Normal Size and Reaction to Light_pupil_RE": {
+        "condition": "Normal Size and Reaction to Light",
+        "field": "pupil",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          },
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-07-29 13:04:31.023000"
+          },
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "Normal Size and Reaction to Light_pupil_LE": {
+        "condition": "Normal Size and Reaction to Light",
+        "field": "pupil",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          },
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "sluggish_pupil_LE": {
+        "condition": "sluggish",
+        "field": "pupil",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-07-29 13:04:31.023000"
+          }
+        ]
+      },
+      "Sluggish reaction_pupil_RE": {
+        "condition": "Sluggish reaction",
+        "field": "pupil",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2022-04-23 08:34:00.527000"
+          }
+        ]
+      },
+      "Sluggish reaction_pupil_LE": {
+        "condition": "Sluggish reaction",
+        "field": "pupil",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2021-12-25 09:39:53.960000"
+          }
+        ]
+      }
+    },
+    "lens": {
+      "PCIOL_lens_RE": {
+        "condition": "PCIOL",
+        "field": "lens",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          },
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "PCIOL_lens_LE": {
+        "condition": "PCIOL",
+        "field": "lens",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          },
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "YAG Opening_lens_RE": {
+        "condition": "YAG Opening",
+        "field": "lens",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-05-07 09:37:19.323000"
+          },
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "YAG Opening_lens_LE": {
+        "condition": "YAG Opening",
+        "field": "lens",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-05-07 09:37:19.323000"
+          },
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "peripheral pco_lens_RE": {
+        "condition": "peripheral pco",
+        "field": "lens",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "peripheral pco_lens_LE": {
+        "condition": "peripheral pco",
+        "field": "lens",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "pc opening_lens_LE": {
+        "condition": "pc opening",
+        "field": "lens",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Clear_lens_RE": {
+        "condition": "Clear",
+        "field": "lens",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "Clear_lens_LE": {
+        "condition": "Clear",
+        "field": "lens",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      }
+    },
+    "undilated_fundus": {
+      "cdr-0.5_undilated_fundus_RE": {
+        "condition": "cdr-0.5",
+        "field": "undilated_fundus",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "cdr-0.5_undilated_fundus_LE": {
+        "condition": "cdr-0.5",
+        "field": "undilated_fundus",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "SO filled globe_undilated_fundus_LE": {
+        "condition": "SO filled globe",
+        "field": "undilated_fundus",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      }
+    },
+    "media": {
+      "Clear_media_RE": {
+        "condition": "Clear",
+        "field": "media",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-08-05 09:05:04.543000"
+          },
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "Clear_media_LE": {
+        "condition": "Clear",
+        "field": "media",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-08-21 15:25:30.613000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "Deferred-Small Pupil_media_RE": {
+        "condition": "Deferred-Small Pupil",
+        "field": "media",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "Deferred-Small Pupil_media_LE": {
+        "condition": "Deferred-Small Pupil",
+        "field": "media",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "haze1+cells ?old_media_RE": {
+        "condition": "haze1+cells ?old",
+        "field": "media",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2021-12-25 09:39:53.960000"
+          }
+        ]
+      },
+      "SO filled_media_LE": {
+        "condition": "SO filled",
+        "field": "media",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "sof globe_media_LE": {
+        "condition": "sof globe",
+        "field": "media",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      }
+    },
+    "disc": {
+      "cup disc ratio-0.5_disc_RE": {
+        "condition": "cup disc ratio-0.5",
+        "field": "disc",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "cup disc ratio-0.5_disc_LE": {
+        "condition": "cup disc ratio-0.5",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          }
+        ]
+      },
+      "not visualised_disc_RE": {
+        "condition": "not visualised",
+        "field": "disc",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "not visualised_disc_LE": {
+        "condition": "not visualised",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "cup disc ratio-0.4_disc_RE": {
+        "condition": "cup disc ratio-0.4",
+        "field": "disc",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-08-21 15:25:30.613000"
+          }
+        ]
+      },
+      "cup disc ratio-0.6_disc_LE": {
+        "condition": "cup disc ratio-0.6",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2019-08-24 08:13:09.487000"
+          }
+        ]
+      },
+      "cup disc ratio-0.4_disc_LE": {
+        "condition": "cup disc ratio-0.4",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-05-07 09:37:19.323000",
+            "end_date": "2021-08-21 15:25:30.613000"
+          }
+        ]
+      },
+      "cup disc ratio-0.65_disc_LE": {
+        "condition": "cup disc ratio-0.65",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2021-12-25 09:39:53.960000"
+          }
+        ]
+      },
+      "susp IRS_disc_RE": {
+        "condition": "susp IRS",
+        "field": "disc",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2022-01-10 15:04:31.027000"
+          }
+        ]
+      },
+      "cup disc ratio-0.7_disc_LE": {
+        "condition": "cup disc ratio-0.7",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2022-01-10 15:04:31.027000"
+          }
+        ]
+      },
+      "IRT_disc_LE": {
+        "condition": "IRT",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2022-01-10 15:04:31.027000"
+          }
+        ]
+      },
+      "Pale disc_disc_LE": {
+        "condition": "Pale disc",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-01-10 15:04:31.027000",
+            "end_date": "2022-01-10 15:04:31.027000"
+          }
+        ]
+      },
+      "cup disc ratio-0.6 Pale disc_disc_LE": {
+        "condition": "cup disc ratio-0.6 Pale disc",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-01-22 09:42:13.720000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Normal_disc_RE": {
+        "condition": "Normal",
+        "field": "disc",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "Normal_disc_LE": {
+        "condition": "Normal",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "cdr0.5_disc_RE": {
+        "condition": "cdr0.5",
+        "field": "disc",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "cdr0.5_disc_LE": {
+        "condition": "cdr0.5",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      }
+    },
+    "vessels": {
+      "Normal_vessels_RE": {
+        "condition": "Normal",
+        "field": "vessels",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "Normal_vessels_LE": {
+        "condition": "Normal",
+        "field": "vessels",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "not visualised_vessels_RE": {
+        "condition": "not visualised",
+        "field": "vessels",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "not visualised_vessels_LE": {
+        "condition": "not visualised",
+        "field": "vessels",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      }
+    },
+    "background_retina": {
+      "PVD_background_retina_RE": {
+        "condition": "PVD",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          }
+        ]
+      },
+      "Normal_background_retina_LE": {
+        "condition": "Normal",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-05-07 09:37:19.323000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "not visualised_background_retina_RE": {
+        "condition": "not visualised",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "not visualised_background_retina_LE": {
+        "condition": "not visualised",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "Normal_background_retina_RE": {
+        "condition": "Normal",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2021-05-07 09:37:19.323000"
+          },
+          {
+            "start_date": "2021-07-31 08:20:39.853000",
+            "end_date": "2021-08-05 09:05:04.543000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "inferonsal sclerosed vessels with CRA patch along vessels_background_retina_RE": {
+        "condition": "inferonsal sclerosed vessels with CRA patch along vessels",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-07-29 13:04:31.023000"
+          }
+        ]
+      },
+      "STBVO_background_retina_LE": {
+        "condition": "STBVO",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "laser scars_background_retina_LE": {
+        "condition": "laser scars",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "hole above arcade . subtotal RRD_background_retina_LE": {
+        "condition": "hole above arcade . subtotal RRD",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-08-21 15:25:30.613000"
+          }
+        ]
+      },
+      "cra scars inferiorly_background_retina_RE": {
+        "condition": "cra scars inferiorly",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-08-21 15:25:30.613000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "retina on_background_retina_LE": {
+        "condition": "retina on",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "hole with FP inferior to disc_background_retina_LE": {
+        "condition": "hole with FP inferior to disc",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "hole superiorly_background_retina_LE": {
+        "condition": "hole superiorly",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2022-04-26 10:37:41.047000"
+          }
+        ]
+      },
+      "hole with SRF inferiorly_background_retina_LE": {
+        "condition": "hole with SRF inferiorly",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "superior retina attached_background_retina_LE": {
+        "condition": "superior retina attached",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-08-15 08:31:31.837000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "VASCULITIS_background_retina_RE": {
+        "condition": "VASCULITIS",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "old rvo_background_retina_LE": {
+        "condition": "old rvo",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "VASCULITIS_background_retina_LE": {
+        "condition": "VASCULITIS",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      }
+    },
+    "foveal_reflex": {
+      "Present_foveal_reflex_RE": {
+        "condition": "Present",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "Present_foveal_reflex_LE": {
+        "condition": "Present",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2018-10-30 13:53:14.010000"
+          },
+          {
+            "start_date": "2023-09-23 08:56:00.653000",
+            "end_date": "2023-09-23 08:56:00.653000"
+          }
+        ]
+      },
+      "not visualised_foveal_reflex_RE": {
+        "condition": "not visualised",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "not visualised_foveal_reflex_LE": {
+        "condition": "not visualised",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-20 11:49:53.013000",
+            "end_date": "2019-08-20 11:49:53.013000"
+          }
+        ]
+      },
+      "dull_foveal_reflex_RE": {
+        "condition": "dull",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "erm_foveal_reflex_LE": {
+        "condition": "erm",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-08-24 08:13:09.487000",
+            "end_date": "2019-08-24 08:13:09.487000"
+          }
+        ]
+      },
+      "ERM with ?? shallow detatchment_foveal_reflex_LE": {
+        "condition": "ERM with ?? shallow detatchment",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-05-07 09:37:19.323000",
+            "end_date": "2021-05-07 09:37:19.323000"
+          }
+        ]
+      },
+      "off_foveal_reflex_LE": {
+        "condition": "off",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "subfoveal deposits_foveal_reflex_LE": {
+        "condition": "subfoveal deposits",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-07-29 13:04:31.023000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "dull_foveal_reflex_LE": {
+        "condition": "dull",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2021-09-25 08:43:12.930000"
+          }
+        ]
+      },
+      "attached_foveal_reflex_LE": {
+        "condition": "attached",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "scarring_foveal_reflex_LE": {
+        "condition": "scarring",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-12-16 12:48:40.323000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "DULL CR ATROPHY_foveal_reflex_RE": {
+        "condition": "DULL CR ATROPHY",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      },
+      "DULL CR ATROPHY_foveal_reflex_LE": {
+        "condition": "DULL CR ATROPHY",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-10-28 07:07:27.270000",
+            "end_date": "2023-10-28 07:07:27.270000"
+          }
+        ]
+      }
+    },
+    "diagnosis": {
+      "Secondary Glaucoma_diagnosis_RE": {
+        "condition": "Secondary Glaucoma",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ],
+        "from_both_eyes": true
+      },
+      "Secondary Glaucoma_diagnosis_LE": {
+        "condition": "Secondary Glaucoma",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-10-30 13:53:14.010000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ],
+        "from_both_eyes": true
+      },
+      "RRD_diagnosis_LE": {
+        "condition": "RRD",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-05-07 09:37:19.323000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "BRVO- Branch Retinal Vein Occlusion_diagnosis_LE": {
+        "condition": "BRVO- Branch Retinal Vein Occlusion",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-05-07 09:37:19.323000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "S/P Sectoral PHC_diagnosis_LE": {
+        "condition": "S/P Sectoral PHC",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-05-07 09:37:19.323000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "PCIOL  / Pseudophakia_diagnosis_RE": {
+        "condition": "PCIOL  / Pseudophakia",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-05-07 09:37:19.323000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ],
+        "from_both_eyes": true
+      },
+      "PCIOL  / Pseudophakia_diagnosis_LE": {
+        "condition": "PCIOL  / Pseudophakia",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-05-07 09:37:19.323000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ],
+        "from_both_eyes": true
+      },
+      "S/P PPV+SOI_diagnosis_LE": {
+        "condition": "S/P PPV+SOI",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Silicon Oil Glaucoma_diagnosis_LE": {
+        "condition": "Silicon Oil Glaucoma",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ]
+      },
+      "Corticosteroid-Induced Ocular Hypertension_diagnosis_LE": {
+        "condition": "Corticosteroid-Induced Ocular Hypertension",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Pseudophakic Glaucoma_diagnosis_RE": {
+        "condition": "Pseudophakic Glaucoma",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ],
+        "from_both_eyes": true
+      },
+      "Pseudophakic Glaucoma_diagnosis_LE": {
+        "condition": "Pseudophakic Glaucoma",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-08-28 08:29:18.673000",
+            "end_date": "2021-08-28 08:29:18.673000"
+          }
+        ],
+        "from_both_eyes": true
+      },
+      "TRD- Tractional Retinal Detachment_diagnosis_LE": {
+        "condition": "TRD- Tractional Retinal Detachment",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ]
+      },
+      "Vasculitis_diagnosis_RE": {
+        "condition": "Vasculitis",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ],
+        "from_both_eyes": true
+      },
+      "Vasculitis_diagnosis_LE": {
+        "condition": "Vasculitis",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2021-09-25 08:43:12.930000",
+            "end_date": "2023-03-22 09:11:09.183000"
+          }
+        ],
+        "from_both_eyes": true
+      }
+    }
+  }
+}

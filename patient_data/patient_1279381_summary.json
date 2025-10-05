@@ -1,0 +1,5269 @@
+{
+  "patient_info": {
+    "uid": "1279381",
+    "total_visits": 38,
+    "first_visit": "2016-10-05 18:24:20.297000",
+    "last_visit": "2024-01-12 07:35:51.517000"
+  },
+  "visits": [
+    {
+      "visit_number": 1,
+      "chronology": "Initial Visit",
+      "visit_date": "2016-10-05 18:24:20.297000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 532222,
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      }
+    },
+    {
+      "visit_number": 2,
+      "chronology": "Follow-up #1",
+      "visit_date": "2016-11-19 14:31:56.837000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 614807,
+      "complaints": [
+        {
+          "main": "Post op Followup",
+          "duration": "1 month"
+        }
+      ],
+      "vision_iop": {
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "6/36P",
+            "UCVA_VA": "6/36P"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "6/6"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "VA": "N24"
+          },
+          "LE": {
+            "VA": "N6"
+          }
+        }
+      },
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      }
+    },
+    {
+      "visit_number": 3,
+      "chronology": "Follow-up #2",
+      "visit_date": "2016-11-26 14:57:50.073000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 628694,
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      }
+    },
+    {
+      "visit_number": 4,
+      "chronology": "Follow-up #3",
+      "visit_date": "2017-03-25 08:17:04.387000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 828132,
+      "complaints": [
+        {
+          "main": "Routine checkup"
+        }
+      ],
+      "vision_iop": {
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "0.5",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/12P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6"
+          }
+        }
+      },
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      }
+    },
+    {
+      "visit_number": 5,
+      "chronology": "Follow-up #4",
+      "visit_date": "2017-07-08 12:04:12.787000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1060312,
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      }
+    },
+    {
+      "visit_number": 6,
+      "chronology": "Follow-up #5",
+      "visit_date": "2017-09-14 09:30:53.627000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1217624,
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        },
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "6/6"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14",
+          "LE": "12"
+        }
+      },
+      "ocular_history": {
+        "description": "INTRAVIT INJ avastin",
+        "duration": "7 years"
+      }
+    },
+    {
+      "visit_number": 7,
+      "chronology": "Follow-up #6",
+      "visit_date": "2017-12-08 08:32:53.743000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1409297,
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "16",
+          "LE": "15"
+        }
+      }
+    },
+    {
+      "visit_number": 8,
+      "chronology": "Follow-up #7",
+      "visit_date": "2018-02-09 08:11:37.740000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1554191,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Defective distance vision"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/36",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "6/36",
+            "UCVA_VA": "6/36"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "6/6"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "1.75",
+            "VA": "N36",
+            "UCVA_VA": "N36"
+          },
+          "LE": {
+            "SPH": "1.75",
+            "VA": "N6",
+            "UCVA_VA": "N10"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        },
+        "description": "Renal;Stroke;Diabetes;Hypertension;Cardiac;Asthma;Other Allergies;Non-Ocular Sx;Others;Hyperlipidemia;Drug Allergies"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, Normal",
+          "LE": "pvd, drusens"
+        },
+        "foveal_reflex": {
+          "RE": "Absent-scarred CNVM",
+          "LE": "dull, NO FLUID OR HGE NOTED"
+        },
+        "remarks": {
+          "RE": "SCARRING AT MACULA-NO ACTIVITY",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14",
+          "LE": "17"
+        },
+        "fundus_remarks": {
+          "RE": "SCARRING AT MACULA-NO ACTIVITY",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2018-05-09 00:00:00"
+      }
+    },
+    {
+      "visit_number": 9,
+      "chronology": "Follow-up #8",
+      "visit_date": "2018-02-19 09:04:32.477000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1576277,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/36",
+          "LE": "6/6"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "11.000",
+          "LE": "14.000"
+        },
+        "special_notes": {
+          "raw": "No Data"
+        }
+      }
+    },
+    {
+      "visit_number": 10,
+      "chronology": "Follow-up #9",
+      "visit_date": "2018-03-06 09:55:22.053000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1615213,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0;150;0;0",
+          "diastolic": "0;0;0;70;0;0"
+        },
+        "status": "; ; ; ; ;",
+        "description": "Other Allergies;Asthma;Cardiac;Diabetes;Hyperlipidemia;Hypertension;Non-Ocular Sx;Others;Renal;Stroke;Drug Allergies"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Pulse",
+            "value": "52"
+          },
+          {
+            "name": "SPO2",
+            "value": "100"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Weight",
+            "value": "68"
+          },
+          {
+            "name": "ECG"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "special_notes": {
+          "raw": "Triton-Subfoveal hyper reflective irregular RPE lesion with Increasing CME S/O CNVM,Thin ERM;WNL"
+        }
+      },
+      "opinion": {
+        "clinic": "PHYSICIAN",
+        "refererer": "RE Avastin IntraVit Inj",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 11,
+      "chronology": "Follow-up #10",
+      "visit_date": "2018-03-17 07:54:07.040000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1645387,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "120",
+          "diastolic": "80"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, Normal",
+          "LE": "pvd, drusens"
+        },
+        "foveal_reflex": {
+          "RE": "Absent-scarred CNVM",
+          "LE": "dull, NO FLUID OR HGE NOTED"
+        },
+        "remarks": {
+          "RE": "SCARRING AT MACULA-NO ACTIVITY",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "2018-03-17 00:00:00",
+          "frequency": 4,
+          "timing": "7 AM,11 AM,3 PM,7 PM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "17/03/2018",
+          "duration_end": "23/03/2018"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Blood Pressure"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "SCARRING AT MACULA-NO ACTIVITY",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2018-04-17 00:00:00"
+      },
+      "ocular_history": {
+        "description": "INTRAVIT INJ avastin;Fit for RE Avastin IntraVit Inj 6/3/18",
+        "duration": "7 years 6 months 3 days;"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 12,
+      "chronology": "Follow-up #11",
+      "visit_date": "2018-04-18 08:09:20.787000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1723176,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/6P"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "medications": [
+        {
+          "drug": "MACUGOLD TABLETS",
+          "start_date": "Apr 18 2018 12:00AM",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 60,
+          "duration_start": "18/04/2018",
+          "duration_end": "16/06/2018"
+        },
+        {
+          "drug": "NEPAFLAM-OD DROPS",
+          "start_date": "Apr 18 2018 12:00AM",
+          "frequency": "Night Only",
+          "route": "11",
+          "duration_days": 60,
+          "duration_start": "18/04/2018",
+          "duration_end": "16/06/2018"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "11.000",
+          "LE": "12.000"
+        },
+        "special_notes": {
+          "raw": "Triton-Subfoveal hyper reflective irregular RPE lesion with Resolving CME S/O CNVM,Triton-Thin ERM PVD+"
+        }
+      },
+      "follow_up": {
+        "advice": "2 months",
+        "date": "2018-06-18 00:00:00"
+      }
+    },
+    {
+      "visit_number": 13,
+      "chronology": "Follow-up #12",
+      "visit_date": "2018-06-20 09:04:37.373000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 1904287,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/9"
+        },
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/9",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "VA": "NAS"
+          },
+          "LE": {
+            "VA": "N8"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "medications": [
+        {
+          "drug": "OFUSION CAPS",
+          "start_date": "Jun 20 2018 12:00AM",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 90,
+          "duration_start": "20/06/2018",
+          "duration_end": "17/09/2018"
+        },
+        {
+          "drug": "XINEP DROPS",
+          "start_date": "Jun 20 2018 12:00AM",
+          "frequency": 2,
+          "route": "11",
+          "duration_days": 90,
+          "duration_start": "20/06/2018",
+          "duration_end": "17/09/2018"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "13.000",
+          "LE": "16.000"
+        },
+        "special_notes": {
+          "raw": "Triton-Subfoveal hyper reflective irregular RPE lesion with  cystic changes  S/O CNVM,Triton- PVD attached to the macula"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2018-09-20 00:00:00"
+      }
+    },
+    {
+      "visit_number": 14,
+      "chronology": "Follow-up #13",
+      "visit_date": "2018-09-20 08:14:48.853000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 41384259,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/9"
+        },
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          },
+          "LE": {
+            "Axis": "0",
+            "VA": "6/9",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N8",
+            "UCVA_VA": "N24"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0;0;127;0",
+          "diastolic": "0;0;0;0;54;0"
+        },
+        "status": ";Done at Aravind; ; ; ;",
+        "description": "Other Allergies;Asthma;Cardiac;Diabetes;Hyperlipidemia;Hypertension;Non-Ocular Sx;Others;Renal;Stroke;Drug Allergies"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Blood Sugar"
+          },
+          {
+            "name": "SPO2",
+            "value": "100"
+          },
+          {
+            "name": "Pulse",
+            "value": "54"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Weight",
+            "value": "65"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "special_notes": {
+          "raw": "Triton-Subfoveal hyper reflective irregular RPE lesion with cystic changes S/O CNVM,Triton- PVD attached to the macula"
+        }
+      },
+      "opinion": {
+        "clinic": "PHYSICIAN",
+        "refererer": "RE Avastin IntraVit Inj",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "undefined"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 15,
+      "chronology": "Follow-up #14",
+      "visit_date": "2018-09-24 08:47:33.510000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 41395814,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "Jan  1 1900 12:00AM",
+            "eye": "RE"
+          },
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "Jan  1 1900 12:00AM",
+            "eye": "RE"
+          }
+        ]
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, Normal",
+          "LE": "pvd, drusens"
+        },
+        "foveal_reflex": {
+          "RE": "Absent-scarred CNVM",
+          "LE": "dull, NO FLUID OR HGE NOTED"
+        },
+        "remarks": {
+          "RE": "SCARRING AT MACULA-NO ACTIVITY",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "2018-09-24 00:00:00",
+          "frequency": 4,
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "24/09/2018",
+          "duration_end": "30/09/2018"
+        }
+      ],
+      "investigations": {
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "SCARRING AT MACULA-NO ACTIVITY",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2018-10-24 00:00:00"
+      },
+      "opinion": {
+        "clinic": "CORNEA CLINIC",
+        "refererer": "RE intravitreal avastin",
+        "remarks": "mild frothing on RE LL margin.. MGD. kindly comment on fitness for same",
+        "completed_datetime": "2018-09-24 09:55:00",
+        "completion_status": "1",
+        "completion_remarks": "MILD MGD. NO E.O CONJUNCTIVITIS . CAN PROCEED WITH RE INTRAVITREAL INJECTION AS ADVISED EARLIER",
+        "clinic_type": "Other Clinic"
+      },
+      "ocular_history": {
+        "description": "Fit for RE Avastin IntraVit InjPhysician:Dr. Banu Shree, Sep 20 2018 1:02 PM,MDU"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin;Avastin",
+        "scheduled_date": "Jan  1 1900 12:00AM;Jan  1 1900 12:00AM"
+      }
+    },
+    {
+      "visit_number": 16,
+      "chronology": "Follow-up #15",
+      "visit_date": "2018-10-25 08:10:53.550000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 41486891,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD",
+          "S/P Intravitreal Injection"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/9"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, Normal",
+          "LE": "pvd, drusens"
+        },
+        "foveal_reflex": {
+          "RE": "Predominantly scarred cnvm with some activity and superior and temporal edge with surrounding HEs",
+          "LE": "dull, NO FLUID OR HGE NOTED"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        },
+        "special_notes": {
+          "raw": "Triton-Subfoveal hyper reflective irregular RPE lesion with cystic changes S/O CNVM,Triton- PVD attached to the macula"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2018-11-26 00:00:00"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 17,
+      "chronology": "Follow-up #16",
+      "visit_date": "2018-10-29 08:46:30.193000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 41495863,
+      "diagnosis": {
+        "RE": [
+          "Wet ARMD",
+          "S/P Intravitreal Injection"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Defective distance vision"
+        }
+      ],
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "Jan  1 1900 12:00AM",
+            "eye": "RE"
+          },
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "Jan  1 1900 12:00AM",
+            "eye": "RE"
+          }
+        ]
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "140;0",
+          "diastolic": "80;0"
+        },
+        "status": ";Done at Outside"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "medications": [
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "2018-10-29 00:00:00",
+          "frequency": 6,
+          "timing": "7 AM,9 AM,11 AM,1 PM,3 PM,5 PM",
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "29/10/2018",
+          "duration_end": "04/11/2018"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Blood Sugar"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2018-11-29 00:00:00"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin;Avastin",
+        "scheduled_date": "Jan  1 1900 12:00AM;Jan  1 1900 12:00AM"
+      }
+    },
+    {
+      "visit_number": 18,
+      "chronology": "Follow-up #17",
+      "visit_date": "2018-11-29 07:52:15.837000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 60168491,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine Followup",
+          "duration": "1 year"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/6P"
+        },
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          },
+          "LE": {
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/6P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "VA": "NAS"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N36"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, Normal",
+          "LE": "pvd, drusens"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull, NO FLUID OR HGE NOTED"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        },
+        "special_notes": {
+          "raw": "Triton-Subfoveal hyper reflective irregular RPE lesion with cystic changes S/O CNVM,Triton- Para foveal IS/OS disruption. PVD+"
+        }
+      },
+      "follow_up": {
+        "advice": "2 months",
+        "date": "2019-01-29 00:00:00"
+      }
+    },
+    {
+      "visit_number": 19,
+      "chronology": "Follow-up #18",
+      "visit_date": "2019-02-21 07:53:07.927000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 75445740,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/6"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, Normal",
+          "LE": "pvd, drusens"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull, NO FLUID OR HGE NOTED"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "NOVORET NEO SOFTGEL CAPS",
+          "start_date": "2019-02-21 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 30,
+          "duration_start": "21/02/2019",
+          "duration_end": "22/03/2019"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "18",
+          "LE": "15"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2019-05-21 00:00:00"
+      }
+    },
+    {
+      "visit_number": 20,
+      "chronology": "Follow-up #19",
+      "visit_date": "2019-06-14 08:21:51.897000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 111888049,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine checkup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          },
+          "LE": {
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, Normal",
+          "LE": "pvd, drusens"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull, NO FLUID OR HGE NOTED"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "NEW I-SITE CAP",
+          "start_date": "2019-06-14 00:00:00",
+          "frequency": 2,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 30,
+          "duration_start": "14/06/2019",
+          "duration_end": "13/07/2019"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "11",
+          "LE": "14"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2019-09-14 00:00:00"
+      }
+    },
+    {
+      "visit_number": 21,
+      "chronology": "Follow-up #20",
+      "visit_date": "2019-09-12 08:12:54.807000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 142977834,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/36",
+          "LE": "6/6"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "16",
+          "LE": "18"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2019-12-12 00:00:00"
+      }
+    },
+    {
+      "visit_number": 22,
+      "chronology": "Follow-up #21",
+      "visit_date": "2019-12-13 08:24:46.940000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 143610340,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/9"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Normal Size and Reaction to Light"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "RETINOX CAPS",
+          "start_date": "2019-12-13 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 30,
+          "duration_start": "13/12/2019",
+          "duration_end": "11/01/2020"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "18.000",
+          "LE": "15.000"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        },
+        "special_notes": {
+          "raw": "HRA-Subfoveal hyper reflective irregular RPE lesion with cystic changes S/O CNVM,HRA - Para foveal IS/OS disruption. PVD+"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2020-03-13 00:00:00"
+      }
+    },
+    {
+      "visit_number": 23,
+      "chronology": "Follow-up #22",
+      "visit_date": "2020-03-13 08:24:19.750000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 144284713,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "4/60",
+          "LE": "6/9"
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "RETINOX CAPS",
+          "start_date": "2020-03-13 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 30,
+          "duration_start": "13/03/2020",
+          "duration_end": "11/04/2020"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "16.000",
+          "LE": "16.000"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        },
+        "special_notes": {
+          "raw": "HRA-Subfoveal hyper reflective irregular RPE lesion with cystic changes S/O CNVM,HRA - Para foveal IS/OS disruption. PVD+"
+        }
+      },
+      "follow_up": {
+        "advice": "4 months",
+        "date": "2020-07-13 00:00:00"
+      }
+    },
+    {
+      "visit_number": 24,
+      "chronology": "Follow-up #23",
+      "visit_date": "2020-09-09 08:06:15.470000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 144910694,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "4/60",
+          "LE": "6/9"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "4/60",
+            "UCVA_VA": "4/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N6"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        },
+        "special_notes": {
+          "raw": "HRA-Subfoveal hyper reflective irregular RPE lesion with Persisting cystic changes S/O CNVM,HRA - Para foveal IS/OS disruption. PVD+"
+        }
+      },
+      "follow_up": {
+        "advice": "4 months",
+        "date": "2021-01-09 00:00:00"
+      }
+    },
+    {
+      "visit_number": 25,
+      "chronology": "Follow-up #24",
+      "visit_date": "2021-01-11 07:50:44.690000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 145935476,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "6/6"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60",
+            "UCVA_VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N12"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0;0;0;0;0;130;0",
+          "diastolic": "0;0;0;0;0;0;0;60;0"
+        },
+        "status": "; ; ; ; ; ;Done at Aravind; ;",
+        "description": "Asthma;Cardiac;Diabetes;Drug Allergies;Hyperlipidemia;Hypertension;Non-Ocular Sx;Other Allergies;Others;Renal;Stroke"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "NEW I-SITE CAP",
+          "start_date": "2021-01-11 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 30,
+          "duration_start": "11/01/2021",
+          "duration_end": "09/02/2021"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Pulse",
+            "value": "53"
+          },
+          {
+            "name": "Pulse",
+            "value": "56"
+          },
+          {
+            "name": "SPO2",
+            "value": "99"
+          },
+          {
+            "name": "Weight",
+            "value": "60"
+          },
+          {
+            "name": "Blood Sugar"
+          },
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "ECG"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "16.000",
+          "LE": "15.000"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        },
+        "special_notes": {
+          "raw": "HRA- Subfoveal hyper reflective irregular RPE lesion with Increasing SRF, Macular Oedema with para foveal hard exudates with cystic changes. S/O CNVM,HRA - Para foveal irregular RPE with  IS/OS disruption. PVD+;Non progression of r wave"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2021-02-11 00:00:00"
+      },
+      "opinion": {
+        "clinic": "PHYSICIAN",
+        "refererer": "IntraVit Inj",
+        "completed_datetime": "1900-01-03 00:00:00",
+        "completion_status": "0",
+        "clinic_type": "Other Clinic"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 26,
+      "chronology": "Follow-up #25",
+      "visit_date": "2021-01-18 08:47:07.693000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 145974310,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "150;0",
+          "diastolic": "70;0"
+        },
+        "status": ";Done at Aravind"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "medications": [
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "2021-01-19 00:00:00",
+          "frequency": 4,
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "19/01/2021",
+          "duration_end": "25/01/2021"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Blood Sugar"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2021-02-19 00:00:00"
+      },
+      "ocular_history": {
+        "description": "Fit for IntraVit InjPhysician:Dr. Banu Shree;Jan 11 2021 10:22 AM;MDU",
+        "duration": "0;0;0"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 27,
+      "chronology": "Follow-up #26",
+      "visit_date": "2021-02-19 08:35:09.467000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 146334477,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/12"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/6",
+            "UCVA_VA": "6/6"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60",
+            "UCVA_VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N60"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "15.000",
+          "LE": "17.000"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES"
+        },
+        "special_notes": {
+          "raw": "HRA- Subfoveal hyper reflective irregular RPE lesion with Resolving SRF.ERM.Resolving  Macular Oedema with para foveal hard exudates. S/O Regressing CNVM,HRA - Para foveal irregular RPE with IS/OS disruption. PVD+"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2021-03-19 00:00:00"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 28,
+      "chronology": "Follow-up #27",
+      "visit_date": "2021-03-01 07:35:50.067000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 146435633,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "130;0",
+          "diastolic": "70;0"
+        },
+        "status": ";Done at Aravind"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES, SEEN EARLIER"
+        }
+      },
+      "medications": [
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "2021-03-02 00:00:00",
+          "frequency": 4,
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "02/03/2021",
+          "duration_end": "08/03/2021"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Blood Pressure"
+          },
+          {
+            "name": "Blood Sugar"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES, SEEN EARLIER"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2021-04-02 00:00:00",
+        "location": "1"
+      },
+      "ocular_history": {
+        "description": "Fit for IntraVit InjPhysician:Dr. Banu Shree  Jan 11 2021 10:22 AM",
+        "duration": "0"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 29,
+      "chronology": "Follow-up #28",
+      "visit_date": "2021-04-01 07:50:16.883000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 146839433,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "vision_iop": {
+        "vision": {
+          "RE": "3/60",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "3/60",
+            "UCVA_VA": "3/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/6P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "NAS",
+            "UCVA_VA": "NAS"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N24"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES, SEEN EARLIER"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Dilate RR"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14.000",
+          "LE": "15.000"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES, SEEN EARLIER"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Resolving Macular edema with  hard exudates. S/O Regressing CNVM,HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M"
+        }
+      },
+      "follow_up": {
+        "advice": "SOS",
+        "date": "1900-01-03 00:00:00"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 30,
+      "chronology": "Follow-up #29",
+      "visit_date": "2021-04-07 07:37:53.573000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 146902190,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "procedures": {
+        "RE": [
+          {
+            "type": "IntraVit Inj",
+            "laser_type": "Avastin",
+            "scheduled": "Immediate",
+            "schedule_date": "1900-01-03 00:00:00",
+            "eye": "RE"
+          }
+        ]
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;120",
+          "diastolic": "0;60"
+        },
+        "status": "Done at Outside;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "Pseudophakia-PCIOL",
+          "LE": "Pseudophakia-PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "VITREOUS CONDENSATIONS INFRONT OF DISC, PVD",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "pvd, mild NPDR",
+          "LE": "pvd, mild NPDR"
+        },
+        "foveal_reflex": {
+          "RE": "pred scarred CNVM",
+          "LE": "dull"
+        },
+        "remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES, SEEN EARLIER"
+        }
+      },
+      "medications": [
+        {
+          "drug": "AUROFLOX EYE DROPS",
+          "start_date": "2021-04-08 00:00:00",
+          "frequency": 4,
+          "route": "11",
+          "duration_days": 7,
+          "duration_start": "08/04/2021",
+          "duration_end": "14/04/2021"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Blood Sugar"
+          },
+          {
+            "name": "Blood Pressure"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "Not Measurable",
+          "LE": "Not Measurable"
+        },
+        "fundus_remarks": {
+          "RE": "Regressing predominantly scarred CNVM s/p IVB x 4",
+          "LE": "DRY AMD CHANGES, SEEN EARLIER"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2021-05-08 00:00:00",
+        "location": "1"
+      },
+      "ocular_history": {
+        "description": "Fit for IntraVit InjPhysician:Dr. Banu Shree Jan 11 2021 10:22 AM",
+        "duration": "0"
+      },
+      "surgeries_and_lasers": {
+        "scheduled_laser_type": "Avastin",
+        "scheduled_date": "1900-01-03 00:00:00"
+      }
+    },
+    {
+      "visit_number": 31,
+      "chronology": "Follow-up #30",
+      "visit_date": "2022-07-12 07:57:24.303000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 152718946,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "3/60",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "3/60",
+            "UCVA_VA": "3/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/6P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "NAS",
+            "UCVA_VA": "NAS"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Clear",
+          "LE": "Clear"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred cnvm",
+          "LE": "Present"
+        }
+      },
+      "medications": [
+        {
+          "drug": "I-SITE AF",
+          "start_date": "2022-07-12 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 30,
+          "duration_start": "12/07/2022",
+          "duration_end": "10/08/2022"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "17.000",
+          "LE": "15.000"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Resolving Macular edema with hard exudates. S/O Regressing CNVM,HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M;No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month",
+        "date": "2022-08-12 00:00:00"
+      }
+    },
+    {
+      "visit_number": 32,
+      "chronology": "Follow-up #31",
+      "visit_date": "2022-08-12 07:47:41.810000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 153211883,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/6P"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/6P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60",
+            "UCVA_VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Hazy-PCO",
+          "LE": "Hazy-PCO"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred cnvm",
+          "LE": "Present"
+        }
+      },
+      "medications": [
+        {
+          "drug": "I-SITE AF",
+          "start_date": "1900-01-03 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_start": "2022-08-12 07:47:41.810000",
+          "duration_end": "2022-08-12 07:47:41.810000"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "18.000",
+          "LE": "18.000"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM with Lamellar Hole.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Persisting Macular edema with hard exudates. S/O Regressed CNVM.Membrane over the macula.,HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M;No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "2 months",
+        "date": "2022-10-12 00:00:00"
+      }
+    },
+    {
+      "visit_number": 33,
+      "chronology": "Follow-up #32",
+      "visit_date": "2022-10-12 07:55:24.957000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 154136214,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/6P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60",
+            "UCVA_VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Hazy-PCO",
+          "LE": "Hazy-PCO"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred cnvm",
+          "LE": "Present"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "20.000",
+          "LE": "20.000"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM with Lamellar Hole.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Persisting Macular edema with hard exudates. S/O Regressed CNVM.Membrane over the macula. ( Same as before ),HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M;No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "1 month;2 months",
+        "date": "Nov 12 2022 12:00AM;Dec 12 2022 12:00AM",
+        "location": ";1"
+      }
+    },
+    {
+      "visit_number": 34,
+      "chronology": "Follow-up #33",
+      "visit_date": "2022-12-12 07:45:52.400000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 155046208,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "User Defined Complaints"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60",
+            "UCVA_VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Hazy-PCO",
+          "LE": "Hazy-PCO"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred cnvm",
+          "LE": "Present"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14.000",
+          "LE": "14.000"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM with Lamellar Hole.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Persisting Macular edema with hard exudates. S/O Regressed CNVM.Membrane over the macula. ( Same as before ),HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2023-03-13 00:00:00"
+      }
+    },
+    {
+      "visit_number": 35,
+      "chronology": "Follow-up #34",
+      "visit_date": "2023-03-11 07:43:08.297000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 156362678,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine Followup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "6/60",
+          "LE": "6/6"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "6/60",
+            "UCVA_VA": "6/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/9"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "N60",
+            "UCVA_VA": "N60"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0;0",
+          "diastolic": "0;0;0"
+        },
+        "status": "; ;"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Hazy-PCO",
+          "LE": "Hazy-PCO"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred cnvm",
+          "LE": "Present"
+        },
+        "remarks": {
+          "LE": "no lesions"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "17.000",
+          "LE": "15.000"
+        },
+        "fundus_remarks": {
+          "LE": "no lesions"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM with Lamellar Hole.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Persisting Macular edema with hard exudates. S/O Regressed CNVM.Membrane over the macula. ( Same as before ),HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M;No Data"
+        }
+      },
+      "follow_up": {
+        "advice": "3 months",
+        "date": "2023-06-12 00:00:00"
+      }
+    },
+    {
+      "visit_number": 36,
+      "chronology": "Follow-up #35",
+      "visit_date": "2023-07-12 07:16:46.500000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 158433145,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine checkup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/12"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6",
+            "UCVA_VA": "6/12"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Hazy-PCO",
+          "LE": "Hazy-PCO"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred CNVM",
+          "LE": "RPE degeneration,DRUSE"
+        }
+      },
+      "medications": [
+        {
+          "drug": "LUTIVIT NF CAPS",
+          "start_date": "2023-07-12 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 180,
+          "duration_start": "12/07/2023",
+          "duration_end": "07/01/2024"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          },
+          {
+            "name": "Optical Coherence Tomography"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "14.000",
+          "LE": "16.000"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM with Lamellar Hole.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Persisting Macular edema with hard exudates. S/O Regressed CNVM.Membrane over the macula. ( Same as before ),HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M"
+        }
+      },
+      "follow_up": {
+        "advice": "6 months",
+        "date": "2024-01-12 00:00:00"
+      }
+    },
+    {
+      "visit_number": 37,
+      "chronology": "Follow-up #36",
+      "visit_date": "2023-08-09 07:04:51.763000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 158909432,
+      "diagnosis": {
+        "RE": [
+          "S/P Intravitreal Injection",
+          "CNVM- Choroidal neovascular membrane"
+        ],
+        "LE": [
+          "ARMD- Dry"
+        ]
+      },
+      "complaints": [
+        {
+          "main": "Routine checkup"
+        }
+      ],
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/12"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6P",
+            "UCVA_VA": "6/12P"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          },
+          "LE": {
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0;0",
+          "diastolic": "0;0"
+        },
+        "status": ";"
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Hazy-PCO",
+          "LE": "Hazy-PCO"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred CNVM",
+          "LE": "RPE degeneration,DRUSE"
+        }
+      },
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "Optical Coherence Tomography"
+          },
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "16.000",
+          "LE": "20.000"
+        },
+        "special_notes": {
+          "raw": "HRA- ERM with Lamellar Hole.Subfoveal hyper reflective irregular RPE lesion with Resolved SRF .Persisting Macular edema with hard exudates. S/O Regressed CNVM.Membrane over the macula. ( Same as before ),HRA - Para foveal irregular RPE .PVD attached to the macula. Foveal Thickness -174M"
+        }
+      },
+      "follow_up": {
+        "advice": "6 months",
+        "date": "2024-02-09 00:00:00"
+      }
+    },
+    {
+      "visit_number": 38,
+      "chronology": "Follow-up #37",
+      "visit_date": "2024-01-12 07:35:51.517000",
+      "Uid": 1279381,
+      "mr_no": "P2373097",
+      "peid": 161319248,
+      "vision_iop": {
+        "vision": {
+          "RE": "5/60",
+          "LE": "6/18"
+        },
+        "dv_refraction": {
+          "RE": {
+            "SPH": "-",
+            "Axis": "0",
+            "VA": "5/60",
+            "UCVA_VA": "5/60"
+          },
+          "LE": {
+            "SPH": "-",
+            "Axis": "180",
+            "VA": "6/6P",
+            "UCVA_VA": "6/18"
+          }
+        },
+        "nv_refraction": {
+          "RE": {
+            "SPH": "2.5",
+            "VA": "NAR",
+            "UCVA_VA": "NAR"
+          },
+          "LE": {
+            "SPH": "2.5",
+            "VA": "N6",
+            "UCVA_VA": "N18"
+          }
+        }
+      },
+      "systemic_history": {
+        "bp": {
+          "systolic": "0",
+          "diastolic": "0"
+        }
+      },
+      "anterior_segment": {
+        "normal": {
+          "RE": "0",
+          "LE": "0"
+        }
+      },
+      "anterior_structures": {
+        "anterior_chamber": {
+          "RE": "Normal Depth",
+          "LE": "Normal Depth"
+        },
+        "iris": {
+          "RE": "Normal Color and Pattern",
+          "LE": "Normal Color and Pattern"
+        },
+        "conjunctiva": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "pupil": {
+          "RE": "Pharmacologically Dilated",
+          "LE": "Pharmacologically Dilated"
+        },
+        "lens": {
+          "RE": "PCIOL",
+          "LE": "PCIOL"
+        }
+      },
+      "ocular_movements": {
+        "movements": {
+          "RE": "FULL",
+          "LE": "FULL"
+        },
+        "corneal_reflex": {
+          "RE": "Orthophoric",
+          "LE": "Orthophoric"
+        },
+        "globe": {
+          "RE": "Normal",
+          "LE": "Normal"
+        }
+      },
+      "fundus": {
+        "media": {
+          "RE": "Hazy-PCO",
+          "LE": "Hazy-PCO"
+        },
+        "disc": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "vessels": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "background_retina": {
+          "RE": "Normal",
+          "LE": "Normal"
+        },
+        "foveal_reflex": {
+          "RE": "Scarred CNVM",
+          "LE": "RPE degeneration,DRUSE"
+        }
+      },
+      "medications": [
+        {
+          "drug": "LUTIVIT NF CAPS",
+          "start_date": "2024-01-12 00:00:00",
+          "frequency": 1,
+          "meals": "After Meals",
+          "route": "15",
+          "duration_days": 180,
+          "duration_start": "12/01/2024",
+          "duration_end": "09/07/2024"
+        }
+      ],
+      "investigations": {
+        "general_investigations": [
+          {
+            "name": "IOP"
+          }
+        ],
+        "eye_specific_results": {
+          "RE": "15",
+          "LE": "15"
+        }
+      },
+      "follow_up": {
+        "advice": "6 months",
+        "date": "2024-07-12 00:00:00"
+      }
+    }
+  ],
+  "gantt_charts": {
+    "anterior_chamber": {
+      "Normal Depth_anterior_chamber_RE": {
+        "condition": "Normal Depth",
+        "field": "anterior_chamber",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Normal Depth_anterior_chamber_LE": {
+        "condition": "Normal Depth",
+        "field": "anterior_chamber",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "iris": {
+      "Normal Color and Pattern_iris_RE": {
+        "condition": "Normal Color and Pattern",
+        "field": "iris",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Normal Color and Pattern_iris_LE": {
+        "condition": "Normal Color and Pattern",
+        "field": "iris",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "conjunctiva": {
+      "Normal_conjunctiva_RE": {
+        "condition": "Normal",
+        "field": "conjunctiva",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Normal_conjunctiva_LE": {
+        "condition": "Normal",
+        "field": "conjunctiva",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "pupil": {
+      "Pharmacologically Dilated_pupil_RE": {
+        "condition": "Pharmacologically Dilated",
+        "field": "pupil",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Pharmacologically Dilated_pupil_LE": {
+        "condition": "Pharmacologically Dilated",
+        "field": "pupil",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2018-09-20 08:14:48.853000"
+          },
+          {
+            "start_date": "2020-03-13 08:24:19.750000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Normal Size and Reaction to Light_pupil_LE": {
+        "condition": "Normal Size and Reaction to Light",
+        "field": "pupil",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-09-24 08:47:33.510000",
+            "end_date": "2019-12-13 08:24:46.940000"
+          }
+        ]
+      }
+    },
+    "lens": {
+      "Pseudophakia-PCIOL_lens_RE": {
+        "condition": "Pseudophakia-PCIOL",
+        "field": "lens",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "Pseudophakia-PCIOL_lens_LE": {
+        "condition": "Pseudophakia-PCIOL",
+        "field": "lens",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "PCIOL_lens_RE": {
+        "condition": "PCIOL",
+        "field": "lens",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2022-07-12 07:57:24.303000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "PCIOL_lens_LE": {
+        "condition": "PCIOL",
+        "field": "lens",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-07-12 07:57:24.303000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "media": {
+      "VITREOUS CONDENSATIONS INFRONT OF DISC_media_RE": {
+        "condition": "VITREOUS CONDENSATIONS INFRONT OF DISC",
+        "field": "media",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "PVD_media_RE": {
+        "condition": "PVD",
+        "field": "media",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "Clear_media_LE": {
+        "condition": "Clear",
+        "field": "media",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2022-07-12 07:57:24.303000"
+          }
+        ]
+      },
+      "Clear_media_RE": {
+        "condition": "Clear",
+        "field": "media",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2022-07-12 07:57:24.303000",
+            "end_date": "2022-07-12 07:57:24.303000"
+          }
+        ]
+      },
+      "Hazy-PCO_media_RE": {
+        "condition": "Hazy-PCO",
+        "field": "media",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2022-08-12 07:47:41.810000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Hazy-PCO_media_LE": {
+        "condition": "Hazy-PCO",
+        "field": "media",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-08-12 07:47:41.810000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "disc": {
+      "Normal_disc_RE": {
+        "condition": "Normal",
+        "field": "disc",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Normal_disc_LE": {
+        "condition": "Normal",
+        "field": "disc",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "vessels": {
+      "Normal_vessels_RE": {
+        "condition": "Normal",
+        "field": "vessels",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Normal_vessels_LE": {
+        "condition": "Normal",
+        "field": "vessels",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "background_retina": {
+      "pvd_background_retina_RE": {
+        "condition": "pvd",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "Normal_background_retina_RE": {
+        "condition": "Normal",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2019-06-14 08:21:51.897000"
+          },
+          {
+            "start_date": "2022-07-12 07:57:24.303000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "pvd_background_retina_LE": {
+        "condition": "pvd",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "drusens_background_retina_LE": {
+        "condition": "drusens",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2019-06-14 08:21:51.897000"
+          }
+        ]
+      },
+      "mild NPDR_background_retina_RE": {
+        "condition": "mild NPDR",
+        "field": "background_retina",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2019-09-12 08:12:54.807000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "mild NPDR_background_retina_LE": {
+        "condition": "mild NPDR",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2019-09-12 08:12:54.807000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "Normal_background_retina_LE": {
+        "condition": "Normal",
+        "field": "background_retina",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-07-12 07:57:24.303000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "foveal_reflex": {
+      "Absent-scarred CNVM_foveal_reflex_RE": {
+        "condition": "Absent-scarred CNVM",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2018-09-24 08:47:33.510000"
+          }
+        ]
+      },
+      "dull_foveal_reflex_LE": {
+        "condition": "dull",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "NO FLUID OR HGE NOTED_foveal_reflex_LE": {
+        "condition": "NO FLUID OR HGE NOTED",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2019-06-14 08:21:51.897000"
+          }
+        ]
+      },
+      "Predominantly scarred cnvm with some activity and superior and temporal edge with surrounding HEs_foveal_reflex_RE": {
+        "condition": "Predominantly scarred cnvm with some activity and superior and temporal edge with surrounding HEs",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-25 08:10:53.550000",
+            "end_date": "2018-10-25 08:10:53.550000"
+          }
+        ]
+      },
+      "pred scarred CNVM_foveal_reflex_RE": {
+        "condition": "pred scarred CNVM",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-11-29 07:52:15.837000",
+            "end_date": "2021-04-07 07:37:53.573000"
+          }
+        ]
+      },
+      "Scarred CNVM_foveal_reflex_RE": {
+        "condition": "Scarred CNVM",
+        "field": "foveal_reflex",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2022-07-12 07:57:24.303000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "Present_foveal_reflex_LE": {
+        "condition": "Present",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2022-07-12 07:57:24.303000",
+            "end_date": "2023-03-11 07:43:08.297000"
+          }
+        ]
+      },
+      "RPE degeneration_foveal_reflex_LE": {
+        "condition": "RPE degeneration",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-07-12 07:16:46.500000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      },
+      "DRUSE_foveal_reflex_LE": {
+        "condition": "DRUSE",
+        "field": "foveal_reflex",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2023-07-12 07:16:46.500000",
+            "end_date": "2024-01-12 07:35:51.517000"
+          }
+        ]
+      }
+    },
+    "diagnosis": {
+      "Wet ARMD_diagnosis_RE": {
+        "condition": "Wet ARMD",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2018-10-29 08:46:30.193000"
+          }
+        ]
+      },
+      "ARMD- Dry_diagnosis_LE": {
+        "condition": "ARMD- Dry",
+        "eye": "LE",
+        "periods": [
+          {
+            "start_date": "2018-02-09 08:11:37.740000",
+            "end_date": "2018-03-17 07:54:07.040000"
+          },
+          {
+            "start_date": "2018-06-20 09:04:37.373000",
+            "end_date": "2023-08-09 07:04:51.763000"
+          }
+        ]
+      },
+      "S/P Intravitreal Injection_diagnosis_RE": {
+        "condition": "S/P Intravitreal Injection",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-10-25 08:10:53.550000",
+            "end_date": "2023-08-09 07:04:51.763000"
+          }
+        ]
+      },
+      "CNVM- Choroidal neovascular membrane_diagnosis_RE": {
+        "condition": "CNVM- Choroidal neovascular membrane",
+        "eye": "RE",
+        "periods": [
+          {
+            "start_date": "2018-11-29 07:52:15.837000",
+            "end_date": "2023-08-09 07:04:51.763000"
+          }
+        ]
+      }
+    }
+  }
+}

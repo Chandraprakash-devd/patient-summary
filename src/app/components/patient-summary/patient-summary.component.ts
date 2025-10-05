@@ -12,8 +12,15 @@ import {
   VADataPoint,
 } from '../line-chart/line-chart.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
-import patient1Data from '../../../../patient_complete_data.json';
-import patient2Data from '../../../../patient_1271481_summary.json';
+import patient1Data from '../../../../patient_data/patient_complete_data.json';
+import patient2Data from '../../../../patient_data/patient_1271481_summary.json';
+import patient3Data from '../../../../patient_data/patient_11512248_summary.json';
+import patient4Data from '../../../../patient_data/patient_1198643_summary.json';
+import patient5Data from '../../../../patient_data/patient_1240726_summary.json';
+import patient6Data from '../../../../patient_data/patient_1279381_summary.json';
+import patient7Data from '../../../../patient_data/patient_1288057_summary.json';
+import patient8Data from '../../../../patient_data/patient_1418045_summary.json';
+import patient9Data from '../../../../patient_data/patient_1488606_summary.json';
 
 @Component({
   selector: 'app-patient-summary',
@@ -33,6 +40,13 @@ export class PatientSummaryComponent implements OnInit {
   private patientDataMap = new Map<string, any>([
     ['Patient 1', patient1Data],
     ['Patient 2', patient2Data],
+    ['Patient 3', patient3Data],
+    ['Patient 4', patient4Data],
+    ['Patient 5', patient5Data],
+    ['Patient 6', patient6Data],
+    ['Patient 7', patient7Data],
+    ['Patient 8', patient8Data],
+    ['Patient 9', patient9Data],
   ]);
 
   jsonData: any = patient1Data;
@@ -674,6 +688,7 @@ export class PatientSummaryComponent implements OnInit {
 
     return ganttData;
   }
+
   getLineChartData(eye: string): ChartData {
     console.log('=== Getting Line Chart Data for eye:', eye, '===');
 
@@ -795,21 +810,20 @@ export class PatientSummaryComponent implements OnInit {
         }
 
         if (!cmtValue && visit.investigations.special_notes) {
-          const eyeNote = visit.investigations.special_notes[eye];
-          if (eyeNote) {
-            const extracted = this.extractCMTFromText(eyeNote, eye);
-            if (extracted) {
-              cmtValue = extracted;
-            }
+          // Use the new Python-like extraction from raw note if available
+          if (visit.investigations.special_notes.raw) {
+            const extracted = this.extractCMTFromText(
+              visit.investigations.special_notes.raw
+            );
+            cmtValue = eye === 'RE' ? extracted.RE : extracted.LE;
           }
 
-          if (!cmtValue && visit.investigations.special_notes.raw) {
-            const extracted = this.extractCMTFromText(
-              visit.investigations.special_notes.raw,
-              eye
-            );
-            if (extracted) {
-              cmtValue = extracted;
+          // Fallback to eye-specific note if raw extraction didn't yield a value
+          if (cmtValue === null) {
+            const eyeNote = visit.investigations.special_notes[eye];
+            if (eyeNote) {
+              const extracted = this.extractCMTFromText(eyeNote);
+              cmtValue = eye === 'RE' ? extracted.RE : extracted.LE;
             }
           }
         }
@@ -920,39 +934,63 @@ export class PatientSummaryComponent implements OnInit {
     return null;
   }
 
-  extractCMTFromText(text: string, eye?: string): number | null {
-    if (!text) return null;
+  extractCMTFromText(text: string): { RE: number | null; LE: number | null } {
+    if (!text || ['none', 'nan', 'no data'].includes(text.toLowerCase())) {
+      return { RE: null, LE: null };
+    }
 
-    if (eye) {
-      const eyeSpecificRegex = new RegExp(
-        `(?:${eye}\\s+)?(?:CMT|cmt|central macular thickness)\\s*(?:${eye}\\s*)?[:-]?\\s*(\\d+)\\s*(?:um|μm|microns?|M)?`,
-        'i'
-      );
-      const eyeMatch = text.match(eyeSpecificRegex);
-      if (eyeMatch) {
-        const value = parseInt(eyeMatch[1], 10);
-        if (!isNaN(value) && value >= 150 && value <= 1500) {
-          return value;
-        }
+    const noteNorm = text.trim().replace(/\s+/g, ' ');
+
+    let reValue: string | null = null;
+    let leValue: string | null = null;
+
+    // --- Explicit RE/LE extraction ---
+    const explicitRegex =
+      /\b(RE|LE)\s*[-:;,]?\s*['"]?(\d+\s*(?:µm|um|mm|Mm|M)?)/gi;
+    let match;
+    while ((match = explicitRegex.exec(noteNorm)) !== null) {
+      const eye = match[1].toUpperCase();
+      const value = match[2].replace(/\s+/g, '').toUpperCase();
+      if (eye === 'RE') {
+        reValue = value;
+      } else if (eye === 'LE') {
+        leValue = value;
       }
     }
 
-    const patterns = [
-      /(?:CMT|cmt|central macular thickness)\s*[:-]?\s*(\d+)\s*(?:um|μm|microns?|M)?/i,
-      /(?<!foveal\s+thickness\s*[:-]?\s*)\b(\d{3,4})M\b/i,
-      /(?<!foveal\s+)thickness\s*[:-]?\s*(\d+)\s*(?:um|μm|microns?)?/i,
-    ];
-
-    for (const pattern of patterns) {
-      const match = text.match(pattern);
-      if (match) {
-        const value = parseInt(match[1], 10);
-        if (!isNaN(value) && value >= 150 && value <= 1500) {
-          return value;
-        }
-      }
+    // --- Foveal Thickness extraction ---
+    const fovealRegex =
+      /Foveal\sThickness\s[-:;,]?\s*(\d+\s*(?:µm|um|mm|Mm|M)?)/gi;
+    const fovealMatches: string[] = [];
+    while ((match = fovealRegex.exec(noteNorm)) !== null) {
+      fovealMatches.push(match[1].replace(/\s+/g, '').toUpperCase());
     }
 
-    return null;
+    if (reValue && leValue) {
+      // pass
+    } else if (reValue && !leValue && fovealMatches.length === 1) {
+      leValue = fovealMatches[0];
+    } else if (!reValue && leValue && fovealMatches.length === 1) {
+      reValue = fovealMatches[0];
+    } else if (!reValue && !leValue && fovealMatches.length === 2) {
+      reValue = fovealMatches[0];
+      leValue = fovealMatches[1];
+    }
+
+    // Parse values to numbers, stripping non-digits
+    const parseValue = (val: string | null): number | null => {
+      if (!val) return null;
+      const numericStr = val.replace(/[^0-9]/g, '');
+      const numeric = parseInt(numericStr, 10);
+      if (isNaN(numeric) || numeric < 150 || numeric > 1500) {
+        return null;
+      }
+      return numeric;
+    };
+
+    return {
+      RE: parseValue(reValue),
+      LE: parseValue(leValue),
+    };
   }
 }
