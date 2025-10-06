@@ -38,15 +38,15 @@ import patient9Data from '../../../../patient_data/patient_1488606_summary.json'
 })
 export class PatientSummaryComponent implements OnInit {
   private patientDataMap = new Map<string, any>([
-    ['Patient 1', patient1Data],
+    ['Patient 1', patient8Data],
     ['Patient 2', patient2Data],
-    ['Patient 3', patient3Data],
-    ['Patient 4', patient4Data],
-    ['Patient 5', patient5Data],
-    ['Patient 6', patient6Data],
-    ['Patient 7', patient7Data],
-    ['Patient 8', patient8Data],
-    ['Patient 9', patient9Data],
+    ['Patient 3', patient5Data],
+    ['Patient 4', patient6Data],
+    ['Patient 5', patient4Data],
+    ['Patient 6', patient1Data],
+    ['Patient 7', patient9Data],
+    ['Patient 8', patient3Data],
+    ['Patient 9', patient7Data],
   ]);
 
   private summaries: Map<string, { re: string; le: string }> = new Map([
