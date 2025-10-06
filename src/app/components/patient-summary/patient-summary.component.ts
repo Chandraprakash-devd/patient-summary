@@ -1037,8 +1037,24 @@ As of February 2024, the left eye demonstrates stable PDR with chronic DME, BCVA
 
   normalizeVAString(vaStr: string): string | null {
     if (!vaStr) return null;
-    let normalized = vaStr.trim().replace(/P$/i, '').trim();
+
+    const trimmed = vaStr.trim();
+    if (!trimmed) return null;
+
+    // Special cases that should not have 'P' removed
+    const specialCases = ['NLP', 'HM', 'CF', 'PL', 'NAS', 'NO PL'];
+    const upper = trimmed.toUpperCase();
+
+    for (const special of specialCases) {
+      if (upper === special || upper.startsWith(special + ' ')) {
+        return upper;
+      }
+    }
+
+    // For normal Snellen values, remove trailing P
+    let normalized = trimmed.replace(/P$/i, '').trim();
     if (!normalized) return null;
+
     return normalized;
   }
 
@@ -1100,7 +1116,7 @@ As of February 2024, the left eye demonstrates stable PDR with chronic DME, BCVA
     if (upper.includes('CF')) return -0.5;
     if (upper === 'HM') return -1.0;
     if (upper === 'PL') return -1.5;
-    if (upper === 'NO PL' || upper === 'NAS') return -2.0;
+    if (upper === 'NLP' || upper === 'NO PL' || upper === 'NAS') return -2.0; // Added NLP here
 
     return null;
   }
