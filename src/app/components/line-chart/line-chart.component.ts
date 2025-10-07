@@ -332,7 +332,7 @@ export class LineChartComponent
     const metric = this.metrics[metricIndex];
 
     if (metricIndex === 0) {
-      return ['6/6', '6/18', '6/60', 'CF', 'HM', 'PL', 'No PL'];
+      return ['6/6', '6/18', '6/60', 'CF', 'HM', 'PL'];
     }
 
     const { min, max, step } = metric;

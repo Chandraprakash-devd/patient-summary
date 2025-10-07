@@ -607,21 +607,32 @@ As of February 2024, the left eye demonstrates stable PDR with chronic DME, BCVA
 
   getDiseases(): { name: string; date: string }[] {
     const diseasesMap = new Map<string, string>();
+
     (this.jsonData.visits || []).forEach((visit: any) => {
       if (visit.systemic_history && visit.systemic_history.description) {
         const diseases = visit.systemic_history.description
           .split(';')
           .filter((d: string) => d.trim());
-        const visitDate =
-          visit.visit_date?.substring(0, 7).replace('-', '/') || '';
+
+        // Parse and format visit date
+        let formattedDate = '';
+        if (visit.visit_date) {
+          const dateObj = new Date(visit.visit_date);
+          const day = String(dateObj.getDate()).padStart(2, '0');
+          const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+          const year = dateObj.getFullYear();
+          formattedDate = `${day}/${month}/${year}`;
+        }
+
         diseases.forEach((disease: string) => {
           const trimmed = disease.trim();
           if (trimmed && !diseasesMap.has(trimmed)) {
-            diseasesMap.set(trimmed, visitDate);
+            diseasesMap.set(trimmed, formattedDate);
           }
         });
       }
     });
+
     return Array.from(diseasesMap.entries()).map(([name, date]) => ({
       name,
       date,

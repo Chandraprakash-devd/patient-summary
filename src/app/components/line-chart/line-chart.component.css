@@ -6,11 +6,11 @@
   font-family: Arial, sans-serif;
   font-size: 11px;
   color: #fff;
-  height: 350px;
+  height: 375px;
   width: 100%;
 }
 
-[data-theme='light'].chart-container {
+[data-theme="light"].chart-container {
   background: #fff;
   color: #000;
 }
@@ -51,20 +51,20 @@
   justify-content: space-evenly;
   padding: 20px 10px;
   background: #000;
+  width: 60px;
+  /* font-size: 20px; */
 }
 
-[data-theme='light'] .y-axis-labels {
+[data-theme="light"] .y-axis-labels {
   background: #fff;
 }
 
 .metric-label {
   display: flex;
   flex-direction: column;
-  align-items: start;
   text-align: right;
-  padding: 5px 0;
   flex: 1;
-  justify-content: space-around;
+  margin: 8px 0;
 }
 
 .metric-name {
@@ -73,7 +73,7 @@
   margin-bottom: 5px;
 }
 
-[data-theme='light'] .metric-name {
+[data-theme="light"] .metric-name {
   color: #666;
 }
 
@@ -86,13 +86,13 @@
 }
 
 .scale-value {
-  font-size: 9px;
+  font-size: 10px;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.15;
   color: #fff;
 }
 
-[data-theme='light'] .scale-value {
+[data-theme="light"] .scale-value {
   color: #000;
 }
 
@@ -102,7 +102,7 @@
   background: #000;
 }
 
-[data-theme='light'] .chart-area {
+[data-theme="light"] .chart-area {
   background: #fff;
 }
 
