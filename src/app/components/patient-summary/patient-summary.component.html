@@ -1,8 +1,8 @@
 <!-- patient-summary.component.html -->
 <div class="top-row">
-  <select [(ngModel)]="selectedPatient" (ngModelChange)="onPatientChange()" class="select-fixed">
-    <option *ngFor="let patient of patients" [value]="patient">{{ patient }}</option>
-  </select>
+  <div class="uid-display select-fixed">
+    UID: {{ selectedPatient || 'N/A' }}
+  </div>
 
   <select [(ngModel)]="selectedEye" (ngModelChange)="updateData()" class="select-fixed small">
     <option *ngFor="let eye of eyes" [value]="eye">{{ eye }}</option>

@@ -5,6 +5,17 @@
   gap: 12px;
   padding: 12px 8px;
 }
+.uid-display {
+  display: flex;
+  align-items: center;
+  /* justify-content: start; */
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
 /* fixed select sizes */
 .select-fixed {
   width: 280px;
@@ -46,7 +57,7 @@
   flex-direction: column;
   height: 220px; /* fixed height */
   overflow: auto;
-  min-width: 280px; 
+  min-width: 280px;
 }
 
 .box-head {
@@ -72,7 +83,7 @@
 }
 .box-body::-webkit-scrollbar-thumb {
   /* background: var(--muted);*/
-   background: transparent;
+  background: transparent;
   border-radius: 4px;
 }
 
@@ -96,7 +107,7 @@
   border-collapse: collapse;
   border: 1px solid rgb(229, 231, 235, 0.3);
   border-radius: 4px;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 .mini-table thead tr th {
   text-align: left;
@@ -189,7 +200,8 @@
   border-collapse: collapse;
 }
 
-.mini-table th, .mini-table td {
+.mini-table th,
+.mini-table td {
   border: 1px solid #ddd;
   padding: 5px;
   text-align: left;

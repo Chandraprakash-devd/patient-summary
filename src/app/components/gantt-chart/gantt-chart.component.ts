@@ -78,17 +78,15 @@ export class GanttChartComponent
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (
-      changes['data'] &&
-      !changes['data'].firstChange &&
-      this.chartInitialized
-    ) {
+    if (changes['data']) {
       if (this.chart) {
         this.chart.destroy();
       }
 
       if (this.data && this.data.length > 0) {
+        // even if chartInitialized is false, we can still render now
         this.renderChart();
+        this.chartInitialized = true;
       }
     }
   }

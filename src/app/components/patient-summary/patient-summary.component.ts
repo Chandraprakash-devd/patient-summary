@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 import { GanttChartComponent } from '../gantt-chart/gantt-chart.component';
@@ -37,6 +38,11 @@ import patient9Data from '../../../../patient_data/patient_1488606_summary.json'
   styleUrls: ['./patient-summary.component.css'],
 })
 export class PatientSummaryComponent implements OnInit {
+  constructor(
+    private route: ActivatedRoute,
+    private cdr: ChangeDetectorRef,
+    private ngZone: NgZone
+  ) {}
   private patientDataMap = new Map<string, any>([
     ['Patient 1', patient8Data],
     ['Patient 2', patient2Data],
@@ -458,19 +464,68 @@ As of February 2024, the left eye demonstrates stable PDR with chronic DME, BCVA
   private colorIndex = 0;
 
   ngOnInit(): void {
-    this.patients = Array.from(this.patientDataMap.keys());
-    this.selectedPatient = this.patients[0];
+    this.route.queryParams.subscribe((params: { [key: string]: any }) => {
+      const uid = params['uid'];
+      console.log('Query param UID:', uid);
 
-    this.jsonData = this.patientDataMap.get(this.selectedPatient);
+      if (!uid) {
+        this.jsonData = null;
+        this.patientSummary = 'No UID provided in URL';
+        this.clearAllData();
+        this.cdr.detectChanges();
+        return;
+      }
 
-    if (!this.jsonData || !this.jsonData.patient_info) {
-      console.error('Invalid JSON data structure');
-      return;
-    }
-    // Initialize procedure colors
-    this.initializeProcedureColors();
+      const foundPatient = Array.from(this.patientDataMap.values()).find(
+        (data: any) => data.patient_info?.uid?.toString() === uid
+      );
 
-    this.updateData();
+      this.ngZone.run(() => {
+        if (foundPatient) {
+          this.jsonData = foundPatient;
+          this.selectedPatient = uid;
+
+          console.log('✅ Found patient data for UID:', uid);
+
+          this.initializeProcedureColors();
+          this.updateData();
+
+          // ✅ Force Angular to detect input changes for child components
+          this.cdr.detectChanges();
+        } else {
+          console.warn('⚠️ No patient data found for UID:', uid);
+          this.jsonData = null;
+          this.patientSummary = `No records found for UID: ${uid}`;
+          this.clearAllData();
+          this.cdr.detectChanges();
+        }
+
+        console.log('Loaded jsonData:', this.jsonData);
+        console.log('Gantt diagnosis data length:', this.ganttData?.length);
+      });
+    });
+  }
+
+  private clearAllData(): void {
+    this.ganttData = [];
+    this.backgroundRetinaData = [];
+    this.maculaFovealReflexData = [];
+    this.conjunctivaData = [];
+    this.mediaData = [];
+    this.anteriorChamberData = [];
+    this.irisData = [];
+    this.discData = [];
+    this.pupilData = [];
+    this.vesselsData = [];
+    this.undilatedFundusData = [];
+    this.medicationsData = [];
+    this.lensData = [];
+    this.lineChartData = {
+      procedures: [],
+      visualAcuityData: [],
+      iopData: [],
+      cmtData: [],
+    };
   }
 
   onPatientChange(): void {
@@ -681,6 +736,7 @@ As of February 2024, the left eye demonstrates stable PDR with chronic DME, BCVA
     section: string,
     eye: string
   ): { task: string; start: string; end: string }[] {
+    console.log(`Generating Gantt data for section: ${section}, eye: ${eye}`);
     const ganttSection =
       this.jsonData.gantt_charts?.[section] ||
       (section === 'diagnosis' ? this.jsonData.diagnosis : null);
