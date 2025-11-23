@@ -1,0 +1,178 @@
+{
+  "p": {
+    "uid": "22696638",
+    "mr": "P5925242",
+    "v": 4,
+    "f": "2024-11-15",
+    "l": "2025-04-05"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2024-11-15",
+      "c": "Initial",
+      "vi": {
+        "vis": {
+          "None": "618"
+        }
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light;Pharmacologically Dilated",
+        "lens": "Clear;NS 2, PSCC"
+      },
+      "op": {
+        "ref": "LE cataract  sx",
+        "rem": "iv manitol"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": [
+          "Disc Normal, PPA",
+          "Normal"
+        ],
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "Dull",
+          "Present"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "12",
+          "13"
+        ],
+        "sp": {
+          "r": "NR"
+        }
+      }
+    },
+    {
+      "v": 2,
+      "d": "2024-12-05",
+      "c": "F1",
+      "vi": {
+        "vis": {
+          "None": "618"
+        }
+      },
+      "as": {
+        "rem": "as seen on 15/11/24"
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "NS 2, PSCC"
+      },
+      "op": {
+        "ref": "LE  cataract  sx",
+        "rem": "ckd"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Disc Normal, PPA",
+        "ve": "Normal",
+        "br": "Tesselated",
+        "mf": "Dull",
+        "rem": "as seen on 15/11/24"
+      },
+      "inv": {
+        "iop": [
+          "14",
+          "17"
+        ]
+      }
+    },
+    {
+      "v": 3,
+      "d": "2024-12-06",
+      "c": "F2",
+      "op": {
+        "ref": "LE  cataract sx",
+        "rem": "renal disease"
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      }
+    },
+    {
+      "v": 4,
+      "d": "2025-04-05",
+      "c": "F3",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": {
+          "With Spectacles": "618",
+          "UCVA": "560"
+        }
+      },
+      "s": {
+        "h": "Asthma;Hypertension;Diabetes;Cardiac;Stroke/Neuro;Identification Marks;Others;Lungs Problem;Rheumatoid Arthritis;Thyroid Status;Other Allergies;Hyperlipidemia;TB;Non-Ocular Sx;History of Malignancy;Liver Disease;Remarks;Renal Disease;Drug Allergies"
+      },
+      "as": {
+        "rem": "no resistance to retropulsion , no palpable mass, finger insunuation possible"
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "ns2 pscc"
+      },
+      "op": {
+        "ref": "RE PHACO with PATIENT’S PREF.",
+        "rem": "RE high  axl;papilloma BE lid"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy cataract",
+        "di": "Myopic disc",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "dull",
+        "rem": [
+          "IO-no treatable lesions in retinal periphery as far as visualised",
+          "IO-no treatable lesions in retinal periphery"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "13",
+          "12"
+        ],
+        "sp": {
+          "r": "DONE,DONE"
+        }
+      }
+    }
+  ]
+}

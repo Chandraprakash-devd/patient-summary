@@ -1,0 +1,2210 @@
+{
+  "p": {
+    "uid": "13543756",
+    "mr": "P5351694",
+    "v": 36,
+    "f": "2022-01-08",
+    "l": "2025-07-15"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2022-01-08",
+      "c": "Initial",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "618P"
+          },
+          {
+            "UCVA": "618"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "150",
+            "va": "612P",
+            "ucva": "618P"
+          },
+          {
+            "sph": "0",
+            "ax": "180",
+            "va": "69",
+            "ucva": "618"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "lens changes"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "hge + CWS +",
+          "hge + CWS+"
+        ],
+        "mf": [
+          "absent",
+          "absent- hge +"
+        ],
+        "rem": [
+          "PDR, /, PRP .. LOTS OF GAP AREAS",
+          "MODERATE NPDR"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "15",
+          "17"
+        ]
+      },
+      "fup": {
+        "adv": "3 months"
+      }
+    },
+    {
+      "v": 2,
+      "d": "2022-04-12",
+      "c": "F1",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "636",
+            "Glasses": "612P"
+          },
+          {
+            "UCVA": "618",
+            "Glasses": "69"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "150",
+            "va": "612P",
+            "ucva": "636"
+          },
+          {
+            "sph": "0",
+            "ax": "180",
+            "va": "69",
+            "ucva": "618"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "150"
+          },
+          {
+            "sph": "0",
+            "ax": "N6"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "lens changes"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "hge + CWS +",
+          "hge + CWS+"
+        ],
+        "mf": [
+          "absent",
+          "absent- hge +"
+        ],
+        "rem": [
+          "PDR, /, PRP .. ISCHEMIC MACULA/PDR+MBVO",
+          "MODERATE NPDR"
+        ]
+      },
+      "inv": {
+        "iop": "20"
+      },
+      "fup": {
+        "adv": "3 months"
+      },
+      "oh": {
+        "desc": "NCT"
+      }
+    },
+    {
+      "v": 3,
+      "d": "2022-04-22",
+      "c": "F2",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "636"
+          },
+          {
+            "UCVA": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Congestion-Diffuse, DISCHARGE",
+        "pu": "Pharmacologically Dilated",
+        "lens": "lens changes"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      },
+      "fup": {
+        "adv": "1 week"
+      }
+    },
+    {
+      "v": 4,
+      "d": "2022-07-15",
+      "c": "F3",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "624",
+            "Glasses": "612"
+          },
+          {
+            "UCVA": "618",
+            "Glasses": "69P"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "150",
+            "va": "612P",
+            "ucva": "624"
+          },
+          {
+            "ax": "165",
+            "va": "69P",
+            "ucva": "618"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "150"
+          },
+          {
+            "sph": "0",
+            "ax": "N8"
+          }
+        ]
+      },
+      "s": {
+        "h": "Asthma;Cardiac;Diabetes;Drug Allergies;H/O COVID 19;H/O COVID VACCINE;Hyperlipidemia;Hypertension;Identification Marks;Non-Ocular Sx;Other Allergies;Others;Remarks;Renal;Stroke;Thyroid"
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "Clear"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": [
+          "NVE superiorly+ few sclerosed vessels near macula",
+          "Normal"
+        ],
+        "br": [
+          "Haemorrhage-Dot & blot, Exudates-Cotton wool spots, PRP laser marks seen superiorly and inferiorly",
+          "hge + CWS+"
+        ],
+        "mf": [
+          "absent",
+          "absent- hge +"
+        ],
+        "rem": [
+          "ISCHEMIC MACULA, PDR S/P PRP unstable, GAP AREAS inferior",
+          "MODERATE NPDR"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "18"
+        ],
+        "sp": {
+          "r": "Inner cavitation spaces, is/os disruption,Altered foveal contour, retinal thinning"
+        }
+      },
+      "fup": {
+        "adv": "Whenever Required"
+      }
+    },
+    {
+      "v": 5,
+      "d": "2022-07-18",
+      "c": "F4",
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "612P",
+            "UCVA": "624"
+          },
+          {
+            "Glasses": "69P",
+            "UCVA": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "NO NVI;Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "NSRL;Pharmacologically Dilated",
+        "lens": "Clear;cc"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": [
+          "NVE superiorly+ few sclerosed vessels near macula",
+          "Normal"
+        ],
+        "br": [
+          "Haemorrhage-Dot & blot, Exudates-Cotton wool spots, PRP laser marks seen superiorly and inferiorly",
+          "hge + CWS+"
+        ],
+        "mf": [
+          "absent",
+          "absent- hge +"
+        ],
+        "rem": [
+          "ISCHEMIC MACULA, PDR S/P PRP unstable, GAP AREAS inferior",
+          "MODERATE NPDR"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "18",
+          "19"
+        ]
+      },
+      "fup": {
+        "adv": "2 months"
+      }
+    },
+    {
+      "v": 6,
+      "d": "2023-01-23",
+      "c": "F5",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "624",
+            "Glasses": "612"
+          },
+          {
+            "UCVA": "618",
+            "Glasses": "612"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light",
+        "lens": "Cataract-Early Cataract"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "18"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 7,
+      "d": "2023-05-31",
+      "c": "F6",
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "660",
+            "UCVA": "660"
+          },
+          {
+            "Glasses": "624",
+            "UCVA": "624"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "0",
+            "ax": "150",
+            "va": "636P",
+            "ucva": "660"
+          },
+          {
+            "ax": "75",
+            "va": "612P",
+            "ucva": "624"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "150"
+          },
+          {
+            "sph": "0",
+            "ax": "N24"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "Cataract-Early Cataract"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "Cotton wool spot, Haemorrhage-Dot & blot, laser marks, - stable lasered pdr",
+          "Cotton wool spot, Haemorrhage-Dot & blot, severe npdr"
+        ],
+        "mf": "absent"
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "15"
+        ],
+        "sp": {
+          "r": "ILM Irregularity with Retinal thinning cmt 231um,Parafoveal VMT with Retinal thinning cmt 185um,"
+        }
+      },
+      "fup": {
+        "adv": "3 months"
+      }
+    },
+    {
+      "v": 8,
+      "d": "2023-08-17",
+      "c": "F7",
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "660",
+            "UCVA": "660"
+          },
+          {
+            "Glasses": "624",
+            "UCVA": "624"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "0",
+            "va": "660",
+            "ucva": "660"
+          },
+          {
+            "ax": "165",
+            "va": "618",
+            "ucva": "624"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "150"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "Cataract-Early Cataract"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "Cotton wool spot, Haemorrhage-Dot & blot, laser marks, -",
+          "Cotton wool spot, Haemorrhage-Dot & blot, NVE"
+        ],
+        "mf": "dull",
+        "rem": [
+          "PDR S/P PRP",
+          ""
+        ]
+      },
+      "inv": {
+        "iop": [
+          "19",
+          "14"
+        ],
+        "sp": {
+          "r": "No Data"
+        }
+      },
+      "fup": {
+        "adv": "Tomorrow"
+      }
+    },
+    {
+      "v": 9,
+      "d": "2023-08-23",
+      "c": "F8",
+      "pr": {
+        "act": [
+          [
+            "No RE procedure"
+          ],
+          null
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "624P",
+            "UCVA With PH": "624P",
+            "Glasses": "636"
+          },
+          {
+            "UCVA": "624",
+            "UCVA With PH": "618",
+            "Glasses": "624"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "Cataract-Early Cataract"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "Cotton wool spot, Haemorrhage-Dot & blot, laser marks, -",
+          "Cotton wool spot, Haemorrhage-Dot & blot, NVE"
+        ],
+        "mf": "dull",
+        "rem": [
+          "PDR S/P PRP",
+          "PDR"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "18",
+          "19"
+        ],
+        "sp": {
+          "r": "FP,FP;HRA- Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA- Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc .."
+        }
+      },
+      "fup": {
+        "adv": "15 days"
+      }
+    },
+    {
+      "v": 10,
+      "d": "2023-09-04",
+      "c": "F9",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "618"
+          },
+          {
+            "UCVA": "612P"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "Cataract-Early Cataract"
+      },
+      "op": {
+        "ref": "PRP LASER",
+        "rem": "Creatinine High"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "Cotton wool spot, Haemorrhage-Dot & blot, laser marks, -",
+          "Cotton wool spot, Haemorrhage-Dot & blot, NVE"
+        ],
+        "mf": "dull",
+        "rem": [
+          "PDR S/P PRP",
+          "PDR"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "normal"
+        }
+      },
+      "fup": {
+        "adv": "10 days"
+      }
+    },
+    {
+      "v": 11,
+      "d": "2023-09-15",
+      "c": "F10",
+      "pr": {
+        "act": [
+          [
+            "No RE procedure"
+          ],
+          [
+            [
+              "Green"
+            ]
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "618"
+          },
+          {
+            "UCVA": "612P"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "Cataract-Early Cataract"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "Cotton wool spot, Haemorrhage-Dot & blot, laser marks, -",
+          "Cotton wool spot, Haemorrhage-Dot & blot, NVE"
+        ],
+        "mf": "dull",
+        "rem": [
+          "PDR S/P PRP",
+          "PDR"
+        ]
+      },
+      "fup": {
+        "adv": "10 days"
+      }
+    },
+    {
+      "v": 12,
+      "d": "2023-09-27",
+      "c": "F11",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "636"
+          },
+          {
+            "UCVA": "612P"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "Cataract-Early Cataract"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": [
+          "Cotton wool spot, Haemorrhage-Dot & blot, laser marks, -",
+          "Cotton wool spot, Haemorrhage-Dot & blot, NVE"
+        ],
+        "mf": "dull",
+        "rem": [
+          "PDR S/P PRP",
+          "PDR"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "No Data"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      },
+      "oh": {
+        "desc": "Fit for PRP LASERPhysician:Dr. Banu Shree, Sep 4 2023 10:47 AM,MDU Pre-operative instructions:avoid nsiads ckd pt no volume overload c.depin 5 mgms before prp"
+      }
+    },
+    {
+      "v": 13,
+      "d": "2023-10-27",
+      "c": "F12",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "660",
+            "UCVA": "660"
+          },
+          {
+            "Glasses": "612P",
+            "UCVA": "618"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "0",
+            "va": "660",
+            "ucva": "660"
+          },
+          {
+            "ax": "180",
+            "va": "612P",
+            "ucva": "618"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "150"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI in dilated State"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth;Normal Depth, Quiet",
+          "Normal Depth;Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "CC NS 1-2 PSCC",
+          "CC NS 1 PSCC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "FVP At Disc"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas posteriorly)",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "dull",
+          "NSD"
+        ],
+        "rem": [
+          "PDR S/P PRP, UNSTABLE",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "18",
+          "19"
+        ],
+        "sp": {
+          "r": "HRA-Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA-Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc ."
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 14,
+      "d": "2023-11-27",
+      "c": "F13",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "660",
+            "UCVA": "660"
+          },
+          {
+            "Glasses": "612P",
+            "UCVA": "624"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "0",
+            "va": "660",
+            "ucva": "660"
+          },
+          {
+            "sph": "0",
+            "ax": "180",
+            "va": "612P",
+            "ucva": "624"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "150"
+          },
+          {
+            "sph": "0",
+            "ax": "N8"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI in dilated State"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "CC NS 1-2 PSCC",
+          "CC NS 1 PSCC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "FVP At Disc"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas posteriorly)",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "NSD"
+        ],
+        "rem": [
+          "PDR S/P PRP, UNSTABLE",
+          "PDR, S/p PRP, Stabilizing"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "16"
+        ],
+        "sp": {
+          "r": "HRA-Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA-Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc ."
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 15,
+      "d": "2023-12-09",
+      "c": "F14",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "636"
+          },
+          {
+            "UCVA": "618"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI in dilated State"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "CC NS 1-2 PSCC",
+          "CC NS 1 PSCC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "FVP At Disc"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas posteriorly)",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "NSD"
+        ],
+        "rem": [
+          "PDR S/P PRP, UNSTABLE",
+          "PDR, S/p PRP, Stabilizing"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 16,
+      "d": "2024-01-12",
+      "c": "F15",
+      "vi": {
+        "vis": [
+          {},
+          {
+            "Glasses": "612P",
+            "UCVA": "624"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "0",
+            "va": "160",
+            "ucva": "160"
+          },
+          {
+            "sph": "0",
+            "ax": "180",
+            "va": "612P",
+            "ucva": "624"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "150"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI/ NVA"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light",
+        "lens": [
+          "CC NS 1-2 PSCC",
+          "CC NS 1 PSCC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "VH+",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "FVP At Disc"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "NSD"
+        ],
+        "rem": [
+          "PDR S/P PRP, s/p add prp",
+          "PDR, S/p PRP, Stabilizing"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "19",
+          "15"
+        ],
+        "sp": {
+          "r": "FP,FP;HRA-Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA-Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc .;No Data"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 17,
+      "d": "2024-02-09",
+      "c": "F16",
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "160",
+            "UCVA": "160"
+          },
+          {
+            "Glasses": "618",
+            "UCVA": "624P"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "0",
+            "va": "160",
+            "ucva": "160"
+          },
+          {
+            "sph": "0",
+            "ax": "180",
+            "va": "618",
+            "ucva": "624P"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0",
+            "ax": "180"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI/ NVA"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light",
+        "lens": [
+          "CC NS 1-2 PSCC",
+          "CC NS 1 PSCC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "VH+",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "FVP At Disc"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "NSD"
+        ],
+        "rem": [
+          "PDR S/P PRP, s/p add prp",
+          "PDR, S/p PRP, Stabilizing"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "15"
+        ],
+        "sp": {
+          "r": "HRA-Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA-Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc .;FP,FP;No Data"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 18,
+      "d": "2024-03-12",
+      "c": "F17",
+      "vi": {
+        "vis": [
+          {
+            "None": "260"
+          },
+          {
+            "None": "636"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI/ NVA"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated;Pharmacologically Dilated,7mm",
+        "lens": [
+          "CC NS 1-2 PSCC;CC NS 2 PSCC;CC NS 2-3 PSCC",
+          "CC NS 1 PSCC;CC NS 2 PSCC;CC NS 1-2 PSCC"
+        ]
+      },
+      "op": {
+        "ref": "LE IOL SX UNDER GVP",
+        "rem": "POD 2 WEEKS RETINA R/V"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "VH+",
+          "Hazy-Cataract"
+        ],
+        "di": [
+          "Normal",
+          "FVP At Disc"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+",
+          "PRP marks+, haemorrhages, PRH in ITQ outside ITA"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "dull"
+        ],
+        "rem": [
+          "PDR S/P PRP, s/p add prp",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "15"
+        ],
+        "sp": {
+          "r": "HRA-Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA-Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc ."
+        }
+      },
+      "fup": {
+        "adv": "15 days"
+      }
+    },
+    {
+      "v": 19,
+      "d": "2024-03-20",
+      "c": "F18",
+      "vi": {
+        "vis": [
+          {},
+          {
+            "None": "612"
+          }
+        ]
+      },
+      "s": {
+        "h": "Asthma;Cardiac;Diabetes;Drug Allergies;H/O COVID 19;Hyperlipidemia;Hypertension;Identification Marks;Liver Disease;Lungs Problem;Malignancy-site;Non-Ocular Sx;Other Allergies;Others;Remarks;Renal;Renal Disease;Rheumatoid Arthritis;Stroke;Stroke/Neuro;Thyroid;TB"
+      },
+      "op": {
+        "ref": "LE CATARACT SX",
+        "rem": "KIDNEY PROBIEM"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "NR;LVH"
+        }
+      },
+      "fup": {
+        "adv": "26 days;16/04/2024"
+      }
+    },
+    {
+      "v": 20,
+      "d": "2024-04-05",
+      "c": "F19",
+      "pr": {
+        "act": [
+          [
+            "No RE procedure"
+          ],
+          null
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "None": "260"
+          },
+          {
+            "None": "612"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,7mm",
+        "lens": [
+          "CC NS 2-3 PSCC",
+          "PCIOL"
+        ]
+      },
+      "op": {
+        "ref": "k/c/o BE PDR s/p PRP, DME, LE POD 15, for review;RE cataract surgery under GVP",
+        "rem": "after 15 days of LE PRP. POD 15 retina review with RR/OCT"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "resolving VH, Hazy - cataract",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas",
+          "PRP marks+, hPosterior and inferior gap areas, haemorrhages"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "dull"
+        ],
+        "rem": [
+          "PDR S/P PRP, s/p add prp",
+          "PDR, S/p PRP, unstable"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "16",
+          "20"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 21,
+      "d": "2024-04-20",
+      "c": "F20",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {
+            "None": "69"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,7mm",
+        "lens": [
+          "CC NS 2-3 PSCC",
+          "PCIOL"
+        ]
+      },
+      "op": {
+        "ref": "RE  CATARACT SX;LE CAT SX;RE CATARACT SX",
+        "rem": "KIDNEY;KIDNET PROBLEM"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "resolving VH, Hazy - cataract",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas",
+          "PRP marks+, hPosterior and inferior gap areas, haemorrhages"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "dull"
+        ],
+        "rem": [
+          "PDR S/P PRP, s/p add prp",
+          "PDR, S/p PRP, unstable"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      },
+      "fup": {
+        "adv": "1 month;3 months"
+      },
+      "oh": {
+        "desc": "Fit for PRP LASERPhysician:Dr. Banu Shree, Sep 4 2023 10:47 AM,MDU Pre-operative instructions:avoid nsiads ckd pt no volume overload c.depin 5 mgms before prp"
+      }
+    },
+    {
+      "v": 22,
+      "d": "2024-04-30",
+      "c": "F21",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {}
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      },
+      "fup": {
+        "adv": "21 days;19 days"
+      }
+    },
+    {
+      "v": 23,
+      "d": "2024-05-21",
+      "c": "F22",
+      "vi": {
+        "vis": [
+          {
+            "None": "636"
+          },
+          {
+            "None": "612"
+          }
+        ]
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,7mm",
+        "lens": "PCIOL"
+      },
+      "op": {
+        "ref": "BE PDR S/P PRP FOR REVIEW AS ADVISED"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "resolving VH",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Decreasing Tractional DME",
+          "dull"
+        ],
+        "rem": [
+          "PDR S/P PRP, s/p add prp",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "18",
+          "15"
+        ],
+        "sp": {
+          "r": "No Data"
+        }
+      },
+      "fup": {
+        "adv": "3 months;2 months"
+      }
+    },
+    {
+      "v": 24,
+      "d": "2024-07-25",
+      "c": "F23",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,7mm",
+        "lens": "PCIOL"
+      },
+      "op": {
+        "ref": "BE PDR - proliferative diabetic retinopathy - s/p PRP for review"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "CME + Tractional DME",
+          "dull"
+        ],
+        "rem": [
+          "PDR S/P PRP",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "13",
+          "15"
+        ],
+        "sp": {
+          "r": "HRA- Macular Oedema with Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA-Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc .;No Data"
+        }
+      },
+      "fup": {
+        "adv": "Whenever Required;1 month"
+      }
+    },
+    {
+      "v": 25,
+      "d": "2024-08-28",
+      "c": "F24",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,7mm",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "CME + Tractional DME",
+          "Tractional DME,  SRF"
+        ],
+        "rem": [
+          "PDR S/P PRP",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "14"
+        ],
+        "sp": {
+          "r": "FP,FP,HRA- Macular Oedema with Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula.,HRA-Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc ."
+        }
+      },
+      "fup": {
+        "adv": "2 months"
+      }
+    },
+    {
+      "v": 26,
+      "d": "2024-10-16",
+      "c": "F25",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,7mm",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas-temporal mid periphery(inferonasal)",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": "ttph, Tractional DME , subfoveal detachment",
+        "rem": [
+          "PDR S/P PRP",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "13",
+          "16"
+        ],
+        "sp": {
+          "r": "HRA- Increasing Macular Oedema with Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula causing traction.,HRA- Increasing Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc and extramacula causing traction.\n.;RE- Focal traction over the disc & macula, Incomplete PVD, moderated dot vit echoes. AXL- 21.32mm. No e/o CD."
+        }
+      },
+      "fup": {
+        "adv": "15 days"
+      }
+    },
+    {
+      "v": 27,
+      "d": "2024-11-15",
+      "c": "F26",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,7mm",
+        "lens": "PCIOL"
+      },
+      "op": {
+        "ref": "RE Parsplana Vitrectomy (PPV) + Endo Laser (Partial) +  Fluid Air Exchange +  ILMP / ERMP +  Tricort"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas-temporal mid periphery(inferonasal)",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": "ttph, Tractional DME , subfoveal detachment",
+        "rem": [
+          "PDR S/P PRP",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "16",
+          "18"
+        ],
+        "sp": {
+          "r": "PRWP;LVH;ADEQUATE LV FUNCTION"
+        }
+      }
+    },
+    {
+      "v": 28,
+      "d": "2024-12-02",
+      "c": "F27",
+      "vi": {
+        "vis": [
+          {
+            "None": "660"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI in dilated state"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "PCIOL"
+      },
+      "op": {
+        "ref": "RE PDR TPHM, planned for VR sx - High BP with reduced O2 saturation last time, Kindly opine regarding fitness for the procedure"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": "Normal",
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas-temporal mid periphery(inferonasal)",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": "TTPH, Tractional DME , subfoveal detachment",
+        "rem": [
+          "PDR S/P PRP",
+          "PDR, S/p PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "16",
+          "15"
+        ]
+      }
+    },
+    {
+      "v": 29,
+      "d": "2024-12-10",
+      "c": "F28",
+      "op": {
+        "ref": "RE Parsplana Vitrectomy (PPV) + Endo Laser (Partial) +  Fluid Air Exchange +  ILMP / ERMP +  Tricort",
+        "rem": "PULMONOLOGY OPINION AND FITNESS"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "normal"
+        }
+      }
+    },
+    {
+      "v": 30,
+      "d": "2024-12-31",
+      "c": "F29",
+      "vi": {
+        "vis": [
+          {
+            "None": "660"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "op": {
+        "ref": "RE Parsplana Vitrectomy (PPV) + Endo Laser (Partial) +  Fluid Air Exchange +  ILMP / ERMP +  Tricort",
+        "rem": "BP HIGH (150/70mmhg)"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": [
+          "Normal",
+          "Sclerosed vessels superiorly"
+        ],
+        "br": [
+          "FVP ST arcade, IT NVE, PRP marks+, Gap Areas-temporal mid periphery(inferonasal)",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": "TTPH, Tractional DME , subfoveal detachment",
+        "rem": "PDR S/P PRP"
+      },
+      "inv": {
+        "iop": [
+          "15",
+          "13"
+        ],
+        "sp": {
+          "r": "FP,FP;No Data;HRA-Resolving Macular Oedema with No Sub foveal detachment with cystic changes. Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, Membrane over the disc and extramacula causing traction.,HRA- Persisting \n Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc and extramacula causing traction.."
+        }
+      }
+    },
+    {
+      "v": 31,
+      "d": "2025-01-20",
+      "c": "F30",
+      "vi": {
+        "vis": [
+          {},
+          {
+            "None": "636"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI in dilated state"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "SOFG",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": [
+          "Normal",
+          "Sclerosed vessels superiorly"
+        ],
+        "br": [
+          "Retina on, large PRH above sup arcade, well lasered",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Mac on , foveal thinning, PRH not involving fovea",
+          "TTPH, Tractional DME , subfoveal detachment"
+        ],
+        "rem": [
+          "PDR S/P PRP, S/p PPV+ SOI",
+          "PDR S/P PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "19",
+          "15"
+        ],
+        "sp": {
+          "r": "FP,FP,HRA- Persisting Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc and extramacula causing traction..,HRA- Retina attached, Heamorrhages at superior to the macula."
+        }
+      }
+    },
+    {
+      "v": 32,
+      "d": "2025-02-26",
+      "c": "F31",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "560",
+            "With Spectacles": "660"
+          },
+          {
+            "UCVA": "624",
+            "With Spectacles": "624"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI in dilated state"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "SOFG",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": [
+          "Normal",
+          "Sclerosed vessels superiorly"
+        ],
+        "br": [
+          "Retina on, Resolving PRH, PRP marks+",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Mac on , foveal thinning, Resolving SRH superiorly not involving fovea",
+          "TTPH, Tractional DME , subfoveal detachment"
+        ],
+        "rem": [
+          "PDR S/P PRP, S/p PPV+ SOI",
+          "PDR S/P PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "14"
+        ],
+        "sp": {
+          "r": "HRA- Retina attached, Resolving SRF.,HRA- Resolving Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc and extramacula causing traction, Increasing Macular edema.,FP,FP"
+        }
+      }
+    },
+    {
+      "v": 33,
+      "d": "2025-03-31",
+      "c": "F32",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "560"
+          },
+          {
+            "UCVA": "636"
+          }
+        ]
+      },
+      "s": {
+        "h": "Remarks;Drug Allergies;TB;Hypertension;Rheumatoid Arthritis;Others;Stroke/Neuro;Liver Disease;Non-Ocular Sx;Lungs Problem;Asthma;Diabetes;Hyperlipidemia;Thyroid Status;Renal Disease;Identification Marks;Other Allergies;Cardiac;History of Malignancy"
+      },
+      "as": {
+        "rem": "No NVI in dilated state"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "SOFG",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": [
+          "Normal",
+          "Sclerosed vessels superiorly"
+        ],
+        "br": [
+          "Retina on, Resolving hge PRP marks+",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Mac on , foveal thinning",
+          "TTPH, Tractional DME IRF is-os disruption, resolved SRF"
+        ],
+        "rem": [
+          "PDR S/P PRP, S/p PPV+ SOI",
+          "PDR S/P PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "14",
+          "15"
+        ],
+        "sp": {
+          "r": "HRA- Retina attached, Resolving SRF.,HRA- Resolved Sub foveal detachment . Para foveal inner retinal layers atrophy with hard exudates and IS/OS disruption, ILM folds . Membrane over the disc and extramacula causing traction, Increasing Macular edema."
+        }
+      }
+    },
+    {
+      "v": 34,
+      "d": "2025-05-09",
+      "c": "F33",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "560",
+            "UCVA With PH": "636"
+          },
+          {
+            "UCVA": "636",
+            "UCVA With PH": "618"
+          }
+        ]
+      },
+      "as": {
+        "rem": "No NVI in dilated state"
+      },
+      "at": {
+        "ac": [
+          "Normal Depth, Quiet",
+          "Normal Depth,Pigments in AC"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "SOFG",
+          "Clear"
+        ],
+        "di": [
+          "Normal",
+          "NVD"
+        ],
+        "ve": [
+          "Normal",
+          "Sclerosed vessels superiorly"
+        ],
+        "br": [
+          "Retina on, Resolving hge PRP marks+",
+          "PRP marks+, haemorrhages"
+        ],
+        "mf": [
+          "Mac on , foveal thinning",
+          "TTPH, Tractional DME IRF is-os disruption, resolved SRF"
+        ],
+        "rem": [
+          "PDR S/P PRP, S/p PPV+ SOI",
+          "PDR S/P PRP"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "15",
+          "13"
+        ]
+      }
+    },
+    {
+      "v": 35,
+      "d": "2025-07-09",
+      "c": "F34",
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "Left ventricular hypertrophy (LVH)"
+        }
+      }
+    },
+    {
+      "v": 36,
+      "d": "2025-07-15",
+      "c": "F35"
+    }
+  ]
+}

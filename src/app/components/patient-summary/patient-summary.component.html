@@ -92,25 +92,36 @@
   <app-line-chart [chartData]="lineChartData" [metrics]="lineChartMetrics" [showVA]="showVA" [showIOP]="showIOP"
     [showCMT]="showCMT" [showProcedures]="showProcedures"></app-line-chart>
 
-  <app-gantt-chart *ngIf="showDiagnosis" [data]="ganttData" [config]="ganttConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showMedication" [data]="medicationsData" [config]="medicationsConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showLens" [data]="lensData" [config]="lensConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showBackgroundRetina" [data]="backgroundRetinaData"
-    [config]="backgroundRetinaConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showMaculaFovealReflex" [data]="maculaFovealReflexData"
-    [config]="maculaFovealReflexConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showConjunctiva" [data]="conjunctivaData"
-    [config]="conjunctivaConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showMedia" [data]="mediaData" [config]="mediaConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showAnteriorChamber" [data]="anteriorChamberData"
-    [config]="anteriorChamberConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showIris" [data]="irisData" [config]="irisConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showDisc" [data]="discData" [config]="discConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showPupil" [data]="pupilData" [config]="pupilConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showVessels" [data]="vesselsData"
+  <app-gantt-chart *ngIf="showDiagnosis && ganttData && ganttData.length > 0" [data]="ganttData"
+    [config]="ganttConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showMedication && medicationsData && medicationsData.length > 0" [data]="medicationsData"
+    [config]="medicationsConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showLens && lensData && lensData.length > 0" [data]="lensData"
+    [config]="lensConfig"></app-gantt-chart>
+  <app-gantt-chart
+    *ngIf="showObservations && showBackgroundRetina && backgroundRetinaData && backgroundRetinaData.length > 0"
+    [data]="backgroundRetinaData" [config]="backgroundRetinaConfig"></app-gantt-chart>
+  <app-gantt-chart
+    *ngIf="showObservations && showMaculaFovealReflex && maculaFovealReflexData && maculaFovealReflexData.length > 0"
+    [data]="maculaFovealReflexData" [config]="maculaFovealReflexConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showConjunctiva && conjunctivaData && conjunctivaData.length > 0"
+    [data]="conjunctivaData" [config]="conjunctivaConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showMedia && mediaData && mediaData.length > 0" [data]="mediaData"
+    [config]="mediaConfig"></app-gantt-chart>
+  <app-gantt-chart
+    *ngIf="showObservations && showAnteriorChamber && anteriorChamberData && anteriorChamberData.length > 0"
+    [data]="anteriorChamberData" [config]="anteriorChamberConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showIris && irisData && irisData.length > 0" [data]="irisData"
+    [config]="irisConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showDisc && discData && discData.length > 0" [data]="discData"
+    [config]="discConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showPupil && pupilData && pupilData.length > 0" [data]="pupilData"
+    [config]="pupilConfig"></app-gantt-chart>
+  <app-gantt-chart *ngIf="showObservations && showVessels && vesselsData && vesselsData.length > 0" [data]="vesselsData"
     [config]="vesselsConfig"></app-gantt-chart>
-  <app-gantt-chart *ngIf="showObservations && showUndilatedFundus" [data]="undilatedFundusData"
-    [config]="undilatedFundusConfig"></app-gantt-chart>
+  <app-gantt-chart
+    *ngIf="showObservations && showUndilatedFundus && undilatedFundusData && undilatedFundusData.length > 0"
+    [data]="undilatedFundusData" [config]="undilatedFundusConfig"></app-gantt-chart>
 
 </div>
 

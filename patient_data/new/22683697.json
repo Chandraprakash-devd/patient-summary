@@ -1,0 +1,190 @@
+{
+  "p": {
+    "uid": "22683697",
+    "mr": "P5923692",
+    "v": 6,
+    "f": "2024-11-12",
+    "l": "2024-12-14"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2024-11-12",
+      "c": "Initial",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light;Pharmacologically Dilated,6mm",
+        "lens": [
+          "Clear;NS2+PSCC",
+          "Clear;NS+PSCC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "hazy",
+          "Present"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "19",
+          "20"
+        ]
+      }
+    },
+    {
+      "v": 2,
+      "d": "2024-12-02",
+      "c": "F1",
+      "vi": {
+        "vis": [
+          {
+            "None": "69"
+          },
+          {
+            "None": "66"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated,6mm",
+        "lens": [
+          "NS2+PSCC",
+          "NS+PSCC"
+        ]
+      },
+      "op": {
+        "ref": "RE PHACO with PATIENT’S PREF.;RE MICS with Eyhance IOL",
+        "rem": "s/ l  opinion;ASTHMA"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "HAZY"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "TOPCON-Normal retinal Layers, Foveal Thickness-183m.,TOPCON-Normal retinal Layers, Foveal Thickness-192m.;Sinus tachycardia",
+          "e": [
+            "183M",
+            "192M"
+          ]
+        }
+      }
+    },
+    {
+      "v": 3,
+      "d": "2024-12-09",
+      "c": "F2",
+      "op": {
+        "ref": "RE  CATARACT SX",
+        "rem": "REPT PHY"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "ef 68 percent"
+        }
+      }
+    },
+    {
+      "v": 4,
+      "d": "2024-12-10",
+      "c": "F3",
+      "op": {
+        "ref": "c/o cough, breathlessness+, B/L crepts+",
+        "rem": "clearance for RE MICS with Eyhance IOL"
+      }
+    },
+    {
+      "v": 5,
+      "d": "2024-12-11",
+      "c": "F4",
+      "vi": {
+        "vis": [
+          {
+            "None": "66"
+          },
+          {}
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": [
+          "Pharmacologically Dilated,6mm",
+          "Normal Size and Reaction to Light;Pharmacologically Dilated,6mm"
+        ],
+        "lens": [
+          "PCIOL",
+          "IMC;ns2,pscc"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "Present",
+          "HAZY"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      }
+    },
+    {
+      "v": 6,
+      "d": "2024-12-14",
+      "c": "F5",
+      "op": {
+        "ref": "LE MICS with Eyhance IOL"
+      },
+      "inv": {
+        "iop": [
+          "19",
+          "20"
+        ]
+      }
+    }
+  ]
+}

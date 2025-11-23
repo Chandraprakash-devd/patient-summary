@@ -1,0 +1,139 @@
+{
+  "p": {
+    "uid": "22764362",
+    "mr": "F2582935",
+    "v": 3,
+    "f": "2024-12-02",
+    "l": "2025-01-04"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2024-12-02",
+      "c": "Initial",
+      "vi": {
+        "vis": [
+          {
+            "None": "636"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light;Pharmacologically Dilated",
+        "lens": [
+          "Clear;Cataract-Immature cataract;Cataract-Immature cataract,NS 2, PSCC, CC",
+          "Clear;Cataract-Immature cataract;Cataract-Immature cataract,NS 1,CC"
+        ]
+      },
+      "op": {
+        "ref": "RE SICS with PMMA",
+        "rem": "Diabetes, Hypertension, Cardiac, Hyperlipidemia, Kidney"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": [
+          "Hazily seen",
+          "Normal"
+        ],
+        "ve": [
+          "not visualised",
+          "Normal"
+        ],
+        "br": [
+          "not visualised",
+          "Normal"
+        ],
+        "mf": [
+          "",
+          "Present"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "13",
+          "12"
+        ]
+      }
+    },
+    {
+      "v": 2,
+      "d": "2024-12-03",
+      "c": "F1",
+      "vi": {
+        "vis": [
+          {
+            "None": "69"
+          },
+          {}
+        ]
+      },
+      "op": {
+        "ref": "RE SICS with PMMA",
+        "rem": "CKD , unstable angina, raised RFT"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "wnl"
+        }
+      }
+    },
+    {
+      "v": 3,
+      "d": "2025-01-04",
+      "c": "F2",
+      "vi": {
+        "vis": [
+          {
+            "None": "66"
+          },
+          {
+            "None": "612"
+          }
+        ]
+      },
+      "at": {
+        "ac": [
+          "Normal Depth,QUIET",
+          "Normal Depth"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "PCIOL",
+          "Cataract-Immature cataract,NS 1,CC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "inv": {
+        "iop": [
+          "14",
+          "12"
+        ]
+      }
+    }
+  ]
+}

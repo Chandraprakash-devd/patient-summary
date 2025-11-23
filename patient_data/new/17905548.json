@@ -1,0 +1,292 @@
+{
+  "p": {
+    "uid": "17905548",
+    "mr": "P333118",
+    "v": 7,
+    "f": "2022-02-03",
+    "l": "2024-12-24"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2022-02-03",
+      "c": "Initial",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "460"
+          },
+          {
+            "UCVA": "560"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "-6.00",
+            "ax": "120",
+            "va": "612P",
+            "ucva": "460"
+          },
+          {
+            "sph": "-4.5",
+            "ax": "75",
+            "va": "69P",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "s": {
+        "h": "Diabetes;Hypertension;Cardiac;Asthma;Other Allergies;Non-Ocular Sx;Others;Hyperlipidemia;Drug Allergies;Remarks;H/O COVID 19;H/O COVID VACCINE;Identification Marks;Thyroid"
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "NS-I, CC, ?AXIAL MYOPIA",
+          "NS-I"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "20"
+        ]
+      },
+      "fup": {
+        "adv": "6 months"
+      }
+    },
+    {
+      "v": 2,
+      "d": "2022-12-17",
+      "c": "F1",
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "612P",
+            "UCVA": "460"
+          },
+          {
+            "Glasses": "612P",
+            "UCVA": "560"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "-6.00",
+            "ax": "120",
+            "va": "612P",
+            "ucva": "460"
+          },
+          {
+            "sph": "-4.5",
+            "ax": "75",
+            "va": "612P",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "ax": "120"
+          },
+          {}
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated, 7MM",
+        "lens": [
+          "NS2, PSCC, CC",
+          "NS2, CC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "inv": {
+        "iop": [
+          "20",
+          "19"
+        ]
+      },
+      "fup": {
+        "adv": "Whenever Required"
+      }
+    },
+    {
+      "v": 3,
+      "d": "2024-12-02",
+      "c": "F2",
+      "vi": {
+        "vis": [
+          {
+            "None": "660"
+          },
+          {
+            "None": "560"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light;Pharmacologically Dilated",
+        "lens": [
+          "Clear;ns3,pscc",
+          "Clear;ns2,pscc"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": [
+          "Hazy view appears normal",
+          "Normal"
+        ],
+        "ve": "Normal",
+        "br": [
+          "Normal",
+          "mod NPDR"
+        ],
+        "mf": "Present"
+      },
+      "inv": {
+        "iop": [
+          "16",
+          "17"
+        ]
+      }
+    },
+    {
+      "v": 4,
+      "d": "2024-12-03",
+      "c": "F3",
+      "vi": {
+        "vis": {
+          "None": "460"
+        }
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Normal Size and Reaction to Light;Pharmacologically Dilated,7mm",
+        "lens": [
+          "Clear;IMC , PSCC;NS 2-3 , diffuse PSCC",
+          "Clear;IMC , PSCC;NS 1-2 , PSCC;NS 2 , PSCC"
+        ]
+      },
+      "op": {
+        "ref": "RE PHACO with AUROFLEX;RE CATARACT SX",
+        "rem": "RE HIgh Astigmatism;ECG CHANGES"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Hazy-Cataract",
+          "Clear"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "HEx+",
+        "mf": "Present"
+      },
+      "inv": {
+        "iop": [
+          "18",
+          "17"
+        ],
+        "sp": {
+          "r": "borderline qwaves  inferior leads"
+        }
+      }
+    },
+    {
+      "v": 5,
+      "d": "2024-12-04",
+      "c": "F4",
+      "inv": {
+        "iop": "Not Measurable"
+      }
+    },
+    {
+      "v": 6,
+      "d": "2024-12-05",
+      "c": "F5",
+      "vi": {
+        "vis": [
+          {
+            "None": "69"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "v": 7,
+      "d": "2024-12-24",
+      "c": "F6",
+      "vi": {
+        "vis": [
+          {
+            "None": "69"
+          },
+          {
+            "None": "460"
+          }
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "15"
+        ]
+      }
+    }
+  ]
+}

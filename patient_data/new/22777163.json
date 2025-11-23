@@ -1,0 +1,225 @@
+{
+  "p": {
+    "uid": "22777163",
+    "mr": "P5933645",
+    "v": 6,
+    "f": "2024-12-05",
+    "l": "2025-01-24"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2024-12-05",
+      "c": "Initial",
+      "vi": {
+        "vis": [
+          {
+            "None": "LP+"
+          },
+          {
+            "None": "HM"
+          }
+        ]
+      },
+      "as": {
+        "rem": "Roplas negative"
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": [
+          "Normal;Muddy;Muddy,increased tmh",
+          "Normal;Muddy"
+        ],
+        "pu": [
+          "Normal Size and Reaction to Light;PXF,Pharmacologically Dilated,5mm",
+          "Normal Size and Reaction to Light;PXF,Pharmacologically Dilated,6mm"
+        ],
+        "lens": [
+          "Clear;HARD MATURE CATARACT;HARD MATURE CATARACT,Calcific ALC;mild phacodonesis",
+          "Clear;HARD MATURE CATARACT;HARD MATURE CATARACT, Calcific ALC"
+        ]
+      },
+      "op": {
+        "ref": "BE hard mature cataract - PXF - mild phacodonesis - opinion on sx advice;Clearance for RE SICS with PMMA RE Duct-not free"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "not visualised",
+        "ve": "not visualised",
+        "br": "not visualised",
+        "mf": "not visualised"
+      },
+      "inv": {
+        "iop": [
+          "16",
+          "18"
+        ],
+        "sp": {
+          "r": "RE - Total PVD. AXL- 23.28 mm & ON normal, RCS complex is normal. Cataractous lens. no e/o RD or CD.,LE - Total PVD. AXL- 23.32 mm & ON normal, RCS complex is normal. Cataractous lens. no e/o RD or CD."
+        }
+      }
+    },
+    {
+      "v": 2,
+      "d": "2024-12-06",
+      "c": "F1",
+      "vi": {
+        "vis": [
+          {
+            "None": "LP+"
+          },
+          {
+            "None": "HM"
+          }
+        ]
+      },
+      "op": {
+        "ref": "RE Punctal Cautery  + cataract sx"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "LVH, T CHANGES+"
+        }
+      }
+    },
+    {
+      "v": 3,
+      "d": "2024-12-07",
+      "c": "F2",
+      "vi": {
+        "vis": [
+          {
+            "None": "560"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "v": 4,
+      "d": "2024-12-23",
+      "c": "F3",
+      "vi": {
+        "vis": [
+          {
+            "None": "636"
+          },
+          {
+            "None": "HM"
+          }
+        ]
+      },
+      "inv": {
+        "iop": [
+          "12",
+          "20"
+        ]
+      }
+    },
+    {
+      "v": 5,
+      "d": "2024-12-30",
+      "c": "F4",
+      "vi": {
+        "vis": [
+          {
+            "None": "636"
+          },
+          {
+            "None": "618"
+          }
+        ]
+      },
+      "as": {
+        "rem": [
+          "Roplas negative;Roplas negative, s/p punctal cautery",
+          "Roplas negative"
+        ]
+      },
+      "at": {
+        "ac": [
+          "Normal Depth,QUIET",
+          "SHALLOW"
+        ],
+        "ir": "Normal Color and Pattern",
+        "cj": [
+          "Muddy,increased tmh",
+          "Muddy"
+        ],
+        "pu": [
+          "PXF,Pharmacologically Dilated,5mm",
+          "PXF,UNDIL"
+        ],
+        "lens": [
+          "PCIOL , CORTEX FROM 9 TO 5OCP IN PERIPHERY IN BAG",
+          "HARD MATURE CATARACT, Calcific ALC"
+        ]
+      },
+      "op": {
+        "ref": "LE CATARACT SX;LE Cataract sx",
+        "rem": "Cardiac"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": [
+          "Normal",
+          "not visualised"
+        ],
+        "ve": [
+          "Normal",
+          "not visualised"
+        ],
+        "br": [
+          "Normal",
+          "not visualised"
+        ],
+        "mf": [
+          "Present",
+          "not visualised"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "14",
+          "17"
+        ]
+      }
+    },
+    {
+      "v": 6,
+      "d": "2025-01-24",
+      "c": "F5",
+      "vi": {
+        "vis": [
+          {
+            "None": "618"
+          },
+          {
+            "None": "69"
+          }
+        ]
+      },
+      "inv": {
+        "iop": [
+          "14",
+          "17"
+        ]
+      }
+    }
+  ]
+}

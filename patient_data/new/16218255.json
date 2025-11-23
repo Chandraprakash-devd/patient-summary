@@ -1,0 +1,1535 @@
+{
+  "p": {
+    "uid": "16218255",
+    "mr": "F2149113",
+    "v": 27,
+    "f": "2022-08-24",
+    "l": "2025-04-19"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2022-08-24",
+      "c": "Initial",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "636",
+            "UCVA With PH": "624P"
+          },
+          {
+            "UCVA": "460",
+            "UCVA With PH": "560"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "RTL, PXF",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "op": {
+        "ref": "LE OCT- CNVM"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "RPE degeneration",
+          "CNVM+, few hges inferiorly"
+        ],
+        "rem": [
+          "",
+          "?active CNVM"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "18",
+          "19"
+        ],
+        "sp": {
+          "r": "Cirrus-Subfoveal hyper reflective irregular RPE lesion with Rebound SRF and SRH S/O CNVM,HRA - Subfoveal hyper reflective irregular RPE lesion with SRF and SRH S/O CNVM"
+        }
+      }
+    },
+    {
+      "v": 2,
+      "d": "2022-08-25",
+      "c": "F1",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "624",
+            "UCVA With PH": "618P"
+          },
+          {
+            "UCVA": "560",
+            "UCVA With PH": "560"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM",
+          "predominantly scarred CNVM"
+        ]
+      },
+      "inv": {
+        "iop": "17"
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 3,
+      "d": "2022-08-29",
+      "c": "F2",
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM",
+          "predominantly scarred CNVM"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 4,
+      "d": "2022-09-30",
+      "c": "F3",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "624"
+          },
+          {
+            "UCVA": "460"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "-0.5",
+            "ax": "90",
+            "va": "612P"
+          },
+          {
+            "ax": "0",
+            "va": "460",
+            "ucva": "460"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, IRF RESOLVING",
+          "predominantly scarred CNVM"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "20",
+          "19"
+        ],
+        "sp": {
+          "r": "Cirrus-Subfoveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O CNVM,Cirrus-Subfoveal hyper reflective irregular RPE lesion with SRF and SRH S/O CNVM"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 5,
+      "d": "2022-10-06",
+      "c": "F4",
+      "vi": {
+        "dist": [
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          },
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, IRF RESOLVING",
+          "predominantly scarred CNVM"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 6,
+      "d": "2022-11-07",
+      "c": "F5",
+      "pr": {
+        "act": [
+          [
+            "No RE procedure"
+          ],
+          null
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "624",
+            "UCVA": "636"
+          },
+          {
+            "Glasses": "460",
+            "UCVA": "460"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "-1.00",
+            "ax": "90",
+            "va": "618",
+            "ucva": "636"
+          },
+          {
+            "ax": "0",
+            "va": "460",
+            "ucva": "460"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, IRF RESOLVED",
+          "predominantly scarred CNVM, SRF+"
+        ],
+        "rem": "S/P IVB"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "Cirrus-Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+,Cirrus-Sub and Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 7,
+      "d": "2022-11-14",
+      "c": "F6",
+      "vi": {
+        "dist": [
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          },
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, IRF RESOLVED",
+          "predominantly scarred CNVM, SRF+"
+        ],
+        "rem": "S/P IVB"
+      },
+      "inv": {
+        "iop": [
+          "20",
+          "18"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 8,
+      "d": "2022-12-16",
+      "c": "F7",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "624",
+            "UCVA": "636"
+          },
+          {
+            "Glasses": "460",
+            "UCVA": "460"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "-1.00",
+            "ax": "90",
+            "va": "618",
+            "ucva": "636"
+          },
+          {
+            "ax": "0",
+            "va": "460",
+            "ucva": "460"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, IRF RESOLVING",
+          "predominantly scarred CNVM, resolved SRF"
+        ],
+        "rem": [
+          "S/P IVB 2",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "HRA -Sub and Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+,HRA -Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 9,
+      "d": "2022-12-24",
+      "c": "F8",
+      "vi": {
+        "dist": [
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          },
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, IRF RESOLVING",
+          "predominantly scarred CNVM, resolved SRF"
+        ],
+        "rem": [
+          "S/P IVB 2",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "15",
+          "16"
+        ],
+        "sp": {
+          "r": "TRITON -Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 10,
+      "d": "2023-01-28",
+      "c": "F9",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "636",
+            "Glasses": "624"
+          },
+          {
+            "UCVA": "560",
+            "Glasses": "560"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "-1.00",
+            "ax": "90",
+            "va": "618",
+            "ucva": "636"
+          },
+          {
+            "ax": "0",
+            "va": "560",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM",
+          "predominantly scarred CNVM, resolved SRF"
+        ],
+        "rem": [
+          "S/P IVB 2",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "20",
+          "18"
+        ],
+        "sp": {
+          "r": "TRITON-Sub and Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+,TRITON -Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 11,
+      "d": "2023-02-28",
+      "c": "F10",
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "op": {
+        "ref": "RE CATARACT SURGERY",
+        "rem": "R/A 1 MONTH WITH RR/OCT"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "inv": {
+        "sp": {
+          "r": "HRA -Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+,HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Regressing CNVM.Praa foveal cystic changes+"
+        }
+      }
+    },
+    {
+      "v": 12,
+      "d": "2023-03-16",
+      "c": "F11",
+      "vi": {
+        "vis": [
+          {
+            "Glasses": "618",
+            "UCVA": "636"
+          },
+          {
+            "Glasses": "560",
+            "UCVA": "560"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "-2.00",
+            "ax": "0",
+            "va": "618",
+            "ucva": "636"
+          },
+          {
+            "ax": "0",
+            "va": "560",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "PXFPharmacologically Dilated",
+        "lens": "IMSC NS 2, PXF on ALC"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Hazy-Cataract",
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, SCARRED",
+          "predominantly scarred CNVM, resolved SRF"
+        ],
+        "rem": [
+          "S/P IVB 2",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "18",
+          "10"
+        ]
+      }
+    },
+    {
+      "v": 13,
+      "d": "2023-03-17",
+      "c": "F12",
+      "op": {
+        "ref": "RE SICS with PMMA",
+        "rem": "old age"
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "old changes+"
+        }
+      }
+    },
+    {
+      "v": 14,
+      "d": "2023-03-18",
+      "c": "F13",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "660",
+            "UCVA With PH": "618"
+          },
+          {}
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 15,
+      "d": "2023-04-19",
+      "c": "F14",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "618"
+          },
+          {
+            "UCVA": "560"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "0",
+            "va": "618",
+            "ucva": "618"
+          },
+          {
+            "ax": "0",
+            "va": "560",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": [
+          "Pharmacologically Dilated",
+          "PXFPharmacologically Dilated"
+        ],
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "op": {
+        "ref": "BE CNVM for review"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM, SCARRED",
+          "predominantly scarred CNVM, resolved SRF"
+        ],
+        "rem": [
+          "S/P IVB 2",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "19"
+        ],
+        "sp": {
+          "r": "No Data"
+        }
+      }
+    },
+    {
+      "v": 16,
+      "d": "2023-04-24",
+      "c": "F15",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": [
+          "Pharmacologically Dilated",
+          "PXFPharmacologically Dilated"
+        ],
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "op": {
+        "ref": "BE CNVM for review"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with fresh SRH (SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 2",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "TRITON-Sub and Para foveal hyper reflective irregular RPE lesion with SRF and SRH S/O Active CNVM.Praa foveal cystic changes with Few hard exudates,TRITON- Sub and Para foveal hyper reflective irregular RPE lesion with SRF and SRH S/O Active CNVM"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 17,
+      "d": "2023-05-03",
+      "c": "F16",
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": [
+          "Pharmacologically Dilated",
+          "Normal Size and Reaction to Light"
+        ],
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with fresh SRH (SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 2",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable"
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 18,
+      "d": "2023-06-03",
+      "c": "F17",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "618"
+          },
+          {
+            "UCVA": "560"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "90",
+            "va": "612",
+            "ucva": "618"
+          },
+          {
+            "ax": "0",
+            "va": "560",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": [
+          "Pharmacologically Dilated",
+          "Normal Size and Reaction to Light"
+        ],
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with persistent SRH (minimal SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 3",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "16",
+          "19"
+        ],
+        "sp": {
+          "r": "HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Persisting SRF and SRH S/O Active CNVM,HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Active CNVM.Praa foveal cystic changes with Few hard exudates"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 19,
+      "d": "2023-08-14",
+      "c": "F18",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "624P"
+          },
+          {
+            "UCVA": "560"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "90",
+            "va": "624P",
+            "ucva": "624P"
+          },
+          {
+            "ax": "0",
+            "va": "560",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with  SRH + clinically  (minimal SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 3",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "13",
+          "17"
+        ],
+        "sp": {
+          "r": "HRA - Sub and Para foveal hyper reflective irregular RPE lesion with  Increasing SRF and SRH S/O Active CNVM.Praa foveal cystic changes with Few hard exudates,HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Persisting SRF and SRH S/O Active CNVM"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 20,
+      "d": "2023-09-01",
+      "c": "F19",
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with  SRH + clinically  (minimal SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 3",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "No Data"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 21,
+      "d": "2024-02-01",
+      "c": "F20",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "660"
+          },
+          {
+            "UCVA": "560"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "90",
+            "va": "636",
+            "ucva": "660"
+          },
+          {
+            "ax": "0",
+            "va": "560",
+            "ucva": "560"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "0"
+          },
+          {
+            "sph": "0"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with  SRH + clinically  (minimal SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 3",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": [
+          "14",
+          "16"
+        ],
+        "sp": {
+          "r": "HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Increasing SRF and SRH S/O Active CNVM.Praa foveal cystic changes with Few hard exudates,HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Resolved SRF and SRH S/O CNVM"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 22,
+      "d": "2024-02-19",
+      "c": "F21",
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with  SRH + clinically  (SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 3",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "No Data"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 23,
+      "d": "2024-03-19",
+      "c": "F22",
+      "vi": {
+        "vis": [
+          {
+            "None": "660"
+          },
+          {
+            "None": "560"
+          }
+        ]
+      },
+      "inv": {
+        "iop": [
+          "17",
+          "20"
+        ],
+        "sp": {
+          "r": "HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Active CNVM.Praa foveal cystic changes with Few hard exudates,HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Resolved SRF and SRH S/O CNVM"
+        }
+      }
+    },
+    {
+      "v": 24,
+      "d": "2024-03-21",
+      "c": "F23",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "None": "636"
+          },
+          {
+            "None": "560"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with  SRH + clinically  (SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 3",
+          "S/P IVB"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 25,
+      "d": "2024-04-15",
+      "c": "F24",
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": [
+          "Pharmacologically Dilated",
+          "Normal Size and Reaction to Light"
+        ],
+        "lens": [
+          "pciol",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with  SRH + clinically  (SRF on OCT)",
+          "scarred CNVM"
+        ],
+        "rem": [
+          "S/P IVB 3",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": "Not Measurable",
+        "sp": {
+          "r": "No Data"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 26,
+      "d": "2024-05-15",
+      "c": "F25",
+      "vi": {
+        "vis": [
+          {
+            "None": "636"
+          },
+          {
+            "None": "560"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "PCIOL",
+          "IMSC NS 2, PXF on ALC"
+        ]
+      },
+      "op": {
+        "ref": "CNVM",
+        "rem": "GAP INVESTIGATION"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "predominantly scarred CNVM with  SRH + clinically  (SRF on OCT)",
+          "Scarred CNVM"
+        ],
+        "rem": [
+          "CNVM S/P IVB;No SRF on OCT",
+          "S/P IVB"
+        ]
+      },
+      "inv": {
+        "iop": "16",
+        "sp": {
+          "r": "No Data;DONE,DONE;DONE;HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Resolving SRF and SRH S/O Active CNVM.Praa foveal cystic changes with Few hard exudates,HRA - Sub and Para foveal hyper reflective irregular RPE lesion with Resolved SRF and SRH S/O CNVM"
+        }
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 27,
+      "d": "2025-04-19",
+      "c": "F26",
+      "pr": {
+        "act": [
+          null,
+          [
+            "No LE procedure"
+          ]
+        ]
+      },
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "636"
+          },
+          {
+            "UCVA": "560"
+          }
+        ]
+      },
+      "s": {
+        "h": "Non-Ocular Sx;Drug Allergies;Cardiac;Hypertension;Diabetes;Other Allergies;Others;Hyperlipidemia;Asthma"
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated",
+        "lens": [
+          "PCIOL",
+          "IMC"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": [
+          "Clear",
+          "Hazy-Cataract"
+        ],
+        "di": "Normal",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": [
+          "CNVM-Minimal SRF On oct,Telangiectatic Vessels+",
+          "SCARRED cnvm"
+        ],
+        "rem": [
+          "CNVM-S/P IVB",
+          ""
+        ]
+      },
+      "inv": {
+        "iop": [
+          "13",
+          "14"
+        ],
+        "sp": {
+          "r": "CIRRUS - Sub and Para foveal hyper reflective irregular RPE lesion with Shallow SRF and SRH S/O Active CNVM.Para foveal cystic changes,CIRRUS - Sub and Para foveal hyper reflective irregular RPE lesion with Resolved SRF and SRH S/O CNVM ( Same as before )"
+        }
+      }
+    }
+  ]
+}
