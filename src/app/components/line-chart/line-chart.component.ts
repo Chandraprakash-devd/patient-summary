@@ -272,31 +272,23 @@ export class LineChartComponent
 
     const datasets = this.chart.data.datasets as any[];
 
-    datasets[0].borderColor = this.getMetricColor(0);
-    datasets[0].backgroundColor = this.getMetricColor(0);
-    datasets[0].pointBorderColor = this.getMetricColor(0);
-    datasets[0].pointBackgroundColor = isDark ? '#000000' : '#ffffff';
+    for (let i = 0; i < datasets.length; i++) {
+      const dataset = datasets[i];
+      const color = this.getMetricColor(i);
 
-    datasets[1].borderColor = this.getMetricColor(1);
-    datasets[1].backgroundColor = this.getMetricColor(1);
-    datasets[1].pointBorderColor = this.getMetricColor(1);
-    datasets[1].pointBackgroundColor = isDark ? '#000000' : '#ffffff';
+      dataset.borderColor = color;
+      dataset.backgroundColor = color;
+      dataset.pointBorderColor = color;
+      dataset.pointBackgroundColor = isDark ? '#000000' : '#ffffff';
 
-    datasets[2].borderColor = this.getMetricColor(2);
-    datasets[2].backgroundColor = this.getMetricColor(2);
-    datasets[2].pointBorderColor = this.getMetricColor(2);
-    datasets[2].pointBackgroundColor = isDark ? '#000000' : '#ffffff';
+      const hoverBgColor = isDark ? '#000000' : '#ffffff';
+      dataset.pointHoverBackgroundColor = hoverBgColor;
 
-    const xScale = this.chart.options.scales?.['x'] as any;
-    if (xScale) {
-      if (xScale.ticks) {
-        xScale.ticks.color = colors.tickColor;
-      }
-      if (xScale.grid) {
-        xScale.grid.color = colors.gridColor;
-      }
-      if (xScale.border) {
-        xScale.border.color = colors.borderColor;
+      const rgbaMatch = color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+      if (rgbaMatch) {
+        const [, r, g, b] = rgbaMatch.map(Number);
+        const alpha = isDark ? 0.2 : 0.1;
+        dataset.backgroundColor = `rgba(${r}, ${g}, ${b}, ${alpha})`;
       }
     }
 
@@ -333,6 +325,39 @@ export class LineChartComponent
 
     if (metricIndex === 0) {
       return ['6/6', '6/18', '6/60', 'CF', 'HM', 'PL'];
+    }
+
+    // For IOP (index 1), calculate dynamic range based on actual data
+    if (metricIndex === 1) {
+      const iopValues = this.chartData.iopData
+        .map((d) => d.y)
+        .filter((v) => v != null);
+
+      if (iopValues.length > 0) {
+        const dataMin = Math.min(...iopValues);
+        const dataMax = Math.max(...iopValues);
+
+        // Use dynamic range, ensuring it includes the configured min/max
+        const min = Math.min(metric.min, Math.floor(dataMin / 5) * 5);
+        const max = Math.max(metric.max, Math.ceil(dataMax / 5) * 5);
+
+        const range = max - min;
+
+        // Adjust step size based on range to prevent crowding
+        // For larger ranges, use bigger steps to keep ~5-6 labels
+        let step = 5;
+        if (range > 30) {
+          step = 10;
+        }
+
+        const values: string[] = [];
+
+        for (let i = max; i >= min; i -= step) {
+          values.push(i.toString());
+        }
+
+        return values;
+      }
     }
 
     const { min, max, step } = metric;
@@ -401,8 +426,23 @@ export class LineChartComponent
     };
 
     const normalizeIOP = (value: number) => {
-      const range = this.metrics[1].max - this.metrics[1].min;
-      const normalized = (value - this.metrics[1].min) / range;
+      // Calculate dynamic min/max from actual IOP data
+      const iopValues = this.chartData.iopData
+        .map((d) => d.y)
+        .filter((v) => v != null);
+      const dataMin = iopValues.length
+        ? Math.min(...iopValues)
+        : this.metrics[1].min;
+      const dataMax = iopValues.length
+        ? Math.max(...iopValues)
+        : this.metrics[1].max;
+
+      // Use dynamic range or fallback to metric config, rounding to nearest 5
+      const min = Math.min(this.metrics[1].min, Math.floor(dataMin / 5) * 5);
+      const max = Math.max(this.metrics[1].max, Math.ceil(dataMax / 5) * 5);
+
+      const range = max - min;
+      const normalized = (value - min) / range;
       return 33.33 + normalized * 33.33;
     };
 

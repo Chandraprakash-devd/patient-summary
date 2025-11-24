@@ -1,0 +1,701 @@
+{
+  "p": {
+    "uid": "0009687282",
+    "mr": "P223443",
+    "v": 12,
+    "f": "2022-05-09",
+    "l": "2023-11-15"
+  },
+  "visits": [
+    {
+      "v": 1,
+      "d": "2022-05-09",
+      "c": "Initial",
+      "vi": {
+        "vis": {
+          "UCVA": "618"
+        },
+        "dist": [
+          {
+            "ax": "105",
+            "va": "69P",
+            "ucva": "618"
+          },
+          {
+            "ax": "60",
+            "va": "69P",
+            "ucva": "618"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "+2.5"
+          },
+          {
+            "sph": "+2.5"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated, 8mm",
+        "lens": "NS 2"
+      },
+      "op": {
+        "ref": "RE PHACO with PATIENT’S PREF."
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "cup disc ratio-0.65, inferior notching",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "m": [
+        [
+          "AUROPROST-RT EYE DROPS",
+          "1 drop",
+          "3",
+          "Night Only",
+          1,
+          "17/5/2022",
+          "17/5/2022"
+        ]
+      ],
+      "inv": {
+        "iop": [
+          "15",
+          "16"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 2,
+      "d": "2022-05-17",
+      "c": "F1",
+      "m": [
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "1",
+          6,
+          7,
+          "18/05/2022",
+          "24/05/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "1",
+          5,
+          7,
+          "25/05/2022",
+          "31/05/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "1",
+          4,
+          7,
+          "01/06/2022",
+          "07/06/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "1",
+          3,
+          7,
+          "08/06/2022",
+          "14/06/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "1",
+          2,
+          7,
+          "15/06/2022",
+          "21/06/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "1",
+          1,
+          7,
+          "22/06/2022",
+          "28/06/2022"
+        ],
+        [
+          "AUROFLOX EYE DROPS",
+          "1 drop",
+          "1",
+          4,
+          10,
+          "18/05/2022",
+          "27/05/2022"
+        ],
+        [
+          "NEPALACT EYE DROPS",
+          "1 drop",
+          "1",
+          3,
+          30,
+          "17/06/2022",
+          "16/07/2022"
+        ]
+      ],
+      "inv": {
+        "iop": "Not Measurable"
+      }
+    },
+    {
+      "v": 3,
+      "d": "2022-05-18",
+      "c": "F2",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "612P",
+            "UCVA With PH": "69"
+          },
+          {}
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 4,
+      "d": "2022-06-20",
+      "c": "F3",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "612"
+          },
+          {
+            "UCVA": "618"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "180",
+            "va": "66",
+            "ucva": "612"
+          },
+          {
+            "ax": "75",
+            "va": "69P",
+            "ucva": "618"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "+2.5"
+          },
+          {
+            "sph": "+2.5"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated, 8mm",
+        "lens": [
+          "PCIOL",
+          "NS 2"
+        ]
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "cup disc ratio-0.65, inferior notching",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "m": [
+        [
+          "NEPALACT EYE DROPS",
+          "1 drop",
+          "1",
+          3,
+          30,
+          "20/06/2022",
+          "20/07/2022"
+        ],
+        [
+          "AUROPROST-RT EYE DROPS",
+          "1 drop",
+          "3",
+          "Night Only",
+          1,
+          "20/06/2022",
+          "20/06/2022"
+        ]
+      ],
+      "inv": {
+        "iop": [
+          "14",
+          "23"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 5,
+      "d": "2022-07-07",
+      "c": "F4",
+      "inv": {
+        "iop": "Not Measurable"
+      }
+    },
+    {
+      "v": 6,
+      "d": "2022-08-01",
+      "c": "F5",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "612",
+            "UCVA With PH": "66"
+          },
+          {
+            "UCVA": "618P",
+            "UCVA With PH": "612"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated, 8mm",
+        "lens": [
+          "PCIOL",
+          "NS 2"
+        ]
+      },
+      "op": {
+        "ref": "LE PHACO with PATIENT’S PREF."
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": "cup disc ratio-0.65, inferior notching",
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "m": [
+        [
+          "AUROPROST-RT EYE DROPS",
+          "1 drop",
+          "3",
+          "Night Only",
+          1,
+          "01/08/2022",
+          "01/08/2022"
+        ]
+      ],
+      "inv": {
+        "iop": [
+          "14",
+          "23"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 7,
+      "d": "2022-08-02",
+      "c": "F6",
+      "m": [
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "2",
+          6,
+          7,
+          "03/08/2022",
+          "09/08/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "2",
+          5,
+          7,
+          "10/08/2022",
+          "16/08/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "2",
+          4,
+          7,
+          "17/08/2022",
+          "23/08/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "2",
+          3,
+          7,
+          "24/08/2022",
+          "30/08/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "2",
+          2,
+          7,
+          "31/08/2022",
+          "06/09/2022"
+        ],
+        [
+          "DEXA 5ML DROPS",
+          "1 drop",
+          "2",
+          1,
+          7,
+          "07/09/2022",
+          "13/09/2022"
+        ],
+        [
+          "AUROFLOX EYE DROPS",
+          "1 drop",
+          "2",
+          4,
+          10,
+          "03/08/2022",
+          "12/08/2022"
+        ],
+        [
+          "NPACT 5ML EYE DROPS",
+          "1 drop",
+          "2",
+          3,
+          30,
+          "01/09/2022",
+          "30/09/2022"
+        ],
+        [
+          "AUROPROST-RT EYE DROPS",
+          "1 drop",
+          "3",
+          "Night Only",
+          1,
+          "02/08/2022",
+          "02/08/2022"
+        ]
+      ],
+      "inv": {
+        "iop": "Not Measurable"
+      }
+    },
+    {
+      "v": 8,
+      "d": "2022-08-03",
+      "c": "F7",
+      "vi": {
+        "vis": [
+          {},
+          {
+            "UCVA": "69P",
+            "UCVA With PH": "66P"
+          }
+        ]
+      },
+      "inv": {
+        "iop": [
+          "19",
+          "22"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 9,
+      "d": "2022-08-29",
+      "c": "F8",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "69"
+          },
+          {
+            "UCVA": "66P"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "180",
+            "va": "66",
+            "ucva": "69"
+          },
+          {
+            "ax": "0",
+            "va": "66P",
+            "ucva": "66P"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "+2.5"
+          },
+          {
+            "sph": "+2.5"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated, 8mm",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "cup disc ratio-0.65, inferior notching",
+          "cup disc ratio-0.6"
+        ],
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "m": [
+        [
+          "AUROPROST-RT EYE DROPS",
+          "1 drop",
+          "3",
+          "Night Only"
+        ]
+      ],
+      "inv": {
+        "iop": [
+          "16",
+          "15"
+        ]
+      },
+      "fup": {
+        "adv": "1 month"
+      }
+    },
+    {
+      "v": 10,
+      "d": "2022-10-08",
+      "c": "F9",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "69P",
+            "UCVA With PH": "66P"
+          },
+          {
+            "UCVA": "66P",
+            "UCVA With PH": "66P"
+          }
+        ],
+        "dist": [
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          },
+          {
+            "sph": "No Data",
+            "ax": "No Data"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated, 8mm",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "cup disc ratio-0.65, inferior notching",
+          "cup disc ratio-0.6"
+        ],
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "m": [
+        [
+          "AUROPROST-RT EYE DROPS",
+          "1 drop",
+          "3",
+          "Night Only"
+        ]
+      ],
+      "inv": {
+        "iop": [
+          "15",
+          "16"
+        ],
+        "sp": {
+          "r": "DONE,DONE"
+        }
+      },
+      "fup": {
+        "adv": "4 months"
+      }
+    },
+    {
+      "v": 11,
+      "d": "2023-02-09",
+      "c": "F10",
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": "Normal",
+        "pu": "Pharmacologically Dilated, 8mm",
+        "lens": "PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "m": [
+        [
+          "AUROPROST-RT EYE DROPS",
+          "",
+          "1 drop",
+          "3",
+          "Night Only"
+        ]
+      ]
+    },
+    {
+      "v": 12,
+      "d": "2023-11-15",
+      "c": "F11",
+      "vi": {
+        "vis": [
+          {
+            "UCVA": "612"
+          },
+          {
+            "UCVA": "69"
+          }
+        ],
+        "dist": [
+          {
+            "ax": "180",
+            "va": "66P",
+            "ucva": "612"
+          },
+          {
+            "ax": "0",
+            "va": "69",
+            "ucva": "69"
+          }
+        ],
+        "nr": [
+          {
+            "sph": "+2.5"
+          },
+          {
+            "sph": "+2.5"
+          }
+        ]
+      },
+      "at": {
+        "ac": "Normal Depth",
+        "ir": "Normal Color and Pattern",
+        "cj": [
+          "Normal",
+          "Normal;episcleritis nasally"
+        ],
+        "pu": "Normal Size and Reaction to Light",
+        "lens": "Clear;PCIOL"
+      },
+      "om": {
+        "om": "FULL",
+        "cr": "Orthophoric",
+        "gl": "Normal"
+      },
+      "fu": {
+        "me": "Clear",
+        "di": [
+          "cup disc ratio-0.65, inferior notching",
+          "cup disc ratio-0.6"
+        ],
+        "ve": "Normal",
+        "br": "Normal",
+        "mf": "Present"
+      },
+      "m": [
+        [
+          "MONOSOPT EYE DROPS",
+          "1 drop",
+          "3",
+          2
+        ],
+        [
+          "FLUR EYE DROPS",
+          "1 drop",
+          "2",
+          3
+        ]
+      ],
+      "inv": {
+        "iop": "19"
+      },
+      "fup": {
+        "adv": "1 year;15 days"
+      }
+    }
+  ]
+}

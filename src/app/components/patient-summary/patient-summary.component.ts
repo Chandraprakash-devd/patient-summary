@@ -13,6 +13,7 @@ import {
   VADataPoint,
 } from '../line-chart/line-chart.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { PatientDataService } from '../../services/patient-data.service';
 import patient1Data from '../../../../patient_data/new/13543756.json';
 import patient2Data from '../../../../patient_data/new/16218255.json';
 import patient3Data from '../../../../patient_data/new/17905548.json';
@@ -22,6 +23,7 @@ import patient6Data from '../../../../patient_data/new/22696638.json';
 import patient7Data from '../../../../patient_data/new/22764362.json';
 import patient8Data from '../../../../patient_data/new/22777163.json';
 import patient9Data from '../../../../patient_data/new/23366760.json';
+// import file from '../../../../patient_data/patient_data_all'
 
 // OLD imports for reference
 // import patient1Data from '../../../../patient_data/patient_complete_data.json';
@@ -52,39 +54,21 @@ export class PatientSummaryComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private cdr: ChangeDetectorRef,
-    private ngZone: NgZone
+    private ngZone: NgZone,
+    private patientDataService: PatientDataService
   ) {}
 
-  private patientDataMap = new Map<string, any>([
-    ['Patient 1', patient8Data],
-    ['Patient 2', patient2Data],
-    ['Patient 3', patient5Data],
-    ['Patient 4', patient6Data],
-    ['Patient 5', patient4Data],
-    ['Patient 6', patient1Data],
-    ['Patient 7', patient9Data],
-    ['Patient 8', patient3Data],
-    ['Patient 9', patient7Data],
-  ]);
-
-  private summaries: Map<string, { re: string; le: string }> = new Map([
-    [
-      '1198643',
-      {
-        re: `The patient initially presented with normal vision (6/6) until February 2018, when moderate NPDR and elevated IOP (26 mmHg) were diagnosed. IOP was controlled with Betabrim (18–20 mmHg), and vision remained stable. By January 2020, the condition progressed to POAG and PDR, with vision at 6/9 and IOP at 26 mmHg. Treatment included Betabrim and Dortas, reducing IOP to 15 mmHg.
-
-In July 2022, PDR advanced with vitreous hemorrhage (VH), necessitating cataract surgery with PCIOL implantation, restoring vision to 6/6. PRP was initiated for NVE and dot-and-blot hemorrhages. Despite ongoing PRP, vision deteriorated to NIP by October 2022, with persistent VH, NVE, and elevated IOP (28 mmHg). Latoprost was added, and subsequent follow-ups showed gradual improvement in vision (6/12 to 6/6P) and IOP stabilization (17–20 mmHg).
-
-By September 2023, additional PRP was performed for unstable PDR and inferior VH. Vision remained stable at 6/6, with IOP controlled at 20 mmHg. However, by December 2023, vision declined slightly to 6/9, with persistent retinal hemorrhages and NVE despite treatment. The final status was 6/9 vision, controlled IOP (18 mmHg), and ongoing management for unstable PDR.`,
-        le: `The patient initially presented with normal vision (6/6) until February 2018, when moderate NPDR and elevated IOP (28 mmHg) were diagnosed. IOP was controlled with Betabrim (15 mmHg), and vision remained stable at 6/6P until May 2019, when it declined to 6/9P. By January 2020, the condition progressed to POAG and severe NPDR, with vision at 6/9 and IOP at 31 mmHg. Betabrim and Dortas reduced IOP to 18 mmHg.
-
-By July 2022, the eye developed PDR with immature cataract (IMC), and vision deteriorated to 6/60 due to media haze. PRP was initiated but limited by the cataract. In October 2022, combined trabeculectomy and phacoemulsification with PCIOL implantation were performed, improving vision to 6/9P. IOP remained elevated (28 mmHg), requiring laser suture lysis (LSL). Persistent dot-and-blot hemorrhages and a CDR of 0.7 were noted.
-
-By February 2023, vision improved to 6/6P, and IOP was controlled at 10 mmHg. CME was identified, requiring ongoing management. By September 2023, vision stabilized at 6/6, but IOP increased to 30 mmHg, prompting escalation of glaucoma therapy. Additional PRP was performed for unstable PDR and inferior VH. As of December 2023, vision was 6/9, with IOP controlled at 20 mmHg. The final status included stable vision, controlled IOP, and ongoing management for glaucoma and unresolved PDR-related complications.`,
-      },
-    ],
-    // Add other patient summaries as needed...
-  ]);
+  // private patientDataMap = new Map<string, any>([
+  //   ['Patient 1', patient8Data],
+  //   ['Patient 2', patient2Data],
+  //   ['Patient 3', patient5Data],
+  //   ['Patient 4', patient6Data],
+  //   ['Patient 5', patient4Data],
+  //   ['Patient 6', patient1Data],
+  //   ['Patient 7', patient9Data],
+  //   ['Patient 8', patient3Data],
+  //   ['Patient 9', patient7Data],
+  // ]);
 
   jsonData: any = null;
   selectedPatient: string = '';
@@ -357,8 +341,9 @@ By February 2023, vision improved to 6/6P, and IOP was controlled at 10 mmHg. CM
   ];
   private colorIndex = 0;
 
-  ngOnInit(): void {
-    this.route.queryParams.subscribe((params: { [key: string]: any }) => {
+  async ngOnInit() {
+    await this.patientDataService.loadSummaries();
+    this.route.queryParams.subscribe(async (params: { [key: string]: any }) => {
       const uid = params['uid'];
       console.log('Query param UID:', uid);
 
@@ -370,10 +355,8 @@ By February 2023, vision improved to 6/6P, and IOP was controlled at 10 mmHg. CM
         return;
       }
 
-      // NEW: Access patient info from p.uid instead of patient_info.uid
-      const foundPatient = Array.from(this.patientDataMap.values()).find(
-        (data: any) => data.p?.uid?.toString() === uid
-      );
+      // Use the service to find patient by UID
+      const foundPatient = await this.patientDataService.findPatientByUID(uid);
 
       this.ngZone.run(() => {
         if (foundPatient) {
@@ -384,8 +367,6 @@ By February 2023, vision improved to 6/6P, and IOP was controlled at 10 mmHg. CM
 
           this.initializeProcedureColors();
           this.updateData();
-
-          // ✅ Force Angular to detect input changes for child components
           this.cdr.detectChanges();
         } else {
           console.warn('⚠️ No patient data found for UID:', uid);
@@ -423,24 +404,24 @@ By February 2023, vision improved to 6/6P, and IOP was controlled at 10 mmHg. CM
     };
   }
 
-  onPatientChange(): void {
-    // Load the selected patient's data
-    this.jsonData = this.patientDataMap.get(this.selectedPatient);
+  // onPatientChange(): void {
+  //   // Load the selected patient's data
+  //   this.jsonData = this.patientDataMap.get(this.selectedPatient);
 
-    // NEW: Check p instead of patient_info
-    if (!this.jsonData || !this.jsonData.p) {
-      console.error('Invalid JSON data for selected patient');
-      return;
-    }
+  //   // NEW: Check p instead of patient_info
+  //   if (!this.jsonData || !this.jsonData.p) {
+  //     console.error('Invalid JSON data for selected patient');
+  //     return;
+  //   }
 
-    // Reinitialize procedure colors for new patient
-    this.procedureColorMap.clear();
-    this.colorIndex = 0;
-    this.initializeProcedureColors();
+  //   // Reinitialize procedure colors for new patient
+  //   this.procedureColorMap.clear();
+  //   this.colorIndex = 0;
+  //   this.initializeProcedureColors();
 
-    // Update all data for new patient
-    this.updateData();
-  }
+  //   // Update all data for new patient
+  //   this.updateData();
+  // }
 
   /**
    * Initialize colors for all unique procedures in the dataset
@@ -571,7 +552,8 @@ By February 2023, vision improved to 6/6P, and IOP was controlled at 10 mmHg. CM
 
     // NEW: Access UID from p.uid
     const uid = this.jsonData.p.uid.toString();
-    const eyeSummary = this.summaries.get(uid);
+    // const eyeSummary = this.summaries.get(uid);
+    const eyeSummary = this.patientDataService.getSummary(uid);
     if (eyeSummary) {
       this.patientSummary =
         this.selectedEye === 'Right Eye' ? eyeSummary.re : eyeSummary.le;
@@ -1362,7 +1344,7 @@ By February 2023, vision improved to 6/6P, and IOP was controlled at 10 mmHg. CM
       if (!val) return null;
       const numericStr = val.replace(/[^0-9]/g, '');
       const numeric = parseInt(numericStr, 10);
-      if (isNaN(numeric) || numeric < 150 || numeric > 1500) {
+      if (isNaN(numeric) || numeric < 0 || numeric > 1500) {
         return null;
       }
       return numeric;
