@@ -11,6 +11,16 @@
       "v": 1,
       "d": "2023-04-24",
       "c": "Initial",
+      "diag": [
+        [
+          "Normal × 1"
+        ],
+        [
+          "S/P PPV+SOI × 1",
+          "RRD × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -68,12 +78,12 @@
         ]
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [

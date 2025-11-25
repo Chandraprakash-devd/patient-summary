@@ -11,6 +11,13 @@
       "v": 1,
       "d": "2022-07-08",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Pigmentary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -76,36 +83,36 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "LUMIGAN DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ],
-        [
-          "MISOPT EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2,
-          5,
-          "08/07/2022",
-          "12/07/2022"
-        ],
-        [
-          "PANTOCID40MGTAB",
-          "1 tablet",
-          "5",
-          "Morning Only",
-          5,
-          "08/07/2022",
-          "12/07/2022"
-        ]
+        {
+          "name": "LUMIGAN DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        },
+        {
+          "name": "MISOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2,
+          "dur": 5,
+          "med_start": "08/07/2022",
+          "med_end": "12/07/2022"
+        },
+        {
+          "name": "PANTOCID40MGTAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only",
+          "dur": 5,
+          "med_start": "08/07/2022",
+          "med_end": "12/07/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -124,6 +131,13 @@
       "v": 2,
       "d": "2022-07-23",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Pigmentary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -162,18 +176,18 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "LUMIGAN DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ],
-        [
-          "MISOPT EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "LUMIGAN DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        },
+        {
+          "name": "MISOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -192,6 +206,13 @@
       "v": 3,
       "d": "2022-07-25",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "Pigmentary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -236,18 +257,18 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "LUMIGAN DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ],
-        [
-          "MISOPT EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "LUMIGAN DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        },
+        {
+          "name": "MISOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "9"
@@ -291,87 +312,87 @@
         ]
       },
       "m": [
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          8,
-          10,
-          "26/07/2022",
-          "04/08/2022"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          7,
-          10,
-          "05/08/2022",
-          "14/08/2022"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          6,
-          10,
-          "15/08/2022",
-          "24/08/2022"
-        ],
-        [
-          "EXOCIN EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          7,
-          "26/07/2022",
-          "01/08/2022"
-        ],
-        [
-          "ATROPINE 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          2,
-          15,
-          "26/07/2022",
-          "09/08/2022"
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          30,
-          "26/07/2022",
-          "24/08/2022"
-        ],
-        [
-          "TEARSNATURLE 5 ML EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          30,
-          "26/07/2022",
-          "24/08/2022"
-        ],
-        [
-          "NEUROBION FORTE TAB",
-          "1 tablet",
-          "5",
-          "Morning Only",
-          30,
-          "26/07/2022",
-          "24/08/2022"
-        ],
-        [
-          "FOLVITE TAB",
-          "1 tablet",
-          "5",
-          "Morning Only",
-          30,
-          "26/07/2022",
-          "24/08/2022"
-        ]
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8,
+          "dur": 10,
+          "med_start": "26/07/2022",
+          "med_end": "04/08/2022"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 7,
+          "dur": 10,
+          "med_start": "05/08/2022",
+          "med_end": "14/08/2022"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6,
+          "dur": 10,
+          "med_start": "15/08/2022",
+          "med_end": "24/08/2022"
+        },
+        {
+          "name": "EXOCIN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 7,
+          "med_start": "26/07/2022",
+          "med_end": "01/08/2022"
+        },
+        {
+          "name": "ATROPINE 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2,
+          "dur": 15,
+          "med_start": "26/07/2022",
+          "med_end": "09/08/2022"
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "26/07/2022",
+          "med_end": "24/08/2022"
+        },
+        {
+          "name": "TEARSNATURLE 5 ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "26/07/2022",
+          "med_end": "24/08/2022"
+        },
+        {
+          "name": "NEUROBION FORTE TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only",
+          "dur": 30,
+          "med_start": "26/07/2022",
+          "med_end": "24/08/2022"
+        },
+        {
+          "name": "FOLVITE TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only",
+          "dur": 30,
+          "med_start": "26/07/2022",
+          "med_end": "24/08/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -384,6 +405,15 @@
       "v": 5,
       "d": "2022-08-08",
       "c": "F4",
+      "diag": [
+        [
+          "Post Trabeculectomy × 1"
+        ],
+        "",
+        [
+          "Pigmentary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -439,6 +469,15 @@
       "v": 6,
       "d": "2022-08-19",
       "c": "F5",
+      "diag": [
+        [
+          "Post Trabeculectomy × 1"
+        ],
+        "",
+        [
+          "Pigmentary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -496,6 +535,15 @@
       "v": 7,
       "d": "2022-09-01",
       "c": "F6",
+      "diag": [
+        [
+          "Post TRAB+TRAB × 1"
+        ],
+        "",
+        [
+          "Pigmentary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -557,90 +605,90 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "LUMIGAN DROPS",
-          "1 drop",
-          "2",
-          "Night Only"
-        ],
-        [
-          "MISOPT EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          6,
-          10,
-          "01/09/2022",
-          "10/09/2022"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          5,
-          10,
-          "11/09/2022",
-          "20/09/2022"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          4,
-          10,
-          "21/09/2022",
-          "30/09/2022"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          3,
-          10,
-          "01/10/2022",
-          "10/10/2022"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          2,
-          10,
-          "11/10/2022",
-          "20/10/2022"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          1,
-          10,
-          "21/10/2022",
-          "30/10/2022"
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          30,
-          "01/09/2022",
-          "30/09/2022"
-        ],
-        [
-          "TEARSNATURLE 5 ML EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          30,
-          "01/09/2022",
-          "30/09/2022"
-        ]
+        {
+          "name": "LUMIGAN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Night Only"
+        },
+        {
+          "name": "MISOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6,
+          "dur": 10,
+          "med_start": "01/09/2022",
+          "med_end": "10/09/2022"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5,
+          "dur": 10,
+          "med_start": "11/09/2022",
+          "med_end": "20/09/2022"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4,
+          "dur": 10,
+          "med_start": "21/09/2022",
+          "med_end": "30/09/2022"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 10,
+          "med_start": "01/10/2022",
+          "med_end": "10/10/2022"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2,
+          "dur": 10,
+          "med_start": "11/10/2022",
+          "med_end": "20/10/2022"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1,
+          "dur": 10,
+          "med_start": "21/10/2022",
+          "med_end": "30/10/2022"
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "01/09/2022",
+          "med_end": "30/09/2022"
+        },
+        {
+          "name": "TEARSNATURLE 5 ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "01/09/2022",
+          "med_end": "30/09/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -656,6 +704,15 @@
       "v": 8,
       "d": "2022-09-19",
       "c": "F7",
+      "diag": [
+        [
+          "Post TRAB+TRAB × 1"
+        ],
+        "",
+        [
+          "Pigmentary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -721,6 +778,14 @@
       "v": 9,
       "d": "2023-10-09",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Pigmentary glaucoma × 1",
+          "Early opacity of lens × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -796,6 +861,14 @@
       "v": 10,
       "d": "2023-11-09",
       "c": "F9",
+      "diag": [
+        "",
+        "",
+        [
+          "Early opacity of lens × 1",
+          "Pigmentary glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

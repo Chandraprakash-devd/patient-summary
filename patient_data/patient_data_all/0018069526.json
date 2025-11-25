@@ -11,6 +11,14 @@
       "v": 1,
       "d": "2022-03-09",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "PSCC × 1",
+          "Glaucoma Suspect × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -95,6 +103,14 @@
       "v": 2,
       "d": "2022-04-09",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "PSCC × 1",
+          "Glaucoma Suspect × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "Glasses": "66P",
@@ -143,6 +159,14 @@
       "v": 3,
       "d": "2022-05-09",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "PSCC × 1",
+          "Glaucoma Suspect × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "Glasses": "66P",
@@ -188,6 +212,14 @@
       "v": 4,
       "d": "2023-03-30",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "PSCC × 1",
+          "Glaucoma Suspect × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -259,6 +291,14 @@
       "v": 5,
       "d": "2024-03-23",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "PSC × 1",
+          "Glaucoma suspect × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "618"
@@ -328,21 +368,21 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "EXTRALUBE EYE DROPS",
-          "3",
-          4
-        ],
-        [
-          "TIMOLET 0.5% DROPS",
-          "3",
-          "Morning Only"
-        ],
-        [
-          "WINOLAP EYE DROPS",
-          "3",
-          2
-        ]
+        {
+          "name": "EXTRALUBE EYE DROPS",
+          "eye": "3",
+          "fre": 4
+        },
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "eye": "3",
+          "fre": "Morning Only"
+        },
+        {
+          "name": "WINOLAP EYE DROPS",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -361,6 +401,14 @@
       "v": 7,
       "d": "2024-07-06",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Glaucoma suspect × 1",
+          "PSC × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "618"
@@ -389,12 +437,11 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "",
-          "3",
-          "Morning Only"
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "eye": "3",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -413,6 +460,14 @@
       "v": 8,
       "d": "2024-12-21",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Glaucoma suspect × 1",
+          "PSC × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"

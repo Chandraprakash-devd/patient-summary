@@ -11,6 +11,17 @@
       "v": 1,
       "d": "2023-06-14",
       "c": "Initial",
+      "diag": [
+        [
+          "PACS × 1"
+        ],
+        [
+          "PACG × 1"
+        ],
+        [
+          "High Myopia × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -80,23 +91,23 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "2 tablet",
-          "5"
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "DORZOX-T EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "2 tablet",
+          "eye": "5"
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "DORZOX-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -112,6 +123,17 @@
       "v": 2,
       "d": "2023-06-22",
       "c": "F1",
+      "diag": [
+        [
+          "PACS × 1"
+        ],
+        [
+          "PACG × 1"
+        ],
+        [
+          "High Myopia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -150,16 +172,16 @@
         ]
       },
       "m": [
-        [
-          "SOFT DROPS",
-          "3",
-          3
-        ],
-        [
-          "LOTEPRED DROPS",
-          "3",
-          4
-        ]
+        {
+          "name": "SOFT DROPS",
+          "eye": "3",
+          "fre": 3
+        },
+        {
+          "name": "LOTEPRED DROPS",
+          "eye": "3",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -175,6 +197,18 @@
       "v": 3,
       "d": "2023-06-29",
       "c": "F2",
+      "diag": [
+        [
+          "PACS × 1"
+        ],
+        [
+          "PACG × 1"
+        ],
+        [
+          "High Myopia × 1",
+          "Status Post PI × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -225,18 +259,18 @@
         "mf": "circular atrophic patch ?GA ?CACD"
       },
       "m": [
-        [
-          "CAREPROST LS DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ],
-        [
-          "DORZOX-T EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "CAREPROST LS DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DORZOX-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -252,6 +286,18 @@
       "v": 4,
       "d": "2023-08-02",
       "c": "F3",
+      "diag": [
+        [
+          "PAC × 1"
+        ],
+        [
+          "PACG × 1"
+        ],
+        [
+          "High Myopia × 1",
+          "Status Post PI × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -325,18 +371,18 @@
         ]
       },
       "m": [
-        [
-          "CAREPROST LS DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ],
-        [
-          "DORZOX-T EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "CAREPROST LS DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DORZOX-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -355,6 +401,16 @@
       "v": 5,
       "d": "2023-11-02",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 1",
+          "High myopia × 1",
+          "Primary Angle-Closure Glaucoma × 1",
+          "Amblyopia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -421,12 +477,12 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -442,6 +498,16 @@
       "v": 6,
       "d": "2024-03-04",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 1",
+          "Amblyopia × 1",
+          "Primary Angle-Closure Glaucoma × 1",
+          "High myopia × 1"
+        ]
+      ],
       "at": {
         "ac": "vh 2",
         "ir": "Peripheral Iridectomy-Laser-Patent",
@@ -476,12 +542,12 @@
         ]
       },
       "m": [
-        [
-          "RIPATEC 5ML EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "RIPATEC 5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -497,6 +563,16 @@
       "v": 7,
       "d": "2024-11-27",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 1",
+          "Amblyopia × 1",
+          "Primary Angle-Closure Glaucoma × 1",
+          "High myopia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -533,13 +609,12 @@
         "mf": "Absent-CNVM"
       },
       "m": [
-        [
-          "DORZOX-T EYE DROPS",
-          "",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "DORZOX-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -552,6 +627,17 @@
       "v": 8,
       "d": "2025-03-28",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 1",
+          "Amblyopia × 1",
+          "Primary Angle-Closure Glaucoma × 1",
+          "High myopia × 1",
+          "Absolute glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

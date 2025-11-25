@@ -403,7 +403,11 @@ export class LineChartComponent
   private createChart() {
     const ctx = this.chartCanvas.nativeElement.getContext('2d');
     if (!ctx) return;
+    const timeRange = this.maxDate.getTime() - this.minDate.getTime();
+    const paddingTime = timeRange * 0.005;
 
+    const paddedMinDate = new Date(this.minDate.getTime() - paddingTime);
+    const paddedMaxDate = new Date(this.maxDate.getTime() + paddingTime);
     const {
       gridColor,
       tickColor,
@@ -567,6 +571,8 @@ export class LineChartComponent
                 month: 'dd-MM-yyyy',
               },
             },
+            // grace: '5%', // Adds 5% padding on both sides
+            offset: true, // Ensures bars/points aren't cut off at edges
             grid: {
               color: gridColor,
               lineWidth: 0.5,
@@ -581,8 +587,8 @@ export class LineChartComponent
             border: {
               color: borderColor,
             },
-            min: this.minDate.toISOString().substring(0, 10),
-            max: this.maxDate.toISOString().substring(0, 10),
+            min: paddedMinDate.toISOString().substring(0, 10),
+            max: paddedMaxDate.toISOString().substring(0, 10),
           },
           y: {
             type: 'linear',

@@ -21,6 +21,7 @@ interface GanttData {
   task: string;
   start: string;
   end: string;
+  dosage?: string;
 }
 
 interface GanttConfig {
@@ -40,6 +41,7 @@ interface ProcessedGanttItem {
   track: number;
   startTime: number;
   endTime: number;
+  dosage?: string;
 }
 
 @Component({
@@ -313,6 +315,7 @@ export class GanttChartComponent
                 this.taskNames[tooltipItems[0].dataIndex],
               label: (tooltipItem) => {
                 const item = this.processedData[tooltipItem.dataIndex];
+
                 const startDateStr = new Date(item.start).toLocaleDateString(
                   dateFormat,
                   {
@@ -321,6 +324,7 @@ export class GanttChartComponent
                     year: 'numeric',
                   }
                 );
+
                 const endDateStr = new Date(item.end).toLocaleDateString(
                   dateFormat,
                   {
@@ -329,7 +333,20 @@ export class GanttChartComponent
                     year: 'numeric',
                   }
                 );
-                return [`Start: ${startDateStr}`, `End: ${endDateStr}`];
+
+                // Build tooltip lines array
+                const lines = [];
+
+                // Add dosage line if available (for medications)
+                if (item.dosage) {
+                  lines.push(`Dosage: ${item.dosage}`);
+                }
+
+                // Add start and end dates
+                lines.push(`Start: ${startDateStr}`);
+                lines.push(`End: ${endDateStr}`);
+
+                return lines;
               },
             },
           },
@@ -469,6 +486,7 @@ export class GanttChartComponent
         task: item.task,
         start: item.start,
         end: item.end,
+        dosage: item.dosage,
         track: 0,
         startTime: new Date(item.start).getTime(),
         endTime: new Date(item.end).getTime(),

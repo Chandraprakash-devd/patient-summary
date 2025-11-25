@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2023-11-08",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Phacomorphic glaucoma × 1",
+          "Mature Cataract × 1",
+          "Phacolytic glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -53,18 +62,18 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -74,6 +83,18 @@
       "v": 2,
       "d": "2023-11-08",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Traumatic subluxation of lens × 1",
+          "Mature Cataract × 2",
+          "Secondary glaucoma × 1",
+          "Aphakia × 1",
+          "Blunt injury of eye × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -144,84 +165,84 @@
         "mf": "not visualised"
       },
       "m": [
-        [
-          "MANNITOL 20% -100ML",
-          "99 ml",
-          "5",
-          2
-        ],
-        [
-          "EXOCIN EYE DROPS",
-          "1 drop",
-          "1",
-          8
-        ],
-        [
-          "ANXIT 0.25 TAB",
-          "5",
-          "Night Only"
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1",
-          8
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1",
-          6
-        ],
-        [
-          "GATILOX DM-10ML",
-          "ORAL  GLYCERIN 30 ML",
-          "1",
-          5
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1",
-          4
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1",
-          3
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1",
-          2
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          6
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          4
-        ],
-        [
-          "IOTIM 0.5% DROPS",
-          "1",
-          2
-        ],
-        [
-          "BIDIN-LS EYE DROPS",
-          "1",
-          3
-        ],
-        [
-          "LUBI-FRESH EYE DROPS",
-          "1",
-          4
-        ]
+        {
+          "name": "MANNITOL 20% -100ML",
+          "dos": "99 ml",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "EXOCIN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "ANXIT 0.25 TAB",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "rem": "ORAL  GLYCERIN 30 ML",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "IOTIM 0.5% DROPS",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "BIDIN-LS EYE DROPS",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "LUBI-FRESH EYE DROPS",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -240,6 +261,18 @@
       "v": 3,
       "d": "2023-11-17",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Blunt injury of eye × 1",
+          "Immature cataract × 1",
+          "Secondary glaucoma × 1",
+          "Traumatic subluxation of lens × 1",
+          "Mature Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -322,6 +355,18 @@
       "v": 4,
       "d": "2023-11-24",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Blunt injury of eye × 1",
+          "Immature cataract × 1",
+          "Secondary glaucoma × 1",
+          "Traumatic subluxation of lens × 1",
+          "Mature Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -388,30 +433,30 @@
         "mf": "not visualised"
       },
       "m": [
-        [
-          "BIDIN-T EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "RIPATEC 5ML EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DIAMOX TAB",
-          "1/2 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "BIDIN-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "RIPATEC 5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1/2 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -427,6 +472,19 @@
       "v": 5,
       "d": "2023-12-04",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Blunt injury of eye × 1",
+          "Immature cataract × 1",
+          "Secondary glaucoma × 1",
+          "Traumatic subluxation of lens × 1",
+          "Mature Cataract × 1",
+          "Acute conjunctivitis × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -479,35 +537,35 @@
         ]
       },
       "m": [
-        [
-          "DEXOREN-S EYE DROPS",
-          "1 drop",
-          "3",
-          4
-        ],
-        [
-          "DEXOREN-S EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ],
-        [
-          "DEXOREN-S EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "DEXOREN-S EYE DROPS",
-          "1 drop",
-          "3",
-          1
-        ],
-        [
-          "ZOXAN EYE OINT",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 4
+        },
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        },
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 1
+        },
+        {
+          "name": "ZOXAN EYE OINT",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ],
       "fup": {
         "adv": "10 days"
@@ -517,6 +575,19 @@
       "v": 6,
       "d": "2023-12-14",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Blunt injury of eye × 1",
+          "Immature cataract × 1",
+          "Secondary glaucoma × 1",
+          "Traumatic subluxation of lens × 1",
+          "Mature Cataract × 1",
+          "Acute conjunctivitis × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -584,26 +655,26 @@
         "mf": "not visualised"
       },
       "m": [
-        [
-          "DORSUN -T E/D",
-          "1",
-          2
-        ],
-        [
-          "RIPATEC 5ML EYE DROPS",
-          "3",
-          2
-        ],
-        [
-          "AZITHRAL E/O",
-          "3",
-          2
-        ],
-        [
-          "LUBI-FRESH EYE DROPS",
-          "3",
-          4
-        ]
+        {
+          "name": "DORSUN -T E/D",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "RIPATEC 5ML EYE DROPS",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "AZITHRAL E/O",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "LUBI-FRESH EYE DROPS",
+          "eye": "3",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -619,6 +690,19 @@
       "v": 7,
       "d": "2024-01-18",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Blunt injury of eye × 1",
+          "Immature cataract × 1",
+          "Secondary glaucoma × 1",
+          "Traumatic subluxation of lens × 1",
+          "Mature Cataract × 1",
+          "Acute conjunctivitis × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -667,17 +751,17 @@
         ]
       },
       "m": [
-        [
-          "KETOGATE EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "ZOXAN EYE OINT",
-          "1",
-          "Night Only"
-        ]
+        {
+          "name": "KETOGATE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "ZOXAN EYE OINT",
+          "eye": "1",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": "15",
@@ -693,6 +777,18 @@
       "v": 8,
       "d": "2024-01-25",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Blunt injury of eye × 1",
+          "Secondary glaucoma × 1",
+          "Traumatic subluxation of lens × 1",
+          "Mature Cataract × 1",
+          "Acute conjunctivitis × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -772,6 +868,16 @@
       "v": 9,
       "d": "2024-02-26",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Blunt injury of eye × 1",
+          "Secondary glaucoma × 1",
+          "Mature Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -848,17 +954,17 @@
         ]
       },
       "m": [
-        [
-          "EXOCIN EYE DROPS",
-          "1 drop",
-          "2",
-          8
-        ],
-        [
-          "ANXIT 0.25 TAB",
-          "5",
-          "Night Only"
-        ]
+        {
+          "name": "EXOCIN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "ANXIT 0.25 TAB",
+          "eye": "5",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -884,54 +990,54 @@
         ]
       },
       "m": [
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          8
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          5
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -944,6 +1050,14 @@
       "v": 11,
       "d": "2024-04-02",
       "c": "F10",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -998,12 +1112,12 @@
         ]
       },
       "m": [
-        [
-          "FLUR EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "FLUR EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [

@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2023-11-03",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Blunt injury of eye × 1",
+          "Subluxation of lens × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -102,54 +111,54 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTAKIND 40 MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "B2 DOC -EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "TIMOBEST EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          1
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTAKIND 40 MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "B2 DOC -EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "TIMOBEST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -168,6 +177,15 @@
       "v": 2,
       "d": "2023-11-09",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Blunt injury of eye × 1",
+          "Subluxation of lens × 1",
+          "Normal × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -245,12 +263,12 @@
         ]
       },
       "m": [
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          6
-        ]
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        }
       ],
       "inv": {
         "iop": [
@@ -355,12 +373,12 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -376,6 +394,13 @@
       "v": 5,
       "d": "2023-12-08",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "Subluxation of lens × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -479,12 +504,12 @@
         "ref": "RE Parsplana Lensectomy (PPL) +  Parsplana Vitrectomy (PPV)"
       },
       "m": [
-        [
-          "CILACAR5MG",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "CILACAR5MG",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -494,6 +519,19 @@
       "v": 7,
       "d": "2024-02-27",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Subluxation of lens × 1",
+          "Corneal haze × 1",
+          "Iris neovascularization × 1",
+          "Traumatic glaucoma × 1",
+          "Traumatic iridodialysis × 1",
+          "Traumatic subluxation of lens × 1",
+          "Ametropia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -561,114 +599,114 @@
         ]
       },
       "m": [
-        [
-          "PANTAKIND 40 MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "PYRIGESIC 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "MANITOL",
-          "1 drop",
-          "1",
-          8
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          7
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          5
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          8
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "PYRIGESIC 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "OFLIN 200MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTHEGEL  OINT",
-          "1",
-          2
-        ]
+        {
+          "name": "PANTAKIND 40 MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "PYRIGESIC 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "rem": "MANITOL",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 7
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "PYRIGESIC 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "OFLIN 200MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTHEGEL  OINT",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -684,6 +722,18 @@
       "v": 8,
       "d": "2024-03-15",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Corneal haze × 1",
+          "Iris neovascularization × 1",
+          "Traumatic glaucoma × 1",
+          "Traumatic iridodialysis × 1",
+          "Traumatic subluxation of lens × 1",
+          "Ametropia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -746,36 +796,36 @@
         ]
       },
       "m": [
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTAKIND 40 MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "OPTIVE EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "B2 DOC -EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "TIMOBEST EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTAKIND 40 MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "OPTIVE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "B2 DOC -EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "TIMOBEST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -791,6 +841,18 @@
       "v": 9,
       "d": "2024-03-22",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Corneal haze × 1",
+          "Iris neovascularization × 1",
+          "Traumatic glaucoma × 1",
+          "Traumatic iridodialysis × 1",
+          "Traumatic subluxation of lens × 1",
+          "Ametropia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -861,12 +923,11 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "2 tablet",
-          "5",
-          ""
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "2 tablet",
+          "eye": "5"
+        }
       ],
       "inv": {
         "iop": [
@@ -923,18 +984,18 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "LYSER - D TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "COMBIFLAM  TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "LYSER - D TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "COMBIFLAM  TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -950,6 +1011,15 @@
       "v": 11,
       "d": "2024-03-28",
       "c": "F10",
+      "diag": [
+        "",
+        "",
+        [
+          "Iris neovascularization × 1",
+          "Immature cataract × 1",
+          "Traumatic glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1017,30 +1087,30 @@
         ]
       },
       "m": [
-        [
-          "BETAFREE EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "TIMOBEST EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ],
-        [
-          "PANTAKIND 40 MG TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "BETAFREE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "TIMOBEST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        },
+        {
+          "name": "PANTAKIND 40 MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -1056,6 +1126,15 @@
       "v": 12,
       "d": "2024-04-12",
       "c": "F11",
+      "diag": [
+        "",
+        "",
+        [
+          "Iris neovascularization × 1",
+          "Traumatic glaucoma × 1",
+          "Immature cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1136,6 +1215,15 @@
       "v": 13,
       "d": "2024-07-12",
       "c": "F12",
+      "diag": [
+        "",
+        "",
+        [
+          "Iris neovascularization × 1",
+          "Traumatic glaucoma × 1",
+          "Immature cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1200,12 +1288,12 @@
         ]
       },
       "m": [
-        [
-          "BETAFREE EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ]
+        {
+          "name": "BETAFREE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -1221,6 +1309,18 @@
       "v": 14,
       "d": "2024-10-29",
       "c": "F13",
+      "diag": [
+        "",
+        "",
+        [
+          "Iris neovascularization × 1",
+          "Traumatic glaucoma × 1",
+          "Immature cataract × 1",
+          "Absolute glaucoma × 1",
+          "Glaucoma suspect × 1",
+          "Blepharitis × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1288,13 +1388,11 @@
         ]
       },
       "m": [
-        [
-          "OCUPOL EYE OINT",
-          "",
-          "",
-          "3",
-          2
-        ]
+        {
+          "name": "OCUPOL EYE OINT",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [

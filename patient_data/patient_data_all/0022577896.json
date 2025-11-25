@@ -11,6 +11,16 @@
       "v": 1,
       "d": "2024-10-16",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 1",
+          "Normal × 1",
+          "Cogan-Reese syndrome × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -55,31 +65,30 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "ALPRAX 0.25 TAB",
-          "",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          8
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ],
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "ALPRAX 0.25 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        },
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -98,6 +107,16 @@
       "v": 2,
       "d": "2024-11-02",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 1",
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -135,19 +154,18 @@
         ]
       },
       "m": [
-        [
-          "ALPRAX 0.25 TAB",
-          "",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          8
-        ]
+        {
+          "name": "ALPRAX 0.25 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8
+        }
       ],
       "inv": {
         "iop": [
@@ -163,6 +181,16 @@
       "v": 3,
       "d": "2024-11-06",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 1",
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -216,78 +244,76 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "TOBAREN-DM EYE DROPS",
-          "",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "TOBAREN-DM EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "TOBAREN-DM EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "PYRIGESIC TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ],
-        [
-          "",
-          "100   ml",
-          "5"
-        ],
-        [
-          "TOBAREN-DM EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "Trisopt eye drops",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "TOBAREN-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "TOBAREN-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "TOBAREN-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "PYRIGESIC TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        },
+        {
+          "dos": "100   ml",
+          "eye": "5"
+        },
+        {
+          "name": "TOBAREN-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "Trisopt eye drops",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -300,6 +326,16 @@
       "v": 4,
       "d": "2024-11-27",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 1",
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -345,25 +381,24 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "IOPAR-SR CAP",
-          "",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -376,6 +411,16 @@
       "v": 5,
       "d": "2024-12-18",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 1",
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -431,6 +476,16 @@
       "v": 6,
       "d": "2025-01-08",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 1",
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -478,6 +533,16 @@
       "v": 7,
       "d": "2025-01-22",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 2",
+          "ICE (irido-corneo-endothelial) syndrome × 2",
+          "Secondary glaucoma × 2",
+          "Normal × 2"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -521,61 +586,60 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "LOPRES 0.5% DROPS",
-          "",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "TOBAREN-DM EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "TOBAREN-DM EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "TOBAREN-DM EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "LOPRES 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "TOBAREN-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "TOBAREN-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "TOBAREN-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -588,6 +652,16 @@
       "v": 8,
       "d": "2025-02-15",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 1",
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 2",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -636,13 +710,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "MISOPT EYE DROPS",
-          "",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "MISOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -655,6 +728,16 @@
       "v": 9,
       "d": "2025-03-29",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Cogan-Reese syndrome × 1",
+          "ICE (irido-corneo-endothelial) syndrome × 1",
+          "Secondary glaucoma × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

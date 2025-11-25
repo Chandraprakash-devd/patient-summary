@@ -86,37 +86,36 @@
         ]
       },
       "m": [
-        [
-          "DEXOREN-S EYE DROPS",
-          "",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "ZOXAN 500MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "P-NAC  TABS",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "ZOXAN 500MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "P-NAC  TABS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "sp": {
@@ -168,43 +167,42 @@
         ]
       },
       "m": [
-        [
-          "DEXOREN-S EYE DROPS",
-          "",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "DEXOREN-S EYE DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "DEXOREN-S EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "DEXOREN-S EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "DEXOREN-S EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "sp": {
@@ -251,6 +249,15 @@
       "v": 5,
       "d": "2023-03-10",
       "c": "F4",
+      "diag": [
+        [
+          "Normal × 1"
+        ],
+        [
+          "Open Globe Injury × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -315,24 +322,24 @@
         ]
       },
       "m": [
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          "Hourly"
-        ],
-        [
-          "AMINOGEN DROPS",
-          "1 drop",
-          "2",
-          "Hourly"
-        ],
-        [
-          "ATROP EYE DROP",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly"
+        },
+        {
+          "name": "AMINOGEN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly"
+        },
+        {
+          "name": "ATROP EYE DROP",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -351,6 +358,15 @@
       "v": 6,
       "d": "2023-03-13",
       "c": "F5",
+      "diag": [
+        [
+          "Normal × 1"
+        ],
+        [
+          "Open Globe Injury × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -425,6 +441,13 @@
       "v": 7,
       "d": "2023-03-14",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -475,59 +498,59 @@
         ]
       },
       "m": [
-        [
-          "ATROPINE 10ML EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ],
-        [
-          "PRED FORTE EYE DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "AMINOGEN DROPS",
-          "1 drop",
-          "2",
-          "Hourly"
-        ],
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          "Hourly"
-        ]
+        {
+          "name": "ATROPINE 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "PRED FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "AMINOGEN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly"
+        },
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly"
+        }
       ],
       "inv": {
         "iop": [
@@ -546,6 +569,16 @@
       "v": 8,
       "d": "2023-03-23",
       "c": "F7",
+      "diag": [
+        "",
+        [
+          "Lens Induced Uveitis × 1",
+          "S/P PPV+SOI × 1"
+        ],
+        [
+          "Hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -613,6 +646,18 @@
       "v": 9,
       "d": "2023-04-04",
       "c": "F8",
+      "diag": [
+        "",
+        [
+          "Lens Induced Uveitis × 1",
+          "S/P PPV+SOI × 1",
+          "Aphakia × 1",
+          "S/P Corneal Tear Suturing × 1"
+        ],
+        [
+          "Hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -683,12 +728,12 @@
         ]
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -704,6 +749,18 @@
       "v": 10,
       "d": "2023-04-18",
       "c": "F9",
+      "diag": [
+        "",
+        [
+          "Lens Induced Uveitis × 1",
+          "S/P PPV+SOI × 1",
+          "Aphakia × 1",
+          "S/P Corneal Tear Suturing × 1"
+        ],
+        [
+          "Hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -759,18 +816,18 @@
         ]
       },
       "m": [
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "AMINOGEN DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "AMINOGEN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -786,6 +843,18 @@
       "v": 11,
       "d": "2023-05-12",
       "c": "F10",
+      "diag": [
+        "",
+        [
+          "Lens Induced Uveitis × 1",
+          "S/P PPV+SOI × 1",
+          "Aphakia × 1",
+          "S/P Corneal Tear Suturing × 1"
+        ],
+        [
+          "Hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -841,12 +910,12 @@
         ]
       },
       "m": [
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -862,6 +931,18 @@
       "v": 12,
       "d": "2023-06-01",
       "c": "F11",
+      "diag": [
+        "",
+        [
+          "Lens Induced Uveitis × 1",
+          "S/P PPV+SOI × 1",
+          "Aphakia × 1",
+          "S/P Corneal Tear Suturing × 1"
+        ],
+        [
+          "Hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -914,54 +995,54 @@
         ]
       },
       "m": [
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "AMINOGEN DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "AMINOGEN DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "AMINOGEN DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "AMINOGEN DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "AMINOGEN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "AMINOGEN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "AMINOGEN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "AMINOGEN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -977,6 +1058,19 @@
       "v": 13,
       "d": "2023-06-24",
       "c": "F12",
+      "diag": [
+        "",
+        [
+          "Lens Induced Uveitis × 1",
+          "S/P PPV+SOI × 1",
+          "Aphakia × 1",
+          "S/P Corneal Tear Suturing × 1",
+          "Secondary Increased IOP × 1"
+        ],
+        [
+          "Hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1038,34 +1132,34 @@
         ]
       },
       "m": [
-        [
-          "LOPRES 0.5% DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          3
-        ],
-        [
-          "DOLO 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "LOPRES 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -1091,6 +1185,13 @@
       "v": 16,
       "d": "2023-09-23",
       "c": "F15",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1153,53 +1254,53 @@
         ]
       },
       "m": [
-        [
-          "MISOPT EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "BIDIN-LS EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "DOLO 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "MANNITOL 20% -100ML",
-          "99 ml",
-          "5",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ],
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "MISOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "BIDIN-LS EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "MANNITOL 20% -100ML",
+          "dos": "99 ml",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -1292,48 +1393,48 @@
         ]
       },
       "m": [
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          24
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          5
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 24
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -1359,6 +1460,15 @@
       "v": 19,
       "d": "2023-10-05",
       "c": "F18",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Normal × 1",
+          "Rupture of globe × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1424,6 +1534,15 @@
       "v": 20,
       "d": "2023-11-16",
       "c": "F19",
+      "diag": [
+        "",
+        "",
+        [
+          "Normal × 1",
+          "Aphakia × 1",
+          "Rupture of globe × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

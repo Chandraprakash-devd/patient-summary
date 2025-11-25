@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2023-05-03",
       "c": "Initial",
+      "diag": [
+        [
+          "RRD × 1"
+        ],
+        "",
+        [
+          "S/P VR Surgery × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "Glasses": "66P",
@@ -76,6 +85,15 @@
       "v": 2,
       "d": "2023-05-04",
       "c": "F1",
+      "diag": [
+        [
+          "RRD × 1"
+        ],
+        "",
+        [
+          "S/P VR Surgery × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -126,77 +144,77 @@
         ]
       },
       "m": [
-        [
-          "PREDIRA",
-          "1",
-          6
-        ],
-        [
-          "PREDIRA",
-          "1",
-          5
-        ],
-        [
-          "PREDIRA",
-          "1",
-          4
-        ],
-        [
-          "PREDIRA",
-          "1",
-          3
-        ],
-        [
-          "PREDIRA",
-          "1",
-          2
-        ],
-        [
-          "PREDIRA",
-          "1",
-          1
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1",
-          3
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1",
-          2
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1",
-          1
-        ],
-        [
-          "ZIVIMOX EYE DDROPS",
-          "1",
-          4
-        ],
-        [
-          "DOLO 650MG TAB",
-          "5",
-          2
-        ],
-        [
-          "CIPROBID-500MG",
-          "5",
-          2
-        ],
-        [
-          "MELO 20MG CAPSULE",
-          "5",
-          1
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "PREDIRA",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "PREDIRA",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "PREDIRA",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "PREDIRA",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "PREDIRA",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "PREDIRA",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "ZIVIMOX EYE DDROPS",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "CIPROBID-500MG",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "MELO 20MG CAPSULE",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "fup": {
         "adv": "15 days"
@@ -206,6 +224,16 @@
       "v": 5,
       "d": "2023-05-20",
       "c": "F4",
+      "diag": [
+        [
+          "RRD × 1"
+        ],
+        "",
+        [
+          "S/P VR Surgery × 1",
+          "Secondary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -264,18 +292,18 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "LOPRES 0.5% DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "LOPRES 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -291,6 +319,16 @@
       "v": 6,
       "d": "2023-06-07",
       "c": "F5",
+      "diag": [
+        [
+          "RRD × 1"
+        ],
+        "",
+        [
+          "S/P VR Surgery × 1",
+          "Secondary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -364,6 +402,16 @@
       "v": 7,
       "d": "2023-07-15",
       "c": "F6",
+      "diag": [
+        [
+          "RRD × 1"
+        ],
+        "",
+        [
+          "S/P VR Surgery × 1",
+          "Secondary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -443,6 +491,16 @@
       "v": 8,
       "d": "2023-08-12",
       "c": "F7",
+      "diag": [
+        [
+          "RRD × 1"
+        ],
+        "",
+        [
+          "S/P VR Surgery × 1",
+          "Secondary Glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -493,12 +551,12 @@
         "rem": "s/p vr sx"
       },
       "m": [
-        [
-          "LOPRES 0.5% DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "LOPRES 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -514,6 +572,15 @@
       "v": 9,
       "d": "2024-05-27",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 1",
+          "Secondary glaucoma × 1",
+          "Rhegmatogenous retinal detachment × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -563,6 +630,15 @@
       "v": 10,
       "d": "2024-10-18",
       "c": "F9",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 1",
+          "Rhegmatogenous retinal detachment × 1",
+          "Secondary glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

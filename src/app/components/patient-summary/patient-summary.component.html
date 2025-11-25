@@ -1,7 +1,7 @@
 <!-- patient-summary.component.html -->
 <div class="top-row">
   <div class="uid-display select-fixed">
-    UID: {{ selectedPatient || 'N/A' }}
+    {{ selectedPatient || 'N/A' }}
   </div>
 
   <select [(ngModel)]="selectedEye" (ngModelChange)="updateData()" class="select-fixed small">

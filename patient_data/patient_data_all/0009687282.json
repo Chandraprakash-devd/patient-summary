@@ -11,6 +11,14 @@
       "v": 1,
       "d": "2022-05-09",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Primary Open Angle Glaucoma/POAG × 1",
+          "Nuclear Sclerosis Grade-II × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "618"
@@ -59,15 +67,15 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "AUROPROST-RT EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only",
-          1,
-          "17/5/2022",
-          "17/5/2022"
-        ]
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only",
+          "dur": 1,
+          "med_start": "17/5/2022",
+          "med_end": "17/5/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -84,78 +92,78 @@
       "d": "2022-05-17",
       "c": "F1",
       "m": [
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "1",
-          6,
-          7,
-          "18/05/2022",
-          "24/05/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "1",
-          5,
-          7,
-          "25/05/2022",
-          "31/05/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "1",
-          4,
-          7,
-          "01/06/2022",
-          "07/06/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "1",
-          3,
-          7,
-          "08/06/2022",
-          "14/06/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "1",
-          2,
-          7,
-          "15/06/2022",
-          "21/06/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "1",
-          1,
-          7,
-          "22/06/2022",
-          "28/06/2022"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4,
-          10,
-          "18/05/2022",
-          "27/05/2022"
-        ],
-        [
-          "NEPALACT EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          30,
-          "17/06/2022",
-          "16/07/2022"
-        ]
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6,
+          "dur": 7,
+          "med_start": "18/05/2022",
+          "med_end": "24/05/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5,
+          "dur": 7,
+          "med_start": "25/05/2022",
+          "med_end": "31/05/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "01/06/2022",
+          "med_end": "07/06/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 7,
+          "med_start": "08/06/2022",
+          "med_end": "14/06/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2,
+          "dur": 7,
+          "med_start": "15/06/2022",
+          "med_end": "21/06/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1,
+          "dur": 7,
+          "med_start": "22/06/2022",
+          "med_end": "28/06/2022"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4,
+          "dur": 10,
+          "med_start": "18/05/2022",
+          "med_end": "27/05/2022"
+        },
+        {
+          "name": "NEPALACT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "17/06/2022",
+          "med_end": "16/07/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -165,6 +173,13 @@
       "v": 3,
       "d": "2022-05-18",
       "c": "F2",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        "",
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -182,6 +197,17 @@
       "v": 4,
       "d": "2022-06-20",
       "c": "F3",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "Primary Open Angle Glaucoma/POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -235,24 +261,24 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "NEPALACT EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          30,
-          "20/06/2022",
-          "20/07/2022"
-        ],
-        [
-          "AUROPROST-RT EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only",
-          1,
-          "20/06/2022",
-          "20/06/2022"
-        ]
+        {
+          "name": "NEPALACT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "20/06/2022",
+          "med_end": "20/07/2022"
+        },
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only",
+          "dur": 1,
+          "med_start": "20/06/2022",
+          "med_end": "20/06/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -276,6 +302,17 @@
       "v": 6,
       "d": "2022-08-01",
       "c": "F5",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "Primary Open Angle Glaucoma/POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -314,15 +351,15 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "AUROPROST-RT EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only",
-          1,
-          "01/08/2022",
-          "01/08/2022"
-        ]
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only",
+          "dur": 1,
+          "med_start": "01/08/2022",
+          "med_end": "01/08/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -339,87 +376,87 @@
       "d": "2022-08-02",
       "c": "F6",
       "m": [
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          6,
-          7,
-          "03/08/2022",
-          "09/08/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          5,
-          7,
-          "10/08/2022",
-          "16/08/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          4,
-          7,
-          "17/08/2022",
-          "23/08/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          3,
-          7,
-          "24/08/2022",
-          "30/08/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          2,
-          7,
-          "31/08/2022",
-          "06/09/2022"
-        ],
-        [
-          "DEXA 5ML DROPS",
-          "1 drop",
-          "2",
-          1,
-          7,
-          "07/09/2022",
-          "13/09/2022"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "2",
-          4,
-          10,
-          "03/08/2022",
-          "12/08/2022"
-        ],
-        [
-          "NPACT 5ML EYE DROPS",
-          "1 drop",
-          "2",
-          3,
-          30,
-          "01/09/2022",
-          "30/09/2022"
-        ],
-        [
-          "AUROPROST-RT EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only",
-          1,
-          "02/08/2022",
-          "02/08/2022"
-        ]
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6,
+          "dur": 7,
+          "med_start": "03/08/2022",
+          "med_end": "09/08/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5,
+          "dur": 7,
+          "med_start": "10/08/2022",
+          "med_end": "16/08/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "17/08/2022",
+          "med_end": "23/08/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3,
+          "dur": 7,
+          "med_start": "24/08/2022",
+          "med_end": "30/08/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2,
+          "dur": 7,
+          "med_start": "31/08/2022",
+          "med_end": "06/09/2022"
+        },
+        {
+          "name": "DEXA 5ML DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1,
+          "dur": 7,
+          "med_start": "07/09/2022",
+          "med_end": "13/09/2022"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4,
+          "dur": 10,
+          "med_start": "03/08/2022",
+          "med_end": "12/08/2022"
+        },
+        {
+          "name": "NPACT 5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "01/09/2022",
+          "med_end": "30/09/2022"
+        },
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only",
+          "dur": 1,
+          "med_start": "02/08/2022",
+          "med_end": "02/08/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -429,6 +466,14 @@
       "v": 8,
       "d": "2022-08-03",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "PCIOL × 1",
+          "Primary Open Angle Glaucoma/POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -452,6 +497,14 @@
       "v": 9,
       "d": "2022-08-29",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "PCIOL × 1",
+          "Primary Open Angle Glaucoma/POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -505,12 +558,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "AUROPROST-RT EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -526,6 +579,14 @@
       "v": 10,
       "d": "2022-10-08",
       "c": "F9",
+      "diag": [
+        "",
+        "",
+        [
+          "PCIOL × 1",
+          "Primary Open Angle Glaucoma/POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -571,12 +632,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "AUROPROST-RT EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -608,19 +669,27 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "AUROPROST-RT EYE DROPS",
-          "",
-          "1 drop",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ]
     },
     {
       "v": 12,
       "d": "2023-11-15",
       "c": "F11",
+      "diag": [
+        "",
+        "",
+        [
+          "POAG × 1",
+          "Pseudophakia × 1",
+          "Episcleritis × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -677,18 +746,18 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "MONOSOPT EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "FLUR EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "MONOSOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "FLUR EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "19"

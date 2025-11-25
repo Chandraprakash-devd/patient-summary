@@ -11,6 +11,13 @@
       "v": 1,
       "d": "2022-06-20",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "PCIOL × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -77,6 +84,16 @@
       "v": 2,
       "d": "2022-06-21",
       "c": "F1",
+      "diag": [
+        "",
+        [
+          "Amblyopia × 1"
+        ],
+        [
+          "PCIOL × 1",
+          "IJT × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -137,15 +154,15 @@
         ]
       },
       "m": [
-        [
-          "NOVORET NEO SOFTGEL CAPS",
-          "1 tablet",
-          "5",
-          1,
-          30,
-          "21/06/2022",
-          "20/07/2022"
-        ]
+        {
+          "name": "NOVORET NEO SOFTGEL CAPS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1,
+          "dur": 30,
+          "med_start": "21/06/2022",
+          "med_end": "20/07/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -164,6 +181,16 @@
       "v": 3,
       "d": "2023-04-25",
       "c": "F2",
+      "diag": [
+        "",
+        [
+          "Amblyopia × 1"
+        ],
+        [
+          "PCIOL × 1",
+          "IJT × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -218,11 +245,11 @@
         ]
       },
       "m": [
-        [
-          "AUROSOL",
-          "3",
-          4
-        ]
+        {
+          "name": "AUROSOL",
+          "eye": "3",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -238,6 +265,16 @@
       "v": 4,
       "d": "2023-05-05",
       "c": "F3",
+      "diag": [
+        "",
+        [
+          "Amblyopia × 1"
+        ],
+        [
+          "PCIOL × 1",
+          "IJT × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -307,6 +344,13 @@
       "v": 5,
       "d": "2023-05-16",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "PCIOL × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -351,12 +395,12 @@
         ]
       },
       "m": [
-        [
-          "AQUALUBE EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ]
+        {
+          "name": "AQUALUBE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -379,6 +423,14 @@
       "v": 6,
       "d": "2023-08-14",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "PCIOL × 1",
+          "IJT × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -435,17 +487,17 @@
         ]
       },
       "m": [
-        [
-          "LUBREX EYE DROPS",
-          "1 drop",
-          "3",
-          4
-        ],
-        [
-          "PANTHEGEL  OINT",
-          "3",
-          1
-        ]
+        {
+          "name": "LUBREX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 4
+        },
+        {
+          "name": "PANTHEGEL  OINT",
+          "eye": "3",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": "Not Measurable",

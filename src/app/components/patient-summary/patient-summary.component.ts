@@ -14,15 +14,6 @@ import {
 } from '../line-chart/line-chart.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { PatientDataService } from '../../services/patient-data.service';
-import patient1Data from '../../../../patient_data/new/13543756.json';
-import patient2Data from '../../../../patient_data/new/16218255.json';
-import patient3Data from '../../../../patient_data/new/17905548.json';
-import patient4Data from '../../../../patient_data/new/19045292.json';
-import patient5Data from '../../../../patient_data/new/22683697.json';
-import patient6Data from '../../../../patient_data/new/22696638.json';
-import patient7Data from '../../../../patient_data/new/22764362.json';
-import patient8Data from '../../../../patient_data/new/22777163.json';
-import patient9Data from '../../../../patient_data/new/23366760.json';
 // import file from '../../../../patient_data/patient_data_all'
 
 // OLD imports for reference
@@ -254,6 +245,9 @@ export class PatientSummaryComponent implements OnInit {
     },
   };
 
+  //    barColorLight: '#e8c468',
+  // barColorDark: '#af57db',
+
   medicationsConfig = {
     title: 'Medications',
     barColorLight: '#e8c468',
@@ -262,8 +256,26 @@ export class PatientSummaryComponent implements OnInit {
     dateFormat: 'en-US',
     tooltipCallback: (context: any, data: any[]) => {
       const index = context.dataIndex;
-      const task = data[index];
-      return `${task.task}<br>Start: ${task.start}<br>End: ${task.end}`;
+      const item = data[index];
+
+      // Use the custom tooltip if available
+      if (item.tooltip) {
+        return item.tooltip;
+      }
+
+      // Build tooltip with dosage
+      let tooltipText = item.task;
+
+      // Add dosage line if available
+      if (item.dosage) {
+        tooltipText += `\nDosage: ${item.dosage}`;
+      }
+
+      // Add start and end dates
+      tooltipText += `\nStart: ${item.start}`;
+      tooltipText += `\nEnd: ${item.end}`;
+
+      return tooltipText;
     },
   };
 
@@ -891,46 +903,88 @@ export class PatientSummaryComponent implements OnInit {
 
       if (visit.diag && Array.isArray(visit.diag)) {
         // diag format: [RE_diagnoses, LE_diagnoses, BE_diagnoses]
-        const diagArray = visit.diag[eyeIndex];
+        // Index 0 = Right Eye, Index 1 = Left Eye, Index 2 = Both Eyes
 
+        const currentDiagnoses = new Set<string>();
+
+        // Get diagnoses for the specific eye
+        let diagArray = visit.diag[eyeIndex];
+
+        // Handle the case where diagArray might be an empty string ""
+        if (typeof diagArray === 'string') {
+          diagArray = diagArray.trim() ? [diagArray] : [];
+        }
+
+        // Process specific eye diagnoses
         if (diagArray && Array.isArray(diagArray)) {
-          const currentDiagnoses = new Set<string>();
-
           diagArray.forEach((diag: string) => {
             if (diag && diag.trim()) {
-              const normalizedDiag = this.normalizeConditionName(diag.trim());
-              currentDiagnoses.add(normalizedDiag);
+              // Remove the "× 1" suffix if present
+              let cleanDiag = diag
+                .trim()
+                .replace(/\s*×\s*\d+\s*$/, '')
+                .trim();
+              const normalizedDiag = this.normalizeConditionName(cleanDiag);
 
-              // Track this diagnosis
-              if (!diagTracker.has(normalizedDiag)) {
-                diagTracker.set(normalizedDiag, {
-                  start: visitDate,
-                  lastSeen: visitDate,
-                });
-              } else {
-                const tracking = diagTracker.get(normalizedDiag)!;
-                tracking.lastSeen = visitDate;
+              if (normalizedDiag) {
+                currentDiagnoses.add(normalizedDiag);
               }
             }
           });
-
-          // Check for diagnoses that are no longer present
-          diagTracker.forEach((tracking, diag) => {
-            if (
-              !currentDiagnoses.has(diag) &&
-              tracking.lastSeen !== visitDate
-            ) {
-              // Diagnosis no longer present, finalize it
-              this.updateConditionMap(
-                diagMap,
-                diag,
-                tracking.start,
-                tracking.lastSeen
-              );
-              diagTracker.delete(diag);
-            }
-          });
         }
+
+        // IMPORTANT: Also include "Both Eyes" (index 2) diagnoses for Right Eye and Left Eye
+        if (eyeIndex === 0 || eyeIndex === 1) {
+          let bothEyesDiag = visit.diag[2]; // Index 2 = Both Eyes
+
+          // Handle empty string
+          if (typeof bothEyesDiag === 'string') {
+            bothEyesDiag = bothEyesDiag.trim() ? [bothEyesDiag] : [];
+          }
+
+          if (bothEyesDiag && Array.isArray(bothEyesDiag)) {
+            bothEyesDiag.forEach((diag: string) => {
+              if (diag && diag.trim()) {
+                let cleanDiag = diag
+                  .trim()
+                  .replace(/\s*×\s*\d+\s*$/, '')
+                  .trim();
+                const normalizedDiag = this.normalizeConditionName(cleanDiag);
+
+                if (normalizedDiag) {
+                  currentDiagnoses.add(normalizedDiag);
+                }
+              }
+            });
+          }
+        }
+
+        // Track all current diagnoses
+        currentDiagnoses.forEach((normalizedDiag) => {
+          if (!diagTracker.has(normalizedDiag)) {
+            diagTracker.set(normalizedDiag, {
+              start: visitDate,
+              lastSeen: visitDate,
+            });
+          } else {
+            const tracking = diagTracker.get(normalizedDiag)!;
+            tracking.lastSeen = visitDate;
+          }
+        });
+
+        // Check for diagnoses that are no longer present
+        diagTracker.forEach((tracking, diag) => {
+          if (!currentDiagnoses.has(diag) && tracking.lastSeen !== visitDate) {
+            // Diagnosis no longer present, finalize it
+            this.updateConditionMap(
+              diagMap,
+              diag,
+              tracking.start,
+              tracking.lastSeen
+            );
+            diagTracker.delete(diag);
+          }
+        });
       }
     });
 
@@ -943,7 +997,6 @@ export class PatientSummaryComponent implements OnInit {
       .map(([task, { start, end }]) => ({ task, start, end }))
       .filter((d) => d.start && d.end);
   }
-
   /**
    * Helper to update condition map with merged date ranges
    */
@@ -978,39 +1031,73 @@ export class PatientSummaryComponent implements OnInit {
   /**
    * NEW: Build medications gantt from visit medications
    */
-  getMedicationsGanttData(): { task: string; start: string; end: string }[] {
-    const medMap = new Map<string, { start: string; end: string }>();
+  getMedicationsGanttData(): {
+    task: string;
+    start: string;
+    end: string;
+    dosage?: string; // Add dosage field
+  }[] {
+    const medMap = new Map<
+      string,
+      {
+        start: string;
+        end: string;
+        dosage: string; // Track dosage
+      }
+    >();
 
     (this.jsonData.visits || []).forEach((visit: any) => {
       if (visit.m && Array.isArray(visit.m)) {
-        // m format: [[drug, frequency, duration_days, start_date, end_date], ...]
-        visit.m.forEach((med: any[]) => {
-          if (!Array.isArray(med) || med.length < 5) return;
+        const visitDate = visit.d; // Visit date
 
-          const [drug, frequency, durationDays, startDate, endDate] = med;
-          const task = drug?.trim();
+        visit.m.forEach((med: any) => {
+          if (!med || typeof med !== 'object') return;
 
-          if (!task) return;
+          const drugName = med.name?.trim();
+          if (!drugName) return;
 
-          let start = startDate || visit.d;
-          let end = endDate;
-
-          // Calculate end date if not provided but duration is available
-          if (!end && durationDays && start) {
-            const startDateObj = new Date(start);
-            const endDateObj = new Date(
-              startDateObj.getTime() + parseInt(durationDays) * 86400000
-            );
-            end = endDateObj.toISOString().substring(0, 10);
+          // Determine eye side for task label
+          let eyeLabel = '';
+          if (med.eye === 1 || med.eye === '1') {
+            eyeLabel = ' (RE)';
+          } else if (med.eye === 2 || med.eye === '2') {
+            eyeLabel = ' (LE)';
+          } else if (med.eye === 3 || med.eye === '3') {
+            eyeLabel = ' (BE)';
           }
+
+          // Create task name with eye indicator
+          const task = `${drugName}${eyeLabel}`;
+
+          // Format dosage: "dos x fre" (e.g., "1 drop x 8")
+          const dosageStr =
+            med.dos && med.fre
+              ? `${med.dos} x ${med.fre}`
+              : med.dos
+              ? med.dos
+              : '';
+
+          const start = visitDate;
+          const end = visitDate;
 
           if (start && end) {
             const entry = medMap.get(task) || {
               start: '9999-12-31',
               end: '0001-01-01',
+              dosage: dosageStr,
             };
-            if (start < entry.start) entry.start = start;
-            if (end > entry.end) entry.end = end;
+
+            // Update start to earliest date
+            if (start < entry.start) {
+              entry.start = start;
+              // Update dosage when we have a new earliest start
+              if (dosageStr) entry.dosage = dosageStr;
+            }
+            // Update end to latest date
+            if (end > entry.end) {
+              entry.end = end;
+            }
+
             medMap.set(task, entry);
           }
         });
@@ -1018,13 +1105,15 @@ export class PatientSummaryComponent implements OnInit {
     });
 
     const ganttData = Array.from(medMap.entries())
-      .map(([task, { start, end }]) => ({
+      .map(([task, { start, end, dosage }]) => ({
         task,
         start,
         end,
+        dosage, // Include dosage in output
       }))
       .filter((d) => d.start !== '9999-12-31' && d.end !== '0001-01-01');
 
+    console.log('Medications gantt data:', ganttData);
     return ganttData;
   }
 

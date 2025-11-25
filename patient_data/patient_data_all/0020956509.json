@@ -11,6 +11,16 @@
       "v": 1,
       "d": "2023-10-20",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Pseudophakia × 1",
+          "Moderate nonproliferative diabetic retinopathy × 1",
+          "Diabetic macular edema × 1"
+        ]
+      ],
       "pr": {
         "act": [
           [
@@ -115,6 +125,14 @@
       "v": 3,
       "d": "2023-11-08",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "NPDR × 1",
+          "Diabetic macular edema × 1"
+        ]
+      ],
       "as": {
         "rem": [
           "",
@@ -163,12 +181,12 @@
         "rem": "moderate NPDR"
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -184,6 +202,16 @@
       "v": 4,
       "d": "2023-12-07",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "Moderate nonproliferative diabetic retinopathy × 1",
+          "Diabetic macular edema × 1",
+          "Immature cataract × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -262,18 +290,18 @@
         "rem": "moderate NPDR"
       },
       "m": [
-        [
-          "NEXT EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ],
-        [
-          "CARAMIN  TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "NEXT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        },
+        {
+          "name": "CARAMIN  TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -292,6 +320,17 @@
       "v": 5,
       "d": "2024-02-07",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Pseudophakia × 1",
+          "Diabetic macular edema × 1",
+          "Moderate nonproliferative diabetic retinopathy × 1",
+          "Exotropia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -373,12 +412,12 @@
         "rem": "moderate NPDR"
       },
       "m": [
-        [
-          "MICRONAC PF - EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "MICRONAC PF - EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -397,6 +436,17 @@
       "v": 6,
       "d": "2024-03-06",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "Exotropia × 1",
+          "Immature cataract × 1",
+          "Pseudophakia × 1",
+          "Diabetic macular edema × 1",
+          "Moderate nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -464,64 +514,64 @@
         "rem": "moderate NPDR"
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          8
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          3
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          5
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -540,6 +590,16 @@
       "v": 7,
       "d": "2024-04-01",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 2",
+          "Exotropia × 1",
+          "Diabetic macular edema × 1",
+          "Moderate nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -598,12 +658,12 @@
         "rem": "moderate NPDR"
       },
       "m": [
-        [
-          "NEPACENT EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ]
+        {
+          "name": "NEPACENT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -622,6 +682,15 @@
       "v": 8,
       "d": "2024-06-08",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Exotropia × 1",
+          "Moderate nonproliferative diabetic retinopathy × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "624"
@@ -679,6 +748,15 @@
       "v": 9,
       "d": "2025-01-30",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Exotropia × 1",
+          "Moderate nonproliferative diabetic retinopathy × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "624"

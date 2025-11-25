@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2022-01-22",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Presbyopia × 1",
+          "Compound Hyperopic Astigmatism × 1",
+          "NTG × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "660",
@@ -59,6 +68,13 @@
       "v": 2,
       "d": "2022-07-23",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "NTG × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "Glasses": "69P",
@@ -124,6 +140,15 @@
       "v": 3,
       "d": "2022-12-23",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "NTG × 1",
+          "Compound Hyperopic Astigmatism × 1",
+          "Presbyopia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -195,6 +220,14 @@
       "v": 4,
       "d": "2023-06-28",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "Primary Open Angle Glaucoma/POAG × 1",
+          "NTG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -267,6 +300,13 @@
       "v": 5,
       "d": "2024-01-13",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "Normal tension glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -322,12 +362,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "XALATAN EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "XALATAN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": "16"
@@ -340,6 +380,13 @@
       "v": 6,
       "d": "2024-04-10",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "Normal tension glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "660"
@@ -368,12 +415,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "XALATAN EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "XALATAN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -389,6 +436,13 @@
       "v": 7,
       "d": "2024-06-20",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Normal tension glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -422,12 +476,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "XALATAN EYE DROPS",
-          "1 drop",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "XALATAN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [

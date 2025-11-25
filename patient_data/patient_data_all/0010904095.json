@@ -11,6 +11,13 @@
       "v": 1,
       "d": "2023-05-02",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "IMC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -78,6 +85,14 @@
       "v": 2,
       "d": "2023-05-09",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "IMC × 1",
+          "Nuclear Sclerosis Grade-II × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -168,48 +183,48 @@
         "rem": "ecg"
       },
       "m": [
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          5
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "fup": {
         "adv": "1 month;15/06/2023"
@@ -219,6 +234,17 @@
       "v": 5,
       "d": "2023-06-15",
       "c": "F4",
+      "diag": [
+        [
+          "Nuclear Sclerosis Grade-II × 1",
+          "Nuclear Sclerosis Grade-III × 1"
+        ],
+        [
+          "PCIOL × 1",
+          "Post Toric IOL × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -249,12 +275,12 @@
         ]
       },
       "m": [
-        [
-          "NPACT EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "NPACT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "17"
@@ -267,6 +293,14 @@
       "v": 6,
       "d": "2023-09-13",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "PCIOL × 1",
+          "Nuclear Sclerosis Grade-II × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -332,6 +366,14 @@
       "v": 7,
       "d": "2024-03-16",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -363,12 +405,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "IRIMIST EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "IRIMIST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -384,6 +426,15 @@
       "v": 8,
       "d": "2024-09-07",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Pseudophakia × 1",
+          "PAC × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -443,12 +494,12 @@
         ]
       },
       "m": [
-        [
-          "TIMOLET-OD EYE DROPS",
-          "1 drop",
-          "1",
-          "Morning Only"
-        ]
+        {
+          "name": "TIMOLET-OD EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -461,6 +512,15 @@
       "v": 9,
       "d": "2024-09-16",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "PAC × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -491,24 +551,24 @@
         ]
       },
       "m": [
-        [
-          "GATILOX-DM EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "GATILOX-DM EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "PYRIGESIC TAB",
-          "1 tablet",
-          "5",
-          "Whenever Required"
-        ]
+        {
+          "name": "GATILOX-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "GATILOX-DM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "PYRIGESIC TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Whenever Required"
+        }
       ],
       "inv": {
         "iop": [
@@ -524,6 +584,15 @@
       "v": 10,
       "d": "2024-10-01",
       "c": "F9",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Pseudophakia × 1",
+          "Primary angle closure × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -567,12 +636,12 @@
         "mf": "Normal"
       },
       "m": [
-        [
-          "MISOPT EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "MISOPT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -591,6 +660,15 @@
       "v": 11,
       "d": "2024-10-22",
       "c": "F10",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Primary angle closure × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": [
@@ -640,6 +718,16 @@
       "v": 12,
       "d": "2024-11-12",
       "c": "F11",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Primary angle closure × 1",
+          "Pseudophakia × 1",
+          "MGD × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -679,13 +767,11 @@
         "mf": "Normal"
       },
       "m": [
-        [
-          "OCUPOL EYE OINT",
-          "",
-          "",
-          "3",
-          2
-        ]
+        {
+          "name": "OCUPOL EYE OINT",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -698,6 +784,15 @@
       "v": 13,
       "d": "2024-11-27",
       "c": "F12",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Primary angle closure × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -729,25 +824,24 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "ALPRAX 0.25 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          8
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "ALPRAX 0.25 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8
+        }
       ],
       "inv": {
         "iop": [
@@ -772,49 +866,48 @@
         ]
       },
       "m": [
-        [
-          "DEXA 7.5 ML",
-          "",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          5
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          6
-        ]
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -824,6 +917,15 @@
       "v": 15,
       "d": "2024-12-18",
       "c": "F14",
+      "diag": [
+        "",
+        "",
+        [
+          "PACS × 1",
+          "Ocular hypertension × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -864,19 +966,18 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "NEPAWEL EYE DROPS",
-          "",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "LOPRES 0.5% DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "NEPAWEL EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "LOPRES 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -889,6 +990,15 @@
       "v": 16,
       "d": "2025-04-18",
       "c": "F15",
+      "diag": [
+        "",
+        "",
+        [
+          "Ocular hypertension × 1",
+          "PACS × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

@@ -11,6 +11,16 @@
       "v": 1,
       "d": "2025-02-24",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Congenital coloboma of iris × 1",
+          "Fundus coloboma × 1",
+          "Immature cataract × 1",
+          "Pterygium × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -69,6 +79,16 @@
       "v": 2,
       "d": "2025-05-15",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Congenital coloboma of iris × 1",
+          "Immature cataract × 1",
+          "Pterygium × 1",
+          "Fundus coloboma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -117,19 +137,18 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "",
-          "1 drop",
-          "1",
-          8
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [

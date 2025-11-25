@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2023-07-01",
       "c": "Initial",
+      "diag": [
+        [
+          "IMC × 1"
+        ],
+        [
+          "Central Corneal Ulcer × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -82,48 +91,48 @@
         ]
       },
       "m": [
-        [
-          "TOBA DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "MOXICIP 400MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "LYSER - D TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "AQUALUBE EYE DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "VIGAMOX DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "TOBA DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "MOXICIP 400MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "LYSER - D TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "AQUALUBE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "VIGAMOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -136,6 +145,15 @@
       "v": 2,
       "d": "2023-07-02",
       "c": "F1",
+      "diag": [
+        [
+          "IMC × 1"
+        ],
+        [
+          "Corneal Ulcer × 1"
+        ],
+        ""
+      ],
       "as": {
         "rem": [
           "",
@@ -167,24 +185,33 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "NATAMET DROPS",
-          "1 drop",
-          "2",
-          "Hourly"
-        ],
-        [
-          "MO-FLOREN EYE DROPS",
-          "1 drop",
-          "2",
-          "Hourly"
-        ]
+        {
+          "name": "NATAMET DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly"
+        },
+        {
+          "name": "MO-FLOREN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly"
+        }
       ]
     },
     {
       "v": 3,
       "d": "2023-07-03",
       "c": "F2",
+      "diag": [
+        [
+          "IMC × 1"
+        ],
+        [
+          "Corneal Ulcer × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {},
@@ -228,12 +255,12 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "LOPRES 0.5% DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "LOPRES 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -249,6 +276,15 @@
       "v": 4,
       "d": "2023-07-10",
       "c": "F3",
+      "diag": [
+        [
+          "IMC × 1"
+        ],
+        [
+          "Corneal Ulcer × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {},
@@ -295,53 +331,53 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "IOPAR-SR CAP",
-          "1 tablet",
-          "5"
-        ],
-        [
-          "VOZOLE EYE DROPS",
-          "1 drop",
-          "2",
-          "Hourly"
-        ],
-        [
-          "COMBIFLAM  TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANCORD 40MG TABLET",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "NATAMET DROPS",
-          "1 drop",
-          "2",
-          "Hourly Times A Day"
-        ],
-        [
-          "MO-FLOREN EYE DROPS",
-          "1 drop",
-          "2",
-          "Hourly Times A Day"
-        ],
-        [
-          "LOPRES 0.5% DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "IOPAR-SR CAP",
+          "dos": "1 tablet",
+          "eye": "5"
+        },
+        {
+          "name": "VOZOLE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly"
+        },
+        {
+          "name": "COMBIFLAM  TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANCORD 40MG TABLET",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "NATAMET DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly Times A Day"
+        },
+        {
+          "name": "MO-FLOREN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly Times A Day"
+        },
+        {
+          "name": "LOPRES 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -371,6 +407,15 @@
       "v": 6,
       "d": "2023-07-17",
       "c": "F5",
+      "diag": [
+        [
+          "IMC × 1"
+        ],
+        [
+          "Post TPK × 1"
+        ],
+        ""
+      ],
       "pr": {
         "act": [
           null,
@@ -450,42 +495,42 @@
         ]
       },
       "m": [
-        [
-          "VOZOLE EYE DROPS",
-          "1 drop",
-          "2",
-          8
-        ],
-        [
-          "NATAMET DROPS",
-          "1 drop",
-          "2",
-          "Hourly Times A Day"
-        ],
-        [
-          "MO-FLOREN EYE DROPS",
-          "1 drop",
-          "2",
-          "Hourly Times A Day"
-        ],
-        [
-          "LYSER - D TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANCORD 40MG TABLET",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "VOZOLE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "NATAMET DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly Times A Day"
+        },
+        {
+          "name": "MO-FLOREN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly Times A Day"
+        },
+        {
+          "name": "LYSER - D TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANCORD 40MG TABLET",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -504,6 +549,16 @@
       "v": 7,
       "d": "2023-07-20",
       "c": "F6",
+      "diag": [
+        [
+          "IMC × 1",
+          "S/P Barrage Laser × 1"
+        ],
+        [
+          "Post TPK × 1"
+        ],
+        ""
+      ],
       "fup": {
         "adv": "1 week"
       }
@@ -512,6 +567,16 @@
       "v": 8,
       "d": "2023-07-27",
       "c": "F7",
+      "diag": [
+        [
+          "IMC × 1",
+          "S/P Barrage Laser × 1"
+        ],
+        [
+          "Post TPK × 1"
+        ],
+        ""
+      ],
       "as": {
         "rem": [
           "",
@@ -575,30 +640,30 @@
         ]
       },
       "m": [
-        [
-          "MO-FLOREN EYE DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "VOZOLE EYE DROPS",
-          "1 drop",
-          "2",
-          8
-        ],
-        [
-          "COMBIFLAM  TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "NATAMET DROPS",
-          "1 drop",
-          "2",
-          "Hourly Times A Day"
-        ]
+        {
+          "name": "MO-FLOREN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "VOZOLE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "COMBIFLAM  TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "NATAMET DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly Times A Day"
+        }
       ],
       "inv": {
         "iop": [
@@ -617,6 +682,16 @@
       "v": 9,
       "d": "2023-08-03",
       "c": "F8",
+      "diag": [
+        [
+          "IMC × 1",
+          "S/P Barrage Laser × 1"
+        ],
+        [
+          "Post TPK × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -661,35 +736,35 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "VOZOLE EYE DROPS",
-          "1 drop",
-          "2",
-          8
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "NATAMET DROPS",
-          "1 drop",
-          "2",
-          "Hourly Times A Day"
-        ],
-        [
-          "MO-FLOREN EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "PANTHEGEL  OINT",
-          "2",
-          3
-        ]
+        {
+          "name": "VOZOLE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "NATAMET DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Hourly Times A Day"
+        },
+        {
+          "name": "MO-FLOREN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "PANTHEGEL  OINT",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -705,6 +780,16 @@
       "v": 10,
       "d": "2023-08-17",
       "c": "F9",
+      "diag": [
+        [
+          "IMC × 1",
+          "S/P Barrage Laser × 1"
+        ],
+        [
+          "Post TPK × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -749,18 +834,18 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "AUROZOLE DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "NATAMET DROPS",
-          "1 drop",
-          "2",
-          6
-        ]
+        {
+          "name": "AUROZOLE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "NATAMET DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        }
       ],
       "inv": {
         "iop": [
@@ -776,6 +861,15 @@
       "v": 11,
       "d": "2023-09-06",
       "c": "F10",
+      "diag": [
+        "",
+        "",
+        [
+          "Post TPK × 1",
+          "IMC × 1",
+          "S/P Barrage Laser × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -822,29 +916,29 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "NATAMET DROPS",
-          "2",
-          6
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "LUBI-FRESH EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "NATAMET DROPS",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "LUBI-FRESH EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -860,6 +954,15 @@
       "v": 12,
       "d": "2023-10-19",
       "c": "F11",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Corneal graft failure × 1",
+          "Immature cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -935,18 +1038,18 @@
         ]
       },
       "m": [
-        [
-          "MAXMOIST EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "MAXMOIST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -962,6 +1065,15 @@
       "v": 13,
       "d": "2023-11-21",
       "c": "F12",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Aphakia × 1",
+          "Corneal graft failure × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1037,12 +1149,12 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -1061,6 +1173,15 @@
       "v": 14,
       "d": "2024-03-18",
       "c": "F13",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Aphakia × 1",
+          "Corneal graft failure × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1135,21 +1256,21 @@
         ]
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          8
-        ],
-        [
-          "ALPRAX 0.5 TAB",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          3
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -1171,6 +1292,14 @@
       "v": 15,
       "d": "2024-10-26",
       "c": "F14",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "Corneal graft failure × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1249,13 +1378,12 @@
         ]
       },
       "m": [
-        [
-          "GATILOX DROPS",
-          "",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "GATILOX DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [

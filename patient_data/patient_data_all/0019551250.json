@@ -11,6 +11,18 @@
       "v": 1,
       "d": "2023-01-05",
       "c": "Initial",
+      "diag": [
+        [
+          "Chronic Angle Closure Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -98,30 +110,30 @@
         ]
       },
       "m": [
-        [
-          "LATOCOM-CF DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ],
-        [
-          "BETAFREE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "LATOCOM-CF DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        },
+        {
+          "name": "BETAFREE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -140,6 +152,18 @@
       "v": 2,
       "d": "2023-01-06",
       "c": "F1",
+      "diag": [
+        [
+          "Chronic Angle Closure Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -153,48 +177,48 @@
         ]
       },
       "m": [
-        [
-          "LATOCOM-CF DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ],
-        [
-          "BETAFREE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "GATILOX DM-10ML",
-          "1 drop",
-          "1",
-          1
-        ]
+        {
+          "name": "LATOCOM-CF DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        },
+        {
+          "name": "BETAFREE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "GATILOX DM-10ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -210,6 +234,18 @@
       "v": 3,
       "d": "2023-01-09",
       "c": "F2",
+      "diag": [
+        [
+          "Chronic Angle Closure Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -261,18 +297,18 @@
         ]
       },
       "m": [
-        [
-          "LATOCOM-CF DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ],
-        [
-          "BETAFREE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "LATOCOM-CF DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        },
+        {
+          "name": "BETAFREE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -319,19 +355,18 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID40MGTAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID40MGTAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ]
     },
     {
@@ -372,19 +407,18 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID40MGTAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID40MGTAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "sp": {
@@ -437,73 +471,85 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          5
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        }
       ]
     },
     {
       "v": 9,
       "d": "2023-03-03",
       "c": "F8",
+      "diag": [
+        [
+          "Chronic Angle Closure Glaucoma × 1",
+          "Aphakia × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -544,30 +590,30 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "RIPATEC EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "TIMOBEST EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "RIPATEC EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "TIMOBEST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -583,6 +629,19 @@
       "v": 10,
       "d": "2023-03-10",
       "c": "F9",
+      "diag": [
+        [
+          "Chronic Angle Closure Glaucoma × 1",
+          "Aphakia × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -625,18 +684,18 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -652,6 +711,19 @@
       "v": 11,
       "d": "2023-03-18",
       "c": "F10",
+      "diag": [
+        [
+          "Chronic Angle Closure Glaucoma × 1",
+          "Aphakia × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -709,18 +781,18 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -736,6 +808,20 @@
       "v": 12,
       "d": "2023-03-23",
       "c": "F11",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -804,30 +890,30 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "BETAFREE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "TIMOBEST EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "BETAFREE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "TIMOBEST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -846,6 +932,20 @@
       "v": 13,
       "d": "2023-03-27",
       "c": "F12",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -898,78 +998,78 @@
         ]
       },
       "m": [
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          5
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "GATE-P 10ML EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "ATROP EYE DROP",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "ATROP EYE DROP",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "DICLO-S",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "BETAFREE EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "TIMOBEST EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "GATE-P 10ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "ATROP EYE DROP",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "ATROP EYE DROP",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "DICLO-S",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "BETAFREE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "TIMOBEST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -988,6 +1088,21 @@
       "v": 14,
       "d": "2023-03-28",
       "c": "F13",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1046,6 +1161,21 @@
       "v": 15,
       "d": "2023-04-12",
       "c": "F14",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1121,6 +1251,22 @@
       "v": 16,
       "d": "2023-05-05",
       "c": "F15",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1",
+          "Neovascular/Rubeotic Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1221,26 +1367,26 @@
         ]
       },
       "m": [
-        [
-          "FML EYE DROPS",
-          "1",
-          4
-        ],
-        [
-          "FML EYE DROPS",
-          "1",
-          3
-        ],
-        [
-          "FML EYE DROPS",
-          "1",
-          2
-        ],
-        [
-          "FML EYE DROPS",
-          "1",
-          1
-        ]
+        {
+          "name": "FML EYE DROPS",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "FML EYE DROPS",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "FML EYE DROPS",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "FML EYE DROPS",
+          "eye": "1",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -1256,6 +1402,22 @@
       "v": 17,
       "d": "2023-05-15",
       "c": "F16",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1",
+          "Neovascular/Rubeotic Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1347,6 +1509,22 @@
       "v": 18,
       "d": "2023-05-22",
       "c": "F17",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1",
+          "Neovascular/Rubeotic Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "as": {
         "rem": [
           "360 degree PAS",
@@ -1408,23 +1586,23 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "2 tablet",
-          "5"
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "2 tablet",
+          "eye": "5"
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -1440,6 +1618,22 @@
       "v": 19,
       "d": "2023-06-06",
       "c": "F18",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1",
+          "Neovascular/Rubeotic Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1523,24 +1717,24 @@
         ]
       },
       "m": [
-        [
-          "DORSUN EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PAN40 TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "DORSUN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PAN40 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -1556,6 +1750,22 @@
       "v": 20,
       "d": "2023-07-12",
       "c": "F19",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1",
+          "Neovascular/Rubeotic Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -1629,24 +1839,24 @@
         ]
       },
       "m": [
-        [
-          "BIMAT-T EYE DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "BIMAT-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -1662,6 +1872,22 @@
       "v": 21,
       "d": "2023-07-22",
       "c": "F20",
+      "diag": [
+        [
+          "Aphakia × 1",
+          "PACG × 1",
+          "Post Trabeculectomy × 1",
+          "Post Diode CPC × 1",
+          "Neovascular/Rubeotic Glaucoma × 1"
+        ],
+        [
+          "Status Post PI × 1",
+          "PAC × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1713,12 +1939,12 @@
         ]
       },
       "m": [
-        [
-          "LUBREX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "LUBREX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -1734,6 +1960,16 @@
       "v": 22,
       "d": "2023-09-22",
       "c": "F21",
+      "diag": [
+        "",
+        "",
+        [
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "APAC × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1832,6 +2068,16 @@
       "v": 23,
       "d": "2023-11-06",
       "c": "F22",
+      "diag": [
+        "",
+        "",
+        [
+          "APAC × 1",
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1900,24 +2146,24 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTAKIND 40 MG TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ],
-        [
-          "IOTIM 0.5% DROPS",
-          "1 drop",
-          "1",
-          2
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTAKIND 40 MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        },
+        {
+          "name": "IOTIM 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -1933,6 +2179,16 @@
       "v": 24,
       "d": "2023-11-20",
       "c": "F23",
+      "diag": [
+        "",
+        "",
+        [
+          "APAC × 1",
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2001,36 +2257,36 @@
         ]
       },
       "m": [
-        [
-          "SYNCA LS EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ]
+        {
+          "name": "SYNCA LS EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -2046,6 +2302,16 @@
       "v": 25,
       "d": "2024-01-23",
       "c": "F24",
+      "diag": [
+        "",
+        "",
+        [
+          "APAC × 1",
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -2110,24 +2376,24 @@
         ]
       },
       "m": [
-        [
-          "DIAMOX ER -500 MG  TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "LACOMA-T EYE DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ]
+        {
+          "name": "DIAMOX ER -500 MG  TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "LACOMA-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -2143,6 +2409,16 @@
       "v": 26,
       "d": "2024-02-14",
       "c": "F25",
+      "diag": [
+        "",
+        "",
+        [
+          "APAC × 1",
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2211,6 +2487,16 @@
       "v": 27,
       "d": "2024-03-26",
       "c": "F26",
+      "diag": [
+        "",
+        "",
+        [
+          "APAC × 1",
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2261,24 +2547,24 @@
         ]
       },
       "m": [
-        [
-          "NETAPRIDE EYE DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ],
-        [
-          "DIAMOX ER -500 MG  TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ],
-        [
-          "PANTAKIND 40 MG TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "NETAPRIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DIAMOX ER -500 MG  TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        },
+        {
+          "name": "PANTAKIND 40 MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -2294,6 +2580,16 @@
       "v": 28,
       "d": "2024-04-02",
       "c": "F27",
+      "diag": [
+        "",
+        "",
+        [
+          "APAC × 1",
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2360,6 +2656,16 @@
       "v": 29,
       "d": "2024-05-24",
       "c": "F28",
+      "diag": [
+        "",
+        "",
+        [
+          "APAC × 1",
+          "Aphakia × 1",
+          "Secondary glaucoma × 1",
+          "PAC × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2421,12 +2727,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "LUBREX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "LUBREX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": [
@@ -2442,6 +2748,14 @@
       "v": 30,
       "d": "2024-06-27",
       "c": "F29",
+      "diag": [
+        "",
+        "",
+        [
+          "Hypotony of eye × 1",
+          "PAC × 2"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2506,36 +2820,36 @@
         ]
       },
       "m": [
-        [
-          "LOTEPRED DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "LOTEPRED DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "LOTEPRED DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "LOTEPRED DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "LUBREX EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "LOTEPRED DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "LOTEPRED DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "LOTEPRED DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "LOTEPRED DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "LUBREX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -2551,6 +2865,14 @@
       "v": 31,
       "d": "2024-08-13",
       "c": "F30",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 2",
+          "Ocular hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2598,36 +2920,36 @@
         ]
       },
       "m": [
-        [
-          "ALBRIM-T EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "AUROPROST-RT EYE DROPS",
-          "1 drop",
-          "1",
-          "Night Only"
-        ],
-        [
-          "DORSUN EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "PANTOCID 40MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "ALBRIM-T EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "AUROPROST-RT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DORSUN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "PANTOCID 40MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -2643,6 +2965,14 @@
       "v": 32,
       "d": "2024-09-18",
       "c": "F31",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 2",
+          "Ocular hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -2722,6 +3052,14 @@
       "v": 33,
       "d": "2024-12-10",
       "c": "F32",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 2",
+          "Ocular hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -2804,6 +3142,15 @@
       "v": 34,
       "d": "2025-03-05",
       "c": "F33",
+      "diag": [
+        "",
+        "",
+        [
+          "PAC × 2",
+          "Ocular hypertension × 1",
+          "Absolute glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2890,6 +3237,15 @@
       "v": 35,
       "d": "2025-06-27",
       "c": "F34",
+      "diag": [
+        "",
+        "",
+        [
+          "Absolute glaucoma × 1",
+          "PAC × 2",
+          "Ocular hypertension × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},

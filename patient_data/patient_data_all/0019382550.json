@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2022-11-30",
       "c": "Initial",
+      "diag": [
+        "",
+        [
+          "CSCR × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -76,15 +85,15 @@
         ]
       },
       "m": [
-        [
-          "ANXIT 0.25 TAB",
-          "1 tablet",
-          "5",
-          "Night Only",
-          30,
-          "30/11/2022",
-          "29/12/2022"
-        ]
+        {
+          "name": "ANXIT 0.25 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only",
+          "dur": 30,
+          "med_start": "30/11/2022",
+          "med_end": "29/12/2022"
+        }
       ],
       "inv": {
         "iop": "20",
@@ -100,6 +109,15 @@
       "v": 2,
       "d": "2022-12-29",
       "c": "F1",
+      "diag": [
+        "",
+        [
+          "CSCR × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -175,6 +193,15 @@
       "v": 3,
       "d": "2023-01-06",
       "c": "F2",
+      "diag": [
+        "",
+        [
+          "CSCR × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "pr": {
         "act": [
           [
@@ -244,6 +271,15 @@
       "v": 4,
       "d": "2023-01-20",
       "c": "F3",
+      "diag": [
+        "",
+        [
+          "CSCR × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -287,12 +323,12 @@
         ]
       },
       "m": [
-        [
-          "NEPAFLO EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "NEPAFLO EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "21"
@@ -318,19 +354,18 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "DORZOX EYE DROPS",
-          "",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "I-SITE PLUS",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "DORZOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "I-SITE PLUS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "sp": {
@@ -342,6 +377,15 @@
       "v": 6,
       "d": "2023-04-05",
       "c": "F5",
+      "diag": [
+        "",
+        [
+          "CSCR × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -399,6 +443,16 @@
       "v": 7,
       "d": "2023-05-08",
       "c": "F6",
+      "diag": [
+        "",
+        [
+          "CSCR × 1",
+          "S/P Focal Laser × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -486,6 +540,16 @@
       "v": 8,
       "d": "2023-05-22",
       "c": "F7",
+      "diag": [
+        "",
+        [
+          "CSCR × 1",
+          "S/P Focal Laser × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "pr": {
         "act": [
           [
@@ -547,6 +611,16 @@
       "v": 9,
       "d": "2023-05-26",
       "c": "F8",
+      "diag": [
+        "",
+        [
+          "CSCR × 1",
+          "S/P Focal Laser × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "660"
@@ -583,24 +657,24 @@
         ]
       },
       "m": [
-        [
-          "NEPAFLO EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "ANXIT 0.25 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "I-SITE PLUS",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "NEPAFLO EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "ANXIT 0.25 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "I-SITE PLUS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -616,6 +690,16 @@
       "v": 10,
       "d": "2023-07-17",
       "c": "F9",
+      "diag": [
+        "",
+        [
+          "CSCR × 1",
+          "S/P Focal Laser × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -655,12 +739,12 @@
         ]
       },
       "m": [
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -679,6 +763,16 @@
       "v": 11,
       "d": "2023-08-21",
       "c": "F10",
+      "diag": [
+        "",
+        [
+          "CSCR × 1",
+          "S/P Focal Laser × 1"
+        ],
+        [
+          "Early Cataract × 1"
+        ]
+      ],
       "pr": {
         "act": [
           [

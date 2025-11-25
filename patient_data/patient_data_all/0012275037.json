@@ -11,6 +11,13 @@
       "v": 1,
       "d": "2022-02-17",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Post PRK × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "66"
@@ -48,14 +55,14 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "OPTIVE EYE DROPS",
-          "3",
-          4,
-          30,
-          "17/02/2022",
-          "18/03/2022"
-        ]
+        {
+          "name": "OPTIVE EYE DROPS",
+          "eye": "3",
+          "fre": 4,
+          "dur": 30,
+          "med_start": "17/02/2022",
+          "med_end": "18/03/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -71,6 +78,14 @@
       "v": 2,
       "d": "2022-10-13",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Post PRK × 1",
+          "Acute Conjunctivitis × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "66"
@@ -100,24 +115,24 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "MOXAP EYE DROPS",
-          "1 drop",
-          "3",
-          4,
-          7,
-          "13/10/2022",
-          "19/10/2022"
-        ],
-        [
-          "EYEMIST FORTE EYE DROPS",
-          "1 drop",
-          "3",
-          3,
-          30,
-          "13/10/2022",
-          "11/11/2022"
-        ]
+        {
+          "name": "MOXAP EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "13/10/2022",
+          "med_end": "19/10/2022"
+        },
+        {
+          "name": "EYEMIST FORTE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "13/10/2022",
+          "med_end": "11/11/2022"
+        }
       ],
       "fup": {
         "adv": "1 year"
@@ -127,6 +142,13 @@
       "v": 3,
       "d": "2023-03-11",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "Post PRK × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "66"
@@ -170,6 +192,14 @@
       "v": 4,
       "d": "2023-09-24",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "Corneal abrasion × 1",
+          "Normal × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "66"
@@ -188,23 +218,23 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "MOXIGRAM EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "LUBREX EYE DROPS",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "PANTHEGEL  OINT",
-          "1",
-          2
-        ]
+        {
+          "name": "MOXIGRAM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "LUBREX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "PANTHEGEL  OINT",
+          "eye": "1",
+          "fre": 2
+        }
       ],
       "fup": {
         "adv": "Tomorrow"
@@ -214,6 +244,13 @@
       "v": 5,
       "d": "2023-09-25",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "Ametropia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "66"
@@ -242,6 +279,13 @@
       "v": 6,
       "d": "2024-08-08",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "Ametropia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -286,6 +330,14 @@
       "v": 7,
       "d": "2024-09-23",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Normal × 1",
+          "Subconjunctival haemorrhage × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -319,18 +371,18 @@
         "uf": "Normal"
       },
       "m": [
-        [
-          "APDROPS EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "LUBREX-DS DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "APDROPS EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "LUBREX-DS DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "fup": {
         "adv": "Whenever Required"

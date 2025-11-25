@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2022-07-28",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "IMC × 1",
+          "PACG × 1",
+          "Status Post PI × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "660"
@@ -70,12 +79,12 @@
         "mf": "dull"
       },
       "m": [
-        [
-          "GLUCOMOL DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "GLUCOMOL DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "28",
@@ -91,6 +100,16 @@
       "v": 2,
       "d": "2022-08-29",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "IMC × 1",
+          "PACG × 1",
+          "Status Post PI × 1",
+          "PDR × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -155,6 +174,16 @@
       "v": 3,
       "d": "2022-09-08",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "IMC × 1",
+          "PACG × 1",
+          "Status Post PI × 1",
+          "PDR × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "660",
@@ -208,15 +237,15 @@
         "rem": "PDR"
       },
       "m": [
-        [
-          "MEGABROM EYE DROPS",
-          "1 drop",
-          "3",
-          2,
-          15,
-          "08/09/2022",
-          "22/09/2022"
-        ]
+        {
+          "name": "MEGABROM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2,
+          "dur": 15,
+          "med_start": "08/09/2022",
+          "med_end": "22/09/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -285,15 +314,15 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "MEGABROM EYE DROPS",
-          "1 drop",
-          "3",
-          2,
-          15,
-          "23/09/2022",
-          "07/10/2022"
-        ]
+        {
+          "name": "MEGABROM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2,
+          "dur": 15,
+          "med_start": "23/09/2022",
+          "med_end": "07/10/2022"
+        }
       ],
       "inv": {
         "iop": "22"
@@ -306,6 +335,16 @@
       "v": 6,
       "d": "2022-10-26",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "IMC × 1",
+          "PACG × 1",
+          "Status Post PI × 1",
+          "PDR × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "UCVA": "560"
@@ -364,12 +403,12 @@
         "rem": "PDR"
       },
       "m": [
-        [
-          "GLUCOMOL DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "GLUCOMOL DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -436,69 +475,69 @@
         ]
       },
       "m": [
-        [
-          "DEXA 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          6,
-          7,
-          "18/11/2022",
-          "24/11/2022"
-        ],
-        [
-          "DEXA 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          5,
-          7,
-          "25/11/2022",
-          "01/12/2022"
-        ],
-        [
-          "DEXA 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          4,
-          7,
-          "02/12/2022",
-          "08/12/2022"
-        ],
-        [
-          "DEXA 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          7,
-          "09/12/2022",
-          "15/12/2022"
-        ],
-        [
-          "DEXA 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          2,
-          7,
-          "16/12/2022",
-          "22/12/2022"
-        ],
-        [
-          "DEXA 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          1,
-          7,
-          "23/12/2022",
-          "29/12/2022"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          15,
-          "18/11/2022",
-          "02/12/2022"
-        ]
+        {
+          "name": "DEXA 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6,
+          "dur": 7,
+          "med_start": "18/11/2022",
+          "med_end": "24/11/2022"
+        },
+        {
+          "name": "DEXA 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5,
+          "dur": 7,
+          "med_start": "25/11/2022",
+          "med_end": "01/12/2022"
+        },
+        {
+          "name": "DEXA 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "02/12/2022",
+          "med_end": "08/12/2022"
+        },
+        {
+          "name": "DEXA 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 7,
+          "med_start": "09/12/2022",
+          "med_end": "15/12/2022"
+        },
+        {
+          "name": "DEXA 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2,
+          "dur": 7,
+          "med_start": "16/12/2022",
+          "med_end": "22/12/2022"
+        },
+        {
+          "name": "DEXA 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1,
+          "dur": 7,
+          "med_start": "23/12/2022",
+          "med_end": "29/12/2022"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 15,
+          "med_start": "18/11/2022",
+          "med_end": "02/12/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -511,6 +550,18 @@
       "v": 10,
       "d": "2022-12-14",
       "c": "F9",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "S/P PRP × 1",
+          "PDR × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -584,27 +635,27 @@
         "rem": "PDR s/p prp"
       },
       "m": [
-        [
-          "NEPAFLAM-OD DROPS",
-          "1 drop",
-          "1",
-          1,
-          30,
-          "14/12/2022",
-          "12/01/2023"
-        ],
-        [
-          "GLUCOMOL DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "BIDIN-LS EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "NEPAFLAM-OD DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1,
+          "dur": 30,
+          "med_start": "14/12/2022",
+          "med_end": "12/01/2023"
+        },
+        {
+          "name": "GLUCOMOL DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "BIDIN-LS EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -623,6 +674,20 @@
       "v": 11,
       "d": "2023-05-24",
       "c": "F10",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "S/P PRP × 1",
+          "PDR × 1",
+          "Status Post PI × 1",
+          "PACG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -693,12 +758,12 @@
         "rem": "PDR s/p prp"
       },
       "m": [
-        [
-          "GLUCOMOL DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "GLUCOMOL DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -714,6 +779,20 @@
       "v": 12,
       "d": "2023-06-08",
       "c": "F11",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "S/P PRP × 1",
+          "PDR × 1",
+          "Status Post PI × 1",
+          "PACG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -768,12 +847,12 @@
         "rem": "PDR s/p prp"
       },
       "m": [
-        [
-          "GLUCOMOL DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "GLUCOMOL DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -792,6 +871,20 @@
       "v": 13,
       "d": "2023-07-06",
       "c": "F12",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "S/P PRP × 1",
+          "PDR × 1",
+          "Status Post PI × 1",
+          "PACG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -843,12 +936,12 @@
         "rem": "PDR s/p prp"
       },
       "m": [
-        [
-          "GLUCOMOL DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "GLUCOMOL DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -873,6 +966,20 @@
       "v": 15,
       "d": "2023-07-27",
       "c": "F14",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "S/P PRP × 1",
+          "PDR × 1",
+          "Status Post PI × 1",
+          "PACG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -883,54 +990,54 @@
         ]
       },
       "m": [
-        [
-          "GLUCOMOL DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "2",
-          5
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "GLUCOMOL DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "fup": {
         "adv": "1 month"
@@ -940,6 +1047,17 @@
       "v": 16,
       "d": "2023-08-31",
       "c": "F15",
+      "diag": [
+        "",
+        "",
+        [
+          "PDR × 1",
+          "Status Post PI × 1",
+          "PCIOL × 1",
+          "PACG × 1",
+          "S/P PRP × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -1000,12 +1118,12 @@
         "rem": "PDR s/p prp"
       },
       "m": [
-        [
-          "AMPLINAK EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "AMPLINAK EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -1021,6 +1139,14 @@
       "v": 17,
       "d": "2024-11-20",
       "c": "F16",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 1",
+          "PDR × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"

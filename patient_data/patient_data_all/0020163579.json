@@ -11,6 +11,13 @@
       "v": 1,
       "d": "2023-05-14",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Examination Incomplete × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -81,6 +88,16 @@
       "v": 2,
       "d": "2023-05-15",
       "c": "F1",
+      "diag": [
+        [
+          "Normal × 1"
+        ],
+        [
+          "Vitreous Haemorrhage × 1",
+          "PCV × 1"
+        ],
+        ""
+      ],
       "as": {
         "rem": [
           "",
@@ -127,28 +144,28 @@
         ]
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          3
-        ],
-        [
-          "DOLO 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -178,6 +195,17 @@
       "v": 4,
       "d": "2023-05-17",
       "c": "F3",
+      "diag": [
+        [
+          "Normal × 1"
+        ],
+        [
+          "Vitreous Haemorrhage × 1",
+          "PCV × 1",
+          "IMC × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -244,65 +272,65 @@
         ]
       },
       "m": [
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "DOLO 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          5
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ]
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "17"
@@ -386,23 +414,23 @@
         ]
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "DOLO 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        }
       ],
       "inv": {
         "iop": [
@@ -415,6 +443,17 @@
       "v": 6,
       "d": "2023-05-23",
       "c": "F5",
+      "diag": [
+        [
+          "Normal × 1"
+        ],
+        [
+          "Vitreous Haemorrhage × 1",
+          "PCV × 1",
+          "IMC × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -483,18 +522,18 @@
         ]
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "TIMOBEST EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "TIMOBEST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -516,6 +555,18 @@
       "v": 7,
       "d": "2023-08-24",
       "c": "F6",
+      "diag": [
+        [
+          "Normal × 1"
+        ],
+        [
+          "Vitreous Haemorrhage × 1",
+          "PCV × 1",
+          "IMC × 1",
+          "S/P PPV+SOI × 1"
+        ],
+        ""
+      ],
       "vi": {
         "vis": [
           {
@@ -621,6 +672,14 @@
       "v": 8,
       "d": "2023-11-22",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "PCV × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -710,23 +769,23 @@
         ]
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "DOLO 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        }
       ],
       "inv": {
         "iop": [
@@ -829,23 +888,23 @@
         ]
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "DOLO 650MG TAB",
-          "1 tablet",
-          "5",
-          2
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "DOLO 650MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        }
       ],
       "inv": {
         "iop": [
@@ -859,48 +918,48 @@
       "d": "2023-11-26",
       "c": "F10",
       "m": [
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          5
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "ZIVIMOX - D EYE DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "HOMIDE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ]
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "ZIVIMOX - D EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "HOMIDE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -913,6 +972,14 @@
       "v": 12,
       "d": "2023-12-04",
       "c": "F11",
+      "diag": [
+        "",
+        "",
+        [
+          "Immature cataract × 1",
+          "PCV × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

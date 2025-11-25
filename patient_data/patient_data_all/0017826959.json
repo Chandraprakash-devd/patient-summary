@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2022-01-13",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "NPDR Moderate × 1",
+          "CSME × 1",
+          "Nuclear Sclerosis Grade-II × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -76,31 +85,31 @@
         "rem": "?mod NPDR"
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only",
-          1,
-          "13/01/2022",
-          "13/01/2022"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8,
-          1,
-          "13/01/2022",
-          "13/01/2022"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          3,
-          1,
-          "14/01/2022",
-          "14/01/2022"
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only",
+          "dur": 1,
+          "med_start": "13/01/2022",
+          "med_end": "13/01/2022"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8,
+          "dur": 1,
+          "med_start": "13/01/2022",
+          "med_end": "13/01/2022"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 3,
+          "dur": 1,
+          "med_start": "14/01/2022",
+          "med_end": "14/01/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -126,6 +135,20 @@
       "v": 4,
       "d": "2023-05-30",
       "c": "F3",
+      "diag": [
+        [
+          "Nuclear Sclerosis Grade-II × 1",
+          "Nuclear Sclerosis Grade-III × 1"
+        ],
+        [
+          "Nuclear Sclerosis Grade-III × 1",
+          "PSCC × 1"
+        ],
+        [
+          "NPDR Moderate × 1",
+          "CSME × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -200,6 +223,19 @@
       "v": 5,
       "d": "2023-06-01",
       "c": "F4",
+      "diag": [
+        [
+          "DME × 1"
+        ],
+        [
+          "ERM × 1",
+          "DME × 1"
+        ],
+        [
+          "PSCC NSG  2 × 1",
+          "NPDR Moderate × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -227,18 +263,18 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "NEPAWEL EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ],
-        [
-          "ENVISA TABS",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "NEPAWEL EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        },
+        {
+          "name": "ENVISA TABS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -251,6 +287,19 @@
       "v": 6,
       "d": "2023-07-01",
       "c": "F5",
+      "diag": [
+        [
+          "DME × 1"
+        ],
+        [
+          "ERM × 1",
+          "DME × 1"
+        ],
+        [
+          "PSCC NSG  2 × 1",
+          "NPDR Moderate × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -304,28 +353,28 @@
         ]
       },
       "m": [
-        [
-          "ENVISA TABS",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          8
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          3
-        ]
+        {
+          "name": "ENVISA TABS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 8
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -348,6 +397,23 @@
       "v": 7,
       "d": "2023-07-05",
       "c": "F6",
+      "diag": [
+        [
+          "DME × 1"
+        ],
+        [
+          "DME × 1"
+        ],
+        [
+          "Stroke × 1",
+          "Hypertension × 1",
+          "Diabetes Mellitus × 1",
+          "Asthmatic × 1",
+          "Dyslipidemia × 1",
+          "NPDR Moderate × 1",
+          "PSCC NSG  2 × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -362,48 +428,48 @@
         "rem": "cardiac"
       },
       "m": [
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          6
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          5
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          4
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "2",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 5
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -419,6 +485,23 @@
       "v": 8,
       "d": "2023-08-09",
       "c": "F7",
+      "diag": [
+        [
+          "DME × 1"
+        ],
+        [
+          "DME × 1"
+        ],
+        [
+          "NPDR Moderate × 1",
+          "PSCC NSG  2 × 1",
+          "Stroke × 1",
+          "Hypertension × 1",
+          "Diabetes Mellitus × 1",
+          "Asthmatic × 1",
+          "Dyslipidemia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -451,12 +534,12 @@
         ]
       },
       "m": [
-        [
-          "NEPAFLAM EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "NEPAFLAM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -472,6 +555,15 @@
       "v": 9,
       "d": "2024-02-06",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 1",
+          "Immature cataract × 1",
+          "Moderate nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -532,22 +624,22 @@
         "rem": "Mod NPDR"
       },
       "m": [
-        [
-          "ALPRAX 0.5 TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          8
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          3
-        ]
+        {
+          "name": "ALPRAX 0.5 TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 8
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -584,49 +676,49 @@
         "rem": "CARDIAC"
       },
       "m": [
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "BUDECORT",
-          "1 drop",
-          "1",
-          6
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          5
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "Dexa 7.5ML EYE DROPS",
-          "1 drop",
-          "1",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ]
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "rem": "BUDECORT",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 6
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 5
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "Dexa 7.5ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -642,6 +734,14 @@
       "v": 11,
       "d": "2024-03-09",
       "c": "F10",
+      "diag": [
+        "",
+        "",
+        [
+          "Moderate nonproliferative diabetic retinopathy × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "618"
@@ -651,12 +751,12 @@
         "ref": "moderate npdr, review"
       },
       "m": [
-        [
-          "NEPAWEL EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ]
+        {
+          "name": "NEPAWEL EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "18"

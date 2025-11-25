@@ -11,6 +11,14 @@
       "v": 1,
       "d": "2024-01-16",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "NPDR × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -61,12 +69,12 @@
         ]
       },
       "m": [
-        [
-          "ZIVIFRESH EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "ZIVIFRESH EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "20"
@@ -79,6 +87,13 @@
       "v": 2,
       "d": "2024-02-01",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -128,6 +143,14 @@
       "v": 3,
       "d": "2024-11-09",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "69"
@@ -173,6 +196,15 @@
       "v": 4,
       "d": "2024-11-12",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1",
+          "Diabetic macular edema × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -218,19 +250,27 @@
         "rem": "Severe npdr , DME"
       },
       "m": [
-        [
-          "MICRONAC PF - EYE DROPS",
-          "",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "MICRONAC PF - EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ]
     },
     {
       "v": 5,
       "d": "2024-11-27",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -255,13 +295,12 @@
         "rem": "Severe npdr , DME"
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "20"
@@ -314,6 +353,16 @@
       "v": 7,
       "d": "2025-01-03",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1",
+          "Secondary glaucoma × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -357,19 +406,18 @@
         "rem": "Severe npdr , DME"
       },
       "m": [
-        [
-          "BriTiGan",
-          "",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "NEPAWEL EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "BriTiGan",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "NEPAWEL EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -382,6 +430,17 @@
       "v": 8,
       "d": "2025-02-04",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "Secondary glaucoma × 1",
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1",
+          "Glaucoma suspect × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -430,19 +489,18 @@
         ]
       },
       "m": [
-        [
-          "BriTiGan",
-          "",
-          "1 drop",
-          "1",
-          2
-        ],
-        [
-          "NEPAWEL EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "BriTiGan",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 2
+        },
+        {
+          "name": "NEPAWEL EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -462,6 +520,17 @@
       "v": 9,
       "d": "2025-03-19",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "Secondary glaucoma × 1",
+          "Glaucoma suspect × 1",
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -506,13 +575,12 @@
         ]
       },
       "m": [
-        [
-          "AMPLINAK EYE DROPS",
-          "",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "AMPLINAK EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "20",
@@ -529,6 +597,17 @@
       "v": 10,
       "d": "2025-04-19",
       "c": "F9",
+      "diag": [
+        "",
+        "",
+        [
+          "Secondary glaucoma × 1",
+          "Glaucoma suspect × 1",
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -571,19 +650,17 @@
         ]
       },
       "m": [
-        [
-          "NEXT EYE DROPS",
-          "",
-          "1 drop",
-          "3",
-          "Afternoon Only"
-        ],
-        [
-          "",
-          "1 tablet",
-          "5",
-          "Afternoon Only"
-        ]
+        {
+          "name": "NEXT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Afternoon Only"
+        },
+        {
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Afternoon Only"
+        }
       ],
       "inv": {
         "iop": "20",
@@ -600,6 +677,17 @@
       "v": 11,
       "d": "2025-05-22",
       "c": "F10",
+      "diag": [
+        "",
+        "",
+        [
+          "Secondary glaucoma × 1",
+          "Glaucoma suspect × 1",
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -641,19 +729,17 @@
         ]
       },
       "m": [
-        [
-          "",
-          "",
-          "1 tablet",
-          "5",
-          "Afternoon Only"
-        ],
-        [
-          "NEXT EYE DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Afternoon Only"
+        },
+        {
+          "name": "NEXT EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": "20",
@@ -670,6 +756,17 @@
       "v": 12,
       "d": "2025-05-28",
       "c": "F11",
+      "diag": [
+        "",
+        "",
+        [
+          "Secondary glaucoma × 1",
+          "Glaucoma suspect × 1",
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "as": {
         "rem": "No NVI in dilated state"
       },
@@ -697,13 +794,12 @@
         ]
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "15"
@@ -713,6 +809,17 @@
       "v": 13,
       "d": "2025-06-05",
       "c": "F12",
+      "diag": [
+        "",
+        "",
+        [
+          "Secondary glaucoma × 1",
+          "Glaucoma suspect × 1",
+          "Diabetic macular edema × 1",
+          "Pseudophakia × 1",
+          "Severe nonproliferative diabetic retinopathy × 1"
+        ]
+      ],
       "as": {
         "rem": "No NVI in dilated state"
       },
@@ -740,13 +847,12 @@
         ]
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "",
-          "1 drop",
-          "2",
-          6
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 6
+        }
       ],
       "inv": {
         "iop": "18"

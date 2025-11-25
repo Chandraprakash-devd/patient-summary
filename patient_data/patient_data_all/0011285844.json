@@ -65,24 +65,24 @@
         "rem": "chronic CNVM post IVB"
       },
       "m": [
-        [
-          "NEPCINAC DROPS",
-          "1 drop",
-          "2",
-          3,
-          60,
-          "03/01/2022",
-          "04/03/2022"
-        ],
-        [
-          "FIT-EYE TAB",
-          "1 tablet",
-          "5",
-          1,
-          60,
-          "03/01/2022",
-          "04/03/2022"
-        ]
+        {
+          "name": "NEPCINAC DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3,
+          "dur": 60,
+          "med_start": "03/01/2022",
+          "med_end": "04/03/2022"
+        },
+        {
+          "name": "FIT-EYE TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1,
+          "dur": 60,
+          "med_start": "03/01/2022",
+          "med_end": "04/03/2022"
+        }
       ],
       "inv": {
         "iop": "13"
@@ -95,6 +95,15 @@
       "v": 2,
       "d": "2022-03-07",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -160,24 +169,24 @@
         "rem": "chronic CNVM post IVB"
       },
       "m": [
-        [
-          "FIT-EYE TAB",
-          "1 tablet",
-          "5",
-          1,
-          60,
-          "07/03/2022",
-          "05/05/2022"
-        ],
-        [
-          "NEPCINAC DROPS",
-          "1 drop",
-          "2",
-          3,
-          60,
-          "07/03/2022",
-          "05/05/2022"
-        ]
+        {
+          "name": "FIT-EYE TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1,
+          "dur": 60,
+          "med_start": "07/03/2022",
+          "med_end": "05/05/2022"
+        },
+        {
+          "name": "NEPCINAC DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3,
+          "dur": 60,
+          "med_start": "07/03/2022",
+          "med_end": "05/05/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -193,6 +202,15 @@
       "v": 3,
       "d": "2022-03-08",
       "c": "F2",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -217,14 +235,14 @@
         "rem": "chronic CNVM post IVB"
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          4,
-          7,
-          "09/03/2022",
-          "15/03/2022"
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "09/03/2022",
+          "med_end": "15/03/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -237,6 +255,15 @@
       "v": 4,
       "d": "2022-04-13",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -345,14 +372,14 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1",
-          4,
-          7,
-          "15/04/2022",
-          "21/04/2022"
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "eye": "1",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "15/04/2022",
+          "med_end": "21/04/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -365,6 +392,16 @@
       "v": 6,
       "d": "2022-05-23",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1",
+          "Wet ARMD × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -420,24 +457,24 @@
         ]
       },
       "m": [
-        [
-          "XINEP DROPS",
-          "1 drop",
-          "3",
-          3,
-          30,
-          "23/05/2022",
-          "21/06/2022"
-        ],
-        [
-          "REFFRON TABLETS",
-          "1 tablet",
-          "5",
-          1,
-          30,
-          "23/05/2022",
-          "21/06/2022"
-        ]
+        {
+          "name": "XINEP DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "23/05/2022",
+          "med_end": "21/06/2022"
+        },
+        {
+          "name": "REFFRON TABLETS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1,
+          "dur": 30,
+          "med_start": "23/05/2022",
+          "med_end": "21/06/2022"
+        }
       ],
       "inv": {
         "iop": "16",
@@ -453,6 +490,16 @@
       "v": 7,
       "d": "2022-08-09",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1",
+          "Wet ARMD × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -510,24 +557,24 @@
         ]
       },
       "m": [
-        [
-          "REFFRON TABLETS",
-          "1 tablet",
-          "5",
-          1,
-          60,
-          "09/08/2022",
-          "07/10/2022"
-        ],
-        [
-          "XINEP DROPS",
-          "1 drop",
-          "3",
-          3,
-          60,
-          "09/08/2022",
-          "07/10/2022"
-        ]
+        {
+          "name": "REFFRON TABLETS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1,
+          "dur": 60,
+          "med_start": "09/08/2022",
+          "med_end": "07/10/2022"
+        },
+        {
+          "name": "XINEP DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3,
+          "dur": 60,
+          "med_start": "09/08/2022",
+          "med_end": "07/10/2022"
+        }
       ],
       "inv": {
         "iop": "14",
@@ -597,24 +644,24 @@
         ]
       },
       "m": [
-        [
-          "XINEP DROPS",
-          "1 drop",
-          "3",
-          3,
-          60,
-          "01/11/2022",
-          "30/12/2022"
-        ],
-        [
-          "REFFRON TABLETS",
-          "1 tablet",
-          "5",
-          1,
-          60,
-          "01/11/2022",
-          "30/12/2022"
-        ]
+        {
+          "name": "XINEP DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3,
+          "dur": 60,
+          "med_start": "01/11/2022",
+          "med_end": "30/12/2022"
+        },
+        {
+          "name": "REFFRON TABLETS",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1,
+          "dur": 60,
+          "med_start": "01/11/2022",
+          "med_end": "30/12/2022"
+        }
       ],
       "inv": {
         "iop": "15",
@@ -630,6 +677,16 @@
       "v": 9,
       "d": "2022-12-02",
       "c": "F8",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1",
+          "Wet ARMD × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -711,6 +768,16 @@
       "v": 10,
       "d": "2022-12-05",
       "c": "F9",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1",
+          "Wet ARMD × 1"
+        ]
+      ],
       "vi": {
         "dist": [
           {
@@ -750,15 +817,15 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "1",
-          4,
-          7,
-          "06/12/2022",
-          "12/12/2022"
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "06/12/2022",
+          "med_end": "12/12/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -771,6 +838,16 @@
       "v": 11,
       "d": "2022-12-12",
       "c": "F10",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1",
+          "Wet ARMD × 1"
+        ]
+      ],
       "vi": {
         "dist": [
           {
@@ -810,15 +887,15 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "2",
-          4,
-          7,
-          "13/12/2022",
-          "19/12/2022"
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 4,
+          "dur": 7,
+          "med_start": "13/12/2022",
+          "med_end": "19/12/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -831,6 +908,16 @@
       "v": 12,
       "d": "2023-01-17",
       "c": "F11",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1",
+          "Wet ARMD × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -898,24 +985,24 @@
         ]
       },
       "m": [
-        [
-          "VITAKIND-I CAPSULE",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "LUBIMOIST",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "NEPASTAR -OD 3ML EYE DROPS",
-          "1 drop",
-          "2",
-          "Afternoon Only"
-        ]
+        {
+          "name": "VITAKIND-I CAPSULE",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "LUBIMOIST",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "NEPASTAR -OD 3ML EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Afternoon Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -934,6 +1021,16 @@
       "v": 13,
       "d": "2023-01-18",
       "c": "F12",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1",
+          "Wet ARMD × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -961,12 +1058,12 @@
         ]
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -1001,6 +1098,15 @@
       "v": 15,
       "d": "2023-03-02",
       "c": "F14",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -1025,12 +1131,12 @@
         "rem": "chronic CNVM post IVB"
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -1046,6 +1152,15 @@
       "v": 16,
       "d": "2023-04-07",
       "c": "F15",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1126,6 +1241,15 @@
       "v": 17,
       "d": "2023-04-08",
       "c": "F16",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1158,12 +1282,12 @@
         "rem": "chronic CNVM post IVB"
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -1179,6 +1303,15 @@
       "v": 18,
       "d": "2023-05-08",
       "c": "F17",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1258,6 +1391,15 @@
       "v": 19,
       "d": "2023-05-17",
       "c": "F18",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -1285,12 +1427,12 @@
         "rem": "chronic CNVM post IVB"
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -1303,6 +1445,15 @@
       "v": 20,
       "d": "2023-07-03",
       "c": "F19",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1381,6 +1532,15 @@
       "v": 21,
       "d": "2023-07-10",
       "c": "F20",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "PCIOL × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -1408,12 +1568,12 @@
         ]
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -1429,6 +1589,13 @@
       "v": 22,
       "d": "2023-08-10",
       "c": "F21",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1512,6 +1679,13 @@
       "v": 23,
       "d": "2023-08-11",
       "c": "F22",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1547,12 +1721,12 @@
         ]
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -1568,6 +1742,14 @@
       "v": 24,
       "d": "2023-09-11",
       "c": "F23",
+      "diag": [
+        "",
+        "",
+        [
+          "S/P Intravitreal Injection × 1",
+          "CNVM × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1649,6 +1831,14 @@
       "v": 25,
       "d": "2023-09-20",
       "c": "F24",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1",
+          "S/P Intravitreal Injection × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -1676,12 +1866,12 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -1697,6 +1887,15 @@
       "v": 26,
       "d": "2023-10-23",
       "c": "F25",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1761,18 +1960,18 @@
         "rem": "Post multiple IVB"
       },
       "m": [
-        [
-          "BROMVUE EYE DROPS",
-          "1 drop",
-          "2",
-          2
-        ],
-        [
-          "EYESURGE TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "BROMVUE EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "EYESURGE TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -1791,6 +1990,15 @@
       "v": 27,
       "d": "2023-10-24",
       "c": "F26",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -1815,12 +2023,12 @@
         "rem": "Post multiple IVB"
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -1833,6 +2041,15 @@
       "v": 28,
       "d": "2023-11-24",
       "c": "F27",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -1943,12 +2160,12 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -1961,6 +2178,13 @@
       "v": 30,
       "d": "2024-01-04",
       "c": "F29",
+      "diag": [
+        "",
+        "",
+        [
+          "CNVM × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {},
@@ -2017,18 +2241,18 @@
         ]
       },
       "m": [
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "NEPALACT Z DROPS",
-          "1 drop",
-          "3",
-          3
-        ]
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "NEPALACT Z DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 3
+        }
       ],
       "inv": {
         "iop": [
@@ -2047,6 +2271,15 @@
       "v": 31,
       "d": "2024-02-06",
       "c": "F30",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CNVM × 1",
+          "CME × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -2114,12 +2347,12 @@
         ]
       },
       "m": [
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -2138,6 +2371,15 @@
       "v": 32,
       "d": "2024-02-22",
       "c": "F31",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1"
+        ]
+      ],
       "s": {
         "h": "Asthma;Cardiac;Diabetes;Drug Allergies;Hyperlipidemia;Hypertension;Non-Ocular Sx;Other Allergies;Others;Renal Disease;Liver Disease;Stroke/Neuro;Lungs Problem;Malignancy-site;Rheumatoid Arthritis;TB;Remarks;Identification Marks;Thyroid"
       },
@@ -2172,12 +2414,12 @@
         ]
       },
       "m": [
-        [
-          "AUROFLOX EYE DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -2196,6 +2438,15 @@
       "v": 33,
       "d": "2024-03-22",
       "c": "F32",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -2241,12 +2492,12 @@
         ]
       },
       "m": [
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -2265,6 +2516,16 @@
       "v": 34,
       "d": "2024-04-01",
       "c": "F33",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "at": {
         "ac": "Normal Depth",
         "ir": "Normal Color and Pattern",
@@ -2292,12 +2553,12 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -2316,6 +2577,16 @@
       "v": 35,
       "d": "2024-05-02",
       "c": "F34",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2353,18 +2624,18 @@
         ]
       },
       "m": [
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          1
-        ],
-        [
-          "Nepalact -od eye drops",
-          "1 drop",
-          "3",
-          "Night Only"
-        ]
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        },
+        {
+          "name": "Nepalact -od eye drops",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -2383,6 +2654,16 @@
       "v": 36,
       "d": "2024-07-02",
       "c": "F35",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2420,18 +2701,18 @@
         ]
       },
       "m": [
-        [
-          "Nepalact -od eye drops",
-          "1 drop",
-          "3",
-          "Night Only"
-        ],
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "Nepalact -od eye drops",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": "Night Only"
+        },
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [
@@ -2450,6 +2731,16 @@
       "v": 37,
       "d": "2024-09-07",
       "c": "F36",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2487,12 +2778,12 @@
         ]
       },
       "m": [
-        [
-          "MACUMER TAB",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "MACUMER TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": "Not Measurable",
@@ -2508,6 +2799,16 @@
       "v": 38,
       "d": "2024-11-08",
       "c": "F37",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2545,25 +2846,24 @@
         ]
       },
       "m": [
-        [
-          "EYEMIST EYE DROPS",
-          "",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "NEPASTAR-OD EYE DROPS",
-          "1 drop",
-          "1",
-          "Afternoon Only"
-        ],
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          "Afternoon Only"
-        ]
+        {
+          "name": "EYEMIST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "NEPASTAR-OD EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": "Afternoon Only"
+        },
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Afternoon Only"
+        }
       ],
       "inv": {
         "iop": "13",
@@ -2576,6 +2876,16 @@
       "v": 39,
       "d": "2025-01-20",
       "c": "F38",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -2626,6 +2936,16 @@
       "v": 40,
       "d": "2025-03-20",
       "c": "F39",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -2676,25 +2996,24 @@
         ]
       },
       "m": [
-        [
-          "NEPASTAR-OD EYE DROPS",
-          "",
-          "1 drop",
-          "2",
-          "Night Only"
-        ],
-        [
-          "EYEMIST EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          "Afternoon Only"
-        ]
+        {
+          "name": "NEPASTAR-OD EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Night Only"
+        },
+        {
+          "name": "EYEMIST EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Afternoon Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -2710,6 +3029,16 @@
       "v": 41,
       "d": "2025-03-31",
       "c": "F40",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,
@@ -2745,13 +3074,12 @@
         ]
       },
       "m": [
-        [
-          "OFLACIN DROPS",
-          "",
-          "1 drop",
-          "1",
-          4
-        ]
+        {
+          "name": "OFLACIN DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -2761,6 +3089,16 @@
       "v": 42,
       "d": "2025-05-16",
       "c": "F41",
+      "diag": [
+        "",
+        "",
+        [
+          "Age related macular degeneration × 1",
+          "CME × 1",
+          "CNVM × 1",
+          "Pseudophakia × 1"
+        ]
+      ],
       "pr": {
         "act": [
           null,

@@ -11,6 +11,19 @@
       "v": 1,
       "d": "2022-02-09",
       "c": "Initial",
+      "diag": [
+        "",
+        [
+          "Asteroid Hyalosis × 1"
+        ],
+        [
+          "PDR × 1",
+          "S/P PRP × 1",
+          "Steroid Responders Glaucoma × 1",
+          "Secondary Glaucoma × 1",
+          "PCIOL × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -89,6 +102,19 @@
       "v": 2,
       "d": "2023-01-20",
       "c": "F1",
+      "diag": [
+        "",
+        [
+          "Asteroid Hyalosis × 1"
+        ],
+        [
+          "PDR × 1",
+          "S/P PRP × 1",
+          "Steroid Responders Glaucoma × 1",
+          "Secondary Glaucoma × 1",
+          "PCIOL × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -155,18 +181,18 @@
         ]
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "DORSUN EYE DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "DORSUN EYE DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "20",
@@ -182,6 +208,19 @@
       "v": 3,
       "d": "2023-04-12",
       "c": "F2",
+      "diag": [
+        "",
+        [
+          "Asteroid Hyalosis × 1"
+        ],
+        [
+          "PDR × 1",
+          "S/P PRP × 1",
+          "Steroid Responders Glaucoma × 1",
+          "Secondary Glaucoma × 1",
+          "PCIOL × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -241,18 +280,18 @@
         ]
       },
       "m": [
-        [
-          "MEGABROM EYE DROPS",
-          "1 drop",
-          "1",
-          3
-        ],
-        [
-          "CELIN 500MG TAB",
-          "1 tablet",
-          "5",
-          "Night Only"
-        ]
+        {
+          "name": "MEGABROM EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3
+        },
+        {
+          "name": "CELIN 500MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -271,6 +310,22 @@
       "v": 4,
       "d": "2023-05-04",
       "c": "F3",
+      "diag": [
+        [
+          "Vitreous Haemorrhage × 1"
+        ],
+        [
+          "Asteroid Hyalosis × 1",
+          "TRD × 1"
+        ],
+        [
+          "PDR × 1",
+          "S/P PRP × 1",
+          "Steroid Responders Glaucoma × 1",
+          "Secondary Glaucoma × 1",
+          "PCIOL × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -308,12 +363,12 @@
         ]
       },
       "m": [
-        [
-          "CELIN 500MG TAB",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "CELIN 500MG TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": "19"
@@ -326,6 +381,14 @@
       "v": 5,
       "d": "2024-03-01",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "PDR × 1",
+          "Proliferative diabetic retinopathy × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -394,11 +457,11 @@
         ]
       },
       "m": [
-        [
-          "DORSUN -T E/D",
-          "3",
-          2
-        ]
+        {
+          "name": "DORSUN -T E/D",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -417,6 +480,14 @@
       "v": 6,
       "d": "2024-05-09",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "PDR × 1",
+          "Proliferative diabetic retinopathy × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {

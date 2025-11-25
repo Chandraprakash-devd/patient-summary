@@ -11,6 +11,16 @@
       "v": 1,
       "d": "2022-08-13",
       "c": "Initial",
+      "diag": [
+        [
+          "Nuclear Cataract/Brown Cataract × 1"
+        ],
+        "",
+        [
+          "IMC × 1",
+          "ARMD × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -97,63 +107,63 @@
       "d": "2022-08-20",
       "c": "F2",
       "m": [
-        [
-          "DEXA 7.5 ML",
-          "1",
-          6,
-          2,
-          "21/08/2022",
-          "22/08/2022"
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1",
-          4,
-          5,
-          "23/08/2022",
-          "27/08/2022"
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1",
-          3,
-          5,
-          "28/08/2022",
-          "01/09/2022"
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1",
-          2,
-          7,
-          "02/09/2022",
-          "08/09/2022"
-        ],
-        [
-          "DEXA 7.5 ML",
-          "1",
-          1,
-          7,
-          "09/09/2022",
-          "15/09/2022"
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "1",
-          3,
-          7,
-          "21/08/2022",
-          "27/08/2022"
-        ],
-        [
-          "NEPAWEL EYE DROPS",
-          "1 drop",
-          "1",
-          3,
-          30,
-          "21/08/2022",
-          "19/09/2022"
-        ]
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "1",
+          "fre": 6,
+          "dur": 2,
+          "med_start": "21/08/2022",
+          "med_end": "22/08/2022"
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "1",
+          "fre": 4,
+          "dur": 5,
+          "med_start": "23/08/2022",
+          "med_end": "27/08/2022"
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "1",
+          "fre": 3,
+          "dur": 5,
+          "med_start": "28/08/2022",
+          "med_end": "01/09/2022"
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "1",
+          "fre": 2,
+          "dur": 7,
+          "med_start": "02/09/2022",
+          "med_end": "08/09/2022"
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "1",
+          "fre": 1,
+          "dur": 7,
+          "med_start": "09/09/2022",
+          "med_end": "15/09/2022"
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "1",
+          "fre": 3,
+          "dur": 7,
+          "med_start": "21/08/2022",
+          "med_end": "27/08/2022"
+        },
+        {
+          "name": "NEPAWEL EYE DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 3,
+          "dur": 30,
+          "med_start": "21/08/2022",
+          "med_end": "19/09/2022"
+        }
       ],
       "inv": {
         "iop": "Not Measurable"
@@ -166,6 +176,17 @@
       "v": 4,
       "d": "2022-08-21",
       "c": "F3",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "ARMD × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -178,15 +199,15 @@
         ]
       },
       "m": [
-        [
-          "HYPERSOL-5 DROPS",
-          "1 drop",
-          "1",
-          4,
-          1,
-          "19/5/2023",
-          "19/5/2023"
-        ]
+        {
+          "name": "HYPERSOL-5 DROPS",
+          "dos": "1 drop",
+          "eye": "1",
+          "fre": 4,
+          "dur": 1,
+          "med_start": "19/5/2023",
+          "med_end": "19/5/2023"
+        }
       ],
       "fup": {
         "adv": "15 days"
@@ -196,6 +217,17 @@
       "v": 5,
       "d": "2022-09-03",
       "c": "F4",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "ARMD × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -257,6 +289,17 @@
       "v": 6,
       "d": "2022-09-17",
       "c": "F5",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "ARMD × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -321,6 +364,18 @@
       "v": 7,
       "d": "2022-09-19",
       "c": "F6",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "ARMD × 1",
+          "NPDR Moderate × 1"
+        ]
+      ],
       "pr": {
         "act": [
           [
@@ -384,6 +439,18 @@
       "v": 8,
       "d": "2022-10-20",
       "c": "F7",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "ARMD × 1",
+          "NPDR Moderate × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -432,15 +499,15 @@
         ]
       },
       "m": [
-        [
-          "MACUMER TAB",
-          "1 tablet",
-          "5",
-          "Morning Only",
-          60,
-          "20/10/2022",
-          "18/12/2022"
-        ]
+        {
+          "name": "MACUMER TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only",
+          "dur": 60,
+          "med_start": "20/10/2022",
+          "med_end": "18/12/2022"
+        }
       ],
       "inv": {
         "iop": [
@@ -485,13 +552,12 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "MACUMER TAB",
-          "",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "MACUMER TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "sp": {
@@ -523,6 +589,18 @@
       "v": 12,
       "d": "2023-05-13",
       "c": "F11",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "IMC × 1"
+        ],
+        [
+          "ARMD × 1",
+          "NPDR Moderate × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -583,12 +661,12 @@
         ]
       },
       "m": [
-        [
-          "I-SITE AF",
-          "1 tablet",
-          "5",
-          "Morning Only"
-        ]
+        {
+          "name": "I-SITE AF",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": "Morning Only"
+        }
       ],
       "inv": {
         "iop": [
@@ -636,42 +714,42 @@
         ]
       },
       "m": [
-        [
-          "DEXA 7.5 ML",
-          "2",
-          6
-        ],
-        [
-          "DEXA 7.5 ML",
-          "2",
-          4
-        ],
-        [
-          "DEXA 7.5 ML",
-          "2",
-          3
-        ],
-        [
-          "DEXA 7.5 ML",
-          "2",
-          2
-        ],
-        [
-          "DEXA 7.5 ML",
-          "2",
-          1
-        ],
-        [
-          "AUROFLOX EYE DROPS",
-          "2",
-          3
-        ],
-        [
-          "NEPAWEL EYE DROPS",
-          "1 drop",
-          "2",
-          3
-        ]
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "2",
+          "fre": 6
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "2",
+          "fre": 4
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "2",
+          "fre": 2
+        },
+        {
+          "name": "DEXA 7.5 ML",
+          "eye": "2",
+          "fre": 1
+        },
+        {
+          "name": "AUROFLOX EYE DROPS",
+          "eye": "2",
+          "fre": 3
+        },
+        {
+          "name": "NEPAWEL EYE DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": 3
+        }
       ],
       "fup": {
         "adv": "21 days"
@@ -681,6 +759,18 @@
       "v": 14,
       "d": "2023-05-20",
       "c": "F13",
+      "diag": [
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "PCIOL × 1"
+        ],
+        [
+          "ARMD × 1",
+          "NPDR Moderate × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -719,6 +809,15 @@
       "v": 15,
       "d": "2023-06-09",
       "c": "F14",
+      "diag": [
+        "",
+        "",
+        [
+          "ARMD × 1",
+          "NPDR Moderate × 1",
+          "PCIOL × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -780,12 +879,12 @@
         ]
       },
       "m": [
-        [
-          "OPTIGOLD TABLET",
-          "1 tablet",
-          "5",
-          1
-        ]
+        {
+          "name": "OPTIGOLD TABLET",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 1
+        }
       ],
       "inv": {
         "iop": [

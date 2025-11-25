@@ -11,6 +11,15 @@
       "v": 1,
       "d": "2022-10-05",
       "c": "Initial",
+      "diag": [
+        "",
+        "",
+        [
+          "Presbyopia × 1",
+          "Simple Hyperopic Astigmatism × 1",
+          "Primary Open Angle Glaucoma/POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -67,26 +76,26 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "DIAMOX TAB",
-          "2 tablet",
-          "5"
-        ],
-        [
-          "DIAMOX TAB",
-          "1 tablet",
-          "5",
-          2,
-          3,
-          "05/10/2022",
-          "07/10/2022"
-        ],
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "DIAMOX TAB",
+          "dos": "2 tablet",
+          "eye": "5"
+        },
+        {
+          "name": "DIAMOX TAB",
+          "dos": "1 tablet",
+          "eye": "5",
+          "fre": 2,
+          "dur": 3,
+          "med_start": "05/10/2022",
+          "med_end": "07/10/2022"
+        },
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": "26",
@@ -105,6 +114,15 @@
       "v": 2,
       "d": "2022-10-25",
       "c": "F1",
+      "diag": [
+        "",
+        "",
+        [
+          "Presbyopia × 1",
+          "Simple Hyperopic Astigmatism × 1",
+          "Primary Open Angle Glaucoma/POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -150,12 +168,12 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "inv": {
         "iop": [
@@ -187,13 +205,12 @@
         "gl": "Normal"
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "",
-          "1 drop",
-          "3",
-          2
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        }
       ],
       "oh": {
         "desc": "TIMOLET 5ML EYE DROPS"
@@ -203,6 +220,13 @@
       "v": 4,
       "d": "2024-09-07",
       "c": "F3",
+      "diag": [
+        "",
+        "",
+        [
+          "POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "618"
@@ -248,6 +272,13 @@
       "v": 5,
       "d": "2024-09-28",
       "c": "F4",
+      "diag": [
+        "",
+        "",
+        [
+          "POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -277,18 +308,18 @@
         "mf": "Present"
       },
       "m": [
-        [
-          "TIMOLET 0.5% DROPS",
-          "1 drop",
-          "3",
-          2
-        ],
-        [
-          "CAREPROST LS DROPS",
-          "1 drop",
-          "2",
-          "Night Only"
-        ]
+        {
+          "name": "TIMOLET 0.5% DROPS",
+          "dos": "1 drop",
+          "eye": "3",
+          "fre": 2
+        },
+        {
+          "name": "CAREPROST LS DROPS",
+          "dos": "1 drop",
+          "eye": "2",
+          "fre": "Night Only"
+        }
       ],
       "inv": {
         "iop": "20",
@@ -304,6 +335,13 @@
       "v": 6,
       "d": "2024-10-26",
       "c": "F5",
+      "diag": [
+        "",
+        "",
+        [
+          "POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": [
           {
@@ -346,6 +384,13 @@
       "v": 7,
       "d": "2025-01-25",
       "c": "F6",
+      "diag": [
+        "",
+        "",
+        [
+          "POAG × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "None": "66"
@@ -391,6 +436,14 @@
       "v": 8,
       "d": "2025-05-26",
       "c": "F7",
+      "diag": [
+        "",
+        "",
+        [
+          "POAG × 1",
+          "Presbyopia × 1"
+        ]
+      ],
       "vi": {
         "vis": {
           "With Spectacles": "66",
