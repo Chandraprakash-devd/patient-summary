@@ -1,10 +1,8 @@
 <div class="chart-container" [attr.data-theme]="currentTheme">
   <div class="procedures-overlay" *ngIf="showProcedures">
     <div *ngFor="let procedure of positionedProcedures" class="procedure-marker"
-      [style.left.%]="procedure.position + (procedure.offsetIndex * 0.4)" [title]="
-        procedure.name +
-        (procedure.count ? ' (' + procedure.count + 'x)' : '')
-      ">
+      [style.left.%]="procedure.position + (procedure.offsetIndex * 0.4)" (mouseenter)="showTooltip($event, procedure)"
+      (mouseleave)="hideTooltip()">
       <div class="procedure-icon" [style.color]="procedure.color">
         <svg *ngIf="procedure.type === 'injection'" width="16" height="16" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" stroke-width="2"
@@ -26,6 +24,17 @@
           <path d="M11 17v.01"></path>
           <path d="M7 14v.01"></path>
         </svg>
+      </div>
+    </div>
+
+    <!-- Custom Tooltip -->
+    <div class="procedure-tooltip" *ngIf="tooltipVisible" [style.left.px]="tooltipX" [style.top.px]="tooltipY">
+      <div class="tooltip-content">
+        <div class="tooltip-name">{{ tooltipData?.name }}</div>
+        <div class="tooltip-date">{{ tooltipData?.date | date:'MMM d, yyyy' }}</div>
+        <div class="tooltip-count" *ngIf="(tooltipData?.count ?? 0) > 1">
+          Occurred {{ tooltipData?.count }} times
+        </div>
       </div>
     </div>
   </div>

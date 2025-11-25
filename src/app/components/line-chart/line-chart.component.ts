@@ -90,6 +90,12 @@ export class LineChartComponent
 
   public positionedProcedures: PositionedProcedure[] = [];
 
+  // Tooltip properties
+  public tooltipVisible: boolean = false;
+  public tooltipX: number = 0;
+  public tooltipY: number = 0;
+  public tooltipData: ProcedureData | null = null;
+
   constructor(private themeService: ThemeService) {}
 
   ngOnInit() {
@@ -614,5 +620,28 @@ export class LineChartComponent
     };
 
     this.chart = new Chart(ctx, config);
+  }
+
+  // Tooltip methods
+  public showTooltip(event: MouseEvent, procedure: ProcedureData): void {
+    const target = event.currentTarget as HTMLElement;
+    const rect = target.getBoundingClientRect();
+    const containerRect = target
+      .closest('.procedures-overlay')
+      ?.getBoundingClientRect();
+
+    if (!containerRect) return;
+
+    // Position tooltip above the procedure marker
+    this.tooltipX = rect.left - containerRect.left + rect.width / 2;
+    this.tooltipY = rect.top - containerRect.top - 10; // 10px above the marker
+
+    this.tooltipData = procedure;
+    this.tooltipVisible = true;
+  }
+
+  public hideTooltip(): void {
+    this.tooltipVisible = false;
+    this.tooltipData = null;
   }
 }
